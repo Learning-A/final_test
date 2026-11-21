@@ -1,0 +1,237 @@
+{
+  "role": "diagnostic",
+  "fault_affected": true,
+  "independent_validation": false,
+  "formal_acceptance": false,
+  "fitting_performed": false,
+  "reference_sha256": "b459e2c1ce363f68713a6d76cdf47f0b58db4ccb644128f0990d1f7e335c9b44",
+  "candidate_sha256": "1921837a6e90da2b8265cf1aab5145a3d82828ba6ca714db707fc489e511975a",
+  "targets": {
+    "idfs44": {
+      "reference": {
+        "n": 125,
+        "zero_actual": 1,
+        "mae_iops": 85.98118615722656,
+        "wape_percent": 30.50016536027391,
+        "mape_percent": 36.65357377253879,
+        "accuracy_percent": 63.34642622746121
+      },
+      "candidate": {
+        "n": 125,
+        "zero_actual": 1,
+        "mae_iops": 89.35126693725586,
+        "wape_percent": 31.695636435543964,
+        "mape_percent": 37.56703273430763,
+        "accuracy_percent": 62.43296726569237
+      },
+      "mae_delta": 3.370080780029298,
+      "mape_delta": 0.9134589617688391,
+      "candidate_commit": "33a1346bdd6dfde6dc609eaa824a7b2aceed42f7",
+      "code_dirty": false,
+      "output_structure": "history_log_residual_v1",
+      "epochs": 100,
+      "best_validation_epoch": 98,
+      "candidate_range": [
+        42.77449417114258,
+        402.15032958984375
+      ],
+      "last_available": {
+        "n": 125,
+        "zero_actual": 1,
+        "mae_iops": 106.504,
+        "wape_percent": 37.78023724388444,
+        "mape_percent": 47.877497304772774,
+        "accuracy_percent": 52.122502695227226
+      },
+      "mean_five": {
+        "n": 125,
+        "zero_actual": 1,
+        "mae_iops": 109.87999999999998,
+        "wape_percent": 38.97780804812985,
+        "mape_percent": 48.410875079629456,
+        "accuracy_percent": 51.589124920370544
+      },
+      "mae_improved_windows": 46,
+      "worst_positive_ape": [
+        {
+          "window_start_ns": 1795254092000000000,
+          "actual": 33,
+          "lags": [
+            302,
+            104,
+            160,
+            299,
+            331
+          ],
+          "reference_prediction": 255.58209228515625,
+          "candidate_prediction": 228.82142639160156
+        },
+        {
+          "window_start_ns": 1795254224000000000,
+          "actual": 56,
+          "lags": [
+            139,
+            0,
+            185,
+            339,
+            292
+          ],
+          "reference_prediction": 246.97799682617188,
+          "candidate_prediction": 268.9757080078125
+        },
+        {
+          "window_start_ns": 1795254145000000000,
+          "actual": 81,
+          "lags": [
+            173,
+            285,
+            308,
+            292,
+            295
+          ],
+          "reference_prediction": 256.70916748046875,
+          "candidate_prediction": 238.08372497558594
+        },
+        {
+          "window_start_ns": 1795254126000000000,
+          "actual": 92,
+          "lags": [
+            279,
+            292,
+            286,
+            256,
+            282
+          ],
+          "reference_prediction": 256.83160400390625,
+          "candidate_prediction": 242.12936401367188
+        },
+        {
+          "window_start_ns": 1795254089000000000,
+          "actual": 104,
+          "lags": [
+            299,
+            331,
+            284,
+            358,
+            308
+          ],
+          "reference_prediction": 257.2233581542969,
+          "candidate_prediction": 244.75894165039062
+        }
+      ]
+    },
+    "cluster": {
+      "reference": {
+        "n": 125,
+        "zero_actual": 0,
+        "mae_iops": 706.87062890625,
+        "wape_percent": 25.053896253854468,
+        "mape_percent": 211.58192479276846,
+        "accuracy_percent": -111.58192479276846
+      },
+      "candidate": {
+        "n": 125,
+        "zero_actual": 0,
+        "mae_iops": 671.0323840332031,
+        "wape_percent": 23.783667116793193,
+        "mape_percent": 229.2344840253358,
+        "accuracy_percent": -129.2344840253358
+      },
+      "mae_delta": -35.83824487304685,
+      "mape_delta": 17.65255923256734,
+      "candidate_commit": "33a1346bdd6dfde6dc609eaa824a7b2aceed42f7",
+      "code_dirty": false,
+      "output_structure": "history_log_residual_v1",
+      "epochs": 100,
+      "best_validation_epoch": 99,
+      "candidate_range": [
+        292.7483825683594,
+        2956.9560546875
+      ],
+      "last_available": {
+        "n": 125,
+        "zero_actual": 0,
+        "mae_iops": 842.808,
+        "wape_percent": 29.871978450414687,
+        "mape_percent": 274.6798773727907,
+        "accuracy_percent": -174.6798773727907
+      },
+      "mean_five": {
+        "n": 125,
+        "zero_actual": 0,
+        "mae_iops": 754.9535999999997,
+        "wape_percent": 26.758120082228672,
+        "mape_percent": 264.31209678103966,
+        "accuracy_percent": -164.31209678103966
+      },
+      "mae_improved_windows": 82,
+      "worst_positive_ape": [
+        {
+          "window_start_ns": 1795254221000000000,
+          "actual": 12,
+          "lags": [
+            3518,
+            3462,
+            3311,
+            3282,
+            3517
+          ],
+          "reference_prediction": 2676.5546875,
+          "candidate_prediction": 2928.8095703125
+        },
+        {
+          "window_start_ns": 1795254092000000000,
+          "actual": 399,
+          "lags": [
+            3439,
+            1139,
+            1861,
+            3369,
+            3571
+          ],
+          "reference_prediction": 2667.26708984375,
+          "candidate_prediction": 2933.06103515625
+        },
+        {
+          "window_start_ns": 1795254224000000000,
+          "actual": 690,
+          "lags": [
+            1590,
+            12,
+            2038,
+            3518,
+            3462
+          ],
+          "reference_prediction": 2620.8037109375,
+          "candidate_prediction": 2533.4267578125
+        },
+        {
+          "window_start_ns": 1795254145000000000,
+          "actual": 979,
+          "lags": [
+            1985,
+            3429,
+            3475,
+            3443,
+            3296
+          ],
+          "reference_prediction": 2674.532958984375,
+          "candidate_prediction": 2763.006591796875
+        },
+        {
+          "window_start_ns": 1795254089000000000,
+          "actual": 1139,
+          "lags": [
+            3369,
+            3571,
+            3316,
+            3590,
+            3409
+          ],
+          "reference_prediction": 2676.783203125,
+          "candidate_prediction": 2903.83837890625
+        }
+      ]
+    }
+  }
+}
