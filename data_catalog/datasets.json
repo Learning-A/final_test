@@ -2,7 +2,7 @@
   "updated_date": "2026-11-22",
   "custodian": "experiment_A",
   "transfer_location": null,
-  "note": "Source code and summaries in Git; diagnostic processed capture is downloadable as a release asset. Normal workload rounds are still unavailable.",
+  "note": "First healthy-observed train capture candidate released; time-boundary review pending. Diagnostic data remains separately labelled. No independent validation/formal rounds yet.",
   "datasets": [
     {
       "dataset_id": "host_smoke_20261121_v3",
@@ -68,9 +68,32 @@
         "repository": "https://github.com/ChrisLzt/idfs-workloads",
         "commit": "fb83711a1226f59899ed034b9195402156ef57d6"
       }
+    },
+    {
+      "dataset_id": "ai_training_20261122_train01_attempt02",
+      "kind": "healthy_observed_workload_capture_candidate",
+      "role": "train",
+      "workload": "ai_training_ses",
+      "source_batch": "workload_development_20261122_v2",
+      "source_attempt": 2,
+      "source_run_id": "ai_training_ses_train_01",
+      "raw_samples": 739312,
+      "workload_seconds": 600,
+      "capture_seconds": 660,
+      "health_checks_passed": 20,
+      "all_24_collectors_ok": true,
+      "normal_training_certified": false,
+      "review_status": "candidate_pending_time_boundary_review",
+      "formal_acceptance": false,
+      "independent_validation": false,
+      "transfer_location": "https://github.com/Learning-A/final_test/releases/tag/development-ai-training-20261122-train01-a02",
+      "archive_sha256": "4505b0240625bfa16ae840ec66f7d82fc4cf67a8a821805e84e50db52cf59314",
+      "handoff_manifest_sha256": "1b8196d7a0da8ed218936224ff5370af294a5dd04e5ad1fcedfe31e2004611a3",
+      "archive_bytes": 1445894
     }
   ],
   "normal_workload_training_rounds_available": 0,
   "normal_workload_validation_rounds_available": 0,
-  "formal_rounds_available": 0
+  "formal_rounds_available": 0,
+  "normal_workload_training_candidate_rounds_available": 1
 }
