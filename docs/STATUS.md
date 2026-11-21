@@ -4,6 +4,8 @@
 
 ## 最新采集进展
 
+AI推理train01 attempt01也已完成600秒负载/660秒采样，24来源退出成功、健康检查全通过；各节点595—599个完整标签秒。[处理数据Release](https://github.com/Learning-A/final_test/releases/tag/development-dev_20261122_ai_inference_ses_train_01_a01)及哈希已登记。累计2个健康观察训练候选，均待精确时间边界复核；独立验证/正式轮仍为0。队列下一项为Baleen train01，实际是否启动以现场queue.json为准。
+
 新批次workload_development_20261122_v2的AI训练train01：attempt01运行中出现12 OSS下线，已保留并排除；attempt02已完成600秒负载、660秒采样、739312条计数，24采集器退出0，20次运行/结束健康检查全部HEALTH_OK/96 up。八节点597—599个完整标签秒，缺失仍标记。该轮是正常环境候选训练数据，精确负载时间边界/时钟证据仍待复核，未认证正式可用。
 
 处理窗口与质量报告已通过 [Release](https://github.com/Learning-A/final_test/releases/tag/development-ai-training-20261122-train01-a02)交付，哈希见数据清单。下一轮AI推理train01已由同一个锁控队列启动；其完成状态需另查，不重复启动控制器。旧段落中的“尚未恢复/正常数据0”是此前阶段记录；目前有1个候选，仍无独立验证/正式轮。
