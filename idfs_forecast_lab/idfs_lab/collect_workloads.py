@@ -14,18 +14,25 @@ from .transport import SiteConnection
 from .dataset import process
 
 
-def run(root):
-    root = Path(root)
-    root.mkdir(parents=True, exist_ok=False)
-    site = load('config/site_smoke.json')
-    protocol = load('config/protocol.json')
-    release = load('config/workloads.json')
+def development_rounds():
     aliases = [('ai_training', 'ai_training_ses'), ('ai_inference', 'ai_inference_ses'),
                ('baleen', 'bigdata_baleen'), ('graph', 'graph_zipf'), ('wrf', 'hpc_wrf')]
-    rounds = [dict(alias=alias, workload=workload, role=role, index=index,
-                   run_id=workload+'_'+role+'_%02d' % index)
-              for role, index in [('train', 1), ('train', 2), ('train', 3), ('validation', 1)]
-              for alias, workload in aliases]
+    return [dict(alias=alias, workload=workload, role=role, index=index,
+                 run_id=workload+'_'+role+'_%02d' % index)
+            for role, index in [('train', 1), ('train', 2), ('train', 3), ('validation', 1)]
+            for alias, workload in aliases]
+
+
+def run(root, site_path='config/site_smoke.json', protocol_path='config/protocol.json',
+        workloads_path='config/workloads.json', rounds=None):
+    root = Path(root)
+    root.mkdir(parents=True, exist_ok=False)
+    site = load(site_path)
+    protocol = load(protocol_path)
+    release = load(workloads_path)
+    rounds = development_rounds() if rounds is None else rounds
+    if not rounds:
+        raise ValueError('at least one round required')
     save(root/'plan.json', dict(rounds=rounds, seconds=660, workload_seconds=600,
          development_only=True, formal=False, workload_commit=release['commit'],
          order='interleave workloads across repetitions; independent validation last'))
@@ -46,9 +53,11 @@ def run(root):
                 if health['exit'] or 'HEALTH_OK' not in health['stdout'] or '96 up' not in health['stdout']:
                     raise RuntimeError('cluster not healthy with 96 OSS up; no workload launched')
                 # Query process names only; never signal or stop a pre-existing task.
-                active = connection.run(target, "ps -u hust -o comm= | grep -E '^java$|^vdbench$' || true")
+                active = connection.run(target,
+                    "ps -u hust -o comm=,args= | awk '$1 == \"java\" || $1 == \"vdbench\" || "
+                    "($1 ~ /^python/ && ($0 ~ /idfs_forecast_inference|idfs[-_]workloads?|python3 -B -/)) {print}'")
                 if active['exit'] or active['stdout'].strip():
-                    raise RuntimeError('existing Java/Vdbench task: refuse overlapping load')
+                    raise RuntimeError('existing workload/preparation/copy/collector task: refuse overlapping load')
                 ready = connection.run(target, shlex.join([release['release']+'/workloads.sh',
                                               'verify', '--case', spec['alias']]), timeout=60)
                 save(dest/'data_readiness.json', ready)
@@ -97,7 +106,12 @@ def run(root):
                         with (dest/'workload.log').open('wb') as log:
                             while True:
                                 if time.monotonic()>=next_health:
-                                    health=connection.run(health_target,'timeout 12 idfs -s',timeout=15)
+                                    try:
+                                        health=connection.run(health_target,'timeout 12 idfs -s',timeout=15)
+                                    except Exception as exc:
+                                        # A transient health query failure must not abandon
+                                        # the channel or lose the load's natural exit evidence.
+                                        health={'exit':-1,'stdout':'','stderr':type(exc).__name__}
                                     health_events.append(dict(observed_local_ns=time.time_ns(),**health))
                                     save(dest/'health_during_load.json',health_events)
                                     next_health=time.monotonic()+30
@@ -109,7 +123,16 @@ def run(root):
                         code=channel.recv_exit_status();channel.close()
                         save(dest/'workload_exit.json',dict(exit=code,end_local_ns=time.time_ns()))
                         collected=capture.result()
-                    if code or collected['state']!='complete':
+                    try:
+                        final_health=connection.run(health_target,'timeout 12 idfs -s',timeout=15)
+                    except Exception as exc:
+                        final_health={'exit':-1,'stdout':'','stderr':type(exc).__name__}
+                    health_events.append(dict(observed_local_ns=time.time_ns(),**final_health))
+                    save(dest/'health_during_load.json',health_events)
+                    collectors_ok = len(collected['outcomes']) == 24 and all(
+                        'error' not in item and item['result']['exit'] == 0
+                        for item in collected['outcomes'])
+                    if code or collected['state']!='complete' or not collectors_ok:
                         raise RuntimeError('workload/capture failure; do not continue to next load')
                     if any(h['exit'] or 'HEALTH_OK' not in h['stdout'] or '96 up' not in h['stdout']
                            for h in health_events):
@@ -123,6 +146,7 @@ def run(root):
             save(root/'status.json',dict(state='between_rounds',completed=outcomes))
             print('DONE '+json.dumps(summary),flush=True)
         save(root/'status.json',dict(state='complete',completed=outcomes,formal=False))
+        return outcomes
     except Exception as exc:
         save(root/'status.json',dict(state='failed',current=spec,completed=outcomes,error=str(exc)))
         raise
