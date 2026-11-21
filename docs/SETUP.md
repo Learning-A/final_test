@@ -22,7 +22,7 @@ B无需现场凭据。若需要更改现场行为，通过候选配置和issue�
 
 ## 自动测试状态
 
-当前仓库没有启用GitHub Actions，本机令牌缺少workflow权限。`docs/templates/github-actions-tests.yml` 只是待安装模板，不会自动执行。两台电脑提交前各自跑本地检查；不要将模板存在写成CI通过。
+2026-11-22 已更新实验端本机Git凭据并启用 `.github/workflows/tests.yml`，每次push和PR触发GitHub Actions。工作流使用Python3.11，安装Paramiko，执行本地功能测试；未安装PyTorch时相关测试会跳过，不能代替实验端含PyTorch的完整检查。具体通过/失败以仓库Actions页面为准，两台电脑提交前仍需各自跑本地检查。
 
 ## 查找信息的顺序
 
