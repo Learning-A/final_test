@@ -1,9 +1,9 @@
 from pathlib import Path
 import tempfile
 import unittest
-from unittest.mock import Mock
+from unittest.mock import Mock, patch
 
-from idfs_lab.capture_queue import exclusive_lock, tick
+from idfs_lab.capture_queue import exclusive_lock, tick, preflight
 from idfs_lab.io import load, save
 
 
@@ -88,3 +88,13 @@ class QueueTests(unittest.TestCase):
         self.healthy.side_effect=TimeoutError('connection')
         self.assertEqual(self.tick()['state'],'waiting_environment')
         self.capture.assert_not_called()
+
+    def test_preflight_checks_hyphenated_workload_copy_paths(self):
+        connection=Mock()
+        connection.run.side_effect=[{'exit':0,'stdout':'HEALTH_OK status: 96 up / 96 in'},
+             {'exit':0,'stdout':'python3 /home/hust/idfs-workloads-20261120/copy_job.py'}]
+        manager=Mock();manager.__enter__=Mock(return_value=connection);manager.__exit__=Mock(return_value=False)
+        with patch('idfs_lab.capture_queue.SiteConnection',return_value=manager):
+            result=preflight({'storage_nodes':[{'management_ip':'storage'}],'control_host':'control'})
+        self.assertTrue(result['healthy']);self.assertFalse(result['idle'])
+        self.assertIn('idfs[-_]workloads?',connection.run.call_args_list[1].args[1])

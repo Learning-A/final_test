@@ -53,9 +53,11 @@ def run(root, site_path='config/site_smoke.json', protocol_path='config/protocol
                 if health['exit'] or 'HEALTH_OK' not in health['stdout'] or '96 up' not in health['stdout']:
                     raise RuntimeError('cluster not healthy with 96 OSS up; no workload launched')
                 # Query process names only; never signal or stop a pre-existing task.
-                active = connection.run(target, "ps -u hust -o comm= | grep -E '^java$|^vdbench$' || true")
+                active = connection.run(target,
+                    "ps -u hust -o comm=,args= | awk '$1 == \"java\" || $1 == \"vdbench\" || "
+                    "($1 ~ /^python/ && ($0 ~ /idfs_forecast_inference|idfs[-_]workloads?|python3 -B -/)) {print}'")
                 if active['exit'] or active['stdout'].strip():
-                    raise RuntimeError('existing Java/Vdbench task: refuse overlapping load')
+                    raise RuntimeError('existing workload/preparation/copy/collector task: refuse overlapping load')
                 ready = connection.run(target, shlex.join([release['release']+'/workloads.sh',
                                               'verify', '--case', spec['alias']]), timeout=60)
                 save(dest/'data_readiness.json', ready)

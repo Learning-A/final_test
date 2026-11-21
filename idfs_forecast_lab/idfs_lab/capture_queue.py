@@ -60,7 +60,7 @@ def preflight(site):
                        'timeout 12 idfs -s', timeout=15)
         tasks = c.run(dict(kind='client_nfs_rpc', host=site['control_host']),
             "ps -u hust -o comm=,args= | awk '$1 == \"java\" || $1 == \"vdbench\" || "
-            "($1 ~ /^python/ && ($0 ~ /idfs_forecast_inference|idfs_workload|python3 -B -/)) {print}'",
+            "($1 ~ /^python/ && ($0 ~ /idfs_forecast_inference|idfs[-_]workloads?|python3 -B -/)) {print}'",
             timeout=15)
     healthy = health['exit'] == 0 and 'HEALTH_OK' in health['stdout'] and '96 up' in health['stdout']
     idle = tasks['exit'] == 0 and not tasks['stdout'].strip()
