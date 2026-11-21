@@ -2,7 +2,7 @@
   "updated_date": "2026-11-22",
   "custodian": "experiment_A",
   "transfer_location": null,
-  "note": "Git contains source and summaries only. Original datasets remain on computer A. A records an accessible transfer location and SHA256 when exporting a package.",
+  "note": "Source code and summaries in Git; diagnostic processed capture is downloadable as a release asset. Normal workload rounds are still unavailable.",
   "datasets": [
     {
       "dataset_id": "host_smoke_20261121_v3",
@@ -42,10 +42,32 @@
       "capture_seconds": 660,
       "normal_workload_training_allowed": false,
       "exclusion_reason": "OSS down / degraded PGs observed during load",
-      "transfer_location": null,
-      "handoff_manifest_sha256": "f6c4442b80315c5c652e5857ff807ec21c0c037e73b893e4136172ae8866b0ed",
-      "handoff_relative_path_on_A": "collaboration_repo/.local/handoffs/ai_training_fault_v1",
-      "handoff_exported": true
+      "transfer_location": "https://github.com/Learning-A/final_test/releases/tag/diagnostic-ai-training-20261121-v2",
+      "handoff_manifest_sha256": "4951b72711a72bd7cf66ecea9b9f700cea702345d2def0fa68475fc23e859d5d",
+      "handoff_relative_path_on_A": "collaboration_repo/.local/handoffs/ai_training_fault_exploratory_v2",
+      "handoff_exported": true,
+      "exploratory_development_allowed": true,
+      "user_authorized_exploratory_use_date": "2026-11-22",
+      "independent_acceptance_allowed": false,
+      "archive_url": "https://github.com/Learning-A/final_test/releases/download/diagnostic-ai-training-20261121-v2/ai_training_fault_exploratory_v2.zip",
+      "archive_sha256": "0e36d0a5a54e5a74f86a4327688ed09ad62c38bea48317a9da68672ac810ebd6",
+      "archive_bytes": 4255642,
+      "examples_by_node": {
+        "idfs44": 583,
+        "idfs45": 578,
+        "idfs46": 578,
+        "idfs47": 485,
+        "idfs64": 564,
+        "idfs65": 583,
+        "idfs66": 583,
+        "idfs67": 578
+      },
+      "feature_schema": "joint_context_v1",
+      "normalization_fitted": false,
+      "workload_source": {
+        "repository": "https://github.com/ChrisLzt/idfs-workloads",
+        "commit": "fb83711a1226f59899ed034b9195402156ef57d6"
+      }
     }
   ],
   "normal_workload_training_rounds_available": 0,
