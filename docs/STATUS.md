@@ -31,4 +31,8 @@
 - 旧 `prepare_confirmed_plan.py` 会重置阶段配置，已移到根 `docs/history/`，不可用于当前配置再生成。
 - 神经训练尚未针对新负载数据完成优化；校准筛选仅使用冒烟数据，存在选择偏差，必须独立验证。
 
+## 可立即用于模型研发的数据
+
+用户已允许先用受故障影响的一轮带AI训练负载数据做探索优化。处理窗口、16文件manifest及八节点4532条联合特征已发布为 [Release附件](https://github.com/Learning-A/final_test/releases/tag/diagnostic-ai-training-20261121-v2)，使用方法见 [数据交接](DIAGNOSTIC_DATA_HANDOFF.md)。保留故障标记，正常训练/独立验证轮数量仍为0。负载上游已明确并核对为ChrisLzt/idfs-workloads的fb83711提交。本次没有启动新负载或训练。
+
 旧工程文档含client7414正式目标、首I/O门槛、三轮平均和“仅准备”等过期段落，以根AGENTS、本文件和用户最新指令为准。

@@ -200,5 +200,9 @@
     "bigdata_fast"
   ],
   "user_allows_outline_description_alignment": true,
-  "original_outline_modified": false
+  "original_outline_modified": false,
+  "source_repository": "https://github.com/ChrisLzt/idfs-workloads",
+  "source_authority": "user_confirmed_2026-11-22",
+  "upstream_main_checked": "2026-11-22",
+  "upstream_main_commit_at_check": "fb83711a1226f59899ed034b9195402156ef57d6"
 }
