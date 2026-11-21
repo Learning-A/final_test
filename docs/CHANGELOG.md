@@ -1,5 +1,17 @@
 # 协作更新记录
 
+## 2026-11-22｜研发端B｜输入归一化负结果复核
+
+- Issue8由A完成，B校验v2结果ZIP/权重并逐窗口对齐v1，复算125秒指标一致。节点MAE增加5.8204、集群增加28.3257，MAPE略降但仍未达标；不认定归一化成功或门饱和已确诊。
+- 同步保存比较脚本、报告及DIAGNOSTIC_INPUT_NORM_REVIEW.md；最严重12 IOPS窗口前五历史均约3300—3500，提示需要检验可用信息与残差结构，不能删除低正值。
+- 不扩七节点、不扫校准、不重跑Issue6/8；下一候选按原loss/seed/split隔离残差输出结构，固定请求另交A。工程检查81通过、0失败/跳过，复算一致，本次未拟合。
+
+## 2026-11-22｜研发端B｜输入尺度单因素候选v2
+
+- 从main c1ccc3f建立model/log-input-normalization；默认行为不变，诊断入口新增--normalize-inputs，训练集五历史log值全局均值/标准差（下限0.25），随模型导出；schema升级diagnostic_total_lags_v2。
+- 固定原GRU/seed2026/损失/271训练125验证/40epoch，不校准，仅请求idfs44和cluster新pilot，不重复已完成Issue6。
+- 81项本地功能检查全过、0失败/跳过；新增固定常数变换、CPU trace与训练主机拒绝测试，无本机拟合。配置和命令见DIAGNOSTIC_INPUT_NORM.md。
+
 ## 2026-11-22｜研发端B｜可执行诊断序列请求v1
 
 - model/diagnostic-splits整合已合入main的PR4，保留双方CHANGELOG。显式诊断加载器不改源role/run_id；新6维序列schema支持节点与直接集群总量。

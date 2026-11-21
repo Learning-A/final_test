@@ -39,7 +39,7 @@ def examples(rows, target):
     return output
 
 
-def fit(archive, destination, target, model='gru', epochs=40):
+def fit(archive, destination, target, model='gru', epochs=40, normalize_inputs=False):
     from .placement import require_training_host
     root=require_training_host()  # before dependency import, data access or writes
     destination=Path(destination).resolve()
@@ -65,13 +65,14 @@ def fit(archive, destination, target, model='gru', epochs=40):
     destination.mkdir(parents=True,exist_ok=False)
     artifact=destination/'model.ts'
     from .models_torch import fit_sequence
-    prediction, details=fit_sequence(x,y,vx,vy,model,artifact,epochs=epochs,threads=4)
+    prediction, details=fit_sequence(x,y,vx,vy,model,artifact,epochs=epochs,threads=4,normalize_inputs=normalize_inputs)
     if len(prediction)!=len(vy) or any(not math.isfinite(v) or v<0 for v in prediction):
         raise ValueError('invalid diagnostic predictions')
     from .io import save
     report=dict(provenance,model=model,development_target=target,source_role='diagnostic',
                 fault_affected=True,normal_training_certified=False,formal_acceptance=False,
-                feature_schema='diagnostic_total_lags_v1',source_feature_schema='joint_context_v1',
+                feature_schema='diagnostic_total_lags_v2' if normalize_inputs else 'diagnostic_total_lags_v1',
+                source_feature_schema='joint_context_v1',normalize_inputs=normalize_inputs,
                 training_host='lmj@b507',seed=2026,threads=4,dataloader_workers=0,
                 epochs_budget=epochs,loss='train-standardized-log1p-smooth-l1',calibration='none',
                 train_examples=len(train),validation_examples=len(validation),training_details=details,
@@ -98,8 +99,9 @@ def main():
     p.add_argument('--target',required=True,choices=(*HOSTS,'cluster'))
     p.add_argument('--model',choices=('gru','tcn'),default='gru')
     p.add_argument('--epochs',type=int,default=40)
+    p.add_argument('--normalize-inputs',action='store_true',help='Train-only log history centering/scaling (diagnostic v2)')
     args=p.parse_args()
-    fit(args.archive,args.output,args.target,args.model,args.epochs)
+    fit(args.archive,args.output,args.target,args.model,args.epochs,args.normalize_inputs)
 
 
 if __name__=='__main__': main()

@@ -4,7 +4,15 @@ import json
 import time
 
 
-def fit_sequence(x,y,vx,vy,name,artifact,epochs=100,threads=4):
+def sequence_inputs(features, log_mean=0.0, log_std=1.0):
+    """Fixed inference transform; parameters must be fitted only on A's train split."""
+    import torch
+    if log_std <= 0:
+        raise ValueError("positive input scale required")
+    return ((torch.log1p(features[:,:5].clamp_min(0))-log_mean)/log_std).flip(1).unsqueeze(-1)
+
+
+def fit_sequence(x,y,vx,vy,name,artifact,epochs=100,threads=4,normalize_inputs=False):
     from .placement import require_training_host
     require_training_host()
     import torch
@@ -20,6 +28,12 @@ def fit_sequence(x,y,vx,vy,name,artifact,epochs=100,threads=4):
     xv=torch.tensor(vx,dtype=torch.float32,device=device)
     yv=torch.log1p(torch.tensor(vy,dtype=torch.float32,device=device))
     mean=yt.mean().item();std=max(yt.std(unbiased=False).item(),1e-6)
+    # Opt-in diagnostic ablation: never consume validation inputs/labels here.
+    input_mean,input_std=0.0,1.0
+    if normalize_inputs:
+        log_history=torch.log1p(xt[:,:5].clamp_min(0))
+        input_mean=log_history.mean().item()
+        input_std=max(log_history.std(unbiased=False).item(),0.25)
 
     class SequenceModel(nn.Module):
         def __init__(self):
@@ -32,7 +46,7 @@ def fit_sequence(x,y,vx,vy,name,artifact,epochs=100,threads=4):
             self.head=nn.Linear(32,1)
 
         def normalized(self,features):
-            sequence=torch.log1p(features[:,:5].clamp_min(0)).flip(1).unsqueeze(-1)
+            sequence=sequence_inputs(features,input_mean,input_std)
             if self.is_gru:
                 output,_=self.encoder(sequence);encoded=output[:,-1,:]
             else:
@@ -74,4 +88,6 @@ def fit_sequence(x,y,vx,vy,name,artifact,epochs=100,threads=4):
     if parity>1e-5:raise RuntimeError("GPU to CPU inference parity failed")
     return cpu_prediction,{"torch":torch.__version__,"cuda_build":torch.version.cuda,"device":"single_visible_gpu",
                        "gpu_cpu_max_relative_error":parity,"gpu_cpu_parity_passed":True,
-                       "epochs_completed":len(history),"history":history,"target_log_mean":mean,"target_log_std":std}
+                       "epochs_completed":len(history),"history":history,"target_log_mean":mean,"target_log_std":std,
+                       "input_transform":"log1p_train_standardized_v1" if normalize_inputs else "log1p_v1",
+                       "input_log_mean":input_mean,"input_log_std":input_std,"input_scaler_fit_split":"train" if normalize_inputs else None}
