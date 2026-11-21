@@ -1,5 +1,23 @@
 # 协作更新记录
 
+## 2026-11-22｜研发端B｜残差100预算结果与指标冲突
+
+- Issue11由A完成，B校验v3b ZIP/权重、复算125窗口，并确认前40epoch记录与v3完全相同。残差增加预算改善，但节点仍不胜v1；集群MAE改善35.8382、MAPE反增17.6526个百分点，不能宣布达标。
+- 预算不再自动增加。下一候选准备按原尺度正值MAPE选checkpoint，原训练loss/早停轨迹不变，先隔离选模目标；未提交新执行请求。
+- 报告DIAGNOSTIC_RESIDUAL_BUDGET_REVIEW.md和配对JSON记录完整负面/正面证据；无B拟合或远端提交。工程检查81通过、0失败/跳过，复算一致。
+
+## 2026-11-22｜研发端B｜残差负结果与预算截断复核
+
+- Issue10由A完成；B校验v3 ZIP/两权重并逐窗口复算，节点/集群MAE与MAPE均退步，输出更跟随滞后历史。报告及通用比较脚本已保存。
+- 两模型最佳验证log损失均在预算末epoch40，后五epoch仍下降；新增只延长上限至100的v3b配置，早停12与模型/损失/seed/分区均不变，由A两个全新任务执行，不复用旧输出。
+- 本次仅JSON分析，无拟合/远端提交；工程检查81通过、0失败/跳过，复算一致。原控制器采集attempt2运行摘要已记录，不干预。
+
+## 2026-11-22｜研发端B｜历史残差输出候选v3
+
+- model/history-residual从main c1ccc3f建立，保持v1输入/目标尺度/log损失/seed/切分，新增--residual-output；在标准化log输出上加入最新可用历史skip，零初始化修正head。schema diagnostic_total_lags_v3。
+- 只请求idfs44/cluster两个新GRU pilot，与已完成v1比较；不启用v2输入归一化、不重跑已完成任务、不扩七节点、不校准。
+- 81项功能检查通过、0失败/跳过，含固定常数零修正=持久值、CPU trace及训练主机拒绝路径；无本机拟合。配置和隔离命令见DIAGNOSTIC_RESIDUAL.md，PR7尚未合入的训练器冲突风险已注明。
+
 ## 2026-11-22｜研发端B｜可执行诊断序列请求v1
 
 - model/diagnostic-splits整合已合入main的PR4，保留双方CHANGELOG。显式诊断加载器不改源role/run_id；新6维序列schema支持节点与直接集群总量。
