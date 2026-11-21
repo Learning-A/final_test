@@ -1,6 +1,7 @@
 import hashlib
 import json
 import platform
+import subprocess
 import sys
 import zipfile
 from pathlib import Path
@@ -13,6 +14,13 @@ p.add_argument('--archive', required=True)
 p.add_argument('--output', required=True)
 args=p.parse_args()
 root=Path(__file__).resolve().parents[1]
+code_paths=['idfs_forecast_lab/idfs_lab/target_baselines.py', 'scripts/replay_diagnostic_baselines.py']
+try:
+    candidate_commit=subprocess.check_output(['git','-C',str(root),'rev-parse','HEAD'],text=True).strip()
+    code_dirty=subprocess.run(['git','-C',str(root),'diff','--quiet','HEAD','--',*code_paths]).returncode != 0
+except (OSError, subprocess.CalledProcessError):
+    candidate_commit=None
+    code_dirty=None
 archive=Path(args.archive)
 assert hashlib.sha256(archive.read_bytes()).hexdigest()=='0e36d0a5a54e5a74f86a4327688ed09ad62c38bea48317a9da68672ac810ebd6'
 z=zipfile.ZipFile(archive)
@@ -33,7 +41,8 @@ pairs=[r for r in result.pop('pairs') if t0<=r['window_start_ns'] and r['window_
 result['paired_windows_entire_capture']=result.pop('paired_windows')
 result.update(dataset_id=m['dataset_id'],run_id=m['source_run_id'],role='diagnostic',fault_affected=True,
               independent_validation=False,environment=platform.platform(),python=platform.python_version(),
-              source_commit='1a112eeb922a10690d0c38425398c6c0f113d7d2',candidate_code_state='uncommitted candidate; hashes below',
+              base_source_commit='1a112eeb922a10690d0c38425398c6c0f113d7d2',
+              candidate_commit=candidate_commit, candidate_code_dirty=code_dirty,
               archive_sha256=hashlib.sha256(archive.read_bytes()).hexdigest(),
               manifest_sha256=hashlib.sha256(manifest_bytes).hexdigest(),source_windows_sha256=m['source_windows_sha256'],
               feature_schema=m['feature_schema'],protocol='development replay: five seconds ending target-1s, source availability <= target-30ms; not online arrival proof',
@@ -42,7 +51,7 @@ for method in ('last_available','mean_five'):
     result['metrics'][method]={
         'nodes':{h:metrics((r['node_'+method][i],r['node_actual'][i]) for r in pairs) for i,h in enumerate(hosts)},
         'cluster':metrics((r['cluster_'+method],r['cluster_actual']) for r in pairs)}
-result['code_sha256']={p:hashlib.sha256((root/p).read_bytes()).hexdigest() for p in ['idfs_forecast_lab/idfs_lab/target_baselines.py']}
+result['code_sha256']={p:hashlib.sha256((root/p).read_bytes()).hexdigest() for p in code_paths}
 out=Path(args.output)
 out.write_text(json.dumps(result,indent=2)+'\n',encoding='utf-8')
 print(json.dumps({'paired':len(pairs),'metrics':result['metrics']}))

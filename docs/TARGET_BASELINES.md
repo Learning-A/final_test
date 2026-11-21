@@ -2,6 +2,10 @@
 
 本候选只做确定性回放，没有拟合或现场操作。保持正式协议入口不变；两种目标按用户最新要求并行保留，最终等待正常负载独立开发验证。main基线提交：1a112eeb922a10690d0c38425398c6c0f113d7d2。
 
+此处“双目标候选”的授权来自B本聊天用户任务原文：“预测目标保留‘8个存储节点分别预测IOPS’和‘整个集群IOPS’两种候选，根据开发验证结果最终确定”。这指研发比较，不代表已更改正式验收对象。当前正式目标仍为八节点host_oss总量，集群仅作开发诊断候选；本PR不修改正式目标/指标配置，最终冻结前需另行同步目标决定。
+
+回放来源字段区分base_source_commit（研发基线）与candidate_commit（执行时Git HEAD），并记录candidate_code_dirty和两个代码文件的SHA256。无Git副本时commit为空，以代码哈希标识，不伪造候选提交；代码改动后未提交时dirty=true，不能把HEAD当作准确代码版本。报告更新提交与其执行代码提交可以不同，以报告中的执行提交和代码哈希为准。
+
 ## 输入与复现
 
 在工程目录中导入 `idfs_lab.target_baselines.paired_baselines` 和 `metrics`。对每个独立run分别读取已经通过交接哈希验证的 `processed/windows.jsonl`；传入该run的完整窗口以及 `site.storage_nodes` 的八个hostname。禁止把多个run拼接后传入。仅消费 scope=host_oss，由现有12 OSS完整聚合得到的节点窗口；客户端计数不参与集群实际值。
