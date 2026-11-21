@@ -90,10 +90,122 @@
       "archive_sha256": "4505b0240625bfa16ae840ec66f7d82fc4cf67a8a821805e84e50db52cf59314",
       "handoff_manifest_sha256": "1b8196d7a0da8ed218936224ff5370af294a5dd04e5ad1fcedfe31e2004611a3",
       "archive_bytes": 1445894
+    },
+    {
+      "dataset_id": "dev_20261122_ai_inference_ses_train_01_a01",
+      "source_run_id": "ai_inference_ses_train_01",
+      "source_batch": "workload_development_20261122_v2",
+      "source_attempt": 1,
+      "workload": "ai_inference_ses",
+      "role": "train",
+      "kind": "healthy_observed_workload_capture_candidate",
+      "relative_path_on_A": "runs\\workload_development_20261122_v2\\workload_development_20261122_v2__ai_inference_ses_train_01__attempt_01\\ai_inference_ses_train_01",
+      "raw_samples": 739312,
+      "workload_seconds": 600,
+      "capture_seconds": 660,
+      "health_checks_passed": 20,
+      "all_24_collectors_ok": true,
+      "normal_training_certified": false,
+      "review_status": "candidate_pending_time_boundary_review",
+      "formal_acceptance": false,
+      "transfer_location": "https://github.com/Learning-A/final_test/releases/tag/development-dev_20261122_ai_inference_ses_train_01_a01",
+      "archive_sha256": "5b825034e3d2807bab862e67f220c85b028561c26b0f148be39f7e001fde44e6",
+      "handoff_manifest_sha256": "b3c20ff8750f8ac8c206d46eca5d782fe3c4c3b7c4ec9738dc2b888b7c2d94b2",
+      "archive_bytes": 1513476,
+      "node_quality": [
+        {
+          "entity": "idfs44",
+          "complete_seconds": 595,
+          "invalid_seconds": 4,
+          "causal_feature_rows": 578,
+          "min_iops": 0,
+          "max_iops": 2008,
+          "mean_iops": 707.3983193277311,
+          "std_iops": 422.63814627438796,
+          "zero_seconds": 5
+        },
+        {
+          "entity": "idfs45",
+          "complete_seconds": 599,
+          "invalid_seconds": 0,
+          "causal_feature_rows": 596,
+          "min_iops": 0,
+          "max_iops": 2040,
+          "mean_iops": 686.652754590985,
+          "std_iops": 365.6380198468435,
+          "zero_seconds": 6
+        },
+        {
+          "entity": "idfs46",
+          "complete_seconds": 599,
+          "invalid_seconds": 0,
+          "causal_feature_rows": 595,
+          "min_iops": 0,
+          "max_iops": 2033,
+          "mean_iops": 658.8614357262104,
+          "std_iops": 376.3909972399459,
+          "zero_seconds": 6
+        },
+        {
+          "entity": "idfs47",
+          "complete_seconds": 599,
+          "invalid_seconds": 0,
+          "causal_feature_rows": 595,
+          "min_iops": 0,
+          "max_iops": 2128,
+          "mean_iops": 756.5325542570952,
+          "std_iops": 400.8616868846494,
+          "zero_seconds": 6
+        },
+        {
+          "entity": "idfs64",
+          "complete_seconds": 598,
+          "invalid_seconds": 1,
+          "causal_feature_rows": 589,
+          "min_iops": 2,
+          "max_iops": 1954,
+          "mean_iops": 701.0969899665552,
+          "std_iops": 423.2710303988287,
+          "zero_seconds": 0
+        },
+        {
+          "entity": "idfs65",
+          "complete_seconds": 596,
+          "invalid_seconds": 3,
+          "causal_feature_rows": 577,
+          "min_iops": 0,
+          "max_iops": 1955,
+          "mean_iops": 652.8171140939597,
+          "std_iops": 401.0674328342581,
+          "zero_seconds": 6
+        },
+        {
+          "entity": "idfs66",
+          "complete_seconds": 599,
+          "invalid_seconds": 0,
+          "causal_feature_rows": 594,
+          "min_iops": 2,
+          "max_iops": 1997,
+          "mean_iops": 634.6310517529215,
+          "std_iops": 347.8829256910644,
+          "zero_seconds": 0
+        },
+        {
+          "entity": "idfs67",
+          "complete_seconds": 598,
+          "invalid_seconds": 1,
+          "causal_feature_rows": 589,
+          "min_iops": 0,
+          "max_iops": 2044,
+          "mean_iops": 799.7692307692307,
+          "std_iops": 499.9388359811135,
+          "zero_seconds": 6
+        }
+      ]
     }
   ],
   "normal_workload_training_rounds_available": 0,
   "normal_workload_validation_rounds_available": 0,
   "formal_rounds_available": 0,
-  "normal_workload_training_candidate_rounds_available": 1
+  "normal_workload_training_candidate_rounds_available": 2
 }
