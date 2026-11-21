@@ -1,0 +1,219 @@
+{
+  "role": "diagnostic",
+  "fault_affected": true,
+  "independent_validation": false,
+  "formal_acceptance": false,
+  "fitting_performed": false,
+  "archives": [
+    "b459e2c1ce363f68713a6d76cdf47f0b58db4ccb644128f0990d1f7e335c9b44",
+    "e50c529e55616137120ab0d50b01f396266f111b36e78e2afa0ad7224ca3bdcd"
+  ],
+  "targets": {
+    "idfs44": {
+      "v1": {
+        "n": 125,
+        "zero_actual": 1,
+        "mae_iops": 85.98118615722656,
+        "wape_percent": 30.50016536027391,
+        "mape_percent": 36.65357377253879,
+        "accuracy_percent": 63.34642622746121
+      },
+      "v2": {
+        "n": 125,
+        "zero_actual": 1,
+        "mae_iops": 91.8015760498047,
+        "wape_percent": 32.564836273981456,
+        "mape_percent": 36.55852487459451,
+        "accuracy_percent": 63.44147512540549
+      },
+      "mae_delta": 5.8203898925781345,
+      "mape_delta": -0.09504889794428095,
+      "v2_candidate": "7d7815f1532517fea4fa85b40e02a1de8b066d00",
+      "v2_code_dirty": false,
+      "v2_input_transform": "log1p_train_standardized_v1",
+      "v2_input_mean": 5.364262104034424,
+      "v2_input_std": 1.0709785223007202,
+      "v2_epochs": 33,
+      "v2_best_epoch": 21,
+      "v1_range": [
+        246.97799682617188,
+        260.4597473144531
+      ],
+      "v2_range": [
+        208.2978973388672,
+        270.19964599609375
+      ],
+      "mae_improved_windows": 46,
+      "worst_v2": [
+        {
+          "window_start_ns": 1795254092000000000,
+          "actual": 33,
+          "lags": [
+            302,
+            104,
+            160,
+            299,
+            331
+          ],
+          "v1_prediction": 255.58209228515625,
+          "v2_prediction": 234.96942138671875
+        },
+        {
+          "window_start_ns": 1795254224000000000,
+          "actual": 56,
+          "lags": [
+            139,
+            0,
+            185,
+            339,
+            292
+          ],
+          "v1_prediction": 246.97799682617188,
+          "v2_prediction": 213.90638732910156
+        },
+        {
+          "window_start_ns": 1795254145000000000,
+          "actual": 81,
+          "lags": [
+            173,
+            285,
+            308,
+            292,
+            295
+          ],
+          "v1_prediction": 256.70916748046875,
+          "v2_prediction": 237.3198699951172
+        },
+        {
+          "window_start_ns": 1795254126000000000,
+          "actual": 92,
+          "lags": [
+            279,
+            292,
+            286,
+            256,
+            282
+          ],
+          "v1_prediction": 256.83160400390625,
+          "v2_prediction": 241.76641845703125
+        },
+        {
+          "window_start_ns": 1795254089000000000,
+          "actual": 104,
+          "lags": [
+            299,
+            331,
+            284,
+            358,
+            308
+          ],
+          "v1_prediction": 257.2233581542969,
+          "v2_prediction": 243.66871643066406
+        }
+      ]
+    },
+    "cluster": {
+      "v1": {
+        "n": 125,
+        "zero_actual": 0,
+        "mae_iops": 706.87062890625,
+        "wape_percent": 25.053896253854468,
+        "mape_percent": 211.58192479276846,
+        "accuracy_percent": -111.58192479276846
+      },
+      "v2": {
+        "n": 125,
+        "zero_actual": 0,
+        "mae_iops": 735.196359375,
+        "wape_percent": 26.05785636120366,
+        "mape_percent": 203.86161115612575,
+        "accuracy_percent": -103.86161115612575
+      },
+      "mae_delta": 28.325730468750066,
+      "mape_delta": -7.7203136366427145,
+      "v2_candidate": "7d7815f1532517fea4fa85b40e02a1de8b066d00",
+      "v2_code_dirty": false,
+      "v2_input_transform": "log1p_train_standardized_v1",
+      "v2_input_mean": 7.667080879211426,
+      "v2_input_std": 1.012476921081543,
+      "v2_epochs": 22,
+      "v2_best_epoch": 10,
+      "v1_range": [
+        2620.8037109375,
+        2676.783203125
+      ],
+      "v2_range": [
+        2554.8310546875,
+        3045.589599609375
+      ],
+      "mae_improved_windows": 43,
+      "worst_v2": [
+        {
+          "window_start_ns": 1795254221000000000,
+          "actual": 12,
+          "lags": [
+            3518,
+            3462,
+            3311,
+            3282,
+            3517
+          ],
+          "v1_prediction": 2676.5546875,
+          "v2_prediction": 2554.8310546875
+        },
+        {
+          "window_start_ns": 1795254092000000000,
+          "actual": 399,
+          "lags": [
+            3439,
+            1139,
+            1861,
+            3369,
+            3571
+          ],
+          "v1_prediction": 2667.26708984375,
+          "v2_prediction": 2613.920654296875
+        },
+        {
+          "window_start_ns": 1795254224000000000,
+          "actual": 690,
+          "lags": [
+            1590,
+            12,
+            2038,
+            3518,
+            3462
+          ],
+          "v1_prediction": 2620.8037109375,
+          "v2_prediction": 2824.624267578125
+        },
+        {
+          "window_start_ns": 1795254145000000000,
+          "actual": 979,
+          "lags": [
+            1985,
+            3429,
+            3475,
+            3443,
+            3296
+          ],
+          "v1_prediction": 2674.532958984375,
+          "v2_prediction": 2603.527099609375
+        },
+        {
+          "window_start_ns": 1795254089000000000,
+          "actual": 1139,
+          "lags": [
+            3369,
+            3571,
+            3316,
+            3590,
+            3409
+          ],
+          "v1_prediction": 2676.783203125,
+          "v2_prediction": 2556.34521484375
+        }
+      ]
+    }
+  }
+}
