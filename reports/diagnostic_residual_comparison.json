@@ -1,0 +1,237 @@
+{
+  "role": "diagnostic",
+  "fault_affected": true,
+  "independent_validation": false,
+  "formal_acceptance": false,
+  "fitting_performed": false,
+  "reference_sha256": "b459e2c1ce363f68713a6d76cdf47f0b58db4ccb644128f0990d1f7e335c9b44",
+  "candidate_sha256": "cf7c5c454773f45ca710711a70c2f06379332887b806b5dbda34fd31e9664c68",
+  "targets": {
+    "idfs44": {
+      "reference": {
+        "n": 125,
+        "zero_actual": 1,
+        "mae_iops": 85.98118615722656,
+        "wape_percent": 30.50016536027391,
+        "mape_percent": 36.65357377253879,
+        "accuracy_percent": 63.34642622746121
+      },
+      "candidate": {
+        "n": 125,
+        "zero_actual": 1,
+        "mae_iops": 97.72380968093871,
+        "wape_percent": 34.665634287182414,
+        "mape_percent": 43.4250329366103,
+        "accuracy_percent": 56.5749670633897
+      },
+      "mae_delta": 11.742623523712155,
+      "mape_delta": 6.7714591640715085,
+      "candidate_commit": "f02a4bf0a8cfa836459ddd3df27e283c25a4479e",
+      "code_dirty": false,
+      "output_structure": "history_log_residual_v1",
+      "epochs": 40,
+      "best_validation_epoch": 40,
+      "candidate_range": [
+        1.1239676475524902,
+        934.7208251953125
+      ],
+      "last_available": {
+        "n": 125,
+        "zero_actual": 1,
+        "mae_iops": 106.504,
+        "wape_percent": 37.78023724388444,
+        "mape_percent": 47.877497304772774,
+        "accuracy_percent": 52.122502695227226
+      },
+      "mean_five": {
+        "n": 125,
+        "zero_actual": 1,
+        "mae_iops": 109.87999999999998,
+        "wape_percent": 38.97780804812985,
+        "mape_percent": 48.410875079629456,
+        "accuracy_percent": 51.589124920370544
+      },
+      "mae_improved_windows": 56,
+      "worst_positive_ape": [
+        {
+          "window_start_ns": 1795254092000000000,
+          "actual": 33,
+          "lags": [
+            302,
+            104,
+            160,
+            299,
+            331
+          ],
+          "reference_prediction": 255.58209228515625,
+          "candidate_prediction": 279.9573059082031
+        },
+        {
+          "window_start_ns": 1795254243000000000,
+          "actual": 171,
+          "lags": [
+            695,
+            571,
+            538,
+            1019,
+            1131
+          ],
+          "reference_prediction": 259.8209533691406,
+          "candidate_prediction": 576.7666015625
+        },
+        {
+          "window_start_ns": 1795254126000000000,
+          "actual": 92,
+          "lags": [
+            279,
+            292,
+            286,
+            256,
+            282
+          ],
+          "reference_prediction": 256.83160400390625,
+          "candidate_prediction": 265.5711975097656
+        },
+        {
+          "window_start_ns": 1795254089000000000,
+          "actual": 104,
+          "lags": [
+            299,
+            331,
+            284,
+            358,
+            308
+          ],
+          "reference_prediction": 257.2233581542969,
+          "candidate_prediction": 281.74005126953125
+        },
+        {
+          "window_start_ns": 1795254224000000000,
+          "actual": 56,
+          "lags": [
+            139,
+            0,
+            185,
+            339,
+            292
+          ],
+          "reference_prediction": 246.97799682617188,
+          "candidate_prediction": 150.44293212890625
+        }
+      ]
+    },
+    "cluster": {
+      "reference": {
+        "n": 125,
+        "zero_actual": 0,
+        "mae_iops": 706.87062890625,
+        "wape_percent": 25.053896253854468,
+        "mape_percent": 211.58192479276846,
+        "accuracy_percent": -111.58192479276846
+      },
+      "candidate": {
+        "n": 125,
+        "zero_actual": 0,
+        "mae_iops": 841.2584797210693,
+        "wape_percent": 29.81705818817145,
+        "mape_percent": 257.32252868800344,
+        "accuracy_percent": -157.32252868800344
+      },
+      "mae_delta": 134.38785081481933,
+      "mape_delta": 45.74060389523498,
+      "candidate_commit": "f02a4bf0a8cfa836459ddd3df27e283c25a4479e",
+      "code_dirty": false,
+      "output_structure": "history_log_residual_v1",
+      "epochs": 40,
+      "best_validation_epoch": 40,
+      "candidate_range": [
+        15.213624954223633,
+        3417.2392578125
+      ],
+      "last_available": {
+        "n": 125,
+        "zero_actual": 0,
+        "mae_iops": 842.808,
+        "wape_percent": 29.871978450414687,
+        "mape_percent": 274.6798773727907,
+        "accuracy_percent": -174.6798773727907
+      },
+      "mean_five": {
+        "n": 125,
+        "zero_actual": 0,
+        "mae_iops": 754.9535999999997,
+        "wape_percent": 26.758120082228672,
+        "mape_percent": 264.31209678103966,
+        "accuracy_percent": -164.31209678103966
+      },
+      "mae_improved_windows": 58,
+      "worst_positive_ape": [
+        {
+          "window_start_ns": 1795254221000000000,
+          "actual": 12,
+          "lags": [
+            3518,
+            3462,
+            3311,
+            3282,
+            3517
+          ],
+          "reference_prediction": 2676.5546875,
+          "candidate_prediction": 3285.45166015625
+        },
+        {
+          "window_start_ns": 1795254092000000000,
+          "actual": 399,
+          "lags": [
+            3439,
+            1139,
+            1861,
+            3369,
+            3571
+          ],
+          "reference_prediction": 2667.26708984375,
+          "candidate_prediction": 3195.360107421875
+        },
+        {
+          "window_start_ns": 1795254089000000000,
+          "actual": 1139,
+          "lags": [
+            3369,
+            3571,
+            3316,
+            3590,
+            3409
+          ],
+          "reference_prediction": 2676.783203125,
+          "candidate_prediction": 3153.77978515625
+        },
+        {
+          "window_start_ns": 1795254126000000000,
+          "actual": 1168,
+          "lags": [
+            3298,
+            3354,
+            3163,
+            3278,
+            3405
+          ],
+          "reference_prediction": 2675.7783203125,
+          "candidate_prediction": 3089.891357421875
+        },
+        {
+          "window_start_ns": 1795254110000000000,
+          "actual": 1465,
+          "lags": [
+            3459,
+            3248,
+            2885,
+            3234,
+            3494
+          ],
+          "reference_prediction": 2675.42236328125,
+          "candidate_prediction": 3232.522705078125
+        }
+      ]
+    }
+  }
+}
