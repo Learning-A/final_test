@@ -1,0 +1,474 @@
+{
+  "schema_version": 1,
+  "fsid": "2400a6fb-bcb5-4951-a90c-7dfe14c0ad75",
+  "control_host": "100.7.74.14",
+  "mountpoint": "/mnt/baize-idfs",
+  "storage_nodes": [
+    {
+      "hostname": "idfs44",
+      "management_ip": "100.7.75.44",
+      "ib_addresses": [
+        "192.168.75.44",
+        "192.168.75.147"
+      ],
+      "nfs_vip": "192.168.75.147",
+      "oss_ids": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "logical_cpus": 64,
+      "nvme_count": 6,
+      "ntp_synchronized": false
+    },
+    {
+      "hostname": "idfs45",
+      "management_ip": "100.7.75.45",
+      "ib_addresses": [
+        "192.168.75.45",
+        "192.168.75.140"
+      ],
+      "nfs_vip": "192.168.75.140",
+      "oss_ids": [
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23
+      ],
+      "logical_cpus": 64,
+      "nvme_count": 6,
+      "ntp_synchronized": true
+    },
+    {
+      "hostname": "idfs46",
+      "management_ip": "100.7.75.46",
+      "ib_addresses": [
+        "192.168.75.46",
+        "192.168.75.146"
+      ],
+      "nfs_vip": "192.168.75.146",
+      "oss_ids": [
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35
+      ],
+      "logical_cpus": 64,
+      "nvme_count": 6,
+      "ntp_synchronized": true
+    },
+    {
+      "hostname": "idfs47",
+      "management_ip": "100.7.75.47",
+      "ib_addresses": [
+        "192.168.75.47",
+        "192.168.75.145"
+      ],
+      "nfs_vip": "192.168.75.145",
+      "oss_ids": [
+        36,
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43,
+        44,
+        45,
+        46,
+        47
+      ],
+      "logical_cpus": 64,
+      "nvme_count": 6,
+      "ntp_synchronized": true
+    },
+    {
+      "hostname": "idfs64",
+      "management_ip": "100.7.75.64",
+      "ib_addresses": [
+        "192.168.75.64",
+        "192.168.75.144"
+      ],
+      "nfs_vip": "192.168.75.144",
+      "oss_ids": [
+        48,
+        49,
+        50,
+        51,
+        52,
+        53,
+        54,
+        55,
+        56,
+        57,
+        58,
+        59
+      ],
+      "logical_cpus": 64,
+      "nvme_count": 6,
+      "ntp_synchronized": true
+    },
+    {
+      "hostname": "idfs65",
+      "management_ip": "100.7.75.65",
+      "ib_addresses": [
+        "192.168.75.65",
+        "192.168.75.143"
+      ],
+      "nfs_vip": "192.168.75.143",
+      "oss_ids": [
+        60,
+        61,
+        62,
+        63,
+        64,
+        65,
+        66,
+        67,
+        68,
+        69,
+        70,
+        71
+      ],
+      "logical_cpus": 64,
+      "nvme_count": 6,
+      "ntp_synchronized": true
+    },
+    {
+      "hostname": "idfs66",
+      "management_ip": "100.7.75.66",
+      "ib_addresses": [
+        "192.168.75.66",
+        "192.168.75.142"
+      ],
+      "nfs_vip": "192.168.75.142",
+      "oss_ids": [
+        72,
+        73,
+        74,
+        75,
+        76,
+        77,
+        78,
+        79,
+        80,
+        81,
+        82,
+        83
+      ],
+      "logical_cpus": 64,
+      "nvme_count": 6,
+      "ntp_synchronized": true
+    },
+    {
+      "hostname": "idfs67",
+      "management_ip": "100.7.75.67",
+      "ib_addresses": [
+        "192.168.75.67",
+        "192.168.75.141"
+      ],
+      "nfs_vip": "192.168.75.141",
+      "oss_ids": [
+        84,
+        85,
+        86,
+        87,
+        88,
+        89,
+        90,
+        91,
+        92,
+        93,
+        94,
+        95
+      ],
+      "logical_cpus": 64,
+      "nvme_count": 6,
+      "ntp_synchronized": true
+    }
+  ],
+  "clients": [
+    {
+      "management_ip": "100.7.74.12",
+      "hostname": "client12",
+      "logical_cpus": 128,
+      "memory_bytes": 267735949312,
+      "mount_source": "192.168.75.141:/sys_ns",
+      "mount_target": "/mnt/baize-idfs",
+      "ipv4_addresses": [
+        "127.0.0.1/8",
+        "100.7.74.12/22",
+        "192.168.75.12/16",
+        "172.17.0.1/16"
+      ],
+      "ntp_synchronized": true
+    },
+    {
+      "management_ip": "100.7.74.14",
+      "hostname": "client7414",
+      "logical_cpus": 128,
+      "memory_bytes": 540664164352,
+      "mount_source": "192.168.75.147:/sys_ns",
+      "mount_target": "/mnt/baize-idfs",
+      "ipv4_addresses": [
+        "127.0.0.1/8",
+        "100.7.74.14/20",
+        "192.168.74.14/16",
+        "172.17.0.1/16"
+      ],
+      "ntp_synchronized": true
+    },
+    {
+      "management_ip": "100.7.74.16",
+      "hostname": "client16",
+      "logical_cpus": 96,
+      "memory_bytes": 540433313792,
+      "mount_source": "192.168.75.142:/sys_ns",
+      "mount_target": "/mnt/baize-idfs",
+      "ipv4_addresses": [
+        "127.0.0.1/8",
+        "100.7.74.16/22",
+        "192.168.74.16/16",
+        "172.17.0.1/16"
+      ],
+      "ntp_synchronized": true
+    },
+    {
+      "management_ip": "100.7.74.18",
+      "hostname": "client18",
+      "logical_cpus": 96,
+      "memory_bytes": 134654545920,
+      "mount_source": "192.168.75.140:/sys_ns",
+      "mount_target": "/mnt/baize-idfs",
+      "ipv4_addresses": [
+        "127.0.0.1/8",
+        "100.7.74.18/22",
+        "192.168.74.18/16",
+        "172.17.0.1/16"
+      ],
+      "ntp_synchronized": true
+    },
+    {
+      "management_ip": "100.7.74.19",
+      "hostname": "client19",
+      "logical_cpus": 128,
+      "memory_bytes": 267740618752,
+      "mount_source": "192.168.75.147:/sys_ns",
+      "mount_target": "/mnt/baize-idfs",
+      "ipv4_addresses": [
+        "127.0.0.1/8",
+        "100.7.74.19/22",
+        "192.168.74.19/16",
+        "172.17.0.1/16"
+      ],
+      "ntp_synchronized": true
+    },
+    {
+      "management_ip": "100.7.74.20",
+      "hostname": "client20",
+      "logical_cpus": 96,
+      "memory_bytes": 540568707072,
+      "mount_source": "192.168.75.146:/sys_ns",
+      "mount_target": "/mnt/baize-idfs",
+      "ipv4_addresses": [
+        "127.0.0.1/8",
+        "100.7.74.20/22",
+        "192.168.74.20/16",
+        "172.17.0.1/16"
+      ],
+      "ntp_synchronized": true
+    },
+    {
+      "management_ip": "100.7.75.14",
+      "hostname": "client14",
+      "logical_cpus": 128,
+      "memory_bytes": 337653833728,
+      "mount_source": "192.168.75.144:/sys_ns",
+      "mount_target": "/mnt/baize-idfs",
+      "ipv4_addresses": [
+        "127.0.0.1/8",
+        "100.7.75.14/20",
+        "192.168.75.14/16",
+        "172.17.0.1/16"
+      ],
+      "ntp_synchronized": true
+    },
+    {
+      "management_ip": "100.7.75.202",
+      "hostname": "client202",
+      "logical_cpus": 128,
+      "memory_bytes": 202320461824,
+      "mount_source": "192.168.75.141:/sys_ns",
+      "mount_target": "/mnt/baize-idfs",
+      "ipv4_addresses": [
+        "127.0.0.1/8",
+        "100.7.75.202/22",
+        "192.168.75.202/16"
+      ],
+      "ntp_synchronized": true
+    },
+    {
+      "management_ip": "100.7.75.203",
+      "hostname": "client203",
+      "logical_cpus": 128,
+      "memory_bytes": 540548886528,
+      "mount_source": "192.168.75.145:/sys_ns",
+      "mount_target": "/mnt/baize-idfs",
+      "ipv4_addresses": [
+        "127.0.0.1/8",
+        "100.7.75.203/20",
+        "192.168.75.203/16",
+        "172.17.0.1/16"
+      ],
+      "ntp_synchronized": true
+    },
+    {
+      "management_ip": "100.7.75.204",
+      "hostname": "client204",
+      "logical_cpus": 128,
+      "memory_bytes": 540548931584,
+      "mount_source": "192.168.75.142:/sys_ns",
+      "mount_target": "/mnt/baize-idfs",
+      "ipv4_addresses": [
+        "127.0.0.1/8",
+        "100.7.75.204/20",
+        "192.168.75.204/16",
+        "172.17.0.1/16"
+      ],
+      "ntp_synchronized": true
+    },
+    {
+      "management_ip": "100.7.75.205",
+      "hostname": "client205",
+      "logical_cpus": 128,
+      "memory_bytes": 202294820864,
+      "mount_source": "192.168.75.140:/sys_ns",
+      "mount_target": "/mnt/baize-idfs",
+      "ipv4_addresses": [
+        "127.0.0.1/8",
+        "100.7.75.205/20",
+        "192.168.75.205/16",
+        "192.168.76.205/16",
+        "172.17.0.1/16"
+      ],
+      "ntp_synchronized": true
+    },
+    {
+      "management_ip": "100.7.75.206",
+      "hostname": "client206",
+      "logical_cpus": 128,
+      "memory_bytes": 405257580544,
+      "mount_source": "192.168.75.143:/sys_ns",
+      "mount_target": "/mnt/baize-idfs",
+      "ipv4_addresses": [
+        "127.0.0.1/8",
+        "100.7.75.206/20",
+        "192.168.75.206/16",
+        "172.17.0.1/16"
+      ],
+      "ntp_synchronized": true
+    },
+    {
+      "management_ip": "100.7.75.210",
+      "hostname": "client210",
+      "logical_cpus": 64,
+      "memory_bytes": 269835857920,
+      "mount_source": "192.168.75.145:/sys_ns",
+      "mount_target": "/mnt/baize-idfs",
+      "ipv4_addresses": [
+        "127.0.0.1/8",
+        "100.7.75.210/20",
+        "192.168.75.210/16",
+        "172.17.0.1/16"
+      ],
+      "ntp_synchronized": true
+    },
+    {
+      "management_ip": "100.7.75.211",
+      "hostname": "client211",
+      "logical_cpus": 96,
+      "memory_bytes": 134515752960,
+      "mount_source": "192.168.75.144:/sys_ns",
+      "mount_target": "/mnt/baize-idfs",
+      "ipv4_addresses": [
+        "127.0.0.1/8",
+        "100.7.75.211/20",
+        "192.168.75.211/16",
+        "172.17.0.1/16"
+      ],
+      "ntp_synchronized": true
+    },
+    {
+      "management_ip": "100.7.75.215",
+      "hostname": "client215",
+      "logical_cpus": 96,
+      "memory_bytes": 405117972480,
+      "mount_source": "192.168.75.146:/sys_ns",
+      "mount_target": "/mnt/baize-idfs",
+      "ipv4_addresses": [
+        "127.0.0.1/8",
+        "100.7.75.215/20",
+        "192.168.75.215/16",
+        "172.17.0.1/16"
+      ],
+      "ntp_synchronized": true
+    },
+    {
+      "management_ip": "100.7.75.216",
+      "hostname": "client216",
+      "logical_cpus": 128,
+      "memory_bytes": 133702410240,
+      "mount_source": "192.168.75.143:/sys_ns",
+      "mount_target": "/mnt/baize-idfs",
+      "ipv4_addresses": [
+        "127.0.0.1/8",
+        "100.7.75.216/20",
+        "192.168.75.216/16",
+        "172.17.0.1/16"
+      ],
+      "ntp_synchronized": true
+    }
+  ],
+  "connection": {
+    "credentials_directory": ".local/credentials",
+    "credentials_note": "cluster.txt",
+    "key_filename": "jump_key",
+    "jump": {
+      "host": "jump.invalid",
+      "port": 22,
+      "user": "CHANGE_ME"
+    },
+    "bridge": {
+      "host": "bridge.invalid",
+      "port": 22,
+      "user": "CHANGE_ME"
+    }
+  },
+  "inference_python": "/home/hust/idfs_forecast_inference/runtime/host_smoke_20261121/python"
+}

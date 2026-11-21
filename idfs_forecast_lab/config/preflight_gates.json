@@ -1,0 +1,62 @@
+[
+  {
+    "id": "scope_and_split",
+    "phase": "collection",
+    "status": "passed",
+    "evidence": "用户最新确认：8个物理存储节点各聚合12 OSS；35轮暂缓，先做实测冒烟"
+  },
+  {
+    "id": "current_read_only_sources",
+    "phase": "collection",
+    "status": "passed",
+    "evidence": "已有 96 OSS 和 16 客户端短时探测；不是持续采样稳定性证明"
+  },
+  {
+    "id": "nonintrusive_source_clock_evidence",
+    "phase": "collection",
+    "status": "pending",
+    "evidence": "现有 WAN RTT 证据不满足 25ms 不确定度；需局域网只读测量，不修改时钟"
+  },
+  {
+    "id": "recording_start_hook",
+    "phase": "collection",
+    "status": "passed",
+    "evidence": "用户确认以本轮开始记录时刻作为 t0；relay/evaluation 接受 recording_start 并保留独立 JSON 证据"
+  },
+  {
+    "id": "load_window_and_counter_budget",
+    "phase": "collection",
+    "status": "pending",
+    "evidence": "需确认同事负载安排、专用输出目录、采样资源预算及持续采样试运行安排；本轮不运行"
+  },
+  {
+    "id": "measured_data_and_preprocessing_QA",
+    "phase": "training",
+    "status": "pending",
+    "evidence": "本次冒烟原始计数/节点聚合/因果复算已通过；正式开发数据尚未采集"
+  },
+  {
+    "id": "idle_gpu_and_private_lmj_job",
+    "phase": "training",
+    "status": "pending",
+    "evidence": "启动时再核验 GPU、lmj 自有目录与剩余磁盘；已有探测不代表资源预留"
+  },
+  {
+    "id": "numeric_near_zero_policy",
+    "phase": "formal",
+    "status": "passed",
+    "evidence": "用户已确认：只排除实际 IOPS 为零的窗口，保留全部正值并披露排除量"
+  },
+  {
+    "id": "validation_selection_and_CPU_parity",
+    "phase": "formal",
+    "status": "pending",
+    "evidence": "八个冒烟模型GPU/CPU和目标CPU核验已通过；独立验证、准确率及正式选择未完成"
+  },
+  {
+    "id": "recompute_and_three_rounds",
+    "phase": "formal",
+    "status": "pending",
+    "evidence": "每类三轮分别 >90%，完整时间/预测/提交/实际值日志与哈希独立复算；目前未开展"
+  }
+]

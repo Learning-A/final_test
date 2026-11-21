@@ -1,0 +1,91 @@
+{
+  "confirmed_date": "2026-11-21",
+  "targets": [
+    "client_nfs_rpc",
+    "oss",
+    "cluster_oss"
+  ],
+  "components": [
+    "read",
+    "write",
+    "total"
+  ],
+  "train_separately_after_collection": true,
+  "choose_target_on_validation_then_freeze": false,
+  "workloads": "latest_live_release",
+  "models": "register_existing_inventory_then_train_adapt_when_data_available",
+  "formal_acceptance": "all_three_rounds_strictly_above_90_percent",
+  "logs_and_independent_recomputation_required": true,
+  "current_authorized_remote_actions": "experiment_A_only_workload_development_capture_and_scoped_training",
+  "remote_changes_authorized": true,
+  "other_pids_must_remain_untouched": true,
+  "training_location": "lmj@192.168.1.13 (b507), via original SOCKS5 route",
+  "cluster_role": "read_only_data_sources_and_trained_cpu_inference_only",
+  "training_on_idfs_cluster": false,
+  "training_on_windows": false,
+  "training_user_scope": "/home/lmj/idfs_forecast_lab only",
+  "modify_existing_processes": false,
+  "formal_target": {
+    "scope": "host_oss",
+    "entity": "idfs44",
+    "component": "total"
+  },
+  "joint_strategy": "per_storage_host_12_OSS_total",
+  "exact_client_oss_attribution": "unverified_disabled",
+  "training_rounds_per_workload": 3,
+  "validation_rounds_per_workload": 1,
+  "formal_rounds_per_workload": 3,
+  "total_rounds": 35,
+  "collection_started": true,
+  "training_started": true,
+  "accuracy_mask": "exclude_only_zero_actual_keep_all_positive",
+  "formal_targets": [
+    {
+      "scope": "host_oss",
+      "entity": "idfs44",
+      "component": "total"
+    },
+    {
+      "scope": "host_oss",
+      "entity": "idfs45",
+      "component": "total"
+    },
+    {
+      "scope": "host_oss",
+      "entity": "idfs46",
+      "component": "total"
+    },
+    {
+      "scope": "host_oss",
+      "entity": "idfs47",
+      "component": "total"
+    },
+    {
+      "scope": "host_oss",
+      "entity": "idfs64",
+      "component": "total"
+    },
+    {
+      "scope": "host_oss",
+      "entity": "idfs65",
+      "component": "total"
+    },
+    {
+      "scope": "host_oss",
+      "entity": "idfs66",
+      "component": "total"
+    },
+    {
+      "scope": "host_oss",
+      "entity": "idfs67",
+      "component": "total"
+    }
+  ],
+  "latest_phase": "development_capture_halted_health_last_snapshot_recovered",
+  "old_35_round_plan": "formal_15_rounds_deferred_development_20_rounds_authorized",
+  "current_inference_service_running": false,
+  "smoke_functional_pass": true,
+  "formal_accuracy_qualified": false,
+  "time_origin": "recording_start",
+  "last_health_snapshot": "2026-11-22T00:25:22+08:00 HEALTH_OK 96 up/in; recheck before execution"
+}

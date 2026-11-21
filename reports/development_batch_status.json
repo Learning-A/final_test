@@ -1,0 +1,28 @@
+{
+  "state": "halted_cluster_health",
+  "planned_rounds": 20,
+  "completed_captures": 1,
+  "normal_training_eligible_rounds": 0,
+  "fault_affected_rounds": [
+    "ai_training_ses_train_01"
+  ],
+  "remaining_rounds_not_started": 19,
+  "runner_exited": true,
+  "workload_exit": 0,
+  "reason": "HEALTH_WARN / OSS down observed; degraded PGs persist after load",
+  "normal_resume_requires": "read-only HEALTH_OK and all 96 OSS up; fresh replacement round; never reuse excluded round as normal training",
+  "intentional_next_round_block": "ai_inference_ses_train_01/BLOCKED.txt",
+  "completed": [
+    {
+      "alias": "ai_training",
+      "workload": "ai_training_ses",
+      "role": "train",
+      "index": 1,
+      "run_id": "ai_training_ses_train_01",
+      "state": "captured_processed",
+      "raw_samples": 739312,
+      "complete_windows": 79345,
+      "remote_results": "/home/hust/idfs_forecast_inference/development/workload_development_20261121_v1/ai_training_ses_train_01"
+    }
+  ]
+}

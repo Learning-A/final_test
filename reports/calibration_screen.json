@@ -1,0 +1,323 @@
+{
+  "kind": "causal_smoke_calibration_screen",
+  "selection_data": "existing smoke only",
+  "independent_validation": false,
+  "formal_acceptance": false,
+  "baselines": {
+    "last_available": {
+      "mae_iops": 338.72435897435895,
+      "wape_percent": 51.48212919977202,
+      "mape_percent": 393.7335278759924,
+      "zero_excluded_from_mape": 4
+    },
+    "mean_five_available": {
+      "mae_iops": 336.7288461538462,
+      "wape_percent": 51.17883465917118,
+      "mape_percent": 1138.5258661019243,
+      "zero_excluded_from_mape": 4
+    },
+    "raw_moe": {
+      "mae_iops": 655.1970969174141,
+      "wape_percent": 99.58227302268288,
+      "mape_percent": 100.04474543863078,
+      "zero_excluded_from_mape": 4
+    },
+    "published_moe": {
+      "mae_iops": 433.04118886380934,
+      "wape_percent": 65.81718097102407,
+      "mape_percent": 1161.8389928274896,
+      "zero_excluded_from_mape": 4
+    }
+  },
+  "candidates_ranked_by_mae": [
+    {
+      "alpha": 0.02,
+      "cap_iops": 500,
+      "mae_iops": 419.4853559324279,
+      "wape_percent": 63.756853380480955,
+      "mape_percent": 748.4391981320574,
+      "zero_excluded_from_mape": 4
+    },
+    {
+      "alpha": 0.05,
+      "cap_iops": 500,
+      "mae_iops": 419.57955098706304,
+      "wape_percent": 63.77116992384203,
+      "mape_percent": 748.4464079582667,
+      "zero_excluded_from_mape": 4
+    },
+    {
+      "alpha": 0.1,
+      "cap_iops": 500,
+      "mae_iops": 420.7858817125993,
+      "wape_percent": 63.954518043409685,
+      "mape_percent": 748.4992695324758,
+      "zero_excluded_from_mape": 4
+    },
+    {
+      "alpha": 0.1,
+      "cap_iops": 1000,
+      "mae_iops": 422.82186677397345,
+      "wape_percent": 64.26396388986683,
+      "mape_percent": 1238.0815337650415,
+      "zero_excluded_from_mape": 4
+    },
+    {
+      "alpha": 0.02,
+      "cap_iops": 1000,
+      "mae_iops": 423.3414737599929,
+      "wape_percent": 64.34293805655608,
+      "mape_percent": 1126.953604704255,
+      "zero_excluded_from_mape": 4
+    },
+    {
+      "alpha": 0.2,
+      "cap_iops": 500,
+      "mae_iops": 425.37888879944916,
+      "wape_percent": 64.65260124290752,
+      "mape_percent": 748.7596690406687,
+      "zero_excluded_from_mape": 4
+    },
+    {
+      "alpha": 0.05,
+      "cap_iops": 1000,
+      "mae_iops": 425.5036502512098,
+      "wape_percent": 64.67156352007632,
+      "mape_percent": 1195.4249870585165,
+      "zero_excluded_from_mape": 4
+    },
+    {
+      "alpha": 0.2,
+      "cap_iops": 1000,
+      "mae_iops": 430.7215658067326,
+      "wape_percent": 65.46462547640068,
+      "mape_percent": 1159.5433901792796,
+      "zero_excluded_from_mape": 4
+    },
+    {
+      "alpha": 0.5,
+      "cap_iops": 1000,
+      "mae_iops": 439.98172326233833,
+      "wape_percent": 66.87206078451744,
+      "mape_percent": 890.3241223568446,
+      "zero_excluded_from_mape": 4
+    },
+    {
+      "alpha": 0.5,
+      "cap_iops": 500,
+      "mae_iops": 443.2174076015976,
+      "wape_percent": 67.36384684828865,
+      "mape_percent": 706.179241859107,
+      "zero_excluded_from_mape": 4
+    },
+    {
+      "alpha": 1.0,
+      "cap_iops": 1000,
+      "mae_iops": 451.3161900660011,
+      "wape_percent": 68.5947667811088,
+      "mape_percent": 396.7413454039844,
+      "zero_excluded_from_mape": 4
+    },
+    {
+      "alpha": 1.0,
+      "cap_iops": 500,
+      "mae_iops": 462.4550322270004,
+      "wape_percent": 70.28774012676607,
+      "mape_percent": 374.1423133603009,
+      "zero_excluded_from_mape": 4
+    },
+    {
+      "alpha": 0.02,
+      "cap_iops": 250,
+      "mae_iops": 503.57308457352815,
+      "wape_percent": 76.53720175319481,
+      "mape_percent": 406.3577162775123,
+      "zero_excluded_from_mape": 4
+    },
+    {
+      "alpha": 0.05,
+      "cap_iops": 250,
+      "mae_iops": 503.57308457352815,
+      "wape_percent": 76.53720175319481,
+      "mape_percent": 406.3577162775123,
+      "zero_excluded_from_mape": 4
+    },
+    {
+      "alpha": 0.1,
+      "cap_iops": 250,
+      "mae_iops": 503.57308457352815,
+      "wape_percent": 76.53720175319481,
+      "mape_percent": 406.3577162775123,
+      "zero_excluded_from_mape": 4
+    },
+    {
+      "alpha": 0.2,
+      "cap_iops": 250,
+      "mae_iops": 503.57308457352815,
+      "wape_percent": 76.53720175319481,
+      "mape_percent": 406.3577162775123,
+      "zero_excluded_from_mape": 4
+    },
+    {
+      "alpha": 0.5,
+      "cap_iops": 250,
+      "mae_iops": 505.32086887445877,
+      "wape_percent": 76.80284446476801,
+      "mape_percent": 406.60853952479954,
+      "zero_excluded_from_mape": 4
+    },
+    {
+      "alpha": 1.0,
+      "cap_iops": 250,
+      "mae_iops": 519.0932207989066,
+      "wape_percent": 78.89608040240786,
+      "mape_percent": 309.30300878563827,
+      "zero_excluded_from_mape": 4
+    },
+    {
+      "alpha": 0.02,
+      "cap_iops": 100,
+      "mae_iops": 587.5061120343422,
+      "wape_percent": 89.2940373612083,
+      "mape_percent": 214.79451202518956,
+      "zero_excluded_from_mape": 4
+    },
+    {
+      "alpha": 0.05,
+      "cap_iops": 100,
+      "mae_iops": 587.5061120343422,
+      "wape_percent": 89.2940373612083,
+      "mape_percent": 214.79451202518956,
+      "zero_excluded_from_mape": 4
+    },
+    {
+      "alpha": 0.1,
+      "cap_iops": 100,
+      "mae_iops": 587.5061120343422,
+      "wape_percent": 89.2940373612083,
+      "mape_percent": 214.79451202518956,
+      "zero_excluded_from_mape": 4
+    },
+    {
+      "alpha": 0.2,
+      "cap_iops": 100,
+      "mae_iops": 587.5061120343422,
+      "wape_percent": 89.2940373612083,
+      "mape_percent": 214.79451202518956,
+      "zero_excluded_from_mape": 4
+    },
+    {
+      "alpha": 0.5,
+      "cap_iops": 100,
+      "mae_iops": 587.5061120343422,
+      "wape_percent": 89.2940373612083,
+      "mape_percent": 214.79451202518956,
+      "zero_excluded_from_mape": 4
+    },
+    {
+      "alpha": 1.0,
+      "cap_iops": 100,
+      "mae_iops": 592.1769756444173,
+      "wape_percent": 90.00395383895,
+      "mape_percent": 215.4542164391044,
+      "zero_excluded_from_mape": 4
+    },
+    {
+      "alpha": 0.02,
+      "cap_iops": 50,
+      "mae_iops": 619.5802762719402,
+      "wape_percent": 94.16893408329412,
+      "mape_percent": 154.1190380555911,
+      "zero_excluded_from_mape": 4
+    },
+    {
+      "alpha": 0.05,
+      "cap_iops": 50,
+      "mae_iops": 619.5802762719402,
+      "wape_percent": 94.16893408329412,
+      "mape_percent": 154.1190380555911,
+      "zero_excluded_from_mape": 4
+    },
+    {
+      "alpha": 0.1,
+      "cap_iops": 50,
+      "mae_iops": 619.5802762719402,
+      "wape_percent": 94.16893408329412,
+      "mape_percent": 154.1190380555911,
+      "zero_excluded_from_mape": 4
+    },
+    {
+      "alpha": 0.2,
+      "cap_iops": 50,
+      "mae_iops": 619.5802762719402,
+      "wape_percent": 94.16893408329412,
+      "mape_percent": 154.1190380555911,
+      "zero_excluded_from_mape": 4
+    },
+    {
+      "alpha": 0.5,
+      "cap_iops": 50,
+      "mae_iops": 619.5802762719402,
+      "wape_percent": 94.16893408329412,
+      "mape_percent": 154.1190380555911,
+      "zero_excluded_from_mape": 4
+    },
+    {
+      "alpha": 1.0,
+      "cap_iops": 50,
+      "mae_iops": 621.0574527700451,
+      "wape_percent": 94.39344758316928,
+      "mape_percent": 154.31742434176311,
+      "zero_excluded_from_mape": 4
+    },
+    {
+      "alpha": 0.02,
+      "cap_iops": 25,
+      "mae_iops": 637.2483789686962,
+      "wape_percent": 96.85427843970069,
+      "mape_percent": 126.69193298946357,
+      "zero_excluded_from_mape": 4
+    },
+    {
+      "alpha": 0.05,
+      "cap_iops": 25,
+      "mae_iops": 637.2483789686962,
+      "wape_percent": 96.85427843970069,
+      "mape_percent": 126.69193298946357,
+      "zero_excluded_from_mape": 4
+    },
+    {
+      "alpha": 0.1,
+      "cap_iops": 25,
+      "mae_iops": 637.2483789686962,
+      "wape_percent": 96.85427843970069,
+      "mape_percent": 126.69193298946357,
+      "zero_excluded_from_mape": 4
+    },
+    {
+      "alpha": 0.2,
+      "cap_iops": 25,
+      "mae_iops": 637.2483789686962,
+      "wape_percent": 96.85427843970069,
+      "mape_percent": 126.69193298946357,
+      "zero_excluded_from_mape": 4
+    },
+    {
+      "alpha": 0.5,
+      "cap_iops": 25,
+      "mae_iops": 637.2483789686962,
+      "wape_percent": 96.85427843970069,
+      "mape_percent": 126.69193298946357,
+      "zero_excluded_from_mape": 4
+    },
+    {
+      "alpha": 1.0,
+      "cap_iops": 25,
+      "mae_iops": 637.9442221997945,
+      "wape_percent": 96.96003844832441,
+      "mape_percent": 126.78397578969738,
+      "zero_excluded_from_mape": 4
+    }
+  ],
+  "note": "Screening candidates requires independent workload validation before deployment."
+}

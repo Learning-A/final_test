@@ -1,0 +1,14 @@
+[project]
+name = "idfs-forecast-lab"
+version = "0.3.0"
+description = "Read-only IDFS/NFS counters and auditable forecasting experiments"
+requires-python = ">=3.8"
+dependencies = []
+
+[project.optional-dependencies]
+ssh = ["paramiko>=3"]
+training = ["numpy", "scikit-learn", "lightgbm", "xgboost"]
+neural = ["torch"]
+
+[project.scripts]
+idfs-lab = "idfs_lab.cli:main"

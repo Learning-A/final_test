@@ -1,0 +1,192 @@
+{
+  "experiment_kind": "smoke_not_acceptance",
+  "functional_pass": true,
+  "nodes": [
+    {
+      "host": "idfs44",
+      "predictions": 39,
+      "settled_pairs": 39,
+      "late_predictions": 0,
+      "causal": true,
+      "host_aggregation_errors": 0,
+      "integrity": true,
+      "diagnostics_present": true,
+      "accuracy_informational_only": {
+        "accuracy_percent": "-12.39116976569458326666059022733838605480",
+        "accuracy_display": "-12.3912",
+        "n_eval": 38,
+        "excluded": 1,
+        "threshold_iops": "0"
+      },
+      "functional_pass": true,
+      "formal_acceptance": false,
+      "raw_counter_recomputed_pairs": 39,
+      "raw_counter_accuracy_matches": true
+    },
+    {
+      "host": "idfs45",
+      "predictions": 39,
+      "settled_pairs": 39,
+      "late_predictions": 0,
+      "causal": true,
+      "host_aggregation_errors": 0,
+      "integrity": true,
+      "diagnostics_present": true,
+      "accuracy_informational_only": {
+        "accuracy_percent": "-33.57953667931310478196608039106693072420",
+        "accuracy_display": "-33.5795",
+        "n_eval": 38,
+        "excluded": 1,
+        "threshold_iops": "0"
+      },
+      "functional_pass": true,
+      "formal_acceptance": false,
+      "raw_counter_recomputed_pairs": 39,
+      "raw_counter_accuracy_matches": true
+    },
+    {
+      "host": "idfs46",
+      "predictions": 39,
+      "settled_pairs": 39,
+      "late_predictions": 0,
+      "causal": true,
+      "host_aggregation_errors": 0,
+      "integrity": true,
+      "diagnostics_present": true,
+      "accuracy_informational_only": {
+        "accuracy_percent": "-2238.582849445519566448876164510256936185",
+        "accuracy_display": "-2238.5828",
+        "n_eval": 39,
+        "excluded": 0,
+        "threshold_iops": "0"
+      },
+      "functional_pass": true,
+      "formal_acceptance": false,
+      "raw_counter_recomputed_pairs": 39,
+      "raw_counter_accuracy_matches": true
+    },
+    {
+      "host": "idfs47",
+      "predictions": 39,
+      "settled_pairs": 39,
+      "late_predictions": 0,
+      "causal": true,
+      "host_aggregation_errors": 0,
+      "integrity": true,
+      "diagnostics_present": true,
+      "accuracy_informational_only": {
+        "accuracy_percent": "-38.75288366402135655271147526669645743680",
+        "accuracy_display": "-38.7529",
+        "n_eval": 38,
+        "excluded": 1,
+        "threshold_iops": "0"
+      },
+      "functional_pass": true,
+      "formal_acceptance": false,
+      "raw_counter_recomputed_pairs": 39,
+      "raw_counter_accuracy_matches": true
+    },
+    {
+      "host": "idfs64",
+      "predictions": 39,
+      "settled_pairs": 39,
+      "late_predictions": 0,
+      "causal": true,
+      "host_aggregation_errors": 0,
+      "integrity": true,
+      "diagnostics_present": true,
+      "accuracy_informational_only": {
+        "accuracy_percent": "-2508.875495494955437530574449774211421118",
+        "accuracy_display": "-2508.8755",
+        "n_eval": 39,
+        "excluded": 0,
+        "threshold_iops": "0"
+      },
+      "functional_pass": true,
+      "formal_acceptance": false,
+      "raw_counter_recomputed_pairs": 39,
+      "raw_counter_accuracy_matches": true
+    },
+    {
+      "host": "idfs65",
+      "predictions": 39,
+      "settled_pairs": 39,
+      "late_predictions": 0,
+      "causal": true,
+      "host_aggregation_errors": 0,
+      "integrity": true,
+      "diagnostics_present": true,
+      "accuracy_informational_only": {
+        "accuracy_percent": "-1858.008292303554451225030398451006723918",
+        "accuracy_display": "-1858.0083",
+        "n_eval": 39,
+        "excluded": 0,
+        "threshold_iops": "0"
+      },
+      "functional_pass": true,
+      "formal_acceptance": false,
+      "raw_counter_recomputed_pairs": 39,
+      "raw_counter_accuracy_matches": true
+    },
+    {
+      "host": "idfs66",
+      "predictions": 39,
+      "settled_pairs": 39,
+      "late_predictions": 0,
+      "causal": true,
+      "host_aggregation_errors": 0,
+      "integrity": true,
+      "diagnostics_present": true,
+      "accuracy_informational_only": {
+        "accuracy_percent": "-1699.467658230883893445030765898167644524",
+        "accuracy_display": "-1699.4677",
+        "n_eval": 39,
+        "excluded": 0,
+        "threshold_iops": "0"
+      },
+      "functional_pass": true,
+      "formal_acceptance": false,
+      "raw_counter_recomputed_pairs": 39,
+      "raw_counter_accuracy_matches": true
+    },
+    {
+      "host": "idfs67",
+      "predictions": 39,
+      "settled_pairs": 39,
+      "late_predictions": 0,
+      "causal": true,
+      "host_aggregation_errors": 0,
+      "integrity": true,
+      "diagnostics_present": true,
+      "accuracy_informational_only": {
+        "accuracy_percent": "1.724319915735493784814205958333382288820",
+        "accuracy_display": "1.7243",
+        "n_eval": 38,
+        "excluded": 1,
+        "threshold_iops": "0"
+      },
+      "functional_pass": true,
+      "formal_acceptance": false,
+      "raw_counter_recomputed_pairs": 39,
+      "raw_counter_accuracy_matches": true
+    }
+  ],
+  "single_shared_counter_stream": true,
+  "collection_state": "complete",
+  "source_clock_precision_verified": false,
+  "training_split": "chronological_same_capture_not_independent",
+  "first_failed_attempt": "live: duplicate eight streams caused backpressure; only its own controller was ended",
+  "batch_forwarding": true,
+  "attempt": "v3",
+  "formal_accuracy_claim": false,
+  "extra_workload_started": false,
+  "other_work_processes_modified": false,
+  "raw_counter_recomputation": {
+    "passed": true,
+    "errors": [],
+    "complete_node_windows": 636,
+    "raw_samples": 89712,
+    "source_kind": "cumulative_measured_counters",
+    "formal_acceptance": false
+  }
+}

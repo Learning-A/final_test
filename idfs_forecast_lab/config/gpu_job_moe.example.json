@@ -1,0 +1,38 @@
+{
+  "job_id": "joint_moe_v1_after_measured_collection",
+  "model": "joint_moe",
+  "target": {
+    "scope": "host_oss",
+    "entity": "idfs44",
+    "component": "total"
+  },
+  "site": "config/site.json",
+  "study": "config/study_plan.json",
+  "cpu_threads": 4,
+  "epochs": 100,
+  "gpu_uuid": null,
+  "train": [
+    "prepared/ai_training_ses_train_01/joint.jsonl",
+    "prepared/ai_training_ses_train_02/joint.jsonl",
+    "prepared/ai_training_ses_train_03/joint.jsonl",
+    "prepared/ai_inference_ses_train_01/joint.jsonl",
+    "prepared/ai_inference_ses_train_02/joint.jsonl",
+    "prepared/ai_inference_ses_train_03/joint.jsonl",
+    "prepared/bigdata_baleen_train_01/joint.jsonl",
+    "prepared/bigdata_baleen_train_02/joint.jsonl",
+    "prepared/bigdata_baleen_train_03/joint.jsonl",
+    "prepared/graph_zipf_train_01/joint.jsonl",
+    "prepared/graph_zipf_train_02/joint.jsonl",
+    "prepared/graph_zipf_train_03/joint.jsonl",
+    "prepared/hpc_wrf_train_01/joint.jsonl",
+    "prepared/hpc_wrf_train_02/joint.jsonl",
+    "prepared/hpc_wrf_train_03/joint.jsonl"
+  ],
+  "validation": [
+    "prepared/ai_training_ses_validation_01/joint.jsonl",
+    "prepared/ai_inference_ses_validation_01/joint.jsonl",
+    "prepared/bigdata_baleen_validation_01/joint.jsonl",
+    "prepared/graph_zipf_validation_01/joint.jsonl",
+    "prepared/hpc_wrf_validation_01/joint.jsonl"
+  ]
+}

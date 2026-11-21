@@ -1,0 +1,43 @@
+{
+  "schema_version": 1,
+  "role": "offline_training_only",
+  "host": "192.168.1.13",
+  "port": 22,
+  "user": "lmj",
+  "proxy": {
+    "type": "socks5",
+    "host": "proxy.invalid",
+    "port": 1080
+  },
+  "credentials_file": ".local/credentials/gpu.txt",
+  "remote_workspace": "/home/lmj/idfs_forecast_lab",
+  "python": "/home/lmj/miniconda3/envs/tabkd/bin/python",
+  "gpu_uuid": null,
+  "cpu_threads": 4,
+  "gpu_workers": 0,
+  "remote_changes_performed": false,
+  "is_idfs_cluster_node": false,
+  "observed_hostname": "b507",
+  "observed_uid": 1010,
+  "python_by_family": {
+    "tabular": "/home/lmj/miniconda3/envs/tabkd/bin/python",
+    "neural": "/home/lmj/miniconda3/envs/tsfm/bin/python"
+  },
+  "max_upload_bytes": 21474836480,
+  "minimum_remaining_bytes": 16106127360,
+  "gpu_policy": "choose_only_idle_gpu_at_job_start_do_not_reserve_or_evict",
+  "data_loader_workers": 0,
+  "observed_gpus": [
+    {
+      "uuid": "GPU-8923f552-5691-b49b-d2c8-87cb9292ae92",
+      "model": "NVIDIA A40",
+      "memory_mib": 46068
+    },
+    {
+      "uuid": "GPU-ac63ac15-888b-c3fb-c42f-eb1cb26487c2",
+      "model": "NVIDIA A40",
+      "memory_mib": 46068
+    }
+  ],
+  "observed_home_free_gib": 76
+}

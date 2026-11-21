@@ -1,0 +1,18 @@
+{
+  "job_id": "client7414_gru_v1",
+  "model": "gru",
+  "target": {
+    "scope": "client_nfs_rpc",
+    "entity": "client7414",
+    "component": "total"
+  },
+  "train": [
+    "runs/features_train.csv"
+  ],
+  "validation": [
+    "runs/features_validation.csv"
+  ],
+  "epochs": 100,
+  "cpu_threads": 4,
+  "gpu_uuid": null
+}

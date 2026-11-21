@@ -1,0 +1,54 @@
+{
+  "updated_date": "2026-11-22",
+  "custodian": "experiment_A",
+  "transfer_location": null,
+  "note": "Git contains source and summaries only. Original datasets remain on computer A. A records an accessible transfer location and SHA256 when exporting a package.",
+  "datasets": [
+    {
+      "dataset_id": "host_smoke_20261121_v3",
+      "kind": "background_smoke",
+      "role": "diagnostic",
+      "relative_path_on_A": "runs/host_smoke_20261121/live_v3",
+      "paired_predictions": 312,
+      "normal_workload_training_allowed": false,
+      "independent_acceptance_allowed": false,
+      "summary": "reports/smoke_report.json",
+      "transfer_location": null,
+      "handoff_manifest_sha256": null
+    },
+    {
+      "dataset_id": "background_rounds_20261121",
+      "kind": "background_counter_collection",
+      "role": "diagnostic",
+      "relative_paths_on_A": [
+        "runs/dev_background_20261121_r01",
+        "runs/dev_background_20261121_r02",
+        "runs/dev_background_20261121_r03"
+      ],
+      "seconds_per_round": 120,
+      "normal_workload_training_allowed": false,
+      "transfer_location": null,
+      "handoff_manifest_sha256": null
+    },
+    {
+      "dataset_id": "workload_development_20261121_v1_ai_training_fault",
+      "kind": "workload_capture_with_cluster_fault",
+      "workload": "ai_training_ses",
+      "role": "diagnostic",
+      "original_planned_role": "train",
+      "relative_path_on_A": "runs/workload_development_20261121_v1/ai_training_ses_train_01",
+      "raw_samples": 739312,
+      "workload_seconds": 600,
+      "capture_seconds": 660,
+      "normal_workload_training_allowed": false,
+      "exclusion_reason": "OSS down / degraded PGs observed during load",
+      "transfer_location": null,
+      "handoff_manifest_sha256": "f6c4442b80315c5c652e5857ff807ec21c0c037e73b893e4136172ae8866b0ed",
+      "handoff_relative_path_on_A": "collaboration_repo/.local/handoffs/ai_training_fault_v1",
+      "handoff_exported": true
+    }
+  ],
+  "normal_workload_training_rounds_available": 0,
+  "normal_workload_validation_rounds_available": 0,
+  "formal_rounds_available": 0
+}

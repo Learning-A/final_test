@@ -1,0 +1,33 @@
+{
+  "schema_version": 1,
+  "round_id": "REPLACE_unique_measured_run_id",
+  "round_index": null,
+  "workload": null,
+  "workload_commit": "fb83711a1226f59899ed034b9195402156ef57d6",
+  "target": {
+    "scope": "host_oss",
+    "entity": "idfs44",
+    "component": "total"
+  },
+  "model_sha256": null,
+  "protocol_hash": "75331a4e3bea2665760aa229a11a0ecb1008209dfb785d5b80e173b432f3b789",
+  "selection_hash": null,
+  "selection_frozen_before_formal_test": false,
+  "data_kind": "measured",
+  "t0_epoch_ns": null,
+  "t0_source": "tool_first_io",
+  "first_io_evidence": {
+    "file": null,
+    "sha256": null
+  },
+  "clock_alignment": {
+    "verified": false,
+    "max_relative_offset_ms": null,
+    "uncertainty_ms": null,
+    "evidence_sha256": null
+  },
+  "log_sha256": {
+    "predictions.jsonl": null,
+    "windows.jsonl": null
+  }
+}

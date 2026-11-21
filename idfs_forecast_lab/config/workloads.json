@@ -1,0 +1,204 @@
+{
+  "authority": "user_confirmed_latest_live_release",
+  "release": "/home/hust/idfs-workloads-fb83711",
+  "commit": "fb83711a1226f59899ed034b9195402156ef57d6",
+  "cases": [
+    {
+      "id": "ai_inference_ses",
+      "path": "/home/hust/idfs-workloads-fb83711/config/ai_inference_ses/rendered/manifest.json",
+      "sha256": "55e1c70b263fc57cc94803d56ef7cc2129df84de6dc8ad2e457e589c4e3c3bef",
+      "data_file": "/mnt/baize-idfs/idfs-workloads-20261120/ai_inference_ses/container/vdb.1_1.dir/vdb_f0000.file",
+      "capacity_bytes": 4947802324992,
+      "runtime": {
+        "clients": [
+          "localhost"
+        ],
+        "ssh_user": "hust",
+        "stock_home": "/home/hust/vdbench50406",
+        "threads": 64
+      },
+      "profiles": [
+        {
+          "name": "continuous",
+          "seconds": 600,
+          "read_share": 0.7999999999999999,
+          "write_share": 0.20000000000000007,
+          "object_selection": "conditional_Zipf0.99",
+          "object_sampling": "iid_with_replacement"
+        }
+      ],
+      "actual_bytes": 4947802324992,
+      "inode": 2274889557958614,
+      "phase_names": [
+        []
+      ]
+    },
+    {
+      "id": "ai_training_ses",
+      "path": "/home/hust/idfs-workloads-fb83711/config/ai_training_ses/rendered/manifest.json",
+      "sha256": "1b12d17ebf330eb32587a960a1ebb1c70d527123742c83071e54569263f00cac",
+      "data_file": "/mnt/baize-idfs/idfs-workloads-20261120/ai_training_ses/container/vdb.1_1.dir/vdb_f0000.file",
+      "capacity_bytes": 6214285000704,
+      "runtime": {
+        "clients": [
+          "localhost"
+        ],
+        "ssh_user": "hust",
+        "stock_home": "/home/hust/vdbench50406",
+        "threads": 64
+      },
+      "profiles": [
+        {
+          "name": "continuous",
+          "seconds": 600,
+          "read_share": 0.7000000000000002,
+          "write_share": 0.2999999999999998,
+          "object_selection": "conditional_Zipf0.99",
+          "object_sampling": "iid_with_replacement"
+        }
+      ],
+      "actual_bytes": 6214285000704,
+      "inode": 2296879790589072,
+      "phase_names": [
+        []
+      ]
+    },
+    {
+      "id": "bigdata_baleen",
+      "path": "/home/hust/idfs-workloads-fb83711/config/bigdata_baleen/rendered/manifest.json",
+      "sha256": "a1d5ca76dc30960759d65ee629fd3687f284ff65b140873e99596a97d05c052b",
+      "data_file": "/mnt/baize-idfs/idfs-workloads-20261120/bigdata_baleen/container/vdb.1_1.dir/vdb_f0000.file",
+      "capacity_bytes": 5497553944576,
+      "runtime": {
+        "clients": [
+          "localhost"
+        ],
+        "ssh_user": "hust",
+        "stock_home": "/home/hust/vdbench50406",
+        "threads": 64
+      },
+      "profiles": [
+        {
+          "name": "native_all",
+          "seconds": 600,
+          "read_share": 0.8587105053935689,
+          "write_share": 0.14128949460643114,
+          "object_selection": null,
+          "object_sampling": null
+        }
+      ],
+      "actual_bytes": 5497553944576,
+      "inode": 2288083697530071,
+      "phase_names": [
+        []
+      ]
+    },
+    {
+      "id": "bigdata_fast",
+      "path": "/home/hust/idfs-workloads-fb83711/config/bigdata_fast/rendered/manifest.json",
+      "sha256": "ef61ad73416a37089a477ca7c5bb08194aa597f9fda0e07598dda6ab4236fe3f",
+      "data_file": "/mnt/baize-idfs/idfs-workloads-20261120/bigdata_fast/fast.bin",
+      "capacity_bytes": 4398046511104,
+      "runtime": {
+        "clients": [
+          "localhost"
+        ],
+        "ssh_user": "hust",
+        "stock_home": "/home/hust/vdbench50406",
+        "threads": 64
+      },
+      "profiles": [
+        {
+          "name": "fast_analysis",
+          "seconds": 600,
+          "read_share": 0.9,
+          "write_share": 0.1,
+          "object_selection": null,
+          "object_sampling": null
+        }
+      ],
+      "actual_bytes": 4398046511104,
+      "inode": 2314471976678488,
+      "phase_names": [
+        []
+      ]
+    },
+    {
+      "id": "graph_zipf",
+      "path": "/home/hust/idfs-workloads-fb83711/config/graph_zipf/rendered/manifest.json",
+      "sha256": "d6c49df67b0e5745ba2bef75bae118315e78d7658816052fcd1d8b809e6589f7",
+      "data_file": "/mnt/baize-idfs/idfs-workloads-20261120/graph/test.graph.edge.props",
+      "capacity_bytes": 4398046511104,
+      "runtime": {
+        "clients": [
+          "localhost"
+        ],
+        "ssh_user": "hust",
+        "stock_home": "/home/hust/vdbench50406",
+        "threads": 64
+      },
+      "profiles": [
+        {
+          "name": "zipf_all",
+          "seconds": 600,
+          "read_share": 1.0,
+          "write_share": 0.0,
+          "object_selection": null,
+          "object_sampling": null
+        }
+      ],
+      "actual_bytes": 4398046511104,
+      "inode": 2295780278796309,
+      "phase_names": [
+        []
+      ]
+    },
+    {
+      "id": "hpc_wrf",
+      "path": "/home/hust/idfs-workloads-fb83711/config/hpc_wrf/rendered/manifest.json",
+      "sha256": "f2fc2cfb9cd3c5ed0267256d489f6a26ffc34cd7d32e2a5b0790334778bf212c",
+      "data_file": "/mnt/baize-idfs/idfs-workloads-20261120/hpc_wrf/container/vdb.1_1.dir/vdb_f0000.file",
+      "capacity_bytes": 3417015582720,
+      "runtime": {
+        "clients": [
+          "localhost"
+        ],
+        "ssh_user": "hust",
+        "stock_home": "/home/hust/vdbench50406",
+        "threads": 64
+      },
+      "profiles": [
+        {
+          "name": "continuous",
+          "seconds": 600,
+          "read_share": 0.10406211560940641,
+          "write_share": 0.8959378843905936,
+          "object_selection": null,
+          "object_sampling": null
+        }
+      ],
+      "actual_bytes": 3417015582720,
+      "inode": 2274889557958615,
+      "phase_names": [
+        [
+          "startup",
+          "history_00h",
+          "checkpoint_05h",
+          "history_06h"
+        ]
+      ]
+    }
+  ],
+  "formal_cases": [
+    "ai_training_ses",
+    "ai_inference_ses",
+    "bigdata_baleen",
+    "graph_zipf",
+    "hpc_wrf"
+  ],
+  "extra_cases": [
+    "bigdata_fast"
+  ],
+  "user_allows_outline_description_alignment": true,
+  "original_outline_modified": false
+}

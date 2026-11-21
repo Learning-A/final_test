@@ -1,0 +1,106 @@
+{
+  "schema": "joint_context_v1",
+  "target": {
+    "scope": "host_oss",
+    "entity": "idfs44",
+    "component": "total"
+  },
+  "feature_count": 415,
+  "temporal_shape": [
+    5,
+    3
+  ],
+  "temporal_order": "oldest_to_newest_read_write_total",
+  "spatial_shape": [
+    96,
+    4
+  ],
+  "spatial_order": "numeric_oss_id_read_write_total_observed_mask",
+  "cross_values": [
+    "target_host_read",
+    "target_host_write",
+    "target_host_total",
+    "observed_oss_read_sum",
+    "observed_oss_write_sum",
+    "oss_coverage",
+    "observed_client_total",
+    "client_coverage"
+  ],
+  "cross_masks": 8,
+  "minimum_observed_oss": 92,
+  "minimum_oss_status": "engineering_setting_validate_on_development_data",
+  "history_end_before_target_ms": 1000,
+  "issue_margin_ms": 30,
+  "graph": "same_physical_host_OSS_graph_not_client_request_attribution",
+  "normalization": "log1p_masked_train_only_mean_std_embedded_in_TorchScript",
+  "exact_client_oss_attribution": {
+    "enabled": false,
+    "required_evidence": [
+      "client_identity",
+      "oss_identity",
+      "cumulative_read_write_count",
+      "reset_identity",
+      "sampling_time",
+      "semantic_and_coverage_validation"
+    ]
+  },
+  "experts": [
+    "GRU_temporal",
+    "physical_host_GCN_spatial",
+    "cross_layer_MLP"
+  ],
+  "gates": "learned_hierarchical_client_vs_storage_then_spatial_vs_cross",
+  "output": "read_plus_write_total_future_one_second",
+  "current_task": "eight_physical_hosts_each_with_independent_12_OSS_target",
+  "not_yet_done": [
+    "representative_workload_fit",
+    "independent_run_validation",
+    "formal_clock_precision",
+    "formal_three_round_acceptance"
+  ],
+  "targets": [
+    {
+      "scope": "host_oss",
+      "entity": "idfs44",
+      "component": "total"
+    },
+    {
+      "scope": "host_oss",
+      "entity": "idfs45",
+      "component": "total"
+    },
+    {
+      "scope": "host_oss",
+      "entity": "idfs46",
+      "component": "total"
+    },
+    {
+      "scope": "host_oss",
+      "entity": "idfs47",
+      "component": "total"
+    },
+    {
+      "scope": "host_oss",
+      "entity": "idfs64",
+      "component": "total"
+    },
+    {
+      "scope": "host_oss",
+      "entity": "idfs65",
+      "component": "total"
+    },
+    {
+      "scope": "host_oss",
+      "entity": "idfs66",
+      "component": "total"
+    },
+    {
+      "scope": "host_oss",
+      "entity": "idfs67",
+      "component": "total"
+    }
+  ],
+  "client_count": 16,
+  "normalization_log_std_floor": 0.25,
+  "inference_precision": "float64"
+}

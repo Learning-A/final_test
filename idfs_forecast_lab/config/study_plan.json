@@ -1,0 +1,384 @@
+{
+  "schema_version": 1,
+  "authority": "user_confirmed_2026-11-21",
+  "formal_target": {
+    "scope": "host_oss",
+    "entity": "idfs44",
+    "component": "total"
+  },
+  "joint_strategy": "storage_context_only",
+  "workload_commit": "fb83711a1226f59899ed034b9195402156ef57d6",
+  "order": [
+    "collect_15_train_and_5_validation",
+    "preprocess",
+    "train_on_lmj_gpu",
+    "choose_on_validation_and_freeze",
+    "stage_cpu_inference",
+    "collect_15_formal_and_recompute"
+  ],
+  "total_rounds": 35,
+  "workload_minutes": 350,
+  "collection_minutes_without_gaps": 385,
+  "sampling_budget_note": "660s is planning allowance; first-I/O must fall inside capture and all required windows must be covered",
+  "formal_data_may_train_or_select": false,
+  "rounds": [
+    {
+      "run_id": "ai_training_ses_train_01",
+      "workload": "ai_training_ses",
+      "role": "train",
+      "role_index": 1,
+      "workload_seconds": 600,
+      "planned_collection_seconds": 660,
+      "state": "planned_not_started"
+    },
+    {
+      "run_id": "ai_training_ses_train_02",
+      "workload": "ai_training_ses",
+      "role": "train",
+      "role_index": 2,
+      "workload_seconds": 600,
+      "planned_collection_seconds": 660,
+      "state": "planned_not_started"
+    },
+    {
+      "run_id": "ai_training_ses_train_03",
+      "workload": "ai_training_ses",
+      "role": "train",
+      "role_index": 3,
+      "workload_seconds": 600,
+      "planned_collection_seconds": 660,
+      "state": "planned_not_started"
+    },
+    {
+      "run_id": "ai_training_ses_validation_01",
+      "workload": "ai_training_ses",
+      "role": "validation",
+      "role_index": 1,
+      "workload_seconds": 600,
+      "planned_collection_seconds": 660,
+      "state": "planned_not_started"
+    },
+    {
+      "run_id": "ai_training_ses_formal_01",
+      "workload": "ai_training_ses",
+      "role": "formal",
+      "role_index": 1,
+      "workload_seconds": 600,
+      "planned_collection_seconds": 660,
+      "state": "planned_not_started"
+    },
+    {
+      "run_id": "ai_training_ses_formal_02",
+      "workload": "ai_training_ses",
+      "role": "formal",
+      "role_index": 2,
+      "workload_seconds": 600,
+      "planned_collection_seconds": 660,
+      "state": "planned_not_started"
+    },
+    {
+      "run_id": "ai_training_ses_formal_03",
+      "workload": "ai_training_ses",
+      "role": "formal",
+      "role_index": 3,
+      "workload_seconds": 600,
+      "planned_collection_seconds": 660,
+      "state": "planned_not_started"
+    },
+    {
+      "run_id": "ai_inference_ses_train_01",
+      "workload": "ai_inference_ses",
+      "role": "train",
+      "role_index": 1,
+      "workload_seconds": 600,
+      "planned_collection_seconds": 660,
+      "state": "planned_not_started"
+    },
+    {
+      "run_id": "ai_inference_ses_train_02",
+      "workload": "ai_inference_ses",
+      "role": "train",
+      "role_index": 2,
+      "workload_seconds": 600,
+      "planned_collection_seconds": 660,
+      "state": "planned_not_started"
+    },
+    {
+      "run_id": "ai_inference_ses_train_03",
+      "workload": "ai_inference_ses",
+      "role": "train",
+      "role_index": 3,
+      "workload_seconds": 600,
+      "planned_collection_seconds": 660,
+      "state": "planned_not_started"
+    },
+    {
+      "run_id": "ai_inference_ses_validation_01",
+      "workload": "ai_inference_ses",
+      "role": "validation",
+      "role_index": 1,
+      "workload_seconds": 600,
+      "planned_collection_seconds": 660,
+      "state": "planned_not_started"
+    },
+    {
+      "run_id": "ai_inference_ses_formal_01",
+      "workload": "ai_inference_ses",
+      "role": "formal",
+      "role_index": 1,
+      "workload_seconds": 600,
+      "planned_collection_seconds": 660,
+      "state": "planned_not_started"
+    },
+    {
+      "run_id": "ai_inference_ses_formal_02",
+      "workload": "ai_inference_ses",
+      "role": "formal",
+      "role_index": 2,
+      "workload_seconds": 600,
+      "planned_collection_seconds": 660,
+      "state": "planned_not_started"
+    },
+    {
+      "run_id": "ai_inference_ses_formal_03",
+      "workload": "ai_inference_ses",
+      "role": "formal",
+      "role_index": 3,
+      "workload_seconds": 600,
+      "planned_collection_seconds": 660,
+      "state": "planned_not_started"
+    },
+    {
+      "run_id": "bigdata_baleen_train_01",
+      "workload": "bigdata_baleen",
+      "role": "train",
+      "role_index": 1,
+      "workload_seconds": 600,
+      "planned_collection_seconds": 660,
+      "state": "planned_not_started"
+    },
+    {
+      "run_id": "bigdata_baleen_train_02",
+      "workload": "bigdata_baleen",
+      "role": "train",
+      "role_index": 2,
+      "workload_seconds": 600,
+      "planned_collection_seconds": 660,
+      "state": "planned_not_started"
+    },
+    {
+      "run_id": "bigdata_baleen_train_03",
+      "workload": "bigdata_baleen",
+      "role": "train",
+      "role_index": 3,
+      "workload_seconds": 600,
+      "planned_collection_seconds": 660,
+      "state": "planned_not_started"
+    },
+    {
+      "run_id": "bigdata_baleen_validation_01",
+      "workload": "bigdata_baleen",
+      "role": "validation",
+      "role_index": 1,
+      "workload_seconds": 600,
+      "planned_collection_seconds": 660,
+      "state": "planned_not_started"
+    },
+    {
+      "run_id": "bigdata_baleen_formal_01",
+      "workload": "bigdata_baleen",
+      "role": "formal",
+      "role_index": 1,
+      "workload_seconds": 600,
+      "planned_collection_seconds": 660,
+      "state": "planned_not_started"
+    },
+    {
+      "run_id": "bigdata_baleen_formal_02",
+      "workload": "bigdata_baleen",
+      "role": "formal",
+      "role_index": 2,
+      "workload_seconds": 600,
+      "planned_collection_seconds": 660,
+      "state": "planned_not_started"
+    },
+    {
+      "run_id": "bigdata_baleen_formal_03",
+      "workload": "bigdata_baleen",
+      "role": "formal",
+      "role_index": 3,
+      "workload_seconds": 600,
+      "planned_collection_seconds": 660,
+      "state": "planned_not_started"
+    },
+    {
+      "run_id": "graph_zipf_train_01",
+      "workload": "graph_zipf",
+      "role": "train",
+      "role_index": 1,
+      "workload_seconds": 600,
+      "planned_collection_seconds": 660,
+      "state": "planned_not_started"
+    },
+    {
+      "run_id": "graph_zipf_train_02",
+      "workload": "graph_zipf",
+      "role": "train",
+      "role_index": 2,
+      "workload_seconds": 600,
+      "planned_collection_seconds": 660,
+      "state": "planned_not_started"
+    },
+    {
+      "run_id": "graph_zipf_train_03",
+      "workload": "graph_zipf",
+      "role": "train",
+      "role_index": 3,
+      "workload_seconds": 600,
+      "planned_collection_seconds": 660,
+      "state": "planned_not_started"
+    },
+    {
+      "run_id": "graph_zipf_validation_01",
+      "workload": "graph_zipf",
+      "role": "validation",
+      "role_index": 1,
+      "workload_seconds": 600,
+      "planned_collection_seconds": 660,
+      "state": "planned_not_started"
+    },
+    {
+      "run_id": "graph_zipf_formal_01",
+      "workload": "graph_zipf",
+      "role": "formal",
+      "role_index": 1,
+      "workload_seconds": 600,
+      "planned_collection_seconds": 660,
+      "state": "planned_not_started"
+    },
+    {
+      "run_id": "graph_zipf_formal_02",
+      "workload": "graph_zipf",
+      "role": "formal",
+      "role_index": 2,
+      "workload_seconds": 600,
+      "planned_collection_seconds": 660,
+      "state": "planned_not_started"
+    },
+    {
+      "run_id": "graph_zipf_formal_03",
+      "workload": "graph_zipf",
+      "role": "formal",
+      "role_index": 3,
+      "workload_seconds": 600,
+      "planned_collection_seconds": 660,
+      "state": "planned_not_started"
+    },
+    {
+      "run_id": "hpc_wrf_train_01",
+      "workload": "hpc_wrf",
+      "role": "train",
+      "role_index": 1,
+      "workload_seconds": 600,
+      "planned_collection_seconds": 660,
+      "state": "planned_not_started"
+    },
+    {
+      "run_id": "hpc_wrf_train_02",
+      "workload": "hpc_wrf",
+      "role": "train",
+      "role_index": 2,
+      "workload_seconds": 600,
+      "planned_collection_seconds": 660,
+      "state": "planned_not_started"
+    },
+    {
+      "run_id": "hpc_wrf_train_03",
+      "workload": "hpc_wrf",
+      "role": "train",
+      "role_index": 3,
+      "workload_seconds": 600,
+      "planned_collection_seconds": 660,
+      "state": "planned_not_started"
+    },
+    {
+      "run_id": "hpc_wrf_validation_01",
+      "workload": "hpc_wrf",
+      "role": "validation",
+      "role_index": 1,
+      "workload_seconds": 600,
+      "planned_collection_seconds": 660,
+      "state": "planned_not_started"
+    },
+    {
+      "run_id": "hpc_wrf_formal_01",
+      "workload": "hpc_wrf",
+      "role": "formal",
+      "role_index": 1,
+      "workload_seconds": 600,
+      "planned_collection_seconds": 660,
+      "state": "planned_not_started"
+    },
+    {
+      "run_id": "hpc_wrf_formal_02",
+      "workload": "hpc_wrf",
+      "role": "formal",
+      "role_index": 2,
+      "workload_seconds": 600,
+      "planned_collection_seconds": 660,
+      "state": "planned_not_started"
+    },
+    {
+      "run_id": "hpc_wrf_formal_03",
+      "workload": "hpc_wrf",
+      "role": "formal",
+      "role_index": 3,
+      "workload_seconds": 600,
+      "planned_collection_seconds": 660,
+      "state": "planned_not_started"
+    }
+  ],
+  "state": "deferred_not_scheduled",
+  "formal_targets": [
+    {
+      "scope": "host_oss",
+      "entity": "idfs44",
+      "component": "total"
+    },
+    {
+      "scope": "host_oss",
+      "entity": "idfs45",
+      "component": "total"
+    },
+    {
+      "scope": "host_oss",
+      "entity": "idfs46",
+      "component": "total"
+    },
+    {
+      "scope": "host_oss",
+      "entity": "idfs47",
+      "component": "total"
+    },
+    {
+      "scope": "host_oss",
+      "entity": "idfs64",
+      "component": "total"
+    },
+    {
+      "scope": "host_oss",
+      "entity": "idfs65",
+      "component": "total"
+    },
+    {
+      "scope": "host_oss",
+      "entity": "idfs66",
+      "component": "total"
+    },
+    {
+      "scope": "host_oss",
+      "entity": "idfs67",
+      "component": "total"
+    }
+  ]
+}
