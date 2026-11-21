@@ -4,7 +4,15 @@ import json
 import time
 
 
-def fit_sequence(x,y,vx,vy,name,artifact,epochs=100,threads=4):
+def normalized_sequence_output(head, features, mean, std, residual=False):
+    """Optional skip in normalized log-target space; raw feature0 is newest lag."""
+    if residual:
+        import torch
+        return head+(torch.log1p(features[:,0].clamp_min(0))-mean)/std
+    return head
+
+
+def fit_sequence(x,y,vx,vy,name,artifact,epochs=100,threads=4,residual_output=False):
     from .placement import require_training_host
     require_training_host()
     import torch
@@ -30,6 +38,9 @@ def fit_sequence(x,y,vx,vy,name,artifact,epochs=100,threads=4):
                 self.conv1=nn.Conv1d(1,32,3)
                 self.conv2=nn.Conv1d(32,32,3)
             self.head=nn.Linear(32,1)
+            if residual_output:
+                # Zero correction starts exactly at the last available value.
+                nn.init.zeros_(self.head.weight);nn.init.zeros_(self.head.bias)
 
         def normalized(self,features):
             sequence=torch.log1p(features[:,:5].clamp_min(0)).flip(1).unsqueeze(-1)
@@ -40,7 +51,7 @@ def fit_sequence(x,y,vx,vy,name,artifact,epochs=100,threads=4):
                 z=F.relu(self.conv1(F.pad(z,(2,0))))
                 z=F.relu(self.conv2(F.pad(z,(2,0))))
                 encoded=z[:,:,-1]
-            return self.head(encoded).reshape(-1)
+            return normalized_sequence_output(self.head(encoded).reshape(-1),features,mean,std,residual_output)
 
         def forward(self,features):
             return torch.expm1((self.normalized(features)*std+mean).clamp(max=60)).clamp_min(0)
@@ -74,4 +85,6 @@ def fit_sequence(x,y,vx,vy,name,artifact,epochs=100,threads=4):
     if parity>1e-5:raise RuntimeError("GPU to CPU inference parity failed")
     return cpu_prediction,{"torch":torch.__version__,"cuda_build":torch.version.cuda,"device":"single_visible_gpu",
                        "gpu_cpu_max_relative_error":parity,"gpu_cpu_parity_passed":True,
-                       "epochs_completed":len(history),"history":history,"target_log_mean":mean,"target_log_std":std}
+                       "epochs_completed":len(history),"history":history,"target_log_mean":mean,"target_log_std":std,
+                       "output_structure":"history_log_residual_v1" if residual_output else "absolute_log_v1",
+                       "head_initialization":"zero_correction" if residual_output else "torch_default"}
