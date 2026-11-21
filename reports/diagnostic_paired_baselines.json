@@ -26,8 +26,9 @@
   "independent_validation": false,
   "environment": "Windows-10-10.0.26200-SP0",
   "python": "3.10.6",
-  "source_commit": "1a112eeb922a10690d0c38425398c6c0f113d7d2",
-  "candidate_code_state": "uncommitted candidate; hashes below",
+  "base_source_commit": "1a112eeb922a10690d0c38425398c6c0f113d7d2",
+  "candidate_commit": "56e2be0b0635182d824c381d754213ff0b7c2e79",
+  "candidate_code_dirty": false,
   "archive_sha256": "0e36d0a5a54e5a74f86a4327688ed09ad62c38bea48317a9da68672ac810ebd6",
   "manifest_sha256": "4951b72711a72bd7cf66ecea9b9f700cea702345d2def0fa68475fc23e859d5d",
   "source_windows_sha256": "7306d7ca4b96ab190ba596cc25eb2e703ecab292f39f1725501bc9927fa208c0",
@@ -189,6 +190,7 @@
     }
   },
   "code_sha256": {
-    "idfs_forecast_lab/idfs_lab/target_baselines.py": "fda7826c43fd55a790194d4a2f5c0de68cb5450493d8ed9103b41c64ee775e75"
+    "idfs_forecast_lab/idfs_lab/target_baselines.py": "fda7826c43fd55a790194d4a2f5c0de68cb5450493d8ed9103b41c64ee775e75",
+    "scripts/replay_diagnostic_baselines.py": "c436949ea31e2f63d147746e3fdb4a31bba712489794a9f32c73305b751bbe0b"
   }
 }
