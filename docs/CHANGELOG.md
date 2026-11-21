@@ -1,5 +1,11 @@
 # 协作更新记录
 
+## 2026-11-22｜研发端B｜复核A的GRU pilot结果
+
+- Issue6已由A完成，两个a03任务；B校验结果ZIP及权重，复算125秒预测指标与manifest一致，模型来源21a0bae且code_dirty=false。
+- 节点/集群MAE改善但未达标；发现输出近常数，集群单个12 IOPS窗口贡献83.96%APE。完整分析和复现脚本见DIAGNOSTIC_PILOT_REVIEW.md。
+- 78项工程检查通过、0失败/跳过；本次仅JSON复算，无本机拟合；下一候选隔离检验输入训练尺度归一化，暂不扩展七节点或搜索校准参数。
+
 ## 2026-11-22｜研发端B｜可执行诊断序列请求v1
 
 - model/diagnostic-splits整合已合入main的PR4，保留双方CHANGELOG。显式诊断加载器不改源role/run_id；新6维序列schema支持节点与直接集群总量。

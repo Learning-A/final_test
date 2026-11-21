@@ -1,0 +1,252 @@
+{
+  "archive_sha256": "b459e2c1ce363f68713a6d76cdf47f0b58db4ccb644128f0990d1f7e335c9b44",
+  "role": "diagnostic",
+  "fault_affected": true,
+  "independent_validation": false,
+  "formal_acceptance": false,
+  "fitting_performed": false,
+  "targets": {
+    "idfs44": {
+      "metrics": {
+        "n": 125,
+        "zero_actual": 1,
+        "mae_iops": 85.98118615722656,
+        "wape_percent": 30.50016536027391,
+        "mape_percent": 36.65357377253879,
+        "accuracy_percent": 63.34642622746121
+      },
+      "weight_sha256": "6fd17b858f5b06b279bf6dba4cb817117ae943de1a743b9bb48da1863d1e0f95",
+      "candidate_commit": "21a0bae2120a4393b074c064e5cab3bddb1427a0",
+      "code_dirty": false,
+      "training_examples": 271,
+      "validation_examples": 125,
+      "training_log_mean": 5.354533672332764,
+      "training_log_std": 1.0213887691497803,
+      "epochs": 15,
+      "best_validation_epoch": 3,
+      "first_epoch": {
+        "epoch": 1,
+        "train_loss": 0.3360742087238829,
+        "validation_loss": 0.16174054145812988
+      },
+      "last_epoch": {
+        "epoch": 15,
+        "train_loss": 0.30436116775903316,
+        "validation_loss": 0.13931827247142792
+      },
+      "actual_range": [
+        0,
+        1149
+      ],
+      "prediction_range": [
+        246.97799682617188,
+        260.4597473144531
+      ],
+      "top_five_ape_share": 0.34299853981476713,
+      "last_available_metrics": {
+        "n": 125,
+        "zero_actual": 1,
+        "mae_iops": 106.504,
+        "wape_percent": 37.78023724388444,
+        "mape_percent": 47.877497304772774,
+        "accuracy_percent": 52.122502695227226
+      },
+      "mean_five_metrics": {
+        "n": 125,
+        "zero_actual": 1,
+        "mae_iops": 109.87999999999998,
+        "wape_percent": 38.97780804812985,
+        "mape_percent": 48.410875079629456,
+        "accuracy_percent": 51.589124920370544
+      },
+      "bands": [
+        {
+          "band": "zero",
+          "metrics": {
+            "n": 1,
+            "zero_actual": 1,
+            "mae_iops": 257.006591796875,
+            "wape_percent": null,
+            "mape_percent": null,
+            "accuracy_percent": null
+          },
+          "ape_share": 0.0,
+          "mean_residual": 257.006591796875
+        },
+        {
+          "band": "(0,10]",
+          "metrics": {
+            "n": 0,
+            "zero_actual": 0,
+            "mae_iops": null,
+            "wape_percent": null,
+            "mape_percent": null,
+            "accuracy_percent": null
+          },
+          "ape_share": 0.0,
+          "mean_residual": null
+        },
+        {
+          "band": "(10,100]",
+          "metrics": {
+            "n": 4,
+            "zero_actual": 0,
+            "mae_iops": 188.52521514892578,
+            "wape_percent": 287.82475595255846,
+            "mape_percent": 352.9032527543234,
+            "accuracy_percent": -252.90325275432338
+          },
+          "ape_share": 0.3105829725075741,
+          "mean_residual": 188.52521514892578
+        },
+        {
+          "band": "(100,1000]",
+          "metrics": {
+            "n": 118,
+            "zero_actual": 0,
+            "mae_iops": 67.6042805041297,
+            "wape_percent": 24.395428438799097,
+            "mape_percent": 25.24443767651772,
+            "accuracy_percent": 74.75556232348228
+          },
+          "ape_share": 0.6554049211335613,
+          "mean_residual": -20.952503139689817
+        },
+        {
+          "band": ">1000",
+          "metrics": {
+            "n": 2,
+            "zero_actual": 0,
+            "mae_iops": 879.6178588867188,
+            "wape_percent": 77.29506668600341,
+            "mape_percent": 77.29324547421284,
+            "accuracy_percent": 22.70675452578716
+          },
+          "ape_share": 0.03401210635886456,
+          "mean_residual": -879.6178588867188
+        }
+      ]
+    },
+    "cluster": {
+      "metrics": {
+        "n": 125,
+        "zero_actual": 0,
+        "mae_iops": 706.87062890625,
+        "wape_percent": 25.053896253854468,
+        "mape_percent": 211.58192479276846,
+        "accuracy_percent": -111.58192479276846
+      },
+      "weight_sha256": "1b41b32e3fa89213997f6990e51173e091de1e4ed52b69c8037be1c17e3a5c0d",
+      "candidate_commit": "21a0bae2120a4393b074c064e5cab3bddb1427a0",
+      "code_dirty": false,
+      "training_examples": 271,
+      "validation_examples": 125,
+      "training_log_mean": 7.670088768005371,
+      "training_log_std": 0.9297100305557251,
+      "epochs": 19,
+      "best_validation_epoch": 7,
+      "first_epoch": {
+        "epoch": 1,
+        "train_loss": 0.3312920742424212,
+        "validation_loss": 0.1606815606355667
+      },
+      "last_epoch": {
+        "epoch": 19,
+        "train_loss": 0.2735887832417259,
+        "validation_loss": 0.11677849292755127
+      },
+      "actual_range": [
+        12,
+        3571
+      ],
+      "prediction_range": [
+        2620.8037109375,
+        2676.783203125
+      ],
+      "top_five_ape_share": 0.8832943181778508,
+      "last_available_metrics": {
+        "n": 125,
+        "zero_actual": 0,
+        "mae_iops": 842.808,
+        "wape_percent": 29.871978450414687,
+        "mape_percent": 274.6798773727907,
+        "accuracy_percent": -174.6798773727907
+      },
+      "mean_five_metrics": {
+        "n": 125,
+        "zero_actual": 0,
+        "mae_iops": 754.9535999999997,
+        "wape_percent": 26.758120082228672,
+        "mape_percent": 264.31209678103966,
+        "accuracy_percent": -164.31209678103966
+      },
+      "bands": [
+        {
+          "band": "zero",
+          "metrics": {
+            "n": 0,
+            "zero_actual": 0,
+            "mae_iops": null,
+            "wape_percent": null,
+            "mape_percent": null,
+            "accuracy_percent": null
+          },
+          "ape_share": 0.0,
+          "mean_residual": null
+        },
+        {
+          "band": "(0,10]",
+          "metrics": {
+            "n": 0,
+            "zero_actual": 0,
+            "mae_iops": null,
+            "wape_percent": null,
+            "mape_percent": null,
+            "accuracy_percent": null
+          },
+          "ape_share": 0.0,
+          "mean_residual": null
+        },
+        {
+          "band": "(10,100]",
+          "metrics": {
+            "n": 1,
+            "zero_actual": 0,
+            "mae_iops": 2664.5546875,
+            "wape_percent": 22204.622395833332,
+            "mape_percent": 22204.622395833336,
+            "accuracy_percent": -22104.622395833336
+          },
+          "ape_share": 0.839565947519625,
+          "mean_residual": 2664.5546875
+        },
+        {
+          "band": "(100,1000]",
+          "metrics": {
+            "n": 3,
+            "zero_actual": 0,
+            "mae_iops": 1964.867919921875,
+            "wape_percent": 285.0388665263842,
+            "mape_percent": 340.5016364155612,
+            "accuracy_percent": -240.50163641556122
+          },
+          "ape_share": 0.03862352269447157,
+          "mean_residual": 1964.867919921875
+        },
+        {
+          "band": ">1000",
+          "metrics": {
+            "n": 121,
+            "zero_actual": 0,
+            "mae_iops": 659.5014063307076,
+            "wape_percent": 22.761211701825648,
+            "mape_percent": 26.62490325633087,
+            "accuracy_percent": 73.37509674366913
+          },
+          "ape_share": 0.12181052978590336,
+          "mean_residual": -227.67881787512914
+        }
+      ]
+    }
+  }
+}
