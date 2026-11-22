@@ -1,0 +1,102 @@
+{
+  "ai_training_ses": {
+    "same_15s_eligible_timeline_reasons": {
+      "purged_or_outside": 93,
+      "accepted_train": 269,
+      "incomplete_target": 7,
+      "incomplete_required_history": 67,
+      "accepted_development": 163
+    },
+    "5s_history_coverage_same_timeline": {
+      "accepted_train": 310,
+      "accepted_development": 163
+    },
+    "incomplete_node_labels_600s": {
+      "idfs45": 2,
+      "idfs46": 2,
+      "idfs47": 2,
+      "idfs66": 1
+    }
+  },
+  "ai_inference_ses": {
+    "same_15s_eligible_timeline_reasons": {
+      "purged_or_outside": 93,
+      "accepted_train": 241,
+      "incomplete_target": 9,
+      "incomplete_required_history": 109,
+      "accepted_development": 147
+    },
+    "5s_history_coverage_same_timeline": {
+      "accepted_train": 301,
+      "accepted_development": 157
+    },
+    "incomplete_node_labels_600s": {
+      "idfs44": 4,
+      "idfs64": 1,
+      "idfs65": 3,
+      "idfs67": 1
+    }
+  },
+  "bigdata_baleen": {
+    "same_15s_eligible_timeline_reasons": {
+      "purged_or_outside": 93,
+      "accepted_train": 279,
+      "incomplete_target": 7,
+      "incomplete_required_history": 93,
+      "accepted_development": 127
+    },
+    "5s_history_coverage_same_timeline": {
+      "accepted_train": 319,
+      "accepted_development": 145
+    },
+    "incomplete_node_labels_600s": {
+      "idfs44": 1,
+      "idfs46": 1,
+      "idfs47": 4,
+      "idfs67": 1
+    }
+  },
+  "graph_zipf": {
+    "same_15s_eligible_timeline_reasons": {
+      "purged_or_outside": 93,
+      "incomplete_required_history": 132,
+      "accepted_train": 234,
+      "incomplete_target": 11,
+      "accepted_development": 129
+    },
+    "5s_history_coverage_same_timeline": {
+      "accepted_train": 303,
+      "accepted_development": 146
+    },
+    "incomplete_node_labels_600s": {
+      "idfs44": 1,
+      "idfs46": 2,
+      "idfs47": 3,
+      "idfs64": 1,
+      "idfs65": 1,
+      "idfs66": 1,
+      "idfs67": 4
+    }
+  },
+  "hpc_wrf": {
+    "same_15s_eligible_timeline_reasons": {
+      "purged_or_outside": 93,
+      "incomplete_required_history": 170,
+      "incomplete_target": 13,
+      "accepted_train": 192,
+      "accepted_development": 131
+    },
+    "5s_history_coverage_same_timeline": {
+      "accepted_train": 281,
+      "accepted_development": 151
+    },
+    "incomplete_node_labels_600s": {
+      "idfs44": 4,
+      "idfs46": 2,
+      "idfs47": 4,
+      "idfs64": 1,
+      "idfs65": 2,
+      "idfs67": 1
+    }
+  }
+}
