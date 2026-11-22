@@ -1,0 +1,47 @@
+{
+  "ai_training_ses": {
+    "low_decile_n": 16,
+    "low_decile_ape_share_percent": 41.45150802631857,
+    "min_cluster_iops": 196,
+    "jump_n": 31,
+    "jump_mape": 106.96389452426243,
+    "other_n": 132,
+    "other_mape": 29.212675593736883
+  },
+  "ai_inference_ses": {
+    "low_decile_n": 15,
+    "low_decile_ape_share_percent": 90.632512074157,
+    "min_cluster_iops": 12,
+    "jump_n": 65,
+    "jump_mape": 723.9452868489925,
+    "other_n": 92,
+    "other_mape": 29.83987690016655
+  },
+  "bigdata_baleen": {
+    "low_decile_n": 14,
+    "low_decile_ape_share_percent": 61.96119656103895,
+    "min_cluster_iops": 179,
+    "jump_n": 33,
+    "jump_mape": 123.40997360701276,
+    "other_n": 112,
+    "other_mape": 20.370125131814156
+  },
+  "graph_zipf": {
+    "low_decile_n": 14,
+    "low_decile_ape_share_percent": 70.57575260902925,
+    "min_cluster_iops": 789,
+    "jump_n": 34,
+    "jump_mape": 125.16179564060428,
+    "other_n": 112,
+    "other_mape": 12.732945320446216
+  },
+  "hpc_wrf": {
+    "low_decile_n": 15,
+    "low_decile_ape_share_percent": 37.30287022549377,
+    "min_cluster_iops": 116,
+    "jump_n": 28,
+    "jump_mape": 99.81462803983925,
+    "other_n": 123,
+    "other_mape": 27.211530139979946
+  }
+}
