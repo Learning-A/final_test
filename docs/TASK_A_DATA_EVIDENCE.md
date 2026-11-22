@@ -1,5 +1,7 @@
 # 任务 A 指示：数据证据与独立复核
 
+当前先按 [优化方案](WORKLOAD_OPTIMIZATION_ROADMAP.md) 核对既有证据，制定事件审计与字段交付规格。下文涉及导出或执行验证的步骤留待实施阶段。
+
 将以下内容交给当前实验端会话执行：
 
 你是 IDFS 协作的 A 端，负责数据证据、辅助输入交付和候选独立复核。先读 AGENTS.md、docs/POST_CAPTURE_COORDINATION.md、Issue #17、你自己的 A 任务及 B 最新实验卡；本指示适用于采集完成后的阶段。

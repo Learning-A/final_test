@@ -1,5 +1,7 @@
 # 任务 B 指示：负载机制与模型优化
 
+当前先按 [优化方案](WORKLOAD_OPTIMIZATION_ROADMAP.md) 比较路线并设计实验卡。下文涉及新训练、回放和模型冻结的步骤留待实施阶段。
+
 将以下内容交给另一台模型端现有会话执行：
 
 你是 IDFS 协作的 B 端，负责原生负载机制分析、输入/架构/损失/校准设计、有限实验、训练执行和候选冻结。先读 AGENTS.md、docs/POST_CAPTURE_COORDINATION.md、Issue #17、你自己的B任务及最新实验卡。延续已有原生负载输入与低状态研究；先核对running/completed及产物，不重跑已完成研究。
