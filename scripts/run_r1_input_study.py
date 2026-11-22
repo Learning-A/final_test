@@ -35,7 +35,8 @@ def require(ok, message):
 
 
 def group_metrics(predicted, actual):
-    out = metrics(zip(predicted, actual))
+    # Normalize NumPy scalars before aggregating booleans and writing JSON.
+    out = metrics((float(p),float(y)) for p,y in zip(predicted, actual))
     bands = {}
     for name, lo, hi in (('positive_le_10',0,10),('positive_10_to_100',10,100),
                          ('positive_100_to_1000',100,1000),('above_1000',1000,float('inf'))):
@@ -49,6 +50,7 @@ def main():
     p = argparse.ArgumentParser(description=__doc__)
     for name in ('train','original-index','core-index','archive','reference-archive','baseline','output'):
         p.add_argument('--'+name, required=True)
+    p.add_argument('--recovery-index')
     a = p.parse_args()
     job = require_training_host()
     dest = Path(a.output).resolve()
@@ -78,6 +80,12 @@ def main():
         file = baseline / ('base144_'+h+'.pkl')
         require(sha(file) == old_report['models']['base144_'+h]['sha256'], 'frozen model differs')
         models.append(pickle.loads(file.read_bytes()))
+    recovery=None
+    if a.recovery_index:
+        require(sha(a.recovery_index)==os.environ['E2E_RECOVERY_INDEX_SHA'],'recovery index differs')
+        recovery=json.loads(Path(a.recovery_index).read_text())
+        require(recovery['source_job']=='b19_r1_inputs_20261123_a01' and
+                set(recovery['models'])=={'margin50_'+h for h in HOSTS},'exact primary recovery required')
     dest.mkdir()
     report = dict(experiment_id='b19-r1-causal-inputs-offline-v1',state='running',
                   code_commit=os.environ['E2E_CODE_SHA'],source_role='train',
@@ -86,9 +94,10 @@ def main():
                   clock_uncertainty_ns=None,online_time_eligibility=False,formal_acceptance=False,
                   seed=2026,threads=4,workers=0,sklearn=sklearn.__version__,
                   numpy=np.__version__,python=sys.version.split()[0],loss='raw squared error',
-                  calibration='none',budget_seconds=1800,
+                  calibration='none',budget_seconds=int(os.environ.get('IDFS_REMAINING_BUDGET_SECONDS','1800')),
                   data_hashes={k:sha(getattr(a,k)) for k in ('train','original_index','core_index','archive','reference_archive')},
                   baseline_report_sha256=BASELINE_SHA,baseline_sample_ids_sha256=PINS['sample_ids'],
+                  recovered_primary=recovery,
                   margins={},models={},limitations=[
                       'Source-clock margins are hypothetical sensitivity budgets, not measured clock/arrival bounds.',
                       'No model-service arrival proof, live 30ms publication or formal acceptance.',
@@ -151,9 +160,19 @@ def main():
             require(relative<=1e-10, 'F0 frozen prediction mismatch')
             arm_predictions['F0'].append(pred)
             x=np.asarray([vector(r,ti,'F0_F1') for r in fit]);vx=np.asarray([vector(r,ti,'F0_F1') for r in dev])
-            model=ExtraTreesRegressor(n_estimators=64,max_depth=8,min_samples_leaf=3,random_state=2026,n_jobs=4)
-            t=time.monotonic();model.fit(x,ys[:,ti]);wall=time.monotonic()-t;model.n_jobs=1
-            file=dest/('margin%d_%s.pkl'%(margin,h));file.write_bytes(pickle.dumps(model,protocol=4))
+            recovered=bool(recovery and margin==50)
+            file=dest/('margin%d_%s.pkl'%(margin,h))
+            if recovered:
+                meta=recovery['models']['margin50_'+h];old=Path(meta['path'])
+                require(sha(old)==meta['sha256'],'recovered model hash differs')
+                model=pickle.loads(old.read_bytes())
+                require((model.n_estimators,model.max_depth,model.min_samples_leaf,model.random_state,model.n_features_in_)==
+                        (64,8,3,2026,x.shape[1]),'recovered model specification differs')
+                file.write_bytes(old.read_bytes());wall=meta['original_fit_seconds']
+            else:
+                model=ExtraTreesRegressor(n_estimators=64,max_depth=8,min_samples_leaf=3,random_state=2026,n_jobs=4)
+                t=time.monotonic();model.fit(x,ys[:,ti]);wall=time.monotonic()-t;model.n_jobs=1
+                file.write_bytes(pickle.dumps(model,protocol=4))
             loaded=pickle.loads(file.read_bytes());raw=model.predict(vx);pred=loaded.predict(vx)
             parity=float(np.max(np.abs(raw-pred)/np.maximum(1,np.abs(raw))))
             require(parity<=1e-10,'CPU serialization mismatch')
@@ -163,6 +182,7 @@ def main():
                 t=time.perf_counter_ns();loaded.predict(vx[k:k+1]);lat.append((time.perf_counter_ns()-t)/1e6)
             report['models']['margin%d_%s'%(margin,h)]=dict(sha256=sha(file),feature_count=x.shape[1],
                 fit_seconds=wall,train_mse=float(np.mean((model.predict(x)-ys[:,ti])**2)),
+                recovered_without_refit=recovered,
                 cpu_serialization_relative_error=parity,frozen_F0_prediction_relative_error=relative,
                 predict_only_ms_p50=float(np.percentile(lat,50)),predict_only_ms_p95=float(np.percentile(lat,95)))
             timings.append(lat)
@@ -205,7 +225,9 @@ def main():
     with gzip.open(pred_path,'wt',encoding='utf-8') as f:
         for row in all_logs:f.write(json.dumps(row)+'\n')
     report.update(state='completed',wall_seconds=time.monotonic()-start_wall,predictions_sha256=sha(pred_path),
-                  primary_passes_screen=report['margins']['50']['passes_prespecified_screen'],new_model_count=27)
+                  primary_passes_screen=report['margins']['50']['passes_prespecified_screen'],
+                  new_model_count=18 if recovery else 27,recovered_model_count=9 if recovery else 0,
+                  total_distinct_models_for_card=27)
     (dest/'report.json').write_text(json.dumps(report,indent=2)+'\n')
     print('COMPLETED',flush=True)
 

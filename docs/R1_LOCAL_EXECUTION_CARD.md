@@ -48,3 +48,21 @@ worst node-group MAPE ratio <=1.05, every workload node macro MAE ratio <=1.05.
 Failure is recorded without changing losses/capacity/thresholds to rescue the
 card. Passing this research screen would still not establish formal accuracy.
 A independently recomputes delivered frozen predictions before adoption.
+
+## Report-write recovery (same experiment, no repeated fits)
+
+The first worker completed all nine 50ms fits, then failed at JSON report writing
+because a NumPy scalar entered a reduction. Its failed record, logs and nine
+weights stay intact. Elapsed supervised time was 81.748 seconds; charge 82 seconds
+against the original total budget. Continuation job `b19_r1_inputs_20261123_a02`
+gets at most **1718 seconds**, so the combined worker budget cannot exceed 1800.
+This is a partial-result recovery, not an automatic rerun of completed training.
+
+Fix only conversion to native scalar types. Pin the nine existing primary weights
+and their original fit times, validate model specification and reuse their bytes
+without fitting. Reconstruct primary predictions from these weights; fit only
+the remaining eighteen 100/200ms models. Do not change margins, sample keys,
+model/loss, selection rules or source-clock qualification. Register the repair
+commit and recovery-index SHA before launch. A new real-NumPy persistence test
+must pass. A second fault stops the card with partial evidence rather than
+another automatic continuation.
