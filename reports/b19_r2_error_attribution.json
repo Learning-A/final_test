@@ -1,0 +1,314 @@
+{
+  "worker_sha": "77fd0da98011306d65187e445c5fdbb66973d9d5",
+  "frozen_report_sha256": "ab2cf84157b0aef5826647ab727a69aee1d06aebf88d992c91d62b7b505b9f26",
+  "metric": "Per-node APE in percent divided by positive-value count within the node and workload group, then divided by 40.",
+  "samples": 2661,
+  "groups": 40,
+  "diagnostic_scope": "retrospective existing train03; original scoring and selection unchanged",
+  "arms": {
+    "L0": {
+      "bands": {
+        "zero": {
+          "count": 62,
+          "macro_mape_contribution_pp": 0.0,
+          "absolute_error_sum": 24911.11627960205,
+          "signed_residual_sum": 24911.11627960205,
+          "mae_iops": 401.7921980580976,
+          "mean_signed_residual_iops": 401.7921980580976
+        },
+        "positive_le_10": {
+          "count": 105,
+          "macro_mape_contribution_pp": 68.25784016172001,
+          "absolute_error_sum": 46379.97961425781,
+          "signed_residual_sum": 46379.97961425781,
+          "mae_iops": 441.7140915643601,
+          "mean_signed_residual_iops": 441.7140915643601
+        },
+        "positive_10_to_100": {
+          "count": 1394,
+          "macro_mape_contribution_pp": 21.602626047458866,
+          "absolute_error_sum": 203756.83013916016,
+          "signed_residual_sum": 203745.0073852539,
+          "mae_iops": 146.16702305535162,
+          "mean_signed_residual_iops": 146.15854188325244
+        },
+        "positive_100_to_1000": {
+          "count": 17507,
+          "macro_mape_contribution_pp": 20.824255642830842,
+          "absolute_error_sum": 1436299.252128601,
+          "signed_residual_sum": 402186.25482940674,
+          "mae_iops": 82.04142640821392,
+          "mean_signed_residual_iops": 22.97288255151692
+        },
+        "above_1000": {
+          "count": 2220,
+          "macro_mape_contribution_pp": 1.6316160474719892,
+          "absolute_error_sum": 498610.00662231445,
+          "signed_residual_sum": -334737.6533508301,
+          "mae_iops": 224.59910208212364,
+          "mean_signed_residual_iops": -150.78272673460813
+        }
+      },
+      "top_six_seconds": [
+        {
+          "dataset_id": "dev_20261122_ai_inference_ses_train_03_a01",
+          "window_start_ns": 1795341311000000000,
+          "macro_mape_contribution_pp": 11.069105347964307
+        },
+        {
+          "dataset_id": "dev_20261122_graph_zipf_train_03_a01",
+          "window_start_ns": 1795343199000000000,
+          "macro_mape_contribution_pp": 8.100198131480056
+        },
+        {
+          "dataset_id": "dev_20261122_ai_inference_ses_train_03_a01",
+          "window_start_ns": 1795341186000000000,
+          "macro_mape_contribution_pp": 8.064053534341383
+        },
+        {
+          "dataset_id": "dev_20261122_ai_inference_ses_train_03_a01",
+          "window_start_ns": 1795341464000000000,
+          "macro_mape_contribution_pp": 7.353881787120533
+        },
+        {
+          "dataset_id": "dev_20261122_graph_zipf_train_03_a01",
+          "window_start_ns": 1795343113000000000,
+          "macro_mape_contribution_pp": 7.017018610410527
+        },
+        {
+          "dataset_id": "dev_20261122_ai_inference_ses_train_03_a01",
+          "window_start_ns": 1795341490000000000,
+          "macro_mape_contribution_pp": 3.9272460988170534
+        }
+      ]
+    },
+    "L1": {
+      "bands": {
+        "zero": {
+          "count": 62,
+          "macro_mape_contribution_pp": 0.0,
+          "absolute_error_sum": 22976.197074890137,
+          "signed_residual_sum": 22976.197074890137,
+          "mae_iops": 370.5838237885506,
+          "mean_signed_residual_iops": 370.5838237885506
+        },
+        "positive_le_10": {
+          "count": 105,
+          "macro_mape_contribution_pp": 59.64650281248915,
+          "absolute_error_sum": 41507.77169418335,
+          "signed_residual_sum": 41507.77169418335,
+          "mae_iops": 395.31211137317473,
+          "mean_signed_residual_iops": 395.31211137317473
+        },
+        "positive_10_to_100": {
+          "count": 1394,
+          "macro_mape_contribution_pp": 18.384718652706447,
+          "absolute_error_sum": 169575.97134780884,
+          "signed_residual_sum": 168028.8245048523,
+          "mae_iops": 121.64703826959027,
+          "mean_signed_residual_iops": 120.53717683274914
+        },
+        "positive_100_to_1000": {
+          "count": 17507,
+          "macro_mape_contribution_pp": 21.912495816889788,
+          "absolute_error_sum": 1617189.6071166992,
+          "signed_residual_sum": -146770.79452514648,
+          "mae_iops": 92.37388513832748,
+          "mean_signed_residual_iops": -8.383549124644228
+        },
+        "above_1000": {
+          "count": 2220,
+          "macro_mape_contribution_pp": 1.7941740662186165,
+          "absolute_error_sum": 531963.2855682373,
+          "signed_residual_sum": -346061.2415008545,
+          "mae_iops": 239.6231016073141,
+          "mean_signed_residual_iops": -155.88344211750203
+        }
+      },
+      "top_six_seconds": [
+        {
+          "dataset_id": "dev_20261122_ai_inference_ses_train_03_a01",
+          "window_start_ns": 1795341311000000000,
+          "macro_mape_contribution_pp": 9.99192990321183
+        },
+        {
+          "dataset_id": "dev_20261122_ai_inference_ses_train_03_a01",
+          "window_start_ns": 1795341186000000000,
+          "macro_mape_contribution_pp": 7.891309121203196
+        },
+        {
+          "dataset_id": "dev_20261122_graph_zipf_train_03_a01",
+          "window_start_ns": 1795343113000000000,
+          "macro_mape_contribution_pp": 6.76000497847342
+        },
+        {
+          "dataset_id": "dev_20261122_graph_zipf_train_03_a01",
+          "window_start_ns": 1795343199000000000,
+          "macro_mape_contribution_pp": 6.238833660528761
+        },
+        {
+          "dataset_id": "dev_20261122_ai_inference_ses_train_03_a01",
+          "window_start_ns": 1795341464000000000,
+          "macro_mape_contribution_pp": 5.635754935702197
+        },
+        {
+          "dataset_id": "dev_20261122_graph_zipf_train_03_a01",
+          "window_start_ns": 1795343004000000000,
+          "macro_mape_contribution_pp": 3.393495152978336
+        }
+      ]
+    },
+    "L2": {
+      "bands": {
+        "zero": {
+          "count": 62,
+          "macro_mape_contribution_pp": 0.0,
+          "absolute_error_sum": 25291.439193725586,
+          "signed_residual_sum": 25291.439193725586,
+          "mae_iops": 407.9264386084772,
+          "mean_signed_residual_iops": 407.9264386084772
+        },
+        "positive_le_10": {
+          "count": 105,
+          "macro_mape_contribution_pp": 64.95857832793756,
+          "absolute_error_sum": 44565.49150848389,
+          "signed_residual_sum": 44565.49150848389,
+          "mae_iops": 424.4332524617513,
+          "mean_signed_residual_iops": 424.4332524617513
+        },
+        "positive_10_to_100": {
+          "count": 1394,
+          "macro_mape_contribution_pp": 20.367599336709663,
+          "absolute_error_sum": 188874.6996536255,
+          "signed_residual_sum": 188497.70290374756,
+          "mae_iops": 135.49117622211298,
+          "mean_signed_residual_iops": 135.22073379034975
+        },
+        "positive_100_to_1000": {
+          "count": 17507,
+          "macro_mape_contribution_pp": 20.965291456188496,
+          "absolute_error_sum": 1468449.868156433,
+          "signed_residual_sum": 396205.5928115845,
+          "mae_iops": 83.87786988955465,
+          "mean_signed_residual_iops": 22.631267082400438
+        },
+        "above_1000": {
+          "count": 2220,
+          "macro_mape_contribution_pp": 1.459311268365917,
+          "absolute_error_sum": 450987.4125213623,
+          "signed_residual_sum": -229044.39604187012,
+          "mae_iops": 203.14748311773076,
+          "mean_signed_residual_iops": -103.17315137021177
+        }
+      },
+      "top_six_seconds": [
+        {
+          "dataset_id": "dev_20261122_ai_inference_ses_train_03_a01",
+          "window_start_ns": 1795341311000000000,
+          "macro_mape_contribution_pp": 10.35014114943411
+        },
+        {
+          "dataset_id": "dev_20261122_ai_inference_ses_train_03_a01",
+          "window_start_ns": 1795341186000000000,
+          "macro_mape_contribution_pp": 8.349499626297073
+        },
+        {
+          "dataset_id": "dev_20261122_graph_zipf_train_03_a01",
+          "window_start_ns": 1795343113000000000,
+          "macro_mape_contribution_pp": 7.3903491370363925
+        },
+        {
+          "dataset_id": "dev_20261122_ai_inference_ses_train_03_a01",
+          "window_start_ns": 1795341464000000000,
+          "macro_mape_contribution_pp": 6.546060049555637
+        },
+        {
+          "dataset_id": "dev_20261122_graph_zipf_train_03_a01",
+          "window_start_ns": 1795343199000000000,
+          "macro_mape_contribution_pp": 5.729741510719127
+        },
+        {
+          "dataset_id": "dev_20261122_graph_zipf_train_03_a01",
+          "window_start_ns": 1795343004000000000,
+          "macro_mape_contribution_pp": 3.377049530253691
+        }
+      ]
+    },
+    "L3": {
+      "bands": {
+        "zero": {
+          "count": 62,
+          "macro_mape_contribution_pp": 0.0,
+          "absolute_error_sum": 21112.69319152832,
+          "signed_residual_sum": 21112.69319152832,
+          "mae_iops": 340.52730954077936,
+          "mean_signed_residual_iops": 340.52730954077936
+        },
+        "positive_le_10": {
+          "count": 105,
+          "macro_mape_contribution_pp": 52.100010712936154,
+          "absolute_error_sum": 35930.89246368408,
+          "signed_residual_sum": 35930.89246368408,
+          "mae_iops": 342.1989758446103,
+          "mean_signed_residual_iops": 342.1989758446103
+        },
+        "positive_10_to_100": {
+          "count": 1394,
+          "macro_mape_contribution_pp": 17.07368522755529,
+          "absolute_error_sum": 156534.9582748413,
+          "signed_residual_sum": 156057.53145599365,
+          "mae_iops": 112.29193563474986,
+          "mean_signed_residual_iops": 111.9494486771834
+        },
+        "positive_100_to_1000": {
+          "count": 17507,
+          "macro_mape_contribution_pp": 22.782801526109605,
+          "absolute_error_sum": 1845431.7670211792,
+          "signed_residual_sum": -643490.5832443237,
+          "mae_iops": 105.41107939802247,
+          "mean_signed_residual_iops": -36.75618799590585
+        },
+        "above_1000": {
+          "count": 2220,
+          "macro_mape_contribution_pp": 2.0551073619117295,
+          "absolute_error_sum": 622187.6481170654,
+          "signed_residual_sum": -474478.48222351074,
+          "mae_iops": 280.2647063590385,
+          "mean_signed_residual_iops": -213.72904604662645
+        }
+      },
+      "top_six_seconds": [
+        {
+          "dataset_id": "dev_20261122_ai_inference_ses_train_03_a01",
+          "window_start_ns": 1795341311000000000,
+          "macro_mape_contribution_pp": 9.062953301555872
+        },
+        {
+          "dataset_id": "dev_20261122_graph_zipf_train_03_a01",
+          "window_start_ns": 1795343113000000000,
+          "macro_mape_contribution_pp": 6.438308389430148
+        },
+        {
+          "dataset_id": "dev_20261122_ai_inference_ses_train_03_a01",
+          "window_start_ns": 1795341186000000000,
+          "macro_mape_contribution_pp": 6.392134153900651
+        },
+        {
+          "dataset_id": "dev_20261122_graph_zipf_train_03_a01",
+          "window_start_ns": 1795343199000000000,
+          "macro_mape_contribution_pp": 3.712747903148616
+        },
+        {
+          "dataset_id": "dev_20261122_ai_inference_ses_train_03_a01",
+          "window_start_ns": 1795341464000000000,
+          "macro_mape_contribution_pp": 3.673105640864678
+        },
+        {
+          "dataset_id": "dev_20261122_graph_zipf_train_03_a01",
+          "window_start_ns": 1795343004000000000,
+          "macro_mape_contribution_pp": 3.079155964009902
+        }
+      ]
+    }
+  }
+}

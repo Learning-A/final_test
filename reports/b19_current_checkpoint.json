@@ -1,6 +1,6 @@
 {
   "schema": "b19_local_checkpoint_v1",
-  "updated_at": "2026-11-23T02:21:20.804095+08:00",
+  "updated_at": "2026-11-23T02:29:05.888844+08:00",
   "owner": "B",
   "owner_thread": "01a203f5-3aa6-7b21-8a1f-8fece4787432",
   "worktree": "F:/sessions/26.9.8_\u6d4b\u8bd5\u5927\u7eb2/work/idfs-model-b",
@@ -9,7 +9,7 @@
   "issue": 19,
   "pr": 16,
   "state": "running",
-  "substage": "R2_independently_verified_no_candidate_promoted",
+  "substage": "R2_verified_error_attribution_A_source_audit",
   "training_running": false,
   "sources": {
     "handoff_sha256": "2e7ac9ddcc68da042a1f06269b6c6021e977e167482face0699e199fee47cf90",
@@ -177,8 +177,8 @@
     "includes_network_and_publication": false
   },
   "next_actions": [
-    "Preserve completed R2 artifacts and the independently verified no-promotion decision.",
-    "Assess whether new error or timing evidence warrants a separately designed comparison."
+    "Review existing capture evidence for three AI inference train03 low-activity seconds with A.",
+    "Preserve the independently verified R2 no-promotion decision and evaluate the input signal before designing a new comparison."
   ],
   "heartbeat": {
     "id": "idfs-b",
@@ -454,6 +454,11 @@
       "new_fitting": false,
       "online_time_eligibility": false,
       "formal_acceptance": false
+    },
+    "error_attribution": {
+      "file": "reports/b19_r2_error_attribution.json",
+      "sha256": "dcaaf0cc06e8cd9ff24f100e3150fb3fc78bcbb6703a720cbcdbb0bf1d9626d8",
+      "scope": "retrospective attribution of frozen train03 prediction errors, without fitting or changing metrics"
     }
   }
 }
