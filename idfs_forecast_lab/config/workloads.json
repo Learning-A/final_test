@@ -65,6 +65,7 @@
     },
     {
       "id": "bigdata_baleen",
+      "config_root": "/home/hust/idfs-workloads-fb83711/config",
       "path": "/home/hust/idfs-workloads-fb83711/config/bigdata_baleen/rendered/manifest.json",
       "sha256": "a1d5ca76dc30960759d65ee629fd3687f284ff65b140873e99596a97d05c052b",
       "data_file": "/mnt/baize-idfs/idfs-workloads-20261120/bigdata_baleen/container/vdb.1_1.dir/vdb_f0000.file",
