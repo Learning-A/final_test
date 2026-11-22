@@ -15,6 +15,6 @@
 
 作业 `b19_r2_loss_controls_v1_a01` 在 b507 的 B 卡运行，四臂总计 179.995 秒，预算 1,800 秒，监督器正常退出。锁记录确认为 B 卡 UUID 和所属会话，完成后释放。工作代码固定为 `77fd0da98011306d65187e445c5fdbb66973d9d5`，环境为 Python 3.11.16、PyTorch 2.4.1 和 NumPy 1.26.4。训练前在本地通过 143 项测试，5 项 Linux 锁专用测试跳过。
 
-B 已用标准库复查 21,288 个原节点标签、10,644 行预测、160 个节点组和 20 个集群汇总组，并核对选中 epoch、晋级条件和产物哈希。A 的独立复核在交付后记录。现场接收、网络、发布与时钟误差尚未验证。 [执行登记](https://github.com/Learning-A/final_test/issues/19#issuecomment-7083366195)
+B 已复查 21,288 个原节点标签、10,644 行预测、160 个节点组和 20 个集群汇总组，并核对选中 epoch、晋级条件和产物哈希。A 在 `A18-R2-INDEPENDENT-METRICS-20261123-01` 独立核对了包内 32 个文件，从原训练包提取标签，复算各臂宏 MAPE、最差组 MAPE、逐负载节点平均 MAE 和晋级判定。结果一致。复核覆盖离线指标，现场接收、网络、发布与时钟误差仍待验证。 [执行登记](https://github.com/Learning-A/final_test/issues/19#issuecomment-7083366195)
 
 复核包含逐样本预测、各臂最佳检查点、归一化状态、训练日志和锁记录。ZIP SHA256 为 `b671e0029e8d0703b34a34a8b26f36624af7be1ed19a72f8726990add077bcf6`。 [下载复核包](https://github.com/Learning-A/final_test/releases/tag/b19-r2-loss-controls-20261123-v1)
