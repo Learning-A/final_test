@@ -52,7 +52,10 @@ def main():
     x=torch.tensor([r['x'] for r in train],dtype=torch.float32,device='cuda');y=torch.tensor([r['y'] for r in train],dtype=torch.float32,device='cuda')
     vx=torch.tensor([r['x'] for r in dev],dtype=torch.float32,device='cuda');vy=torch.tensor([r['y'] for r in dev],dtype=torch.float32,device='cuda')
     mean,std=training_scaler(x);ystd=torch.log1p(y).std(0).clamp_min(.25)
-    scale=y.median(0).values.clamp_min(1);relfloor=torch.quantile(y,.1,dim=0).clamp_min(1)
+    # CUDA median-with-indices is rejected under deterministic mode in tsfm.
+    # Train-only CPU statistics on b507 preserve the same definitions.
+    cpu_y=y.cpu()
+    scale=cpu_y.median(0).values.clamp_min(1).cuda();relfloor=torch.quantile(cpu_y,.1,dim=0).clamp_min(1).cuda()
     subsets={w:[k for k,r in enumerate(dev) if r['workload']==w] for w in data}
     ids={w:{p:[r['start'] for r in d['split'][p]] for p in ('train','development')} for w,d in data.items()}
     report=dict(experiment_id='masked-multigroup-moe-v1',state='running',archive_sha256=sha,code_commit=os.environ['E2E_CODE_SHA'],
