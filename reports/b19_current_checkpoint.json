@@ -1,6 +1,6 @@
 {
   "schema": "b19_local_checkpoint_v1",
-  "updated_at": "2026-11-23T01:56:39.402410+08:00",
+  "updated_at": "2026-11-23T02:07:07.067583+08:00",
   "owner": "B",
   "owner_thread": "01a203f5-3aa6-7b21-8a1f-8fece4787432",
   "worktree": "F:/sessions/26.9.8_\u6d4b\u8bd5\u5927\u7eb2/work/idfs-model-b",
@@ -9,7 +9,7 @@
   "issue": 19,
   "pr": 16,
   "state": "running",
-  "substage": "R2_inputs_and_fixed_loss_controls_verified",
+  "substage": "R2_training_runner_preflight_checked",
   "training_running": false,
   "sources": {
     "handoff_sha256": "2e7ac9ddcc68da042a1f06269b6c6021e977e167482face0699e199fee47cf90",
@@ -293,7 +293,7 @@
   },
   "future_loss_card": {
     "path": "docs/B19_R2_LOSS_CARD_DRAFT.md",
-    "state": "verified_input_assembly_and_loss_controls_training_runner_pending",
+    "state": "runner_preflight_checked",
     "configurations": [
       "L0",
       "L1",
@@ -304,7 +304,7 @@
     "new_fit_started": false,
     "preprocessing_fitted": false,
     "registered_job_id": null,
-    "implementation_ready": false,
+    "implementation_ready": true,
     "external_validation_new_evaluations": 0,
     "requires_exact_feature_mask_and_scaling_spec": true,
     "input_scaling_spec": "docs/B19_R2_INPUT_SCALING_SPEC.md",
@@ -353,6 +353,18 @@
       "passed": 3,
       "parameter_count": 21089,
       "fixture": "synthetic features and supplied scales"
-    }
+    },
+    "runner": "scripts/run_r2_loss_study.py",
+    "runner_sha256": "de70c53a2b7ee3c5972fda79f951a8ccc5b8df1fc05b38d5573ce666dc69a21a",
+    "configuration_sha256": "cc08468bb49cc23db8bee90ed554eaadc7049ae0ca7be832f7f65f2f1869951f",
+    "job_id": "b19_r2_loss_controls_v1_a01",
+    "total_budget_seconds": 1800,
+    "synthetic_runner_checks": [
+      "fixed permutation and short batch",
+      "earlier checkpoint on ties",
+      "zero-only MAPE",
+      "multi-metric promotion screen",
+      "prediction and report artifacts"
+    ]
   }
 }
