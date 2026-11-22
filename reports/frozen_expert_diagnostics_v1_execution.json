@@ -1,0 +1,20 @@
+{
+  "job_id": "frozen_moe_group_diagnostics_v1_a01",
+  "experiment_id": "frozen-moe-group-diagnostics-v1",
+  "fit_performed": false,
+  "cpu_threads": 4,
+  "gpu_used": false,
+  "code_commit": "9dfd59a3fb09d7bdbfa9558a736aaf014a8bd31b",
+  "command": [
+    "/home/lmj/miniconda3/envs/tsfm/bin/python",
+    "/home/lmj/idfs_forecast_lab/model_b_20261122T074416Z/frozen_moe_group_diagnostics_v1_a01/source/scripts/run_expert_diagnostics.py",
+    "--archive",
+    "/home/lmj/idfs_forecast_lab/model_b_20261122T074416Z/all_workloads_first_round_e2e_v1_a01/data.zip",
+    "--models",
+    "/home/lmj/idfs_forecast_lab/model_b_20261122T074416Z/masked_multigroup_moe_v1_a02/results",
+    "--output",
+    "/home/lmj/idfs_forecast_lab/model_b_20261122T074416Z/frozen_moe_group_diagnostics_v1_a01/results"
+  ],
+  "exit_code": 0,
+  "wall_seconds": 24.402420604601502
+}
