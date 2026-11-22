@@ -1,5 +1,11 @@
 # 协作更新记录
 
+## 2026-11-22｜研发端B｜用户确认分阶段计划并开始旧核心适配
+
+- NEXT_OPTIMIZATION_PLAN固定证据→旧核心→输入→单因素损失→因果校准/集成→独立验证顺序；正式MAPE门槛不变，容限只作辅助。
+- 从旧最佳npz核对trial2真实loss=MAE，hidden128/layers2/TCN32x6；与默认common的SmoothL1区分。直接复制旧models.py且哈希固定，legacy_core_current1s_v1_a01在共享GPU lease下运行；两组GRU已完成目标，TCN仍运行，不能把计划写成全部完成。
+- 新增无拟合容限曲线CLI与45对象组报告；预设绝对容限网格加相对10%仅作灵敏度，approved_business_tolerances=null，不标通过，不选容限。98项功能检查通过，无Windows拟合。
+
 ## 2026-11-22｜研发端B｜冻结MoE组通路诊断闭环
 
 - CPU推理完成两冻结MoE×full/删短/删长/删空间8变体，无拟合/选模/GPU占用；源码9dfd59a，24.40秒。97项检查通过、800组指标独立复算，full与原TorchScript对拍通过。

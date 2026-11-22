@@ -1,0 +1,2181 @@
+{
+  "source_predictions_sha256": "6e20ce979469df5dc0bad1f8ddb6d55483b24a53fdad4ecc4694b241e12c32b9",
+  "arm": "moe_combo",
+  "scope": "auxiliary sensitivity only; includes true-zero windows",
+  "formal_definition_changed": false,
+  "approved_business_tolerances": null,
+  "candidate_selection_performed": false,
+  "formal_acceptance": false,
+  "groups": {
+    "ai_inference_ses": {
+      "idfs44": {
+        "reference_metrics": {
+          "n": 157,
+          "zero_actual": 1,
+          "mae_iops": 256.46255886868056,
+          "wape_percent": 38.416041810463355,
+          "mape_percent": 72.58367438428895,
+          "accuracy_percent": 27.416325615711045
+        },
+        "smape_percent": 41.616048366998214,
+        "tolerance_curve": [
+          {
+            "absolute_tolerance_iops": 0,
+            "relative_tolerance": 0.1,
+            "fraction_within_tolerance_percent": 14.012738853503185
+          },
+          {
+            "absolute_tolerance_iops": 1,
+            "relative_tolerance": 0.1,
+            "fraction_within_tolerance_percent": 14.012738853503185
+          },
+          {
+            "absolute_tolerance_iops": 5,
+            "relative_tolerance": 0.1,
+            "fraction_within_tolerance_percent": 14.012738853503185
+          },
+          {
+            "absolute_tolerance_iops": 10,
+            "relative_tolerance": 0.1,
+            "fraction_within_tolerance_percent": 14.012738853503185
+          },
+          {
+            "absolute_tolerance_iops": 25,
+            "relative_tolerance": 0.1,
+            "fraction_within_tolerance_percent": 14.012738853503185
+          },
+          {
+            "absolute_tolerance_iops": 50,
+            "relative_tolerance": 0.1,
+            "fraction_within_tolerance_percent": 14.64968152866242
+          },
+          {
+            "absolute_tolerance_iops": 100,
+            "relative_tolerance": 0.1,
+            "fraction_within_tolerance_percent": 24.840764331210192
+          }
+        ]
+      },
+      "idfs45": {
+        "reference_metrics": {
+          "n": 157,
+          "zero_actual": 1,
+          "mae_iops": 232.39894279017798,
+          "wape_percent": 35.67293438474198,
+          "mape_percent": 70.55535875675143,
+          "accuracy_percent": 29.44464124324857
+        },
+        "smape_percent": 40.24661944456538,
+        "tolerance_curve": [
+          {
+            "absolute_tolerance_iops": 0,
+            "relative_tolerance": 0.1,
+            "fraction_within_tolerance_percent": 18.471337579617835
+          },
+          {
+            "absolute_tolerance_iops": 1,
+            "relative_tolerance": 0.1,
+            "fraction_within_tolerance_percent": 18.471337579617835
+          },
+          {
+            "absolute_tolerance_iops": 5,
+            "relative_tolerance": 0.1,
+            "fraction_within_tolerance_percent": 18.471337579617835
+          },
+          {
+            "absolute_tolerance_iops": 10,
+            "relative_tolerance": 0.1,
+            "fraction_within_tolerance_percent": 18.471337579617835
+          },
+          {
+            "absolute_tolerance_iops": 25,
+            "relative_tolerance": 0.1,
+            "fraction_within_tolerance_percent": 18.471337579617835
+          },
+          {
+            "absolute_tolerance_iops": 50,
+            "relative_tolerance": 0.1,
+            "fraction_within_tolerance_percent": 18.471337579617835
+          },
+          {
+            "absolute_tolerance_iops": 100,
+            "relative_tolerance": 0.1,
+            "fraction_within_tolerance_percent": 24.840764331210192
+          }
+        ]
+      },
+      "idfs46": {
+        "reference_metrics": {
+          "n": 157,
+          "zero_actual": 1,
+          "mae_iops": 260.9279327379564,
+          "wape_percent": 38.21318940688148,
+          "mape_percent": 68.17134489452494,
+          "accuracy_percent": 31.828655105475065
+        },
+        "smape_percent": 42.16312520034706,
+        "tolerance_curve": [
+          {
+            "absolute_tolerance_iops": 0,
+            "relative_tolerance": 0.1,
+            "fraction_within_tolerance_percent": 17.8343949044586
+          },
+          {
+            "absolute_tolerance_iops": 1,
+            "relative_tolerance": 0.1,
+            "fraction_within_tolerance_percent": 17.8343949044586
+          },
+          {
+            "absolute_tolerance_iops": 5,
+            "relative_tolerance": 0.1,
+            "fraction_within_tolerance_percent": 17.8343949044586
+          },
+          {
+            "absolute_tolerance_iops": 10,
+            "relative_tolerance": 0.1,
+            "fraction_within_tolerance_percent": 17.8343949044586
+          },
+          {
+            "absolute_tolerance_iops": 25,
+            "relative_tolerance": 0.1,
+            "fraction_within_tolerance_percent": 17.8343949044586
+          },
+          {
+            "absolute_tolerance_iops": 50,
+            "relative_tolerance": 0.1,
+            "fraction_within_tolerance_percent": 19.10828025477707
+          },
+          {
+            "absolute_tolerance_iops": 100,
+            "relative_tolerance": 0.1,
+            "fraction_within_tolerance_percent": 32.48407643312102
+          }
+        ]
+      },
+      "idfs47": {
+        "reference_metrics": {
+          "n": 157,
+          "zero_actual": 1,
+          "mae_iops": 287.55385834604743,
+          "wape_percent": 37.707729115087325,
+          "mape_percent": 70.26624195776968,
+          "accuracy_percent": 29.73375804223032
+        },
+        "smape_percent": 42.227129145679925,
+        "tolerance_curve": [
+          {
+            "absolute_tolerance_iops": 0,
+            "relative_tolerance": 0.1,
+            "fraction_within_tolerance_percent": 18.471337579617835
+          },
+          {
+            "absolute_tolerance_iops": 1,
+            "relative_tolerance": 0.1,
+            "fraction_within_tolerance_percent": 18.471337579617835
+          },
+          {
+            "absolute_tolerance_iops": 5,
+            "relative_tolerance": 0.1,
+            "fraction_within_tolerance_percent": 18.471337579617835
+          },
+          {
+            "absolute_tolerance_iops": 10,
+            "relative_tolerance": 0.1,
+            "fraction_within_tolerance_percent": 18.471337579617835
+          },
+          {
+            "absolute_tolerance_iops": 25,
+            "relative_tolerance": 0.1,
+            "fraction_within_tolerance_percent": 18.471337579617835
+          },
+          {
+            "absolute_tolerance_iops": 50,
+            "relative_tolerance": 0.1,
+            "fraction_within_tolerance_percent": 18.471337579617835
+          },
+          {
+            "absolute_tolerance_iops": 100,
+            "relative_tolerance": 0.1,
+            "fraction_within_tolerance_percent": 25.477707006369428
+          }
+        ]
+      },
+      "idfs64": {
+        "reference_metrics": {
+          "n": 157,
+          "zero_actual": 0,
+          "mae_iops": 226.46122096434283,
+          "wape_percent": 35.65781936756777,
+          "mape_percent": 119.13355282296044,
+          "accuracy_percent": -19.13355282296044
+        },
+        "smape_percent": 39.97810864827504,
+        "tolerance_curve": [
+          {
+            "absolute_tolerance_iops": 0,
+            "relative_tolerance": 0.1,
+            "fraction_within_tolerance_percent": 19.745222929936304
+          },
+          {
+            "absolute_tolerance_iops": 1,
+            "relative_tolerance": 0.1,
+            "fraction_within_tolerance_percent": 19.745222929936304
+          },
+          {
+            "absolute_tolerance_iops": 5,
+            "relative_tolerance": 0.1,
+            "fraction_within_tolerance_percent": 19.745222929936304
+          },
+          {
+            "absolute_tolerance_iops": 10,
+            "relative_tolerance": 0.1,
+            "fraction_within_tolerance_percent": 19.745222929936304
+          },
+          {
+            "absolute_tolerance_iops": 25,
+            "relative_tolerance": 0.1,
+            "fraction_within_tolerance_percent": 19.745222929936304
+          },
+          {
+            "absolute_tolerance_iops": 50,
+            "relative_tolerance": 0.1,
+            "fraction_within_tolerance_percent": 19.745222929936304
+          },
+          {
+            "absolute_tolerance_iops": 100,
+            "relative_tolerance": 0.1,
+            "fraction_within_tolerance_percent": 28.662420382165607
+          }
+        ]
+      },
+      "idfs65": {
+        "reference_metrics": {
+          "n": 157,
+          "zero_actual": 1,
+          "mae_iops": 227.26345953063293,
+          "wape_percent": 37.15775550519596,
+          "mape_percent": 74.52705207320716,
+          "accuracy_percent": 25.47294792679284
+        },
+        "smape_percent": 40.20922624194935,
+        "tolerance_curve": [
+          {
+            "absolute_tolerance_iops": 0,
+            "relative_tolerance": 0.1,
+            "fraction_within_tolerance_percent": 17.197452229299362
+          },
+          {
+            "absolute_tolerance_iops": 1,
+            "relative_tolerance": 0.1,
+            "fraction_within_tolerance_percent": 17.197452229299362
+          },
+          {
+            "absolute_tolerance_iops": 5,
+            "relative_tolerance": 0.1,
+            "fraction_within_tolerance_percent": 17.197452229299362
+          },
+          {
+            "absolute_tolerance_iops": 10,
+            "relative_tolerance": 0.1,
+            "fraction_within_tolerance_percent": 17.197452229299362
+          },
+          {
+            "absolute_tolerance_iops": 25,
+            "relative_tolerance": 0.1,
+            "fraction_within_tolerance_percent": 17.197452229299362
+          },
+          {
+            "absolute_tolerance_iops": 50,
+            "relative_tolerance": 0.1,
+            "fraction_within_tolerance_percent": 17.8343949044586
+          },
+          {
+            "absolute_tolerance_iops": 100,
+            "relative_tolerance": 0.1,
+            "fraction_within_tolerance_percent": 35.031847133757964
+          }
+        ]
+      },
+      "idfs66": {
+        "reference_metrics": {
+          "n": 157,
+          "zero_actual": 0,
+          "mae_iops": 244.91903718649746,
+          "wape_percent": 39.125641121989545,
+          "mape_percent": 153.21397581837107,
+          "accuracy_percent": -53.21397581837107
+        },
+        "smape_percent": 43.5514584823483,
+        "tolerance_curve": [
+          {
+            "absolute_tolerance_iops": 0,
+            "relative_tolerance": 0.1,
+            "fraction_within_tolerance_percent": 13.375796178343949
+          },
+          {
+            "absolute_tolerance_iops": 1,
+            "relative_tolerance": 0.1,
+            "fraction_within_tolerance_percent": 13.375796178343949
+          },
+          {
+            "absolute_tolerance_iops": 5,
+            "relative_tolerance": 0.1,
+            "fraction_within_tolerance_percent": 13.375796178343949
+          },
+          {
+            "absolute_tolerance_iops": 10,
+            "relative_tolerance": 0.1,
+            "fraction_within_tolerance_percent": 13.375796178343949
+          },
+          {
+            "absolute_tolerance_iops": 25,
+            "relative_tolerance": 0.1,
+            "fraction_within_tolerance_percent": 13.375796178343949
+          },
+          {
+            "absolute_tolerance_iops": 50,
+            "relative_tolerance": 0.1,
+            "fraction_within_tolerance_percent": 13.375796178343949
+          },
+          {
+            "absolute_tolerance_iops": 100,
+            "relative_tolerance": 0.1,
+            "fraction_within_tolerance_percent": 23.56687898089172
+          }
+        ]
+      },
+      "idfs67": {
+        "reference_metrics": {
+          "n": 157,
+          "zero_actual": 1,
+          "mae_iops": 385.18362448466985,
+          "wape_percent": 46.06406746095669,
+          "mape_percent": 64.64760473121537,
+          "accuracy_percent": 35.35239526878463
+        },
+        "smape_percent": 49.56373897190128,
+        "tolerance_curve": [
+          {
+            "absolute_tolerance_iops": 0,
+            "relative_tolerance": 0.1,
+            "fraction_within_tolerance_percent": 15.92356687898089
+          },
+          {
+            "absolute_tolerance_iops": 1,
+            "relative_tolerance": 0.1,
+            "fraction_within_tolerance_percent": 15.92356687898089
+          },
+          {
+            "absolute_tolerance_iops": 5,
+            "relative_tolerance": 0.1,
+            "fraction_within_tolerance_percent": 15.92356687898089
+          },
+          {
+            "absolute_tolerance_iops": 10,
+            "relative_tolerance": 0.1,
+            "fraction_within_tolerance_percent": 15.92356687898089
+          },
+          {
+            "absolute_tolerance_iops": 25,
+            "relative_tolerance": 0.1,
+            "fraction_within_tolerance_percent": 15.92356687898089
+          },
+          {
+            "absolute_tolerance_iops": 50,
+            "relative_tolerance": 0.1,
+            "fraction_within_tolerance_percent": 15.92356687898089
+          },
+          {
+            "absolute_tolerance_iops": 100,
+            "relative_tolerance": 0.1,
+            "fraction_within_tolerance_percent": 23.56687898089172
+          }
+        ]
+      },
+      "cluster": {
+        "reference_metrics": {
+          "n": 157,
+          "zero_actual": 0,
+          "mae_iops": 1921.5903986194205,
+          "wape_percent": 35.108079158593284,
+          "mape_percent": 317.2083587261136,
+          "accuracy_percent": -217.2083587261136
+        },
+        "smape_percent": 41.92260136173626,
+        "tolerance_curve": [
+          {
+            "absolute_tolerance_iops": 0,
+            "relative_tolerance": 0.1,
+            "fraction_within_tolerance_percent": 8.280254777070065
+          },
+          {
+            "absolute_tolerance_iops": 1,
+            "relative_tolerance": 0.1,
+            "fraction_within_tolerance_percent": 8.280254777070065
+          },
+          {
+            "absolute_tolerance_iops": 5,
+            "relative_tolerance": 0.1,
+            "fraction_within_tolerance_percent": 8.280254777070065
+          },
+          {
+            "absolute_tolerance_iops": 10,
+            "relative_tolerance": 0.1,
+            "fraction_within_tolerance_percent": 8.280254777070065
+          },
+          {
+            "absolute_tolerance_iops": 25,
+            "relative_tolerance": 0.1,
+            "fraction_within_tolerance_percent": 8.280254777070065
+          },
+          {
+            "absolute_tolerance_iops": 50,
+            "relative_tolerance": 0.1,
+            "fraction_within_tolerance_percent": 8.280254777070065
+          },
+          {
+            "absolute_tolerance_iops": 100,
+            "relative_tolerance": 0.1,
+            "fraction_within_tolerance_percent": 8.280254777070065
+          }
+        ]
+      }
+    },
+    "ai_training_ses": {
+      "idfs44": {
+        "reference_metrics": {
+          "n": 163,
+          "zero_actual": 0,
+          "mae_iops": 131.46771154237481,
+          "wape_percent": 32.428741970319905,
+          "mape_percent": 41.84895346720574,
+          "accuracy_percent": 58.15104653279426
+        },
+        "smape_percent": 35.0035874157922,
+        "tolerance_curve": [
+          {
+            "absolute_tolerance_iops": 0,
+            "relative_tolerance": 0.1,
+            "fraction_within_tolerance_percent": 11.042944785276074
+          },
+          {
+            "absolute_tolerance_iops": 1,
+            "relative_tolerance": 0.1,
+            "fraction_within_tolerance_percent": 11.042944785276074
+          },
+          {
+            "absolute_tolerance_iops": 5,
+            "relative_tolerance": 0.1,
+            "fraction_within_tolerance_percent": 11.042944785276074
+          },
+          {
+            "absolute_tolerance_iops": 10,
+            "relative_tolerance": 0.1,
+            "fraction_within_tolerance_percent": 11.042944785276074
+          },
+          {
+            "absolute_tolerance_iops": 25,
+            "relative_tolerance": 0.1,
+            "fraction_within_tolerance_percent": 11.042944785276074
+          },
+          {
+            "absolute_tolerance_iops": 50,
+            "relative_tolerance": 0.1,
+            "fraction_within_tolerance_percent": 23.926380368098158
+          },
+          {
+            "absolute_tolerance_iops": 100,
+            "relative_tolerance": 0.1,
+            "fraction_within_tolerance_percent": 53.987730061349694
+          }
+        ]
+      },
+      "idfs45": {
+        "reference_metrics": {
+          "n": 163,
+          "zero_actual": 0,
+          "mae_iops": 89.85619324988944,
+          "wape_percent": 31.04663282120566,
+          "mape_percent": 41.72461185899996,
+          "accuracy_percent": 58.27538814100004
+        },
+        "smape_percent": 34.336340509528796,
+        "tolerance_curve": [
+          {
+            "absolute_tolerance_iops": 0,
+            "relative_tolerance": 0.1,
+            "fraction_within_tolerance_percent": 9.815950920245399
+          },
+          {
+            "absolute_tolerance_iops": 1,
+            "relative_tolerance": 0.1,
+            "fraction_within_tolerance_percent": 9.815950920245399
+          },
+          {
+            "absolute_tolerance_iops": 5,
+            "relative_tolerance": 0.1,
+            "fraction_within_tolerance_percent": 9.815950920245399
+          },
+          {
+            "absolute_tolerance_iops": 10,
+            "relative_tolerance": 0.1,
+            "fraction_within_tolerance_percent": 9.815950920245399
+          },
+          {
+            "absolute_tolerance_iops": 25,
+            "relative_tolerance": 0.1,
+            "fraction_within_tolerance_percent": 10.429447852760736
+          },
+          {
+            "absolute_tolerance_iops": 50,
+            "relative_tolerance": 0.1,
+            "fraction_within_tolerance_percent": 23.312883435582823
+          },
+          {
+            "absolute_tolerance_iops": 100,
+            "relative_tolerance": 0.1,
+            "fraction_within_tolerance_percent": 72.39263803680981
+          }
+        ]
+      },
+      "idfs46": {
+        "reference_metrics": {
+          "n": 163,
+          "zero_actual": 0,
+          "mae_iops": 164.0009921351059,
+          "wape_percent": 41.221529249070564,
+          "mape_percent": 53.85565834221805,
+          "accuracy_percent": 46.14434165778195
+        },
+        "smape_percent": 40.97008824345629,
+        "tolerance_curve": [
+          {
+            "absolute_tolerance_iops": 0,
+            "relative_tolerance": 0.1,
+            "fraction_within_tolerance_percent": 11.656441717791411
+          },
+          {
+            "absolute_tolerance_iops": 1,
+            "relative_tolerance": 0.1,
+            "fraction_within_tolerance_percent": 11.656441717791411
+          },
+          {
+            "absolute_tolerance_iops": 5,
+            "relative_tolerance": 0.1,
+            "fraction_within_tolerance_percent": 11.656441717791411
+          },
+          {
+            "absolute_tolerance_iops": 10,
+            "relative_tolerance": 0.1,
+            "fraction_within_tolerance_percent": 11.656441717791411
+          },
+          {
+            "absolute_tolerance_iops": 25,
+            "relative_tolerance": 0.1,
+            "fraction_within_tolerance_percent": 12.269938650306749
+          },
+          {
+            "absolute_tolerance_iops": 50,
+            "relative_tolerance": 0.1,
+            "fraction_within_tolerance_percent": 25.766871165644172
+          },
+          {
+            "absolute_tolerance_iops": 100,
+            "relative_tolerance": 0.1,
+            "fraction_within_tolerance_percent": 61.34969325153374
+          }
+        ]
+      },
+      "idfs47": {
+        "reference_metrics": {
+          "n": 163,
+          "zero_actual": 0,
+          "mae_iops": 159.05384763854806,
+          "wape_percent": 39.900543531586024,
+          "mape_percent": 48.82439397642271,
+          "accuracy_percent": 51.17560602357729
+        },
+        "smape_percent": 40.373679652239986,
+        "tolerance_curve": [
+          {
+            "absolute_tolerance_iops": 0,
+            "relative_tolerance": 0.1,
+            "fraction_within_tolerance_percent": 9.815950920245399
+          },
+          {
+            "absolute_tolerance_iops": 1,
+            "relative_tolerance": 0.1,
+            "fraction_within_tolerance_percent": 9.815950920245399
+          },
+          {
+            "absolute_tolerance_iops": 5,
+            "relative_tolerance": 0.1,
+            "fraction_within_tolerance_percent": 9.815950920245399
+          },
+          {
+            "absolute_tolerance_iops": 10,
+            "relative_tolerance": 0.1,
+            "fraction_within_tolerance_percent": 9.815950920245399
+          },
+          {
+            "absolute_tolerance_iops": 25,
+            "relative_tolerance": 0.1,
+            "fraction_within_tolerance_percent": 9.815950920245399
+          },
+          {
+            "absolute_tolerance_iops": 50,
+            "relative_tolerance": 0.1,
+            "fraction_within_tolerance_percent": 21.47239263803681
+          },
+          {
+            "absolute_tolerance_iops": 100,
+            "relative_tolerance": 0.1,
+            "fraction_within_tolerance_percent": 58.895705521472394
+          }
+        ]
+      },
+      "idfs64": {
+        "reference_metrics": {
+          "n": 163,
+          "zero_actual": 0,
+          "mae_iops": 145.10160747822266,
+          "wape_percent": 36.40494092314723,
+          "mape_percent": 50.374204985074485,
+          "accuracy_percent": 49.625795014925515
+        },
+        "smape_percent": 36.13619313578575,
+        "tolerance_curve": [
+          {
+            "absolute_tolerance_iops": 0,
+            "relative_tolerance": 0.1,
+            "fraction_within_tolerance_percent": 16.56441717791411
+          },
+          {
+            "absolute_tolerance_iops": 1,
+            "relative_tolerance": 0.1,
+            "fraction_within_tolerance_percent": 16.56441717791411
+          },
+          {
+            "absolute_tolerance_iops": 5,
+            "relative_tolerance": 0.1,
+            "fraction_within_tolerance_percent": 16.56441717791411
+          },
+          {
+            "absolute_tolerance_iops": 10,
+            "relative_tolerance": 0.1,
+            "fraction_within_tolerance_percent": 16.56441717791411
+          },
+          {
+            "absolute_tolerance_iops": 25,
+            "relative_tolerance": 0.1,
+            "fraction_within_tolerance_percent": 17.177914110429448
+          },
+          {
+            "absolute_tolerance_iops": 50,
+            "relative_tolerance": 0.1,
+            "fraction_within_tolerance_percent": 24.539877300613497
+          },
+          {
+            "absolute_tolerance_iops": 100,
+            "relative_tolerance": 0.1,
+            "fraction_within_tolerance_percent": 62.576687116564415
+          }
+        ]
+      },
+      "idfs65": {
+        "reference_metrics": {
+          "n": 163,
+          "zero_actual": 0,
+          "mae_iops": 163.31739404444713,
+          "wape_percent": 38.79499151728367,
+          "mape_percent": 44.36628090310219,
+          "accuracy_percent": 55.63371909689781
+        },
+        "smape_percent": 37.706942953747806,
+        "tolerance_curve": [
+          {
+            "absolute_tolerance_iops": 0,
+            "relative_tolerance": 0.1,
+            "fraction_within_tolerance_percent": 17.177914110429448
+          },
+          {
+            "absolute_tolerance_iops": 1,
+            "relative_tolerance": 0.1,
+            "fraction_within_tolerance_percent": 17.177914110429448
+          },
+          {
+            "absolute_tolerance_iops": 5,
+            "relative_tolerance": 0.1,
+            "fraction_within_tolerance_percent": 17.177914110429448
+          },
+          {
+            "absolute_tolerance_iops": 10,
+            "relative_tolerance": 0.1,
+            "fraction_within_tolerance_percent": 17.177914110429448
+          },
+          {
+            "absolute_tolerance_iops": 25,
+            "relative_tolerance": 0.1,
+            "fraction_within_tolerance_percent": 17.791411042944784
+          },
+          {
+            "absolute_tolerance_iops": 50,
+            "relative_tolerance": 0.1,
+            "fraction_within_tolerance_percent": 31.288343558282207
+          },
+          {
+            "absolute_tolerance_iops": 100,
+            "relative_tolerance": 0.1,
+            "fraction_within_tolerance_percent": 64.41717791411043
+          }
+        ]
+      },
+      "idfs66": {
+        "reference_metrics": {
+          "n": 163,
+          "zero_actual": 0,
+          "mae_iops": 152.63567065879053,
+          "wape_percent": 39.424492239185604,
+          "mape_percent": 44.32920096858734,
+          "accuracy_percent": 55.67079903141266
+        },
+        "smape_percent": 41.834427084329725,
+        "tolerance_curve": [
+          {
+            "absolute_tolerance_iops": 0,
+            "relative_tolerance": 0.1,
+            "fraction_within_tolerance_percent": 10.429447852760736
+          },
+          {
+            "absolute_tolerance_iops": 1,
+            "relative_tolerance": 0.1,
+            "fraction_within_tolerance_percent": 10.429447852760736
+          },
+          {
+            "absolute_tolerance_iops": 5,
+            "relative_tolerance": 0.1,
+            "fraction_within_tolerance_percent": 10.429447852760736
+          },
+          {
+            "absolute_tolerance_iops": 10,
+            "relative_tolerance": 0.1,
+            "fraction_within_tolerance_percent": 10.429447852760736
+          },
+          {
+            "absolute_tolerance_iops": 25,
+            "relative_tolerance": 0.1,
+            "fraction_within_tolerance_percent": 13.496932515337424
+          },
+          {
+            "absolute_tolerance_iops": 50,
+            "relative_tolerance": 0.1,
+            "fraction_within_tolerance_percent": 19.01840490797546
+          },
+          {
+            "absolute_tolerance_iops": 100,
+            "relative_tolerance": 0.1,
+            "fraction_within_tolerance_percent": 44.785276073619634
+          }
+        ]
+      },
+      "idfs67": {
+        "reference_metrics": {
+          "n": 163,
+          "zero_actual": 0,
+          "mae_iops": 115.65509242043588,
+          "wape_percent": 34.19886086737365,
+          "mape_percent": 46.221017006720786,
+          "accuracy_percent": 53.778982993279214
+        },
+        "smape_percent": 36.08356640346843,
+        "tolerance_curve": [
+          {
+            "absolute_tolerance_iops": 0,
+            "relative_tolerance": 0.1,
+            "fraction_within_tolerance_percent": 12.269938650306749
+          },
+          {
+            "absolute_tolerance_iops": 1,
+            "relative_tolerance": 0.1,
+            "fraction_within_tolerance_percent": 12.269938650306749
+          },
+          {
+            "absolute_tolerance_iops": 5,
+            "relative_tolerance": 0.1,
+            "fraction_within_tolerance_percent": 12.269938650306749
+          },
+          {
+            "absolute_tolerance_iops": 10,
+            "relative_tolerance": 0.1,
+            "fraction_within_tolerance_percent": 12.269938650306749
+          },
+          {
+            "absolute_tolerance_iops": 25,
+            "relative_tolerance": 0.1,
+            "fraction_within_tolerance_percent": 12.269938650306749
+          },
+          {
+            "absolute_tolerance_iops": 50,
+            "relative_tolerance": 0.1,
+            "fraction_within_tolerance_percent": 24.539877300613497
+          },
+          {
+            "absolute_tolerance_iops": 100,
+            "relative_tolerance": 0.1,
+            "fraction_within_tolerance_percent": 60.122699386503065
+          }
+        ]
+      },
+      "cluster": {
+        "reference_metrics": {
+          "n": 163,
+          "zero_actual": 0,
+          "mae_iops": 963.8817884180371,
+          "wape_percent": 31.7462950190321,
+          "mape_percent": 43.99971723083071,
+          "accuracy_percent": 56.00028276916929
+        },
+        "smape_percent": 37.26588904876115,
+        "tolerance_curve": [
+          {
+            "absolute_tolerance_iops": 0,
+            "relative_tolerance": 0.1,
+            "fraction_within_tolerance_percent": 8.588957055214724
+          },
+          {
+            "absolute_tolerance_iops": 1,
+            "relative_tolerance": 0.1,
+            "fraction_within_tolerance_percent": 8.588957055214724
+          },
+          {
+            "absolute_tolerance_iops": 5,
+            "relative_tolerance": 0.1,
+            "fraction_within_tolerance_percent": 8.588957055214724
+          },
+          {
+            "absolute_tolerance_iops": 10,
+            "relative_tolerance": 0.1,
+            "fraction_within_tolerance_percent": 8.588957055214724
+          },
+          {
+            "absolute_tolerance_iops": 25,
+            "relative_tolerance": 0.1,
+            "fraction_within_tolerance_percent": 8.588957055214724
+          },
+          {
+            "absolute_tolerance_iops": 50,
+            "relative_tolerance": 0.1,
+            "fraction_within_tolerance_percent": 8.588957055214724
+          },
+          {
+            "absolute_tolerance_iops": 100,
+            "relative_tolerance": 0.1,
+            "fraction_within_tolerance_percent": 8.588957055214724
+          }
+        ]
+      }
+    },
+    "bigdata_baleen": {
+      "idfs44": {
+        "reference_metrics": {
+          "n": 145,
+          "zero_actual": 0,
+          "mae_iops": 60.26239912303878,
+          "wape_percent": 29.496515908859788,
+          "mape_percent": 55.7974060832342,
+          "accuracy_percent": 44.2025939167658
+        },
+        "smape_percent": 33.10668275463903,
+        "tolerance_curve": [
+          {
+            "absolute_tolerance_iops": 0,
+            "relative_tolerance": 0.1,
+            "fraction_within_tolerance_percent": 20.689655172413794
+          },
+          {
+            "absolute_tolerance_iops": 1,
+            "relative_tolerance": 0.1,
+            "fraction_within_tolerance_percent": 20.689655172413794
+          },
+          {
+            "absolute_tolerance_iops": 5,
+            "relative_tolerance": 0.1,
+            "fraction_within_tolerance_percent": 20.689655172413794
+          },
+          {
+            "absolute_tolerance_iops": 10,
+            "relative_tolerance": 0.1,
+            "fraction_within_tolerance_percent": 20.689655172413794
+          },
+          {
+            "absolute_tolerance_iops": 25,
+            "relative_tolerance": 0.1,
+            "fraction_within_tolerance_percent": 29.655172413793103
+          },
+          {
+            "absolute_tolerance_iops": 50,
+            "relative_tolerance": 0.1,
+            "fraction_within_tolerance_percent": 48.96551724137931
+          },
+          {
+            "absolute_tolerance_iops": 100,
+            "relative_tolerance": 0.1,
+            "fraction_within_tolerance_percent": 78.62068965517241
+          }
+        ]
+      },
+      "idfs45": {
+        "reference_metrics": {
+          "n": 145,
+          "zero_actual": 0,
+          "mae_iops": 51.283889398374214,
+          "wape_percent": 26.225229986825113,
+          "mape_percent": 47.13730965730619,
+          "accuracy_percent": 52.86269034269381
+        },
+        "smape_percent": 30.15619477123866,
+        "tolerance_curve": [
+          {
+            "absolute_tolerance_iops": 0,
+            "relative_tolerance": 0.1,
+            "fraction_within_tolerance_percent": 24.137931034482758
+          },
+          {
+            "absolute_tolerance_iops": 1,
+            "relative_tolerance": 0.1,
+            "fraction_within_tolerance_percent": 24.137931034482758
+          },
+          {
+            "absolute_tolerance_iops": 5,
+            "relative_tolerance": 0.1,
+            "fraction_within_tolerance_percent": 24.137931034482758
+          },
+          {
+            "absolute_tolerance_iops": 10,
+            "relative_tolerance": 0.1,
+            "fraction_within_tolerance_percent": 24.137931034482758
+          },
+          {
+            "absolute_tolerance_iops": 25,
+            "relative_tolerance": 0.1,
+            "fraction_within_tolerance_percent": 31.724137931034484
+          },
+          {
+            "absolute_tolerance_iops": 50,
+            "relative_tolerance": 0.1,
+            "fraction_within_tolerance_percent": 57.93103448275862
+          },
+          {
+            "absolute_tolerance_iops": 100,
+            "relative_tolerance": 0.1,
+            "fraction_within_tolerance_percent": 87.58620689655173
+          }
+        ]
+      },
+      "idfs46": {
+        "reference_metrics": {
+          "n": 145,
+          "zero_actual": 0,
+          "mae_iops": 60.15236283773061,
+          "wape_percent": 26.77130942747372,
+          "mape_percent": 45.019867258093676,
+          "accuracy_percent": 54.980132741906324
+        },
+        "smape_percent": 30.199589475111523,
+        "tolerance_curve": [
+          {
+            "absolute_tolerance_iops": 0,
+            "relative_tolerance": 0.1,
+            "fraction_within_tolerance_percent": 24.82758620689655
+          },
+          {
+            "absolute_tolerance_iops": 1,
+            "relative_tolerance": 0.1,
+            "fraction_within_tolerance_percent": 24.82758620689655
+          },
+          {
+            "absolute_tolerance_iops": 5,
+            "relative_tolerance": 0.1,
+            "fraction_within_tolerance_percent": 24.82758620689655
+          },
+          {
+            "absolute_tolerance_iops": 10,
+            "relative_tolerance": 0.1,
+            "fraction_within_tolerance_percent": 24.82758620689655
+          },
+          {
+            "absolute_tolerance_iops": 25,
+            "relative_tolerance": 0.1,
+            "fraction_within_tolerance_percent": 26.896551724137932
+          },
+          {
+            "absolute_tolerance_iops": 50,
+            "relative_tolerance": 0.1,
+            "fraction_within_tolerance_percent": 52.41379310344828
+          },
+          {
+            "absolute_tolerance_iops": 100,
+            "relative_tolerance": 0.1,
+            "fraction_within_tolerance_percent": 78.62068965517241
+          }
+        ]
+      },
+      "idfs47": {
+        "reference_metrics": {
+          "n": 145,
+          "zero_actual": 0,
+          "mae_iops": 55.2628116494715,
+          "wape_percent": 28.250979019790464,
+          "mape_percent": 57.380913927331484,
+          "accuracy_percent": 42.619086072668516
+        },
+        "smape_percent": 32.56247804962377,
+        "tolerance_curve": [
+          {
+            "absolute_tolerance_iops": 0,
+            "relative_tolerance": 0.1,
+            "fraction_within_tolerance_percent": 21.379310344827587
+          },
+          {
+            "absolute_tolerance_iops": 1,
+            "relative_tolerance": 0.1,
+            "fraction_within_tolerance_percent": 21.379310344827587
+          },
+          {
+            "absolute_tolerance_iops": 5,
+            "relative_tolerance": 0.1,
+            "fraction_within_tolerance_percent": 21.379310344827587
+          },
+          {
+            "absolute_tolerance_iops": 10,
+            "relative_tolerance": 0.1,
+            "fraction_within_tolerance_percent": 21.379310344827587
+          },
+          {
+            "absolute_tolerance_iops": 25,
+            "relative_tolerance": 0.1,
+            "fraction_within_tolerance_percent": 28.96551724137931
+          },
+          {
+            "absolute_tolerance_iops": 50,
+            "relative_tolerance": 0.1,
+            "fraction_within_tolerance_percent": 54.48275862068966
+          },
+          {
+            "absolute_tolerance_iops": 100,
+            "relative_tolerance": 0.1,
+            "fraction_within_tolerance_percent": 83.44827586206897
+          }
+        ]
+      },
+      "idfs64": {
+        "reference_metrics": {
+          "n": 145,
+          "zero_actual": 0,
+          "mae_iops": 60.20630569706168,
+          "wape_percent": 26.306808275045785,
+          "mape_percent": 46.404662969509474,
+          "accuracy_percent": 53.595337030490526
+        },
+        "smape_percent": 30.457540526856246,
+        "tolerance_curve": [
+          {
+            "absolute_tolerance_iops": 0,
+            "relative_tolerance": 0.1,
+            "fraction_within_tolerance_percent": 25.517241379310345
+          },
+          {
+            "absolute_tolerance_iops": 1,
+            "relative_tolerance": 0.1,
+            "fraction_within_tolerance_percent": 25.517241379310345
+          },
+          {
+            "absolute_tolerance_iops": 5,
+            "relative_tolerance": 0.1,
+            "fraction_within_tolerance_percent": 25.517241379310345
+          },
+          {
+            "absolute_tolerance_iops": 10,
+            "relative_tolerance": 0.1,
+            "fraction_within_tolerance_percent": 25.517241379310345
+          },
+          {
+            "absolute_tolerance_iops": 25,
+            "relative_tolerance": 0.1,
+            "fraction_within_tolerance_percent": 30.344827586206897
+          },
+          {
+            "absolute_tolerance_iops": 50,
+            "relative_tolerance": 0.1,
+            "fraction_within_tolerance_percent": 49.6551724137931
+          },
+          {
+            "absolute_tolerance_iops": 100,
+            "relative_tolerance": 0.1,
+            "fraction_within_tolerance_percent": 83.44827586206897
+          }
+        ]
+      },
+      "idfs65": {
+        "reference_metrics": {
+          "n": 145,
+          "zero_actual": 0,
+          "mae_iops": 53.21306226815494,
+          "wape_percent": 26.850967528126624,
+          "mape_percent": 48.65927215812367,
+          "accuracy_percent": 51.34072784187633
+        },
+        "smape_percent": 30.66600960978709,
+        "tolerance_curve": [
+          {
+            "absolute_tolerance_iops": 0,
+            "relative_tolerance": 0.1,
+            "fraction_within_tolerance_percent": 23.448275862068964
+          },
+          {
+            "absolute_tolerance_iops": 1,
+            "relative_tolerance": 0.1,
+            "fraction_within_tolerance_percent": 23.448275862068964
+          },
+          {
+            "absolute_tolerance_iops": 5,
+            "relative_tolerance": 0.1,
+            "fraction_within_tolerance_percent": 23.448275862068964
+          },
+          {
+            "absolute_tolerance_iops": 10,
+            "relative_tolerance": 0.1,
+            "fraction_within_tolerance_percent": 23.448275862068964
+          },
+          {
+            "absolute_tolerance_iops": 25,
+            "relative_tolerance": 0.1,
+            "fraction_within_tolerance_percent": 29.655172413793103
+          },
+          {
+            "absolute_tolerance_iops": 50,
+            "relative_tolerance": 0.1,
+            "fraction_within_tolerance_percent": 55.172413793103445
+          },
+          {
+            "absolute_tolerance_iops": 100,
+            "relative_tolerance": 0.1,
+            "fraction_within_tolerance_percent": 85.51724137931035
+          }
+        ]
+      },
+      "idfs66": {
+        "reference_metrics": {
+          "n": 145,
+          "zero_actual": 0,
+          "mae_iops": 56.09072966617182,
+          "wape_percent": 28.408801570417808,
+          "mape_percent": 48.3425721434689,
+          "accuracy_percent": 51.6574278565311
+        },
+        "smape_percent": 32.846519835663074,
+        "tolerance_curve": [
+          {
+            "absolute_tolerance_iops": 0,
+            "relative_tolerance": 0.1,
+            "fraction_within_tolerance_percent": 22.75862068965517
+          },
+          {
+            "absolute_tolerance_iops": 1,
+            "relative_tolerance": 0.1,
+            "fraction_within_tolerance_percent": 22.75862068965517
+          },
+          {
+            "absolute_tolerance_iops": 5,
+            "relative_tolerance": 0.1,
+            "fraction_within_tolerance_percent": 22.75862068965517
+          },
+          {
+            "absolute_tolerance_iops": 10,
+            "relative_tolerance": 0.1,
+            "fraction_within_tolerance_percent": 22.75862068965517
+          },
+          {
+            "absolute_tolerance_iops": 25,
+            "relative_tolerance": 0.1,
+            "fraction_within_tolerance_percent": 28.275862068965516
+          },
+          {
+            "absolute_tolerance_iops": 50,
+            "relative_tolerance": 0.1,
+            "fraction_within_tolerance_percent": 53.10344827586207
+          },
+          {
+            "absolute_tolerance_iops": 100,
+            "relative_tolerance": 0.1,
+            "fraction_within_tolerance_percent": 84.13793103448276
+          }
+        ]
+      },
+      "idfs67": {
+        "reference_metrics": {
+          "n": 145,
+          "zero_actual": 0,
+          "mae_iops": 58.261531092420874,
+          "wape_percent": 26.823909342735206,
+          "mape_percent": 46.15550326436483,
+          "accuracy_percent": 53.84449673563517
+        },
+        "smape_percent": 30.568607992194146,
+        "tolerance_curve": [
+          {
+            "absolute_tolerance_iops": 0,
+            "relative_tolerance": 0.1,
+            "fraction_within_tolerance_percent": 24.137931034482758
+          },
+          {
+            "absolute_tolerance_iops": 1,
+            "relative_tolerance": 0.1,
+            "fraction_within_tolerance_percent": 24.137931034482758
+          },
+          {
+            "absolute_tolerance_iops": 5,
+            "relative_tolerance": 0.1,
+            "fraction_within_tolerance_percent": 24.137931034482758
+          },
+          {
+            "absolute_tolerance_iops": 10,
+            "relative_tolerance": 0.1,
+            "fraction_within_tolerance_percent": 24.137931034482758
+          },
+          {
+            "absolute_tolerance_iops": 25,
+            "relative_tolerance": 0.1,
+            "fraction_within_tolerance_percent": 28.275862068965516
+          },
+          {
+            "absolute_tolerance_iops": 50,
+            "relative_tolerance": 0.1,
+            "fraction_within_tolerance_percent": 54.48275862068966
+          },
+          {
+            "absolute_tolerance_iops": 100,
+            "relative_tolerance": 0.1,
+            "fraction_within_tolerance_percent": 82.75862068965517
+          }
+        ]
+      },
+      "cluster": {
+        "reference_metrics": {
+          "n": 145,
+          "zero_actual": 0,
+          "mae_iops": 408.25258076558225,
+          "wape_percent": 24.56627845763504,
+          "mape_percent": 43.82057340548004,
+          "accuracy_percent": 56.17942659451996
+        },
+        "smape_percent": 28.3799677000016,
+        "tolerance_curve": [
+          {
+            "absolute_tolerance_iops": 0,
+            "relative_tolerance": 0.1,
+            "fraction_within_tolerance_percent": 24.82758620689655
+          },
+          {
+            "absolute_tolerance_iops": 1,
+            "relative_tolerance": 0.1,
+            "fraction_within_tolerance_percent": 24.82758620689655
+          },
+          {
+            "absolute_tolerance_iops": 5,
+            "relative_tolerance": 0.1,
+            "fraction_within_tolerance_percent": 24.82758620689655
+          },
+          {
+            "absolute_tolerance_iops": 10,
+            "relative_tolerance": 0.1,
+            "fraction_within_tolerance_percent": 24.82758620689655
+          },
+          {
+            "absolute_tolerance_iops": 25,
+            "relative_tolerance": 0.1,
+            "fraction_within_tolerance_percent": 24.82758620689655
+          },
+          {
+            "absolute_tolerance_iops": 50,
+            "relative_tolerance": 0.1,
+            "fraction_within_tolerance_percent": 24.82758620689655
+          },
+          {
+            "absolute_tolerance_iops": 100,
+            "relative_tolerance": 0.1,
+            "fraction_within_tolerance_percent": 24.82758620689655
+          }
+        ]
+      }
+    },
+    "graph_zipf": {
+      "idfs44": {
+        "reference_metrics": {
+          "n": 146,
+          "zero_actual": 0,
+          "mae_iops": 166.40993090514925,
+          "wape_percent": 19.063044262182654,
+          "mape_percent": 40.794024275497755,
+          "accuracy_percent": 59.205975724502245
+        },
+        "smape_percent": 22.33447307849938,
+        "tolerance_curve": [
+          {
+            "absolute_tolerance_iops": 0,
+            "relative_tolerance": 0.1,
+            "fraction_within_tolerance_percent": 45.89041095890411
+          },
+          {
+            "absolute_tolerance_iops": 1,
+            "relative_tolerance": 0.1,
+            "fraction_within_tolerance_percent": 45.89041095890411
+          },
+          {
+            "absolute_tolerance_iops": 5,
+            "relative_tolerance": 0.1,
+            "fraction_within_tolerance_percent": 45.89041095890411
+          },
+          {
+            "absolute_tolerance_iops": 10,
+            "relative_tolerance": 0.1,
+            "fraction_within_tolerance_percent": 45.89041095890411
+          },
+          {
+            "absolute_tolerance_iops": 25,
+            "relative_tolerance": 0.1,
+            "fraction_within_tolerance_percent": 45.89041095890411
+          },
+          {
+            "absolute_tolerance_iops": 50,
+            "relative_tolerance": 0.1,
+            "fraction_within_tolerance_percent": 45.89041095890411
+          },
+          {
+            "absolute_tolerance_iops": 100,
+            "relative_tolerance": 0.1,
+            "fraction_within_tolerance_percent": 46.57534246575342
+          }
+        ]
+      },
+      "idfs45": {
+        "reference_metrics": {
+          "n": 146,
+          "zero_actual": 0,
+          "mae_iops": 148.5954163256087,
+          "wape_percent": 18.00603449628497,
+          "mape_percent": 38.44800709234159,
+          "accuracy_percent": 61.55199290765841
+        },
+        "smape_percent": 21.252606369228005,
+        "tolerance_curve": [
+          {
+            "absolute_tolerance_iops": 0,
+            "relative_tolerance": 0.1,
+            "fraction_within_tolerance_percent": 47.26027397260274
+          },
+          {
+            "absolute_tolerance_iops": 1,
+            "relative_tolerance": 0.1,
+            "fraction_within_tolerance_percent": 47.26027397260274
+          },
+          {
+            "absolute_tolerance_iops": 5,
+            "relative_tolerance": 0.1,
+            "fraction_within_tolerance_percent": 47.26027397260274
+          },
+          {
+            "absolute_tolerance_iops": 10,
+            "relative_tolerance": 0.1,
+            "fraction_within_tolerance_percent": 47.26027397260274
+          },
+          {
+            "absolute_tolerance_iops": 25,
+            "relative_tolerance": 0.1,
+            "fraction_within_tolerance_percent": 47.26027397260274
+          },
+          {
+            "absolute_tolerance_iops": 50,
+            "relative_tolerance": 0.1,
+            "fraction_within_tolerance_percent": 47.26027397260274
+          },
+          {
+            "absolute_tolerance_iops": 100,
+            "relative_tolerance": 0.1,
+            "fraction_within_tolerance_percent": 49.31506849315068
+          }
+        ]
+      },
+      "idfs46": {
+        "reference_metrics": {
+          "n": 146,
+          "zero_actual": 0,
+          "mae_iops": 156.0672127858077,
+          "wape_percent": 18.756534356306222,
+          "mape_percent": 39.43866971570492,
+          "accuracy_percent": 60.56133028429508
+        },
+        "smape_percent": 22.00015391585092,
+        "tolerance_curve": [
+          {
+            "absolute_tolerance_iops": 0,
+            "relative_tolerance": 0.1,
+            "fraction_within_tolerance_percent": 41.78082191780822
+          },
+          {
+            "absolute_tolerance_iops": 1,
+            "relative_tolerance": 0.1,
+            "fraction_within_tolerance_percent": 41.78082191780822
+          },
+          {
+            "absolute_tolerance_iops": 5,
+            "relative_tolerance": 0.1,
+            "fraction_within_tolerance_percent": 41.78082191780822
+          },
+          {
+            "absolute_tolerance_iops": 10,
+            "relative_tolerance": 0.1,
+            "fraction_within_tolerance_percent": 41.78082191780822
+          },
+          {
+            "absolute_tolerance_iops": 25,
+            "relative_tolerance": 0.1,
+            "fraction_within_tolerance_percent": 41.78082191780822
+          },
+          {
+            "absolute_tolerance_iops": 50,
+            "relative_tolerance": 0.1,
+            "fraction_within_tolerance_percent": 41.78082191780822
+          },
+          {
+            "absolute_tolerance_iops": 100,
+            "relative_tolerance": 0.1,
+            "fraction_within_tolerance_percent": 44.52054794520548
+          }
+        ]
+      },
+      "idfs47": {
+        "reference_metrics": {
+          "n": 146,
+          "zero_actual": 0,
+          "mae_iops": 163.87871131508402,
+          "wape_percent": 18.75762757398947,
+          "mape_percent": 40.47183625292876,
+          "accuracy_percent": 59.52816374707124
+        },
+        "smape_percent": 22.04478011154123,
+        "tolerance_curve": [
+          {
+            "absolute_tolerance_iops": 0,
+            "relative_tolerance": 0.1,
+            "fraction_within_tolerance_percent": 44.52054794520548
+          },
+          {
+            "absolute_tolerance_iops": 1,
+            "relative_tolerance": 0.1,
+            "fraction_within_tolerance_percent": 44.52054794520548
+          },
+          {
+            "absolute_tolerance_iops": 5,
+            "relative_tolerance": 0.1,
+            "fraction_within_tolerance_percent": 44.52054794520548
+          },
+          {
+            "absolute_tolerance_iops": 10,
+            "relative_tolerance": 0.1,
+            "fraction_within_tolerance_percent": 44.52054794520548
+          },
+          {
+            "absolute_tolerance_iops": 25,
+            "relative_tolerance": 0.1,
+            "fraction_within_tolerance_percent": 44.52054794520548
+          },
+          {
+            "absolute_tolerance_iops": 50,
+            "relative_tolerance": 0.1,
+            "fraction_within_tolerance_percent": 44.52054794520548
+          },
+          {
+            "absolute_tolerance_iops": 100,
+            "relative_tolerance": 0.1,
+            "fraction_within_tolerance_percent": 47.26027397260274
+          }
+        ]
+      },
+      "idfs64": {
+        "reference_metrics": {
+          "n": 146,
+          "zero_actual": 0,
+          "mae_iops": 171.94381109188106,
+          "wape_percent": 18.955560402774672,
+          "mape_percent": 40.89802405975853,
+          "accuracy_percent": 59.10197594024147
+        },
+        "smape_percent": 22.189429331591786,
+        "tolerance_curve": [
+          {
+            "absolute_tolerance_iops": 0,
+            "relative_tolerance": 0.1,
+            "fraction_within_tolerance_percent": 36.3013698630137
+          },
+          {
+            "absolute_tolerance_iops": 1,
+            "relative_tolerance": 0.1,
+            "fraction_within_tolerance_percent": 36.3013698630137
+          },
+          {
+            "absolute_tolerance_iops": 5,
+            "relative_tolerance": 0.1,
+            "fraction_within_tolerance_percent": 36.3013698630137
+          },
+          {
+            "absolute_tolerance_iops": 10,
+            "relative_tolerance": 0.1,
+            "fraction_within_tolerance_percent": 36.3013698630137
+          },
+          {
+            "absolute_tolerance_iops": 25,
+            "relative_tolerance": 0.1,
+            "fraction_within_tolerance_percent": 36.3013698630137
+          },
+          {
+            "absolute_tolerance_iops": 50,
+            "relative_tolerance": 0.1,
+            "fraction_within_tolerance_percent": 36.3013698630137
+          },
+          {
+            "absolute_tolerance_iops": 100,
+            "relative_tolerance": 0.1,
+            "fraction_within_tolerance_percent": 37.67123287671233
+          }
+        ]
+      },
+      "idfs65": {
+        "reference_metrics": {
+          "n": 146,
+          "zero_actual": 0,
+          "mae_iops": 143.31993595833603,
+          "wape_percent": 17.692771990425953,
+          "mape_percent": 37.101121594886905,
+          "accuracy_percent": 62.898878405113095
+        },
+        "smape_percent": 20.881816957930205,
+        "tolerance_curve": [
+          {
+            "absolute_tolerance_iops": 0,
+            "relative_tolerance": 0.1,
+            "fraction_within_tolerance_percent": 47.945205479452056
+          },
+          {
+            "absolute_tolerance_iops": 1,
+            "relative_tolerance": 0.1,
+            "fraction_within_tolerance_percent": 47.945205479452056
+          },
+          {
+            "absolute_tolerance_iops": 5,
+            "relative_tolerance": 0.1,
+            "fraction_within_tolerance_percent": 47.945205479452056
+          },
+          {
+            "absolute_tolerance_iops": 10,
+            "relative_tolerance": 0.1,
+            "fraction_within_tolerance_percent": 47.945205479452056
+          },
+          {
+            "absolute_tolerance_iops": 25,
+            "relative_tolerance": 0.1,
+            "fraction_within_tolerance_percent": 47.945205479452056
+          },
+          {
+            "absolute_tolerance_iops": 50,
+            "relative_tolerance": 0.1,
+            "fraction_within_tolerance_percent": 47.945205479452056
+          },
+          {
+            "absolute_tolerance_iops": 100,
+            "relative_tolerance": 0.1,
+            "fraction_within_tolerance_percent": 56.16438356164384
+          }
+        ]
+      },
+      "idfs66": {
+        "reference_metrics": {
+          "n": 146,
+          "zero_actual": 0,
+          "mae_iops": 366.36056248432027,
+          "wape_percent": 17.334306244822344,
+          "mape_percent": 40.717991322502925,
+          "accuracy_percent": 59.282008677497075
+        },
+        "smape_percent": 20.369831054407577,
+        "tolerance_curve": [
+          {
+            "absolute_tolerance_iops": 0,
+            "relative_tolerance": 0.1,
+            "fraction_within_tolerance_percent": 65.75342465753425
+          },
+          {
+            "absolute_tolerance_iops": 1,
+            "relative_tolerance": 0.1,
+            "fraction_within_tolerance_percent": 65.75342465753425
+          },
+          {
+            "absolute_tolerance_iops": 5,
+            "relative_tolerance": 0.1,
+            "fraction_within_tolerance_percent": 65.75342465753425
+          },
+          {
+            "absolute_tolerance_iops": 10,
+            "relative_tolerance": 0.1,
+            "fraction_within_tolerance_percent": 65.75342465753425
+          },
+          {
+            "absolute_tolerance_iops": 25,
+            "relative_tolerance": 0.1,
+            "fraction_within_tolerance_percent": 65.75342465753425
+          },
+          {
+            "absolute_tolerance_iops": 50,
+            "relative_tolerance": 0.1,
+            "fraction_within_tolerance_percent": 65.75342465753425
+          },
+          {
+            "absolute_tolerance_iops": 100,
+            "relative_tolerance": 0.1,
+            "fraction_within_tolerance_percent": 65.75342465753425
+          }
+        ]
+      },
+      "idfs67": {
+        "reference_metrics": {
+          "n": 146,
+          "zero_actual": 0,
+          "mae_iops": 149.3671863592997,
+          "wape_percent": 17.086585605623878,
+          "mape_percent": 37.427584760781,
+          "accuracy_percent": 62.572415239219
+        },
+        "smape_percent": 20.28647363562387,
+        "tolerance_curve": [
+          {
+            "absolute_tolerance_iops": 0,
+            "relative_tolerance": 0.1,
+            "fraction_within_tolerance_percent": 52.054794520547944
+          },
+          {
+            "absolute_tolerance_iops": 1,
+            "relative_tolerance": 0.1,
+            "fraction_within_tolerance_percent": 52.054794520547944
+          },
+          {
+            "absolute_tolerance_iops": 5,
+            "relative_tolerance": 0.1,
+            "fraction_within_tolerance_percent": 52.054794520547944
+          },
+          {
+            "absolute_tolerance_iops": 10,
+            "relative_tolerance": 0.1,
+            "fraction_within_tolerance_percent": 52.054794520547944
+          },
+          {
+            "absolute_tolerance_iops": 25,
+            "relative_tolerance": 0.1,
+            "fraction_within_tolerance_percent": 52.054794520547944
+          },
+          {
+            "absolute_tolerance_iops": 50,
+            "relative_tolerance": 0.1,
+            "fraction_within_tolerance_percent": 52.054794520547944
+          },
+          {
+            "absolute_tolerance_iops": 100,
+            "relative_tolerance": 0.1,
+            "fraction_within_tolerance_percent": 53.42465753424658
+          }
+        ]
+      },
+      "cluster": {
+        "reference_metrics": {
+          "n": 146,
+          "zero_actual": 0,
+          "mae_iops": 1418.7437425257594,
+          "wape_percent": 17.496461744654287,
+          "mape_percent": 38.915006353907685,
+          "accuracy_percent": 61.084993646092315
+        },
+        "smape_percent": 20.751497459191707,
+        "tolerance_curve": [
+          {
+            "absolute_tolerance_iops": 0,
+            "relative_tolerance": 0.1,
+            "fraction_within_tolerance_percent": 52.73972602739726
+          },
+          {
+            "absolute_tolerance_iops": 1,
+            "relative_tolerance": 0.1,
+            "fraction_within_tolerance_percent": 52.73972602739726
+          },
+          {
+            "absolute_tolerance_iops": 5,
+            "relative_tolerance": 0.1,
+            "fraction_within_tolerance_percent": 52.73972602739726
+          },
+          {
+            "absolute_tolerance_iops": 10,
+            "relative_tolerance": 0.1,
+            "fraction_within_tolerance_percent": 52.73972602739726
+          },
+          {
+            "absolute_tolerance_iops": 25,
+            "relative_tolerance": 0.1,
+            "fraction_within_tolerance_percent": 52.73972602739726
+          },
+          {
+            "absolute_tolerance_iops": 50,
+            "relative_tolerance": 0.1,
+            "fraction_within_tolerance_percent": 52.73972602739726
+          },
+          {
+            "absolute_tolerance_iops": 100,
+            "relative_tolerance": 0.1,
+            "fraction_within_tolerance_percent": 52.73972602739726
+          }
+        ]
+      }
+    },
+    "hpc_wrf": {
+      "idfs44": {
+        "reference_metrics": {
+          "n": 151,
+          "zero_actual": 0,
+          "mae_iops": 96.74871164303887,
+          "wape_percent": 44.15212602181719,
+          "mape_percent": 39.83286131360437,
+          "accuracy_percent": 60.16713868639563
+        },
+        "smape_percent": 36.27621229215342,
+        "tolerance_curve": [
+          {
+            "absolute_tolerance_iops": 0,
+            "relative_tolerance": 0.1,
+            "fraction_within_tolerance_percent": 25.827814569536425
+          },
+          {
+            "absolute_tolerance_iops": 1,
+            "relative_tolerance": 0.1,
+            "fraction_within_tolerance_percent": 25.827814569536425
+          },
+          {
+            "absolute_tolerance_iops": 5,
+            "relative_tolerance": 0.1,
+            "fraction_within_tolerance_percent": 25.827814569536425
+          },
+          {
+            "absolute_tolerance_iops": 10,
+            "relative_tolerance": 0.1,
+            "fraction_within_tolerance_percent": 26.490066225165563
+          },
+          {
+            "absolute_tolerance_iops": 25,
+            "relative_tolerance": 0.1,
+            "fraction_within_tolerance_percent": 48.34437086092715
+          },
+          {
+            "absolute_tolerance_iops": 50,
+            "relative_tolerance": 0.1,
+            "fraction_within_tolerance_percent": 70.19867549668874
+          },
+          {
+            "absolute_tolerance_iops": 100,
+            "relative_tolerance": 0.1,
+            "fraction_within_tolerance_percent": 84.10596026490066
+          }
+        ]
+      },
+      "idfs45": {
+        "reference_metrics": {
+          "n": 151,
+          "zero_actual": 0,
+          "mae_iops": 37.49381368582471,
+          "wape_percent": 28.655999729511215,
+          "mape_percent": 41.549224454886534,
+          "accuracy_percent": 58.450775545113466
+        },
+        "smape_percent": 26.79845769430695,
+        "tolerance_curve": [
+          {
+            "absolute_tolerance_iops": 0,
+            "relative_tolerance": 0.1,
+            "fraction_within_tolerance_percent": 29.801324503311257
+          },
+          {
+            "absolute_tolerance_iops": 1,
+            "relative_tolerance": 0.1,
+            "fraction_within_tolerance_percent": 29.801324503311257
+          },
+          {
+            "absolute_tolerance_iops": 5,
+            "relative_tolerance": 0.1,
+            "fraction_within_tolerance_percent": 29.801324503311257
+          },
+          {
+            "absolute_tolerance_iops": 10,
+            "relative_tolerance": 0.1,
+            "fraction_within_tolerance_percent": 29.801324503311257
+          },
+          {
+            "absolute_tolerance_iops": 25,
+            "relative_tolerance": 0.1,
+            "fraction_within_tolerance_percent": 67.54966887417218
+          },
+          {
+            "absolute_tolerance_iops": 50,
+            "relative_tolerance": 0.1,
+            "fraction_within_tolerance_percent": 88.0794701986755
+          },
+          {
+            "absolute_tolerance_iops": 100,
+            "relative_tolerance": 0.1,
+            "fraction_within_tolerance_percent": 95.36423841059603
+          }
+        ]
+      },
+      "idfs46": {
+        "reference_metrics": {
+          "n": 151,
+          "zero_actual": 0,
+          "mae_iops": 38.64135244673156,
+          "wape_percent": 28.472377004130507,
+          "mape_percent": 42.18100054763134,
+          "accuracy_percent": 57.81899945236866
+        },
+        "smape_percent": 25.958144501465686,
+        "tolerance_curve": [
+          {
+            "absolute_tolerance_iops": 0,
+            "relative_tolerance": 0.1,
+            "fraction_within_tolerance_percent": 29.13907284768212
+          },
+          {
+            "absolute_tolerance_iops": 1,
+            "relative_tolerance": 0.1,
+            "fraction_within_tolerance_percent": 29.13907284768212
+          },
+          {
+            "absolute_tolerance_iops": 5,
+            "relative_tolerance": 0.1,
+            "fraction_within_tolerance_percent": 29.13907284768212
+          },
+          {
+            "absolute_tolerance_iops": 10,
+            "relative_tolerance": 0.1,
+            "fraction_within_tolerance_percent": 29.801324503311257
+          },
+          {
+            "absolute_tolerance_iops": 25,
+            "relative_tolerance": 0.1,
+            "fraction_within_tolerance_percent": 59.602649006622514
+          },
+          {
+            "absolute_tolerance_iops": 50,
+            "relative_tolerance": 0.1,
+            "fraction_within_tolerance_percent": 88.0794701986755
+          },
+          {
+            "absolute_tolerance_iops": 100,
+            "relative_tolerance": 0.1,
+            "fraction_within_tolerance_percent": 96.02649006622516
+          }
+        ]
+      },
+      "idfs47": {
+        "reference_metrics": {
+          "n": 151,
+          "zero_actual": 0,
+          "mae_iops": 108.21443361202218,
+          "wape_percent": 43.527915491250255,
+          "mape_percent": 43.22710542814089,
+          "accuracy_percent": 56.77289457185911
+        },
+        "smape_percent": 40.40822866077449,
+        "tolerance_curve": [
+          {
+            "absolute_tolerance_iops": 0,
+            "relative_tolerance": 0.1,
+            "fraction_within_tolerance_percent": 25.165562913907284
+          },
+          {
+            "absolute_tolerance_iops": 1,
+            "relative_tolerance": 0.1,
+            "fraction_within_tolerance_percent": 25.165562913907284
+          },
+          {
+            "absolute_tolerance_iops": 5,
+            "relative_tolerance": 0.1,
+            "fraction_within_tolerance_percent": 25.165562913907284
+          },
+          {
+            "absolute_tolerance_iops": 10,
+            "relative_tolerance": 0.1,
+            "fraction_within_tolerance_percent": 25.165562913907284
+          },
+          {
+            "absolute_tolerance_iops": 25,
+            "relative_tolerance": 0.1,
+            "fraction_within_tolerance_percent": 41.72185430463576
+          },
+          {
+            "absolute_tolerance_iops": 50,
+            "relative_tolerance": 0.1,
+            "fraction_within_tolerance_percent": 62.913907284768214
+          },
+          {
+            "absolute_tolerance_iops": 100,
+            "relative_tolerance": 0.1,
+            "fraction_within_tolerance_percent": 76.82119205298014
+          }
+        ]
+      },
+      "idfs64": {
+        "reference_metrics": {
+          "n": 151,
+          "zero_actual": 0,
+          "mae_iops": 57.27440981489114,
+          "wape_percent": 32.84631933934129,
+          "mape_percent": 36.76247028146999,
+          "accuracy_percent": 63.23752971853001
+        },
+        "smape_percent": 27.311612680647688,
+        "tolerance_curve": [
+          {
+            "absolute_tolerance_iops": 0,
+            "relative_tolerance": 0.1,
+            "fraction_within_tolerance_percent": 30.4635761589404
+          },
+          {
+            "absolute_tolerance_iops": 1,
+            "relative_tolerance": 0.1,
+            "fraction_within_tolerance_percent": 30.4635761589404
+          },
+          {
+            "absolute_tolerance_iops": 5,
+            "relative_tolerance": 0.1,
+            "fraction_within_tolerance_percent": 30.4635761589404
+          },
+          {
+            "absolute_tolerance_iops": 10,
+            "relative_tolerance": 0.1,
+            "fraction_within_tolerance_percent": 30.4635761589404
+          },
+          {
+            "absolute_tolerance_iops": 25,
+            "relative_tolerance": 0.1,
+            "fraction_within_tolerance_percent": 59.602649006622514
+          },
+          {
+            "absolute_tolerance_iops": 50,
+            "relative_tolerance": 0.1,
+            "fraction_within_tolerance_percent": 81.45695364238411
+          },
+          {
+            "absolute_tolerance_iops": 100,
+            "relative_tolerance": 0.1,
+            "fraction_within_tolerance_percent": 90.06622516556291
+          }
+        ]
+      },
+      "idfs65": {
+        "reference_metrics": {
+          "n": 151,
+          "zero_actual": 0,
+          "mae_iops": 73.1342870049029,
+          "wape_percent": 38.74970117456871,
+          "mape_percent": 44.71581144476957,
+          "accuracy_percent": 55.28418855523043
+        },
+        "smape_percent": 31.88855428275495,
+        "tolerance_curve": [
+          {
+            "absolute_tolerance_iops": 0,
+            "relative_tolerance": 0.1,
+            "fraction_within_tolerance_percent": 27.1523178807947
+          },
+          {
+            "absolute_tolerance_iops": 1,
+            "relative_tolerance": 0.1,
+            "fraction_within_tolerance_percent": 27.1523178807947
+          },
+          {
+            "absolute_tolerance_iops": 5,
+            "relative_tolerance": 0.1,
+            "fraction_within_tolerance_percent": 27.1523178807947
+          },
+          {
+            "absolute_tolerance_iops": 10,
+            "relative_tolerance": 0.1,
+            "fraction_within_tolerance_percent": 27.1523178807947
+          },
+          {
+            "absolute_tolerance_iops": 25,
+            "relative_tolerance": 0.1,
+            "fraction_within_tolerance_percent": 55.629139072847686
+          },
+          {
+            "absolute_tolerance_iops": 50,
+            "relative_tolerance": 0.1,
+            "fraction_within_tolerance_percent": 79.47019867549669
+          },
+          {
+            "absolute_tolerance_iops": 100,
+            "relative_tolerance": 0.1,
+            "fraction_within_tolerance_percent": 86.75496688741723
+          }
+        ]
+      },
+      "idfs66": {
+        "reference_metrics": {
+          "n": 151,
+          "zero_actual": 0,
+          "mae_iops": 90.1217636051854,
+          "wape_percent": 41.843632938881356,
+          "mape_percent": 43.77512080355785,
+          "accuracy_percent": 56.22487919644215
+        },
+        "smape_percent": 36.899724067531785,
+        "tolerance_curve": [
+          {
+            "absolute_tolerance_iops": 0,
+            "relative_tolerance": 0.1,
+            "fraction_within_tolerance_percent": 17.880794701986755
+          },
+          {
+            "absolute_tolerance_iops": 1,
+            "relative_tolerance": 0.1,
+            "fraction_within_tolerance_percent": 17.880794701986755
+          },
+          {
+            "absolute_tolerance_iops": 5,
+            "relative_tolerance": 0.1,
+            "fraction_within_tolerance_percent": 17.880794701986755
+          },
+          {
+            "absolute_tolerance_iops": 10,
+            "relative_tolerance": 0.1,
+            "fraction_within_tolerance_percent": 17.880794701986755
+          },
+          {
+            "absolute_tolerance_iops": 25,
+            "relative_tolerance": 0.1,
+            "fraction_within_tolerance_percent": 45.033112582781456
+          },
+          {
+            "absolute_tolerance_iops": 50,
+            "relative_tolerance": 0.1,
+            "fraction_within_tolerance_percent": 72.18543046357615
+          },
+          {
+            "absolute_tolerance_iops": 100,
+            "relative_tolerance": 0.1,
+            "fraction_within_tolerance_percent": 80.13245033112582
+          }
+        ]
+      },
+      "idfs67": {
+        "reference_metrics": {
+          "n": 151,
+          "zero_actual": 0,
+          "mae_iops": 113.05496784079018,
+          "wape_percent": 44.82185560416761,
+          "mape_percent": 46.5963899476962,
+          "accuracy_percent": 53.4036100523038
+        },
+        "smape_percent": 40.43483600147586,
+        "tolerance_curve": [
+          {
+            "absolute_tolerance_iops": 0,
+            "relative_tolerance": 0.1,
+            "fraction_within_tolerance_percent": 21.85430463576159
+          },
+          {
+            "absolute_tolerance_iops": 1,
+            "relative_tolerance": 0.1,
+            "fraction_within_tolerance_percent": 21.85430463576159
+          },
+          {
+            "absolute_tolerance_iops": 5,
+            "relative_tolerance": 0.1,
+            "fraction_within_tolerance_percent": 21.85430463576159
+          },
+          {
+            "absolute_tolerance_iops": 10,
+            "relative_tolerance": 0.1,
+            "fraction_within_tolerance_percent": 21.85430463576159
+          },
+          {
+            "absolute_tolerance_iops": 25,
+            "relative_tolerance": 0.1,
+            "fraction_within_tolerance_percent": 39.0728476821192
+          },
+          {
+            "absolute_tolerance_iops": 50,
+            "relative_tolerance": 0.1,
+            "fraction_within_tolerance_percent": 66.2251655629139
+          },
+          {
+            "absolute_tolerance_iops": 100,
+            "relative_tolerance": 0.1,
+            "fraction_within_tolerance_percent": 78.1456953642384
+          }
+        ]
+      },
+      "cluster": {
+        "reference_metrics": {
+          "n": 151,
+          "zero_actual": 0,
+          "mae_iops": 478.37764538803,
+          "wape_percent": 30.567132337037073,
+          "mape_percent": 40.6743562406161,
+          "accuracy_percent": 59.3256437593839
+        },
+        "smape_percent": 36.03242999866823,
+        "tolerance_curve": [
+          {
+            "absolute_tolerance_iops": 0,
+            "relative_tolerance": 0.1,
+            "fraction_within_tolerance_percent": 4.635761589403973
+          },
+          {
+            "absolute_tolerance_iops": 1,
+            "relative_tolerance": 0.1,
+            "fraction_within_tolerance_percent": 4.635761589403973
+          },
+          {
+            "absolute_tolerance_iops": 5,
+            "relative_tolerance": 0.1,
+            "fraction_within_tolerance_percent": 4.635761589403973
+          },
+          {
+            "absolute_tolerance_iops": 10,
+            "relative_tolerance": 0.1,
+            "fraction_within_tolerance_percent": 4.635761589403973
+          },
+          {
+            "absolute_tolerance_iops": 25,
+            "relative_tolerance": 0.1,
+            "fraction_within_tolerance_percent": 4.635761589403973
+          },
+          {
+            "absolute_tolerance_iops": 50,
+            "relative_tolerance": 0.1,
+            "fraction_within_tolerance_percent": 4.635761589403973
+          },
+          {
+            "absolute_tolerance_iops": 100,
+            "relative_tolerance": 0.1,
+            "fraction_within_tolerance_percent": 4.635761589403973
+          }
+        ]
+      }
+    }
+  }
+}
