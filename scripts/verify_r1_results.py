@@ -30,7 +30,7 @@ def metrics(pairs):
 def compare(a,b,path=''):
     if isinstance(a,dict):
         if set(a)!=set(b):raise ValueError('metric keys differ '+path)
-        for k,v in a.items():compare(v,b[k],path+'/'+k)
+        for k,v in a.items():compare(v,b[k],path+'/'+str(k))
     elif a is None or b is None:
         if a!=b:raise ValueError('null differs '+path)
     elif not math.isclose(a,b,rel_tol=1e-10,abs_tol=1e-8):

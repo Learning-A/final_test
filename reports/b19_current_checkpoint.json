@@ -1,0 +1,183 @@
+{
+  "schema": "b19_local_checkpoint_v1",
+  "updated_at": "2026-11-23T00:31:56.254308+08:00",
+  "owner": "B",
+  "owner_thread": "01a203f5-3aa6-7b21-8a1f-8fece4787432",
+  "worktree": "F:/sessions/26.9.8_\u6d4b\u8bd5\u5927\u7eb2/work/idfs-model-b",
+  "local_branch": "model/local-b-r1",
+  "remote_branch": "model/causal-multiscale-inputs",
+  "issue": 19,
+  "pr": 16,
+  "state": "running",
+  "substage": "R1_completed_freeze_and_A_independent_review_pending",
+  "training_running": false,
+  "sources": {
+    "handoff_sha256": "2e7ac9ddcc68da042a1f06269b6c6021e977e167482face0699e199fee47cf90",
+    "research_plan_sha256": "fac1ef01e43f051e57bb9e495213ded0af33965f4df8ed6b948dd653b1f10a11",
+    "execution_card_sha256": "786fad23bd2df219b14a00b90779389f42a83f8b8d5ed466cc351b328b1b0a23"
+  },
+  "history": [
+    {
+      "job_id": "all_workloads_first_round_e2e_v1_a01",
+      "state": "completed",
+      "do_not_repeat": true
+    },
+    {
+      "job_id": "first_round_input_loss_v1_a01",
+      "state": "completed",
+      "do_not_repeat": true
+    },
+    {
+      "job_id": "masked_multigroup_moe_v1_a01",
+      "state": "failed_before_fit",
+      "do_not_repeat": true
+    },
+    {
+      "job_id": "masked_multigroup_moe_v1_a02",
+      "state": "completed",
+      "do_not_repeat": true
+    },
+    {
+      "job_id": "frozen_moe_group_diagnostics_v1_a01",
+      "state": "completed_no_fit",
+      "do_not_repeat": true
+    },
+    {
+      "job_id": "legacy_core_current1s_v1_a01",
+      "state": "timed_out_partial",
+      "do_not_repeat": true
+    },
+    {
+      "job_id": "legacy_core_recovery_v1_a01",
+      "state": "partial_recovered_no_fit",
+      "do_not_repeat": true
+    },
+    {
+      "job_id": "frozen_independent_rounds_v1_a01",
+      "state": "completed",
+      "do_not_repeat": true
+    },
+    {
+      "job_id": "workload_causal_input_v1_a01",
+      "state": "completed",
+      "do_not_repeat": true
+    },
+    {
+      "job_id": "causal_low_state_v1_a01",
+      "state": "completed_not_adopted",
+      "do_not_repeat": true
+    }
+  ],
+  "current": {
+    "experiment_id": "b19-r1-causal-inputs-offline-v1",
+    "source_sha": "8fbf56e59db9ba28d1afc277cfe4d6e6628e16e4",
+    "jobs": [
+      {
+        "job_id": "b19_r1_inputs_20261123_a01",
+        "state": "failed_or_interrupted",
+        "source_sha": "50cff145212a811302ed53ed600faa6c6908e1bb",
+        "elapsed_seconds": 81.74744606018066,
+        "do_not_repeat": true
+      },
+      {
+        "job_id": "b19_r1_inputs_20261123_a02",
+        "state": "completed",
+        "source_sha": "8fbf56e59db9ba28d1afc277cfe4d6e6628e16e4",
+        "elapsed_seconds": 228.58116745948792,
+        "do_not_repeat": true
+      }
+    ],
+    "total_elapsed_seconds": 310.3286135196686,
+    "total_worker_budget_seconds": 1800,
+    "continuation_budget_seconds": 1718,
+    "distinct_new_models": 27,
+    "recovered_without_refit": 9,
+    "continuation_new_models": 18,
+    "reused_F0_models_without_fit": 9,
+    "fit_seconds": 5328,
+    "internal_dev_seconds": 2661,
+    "source_role": "train",
+    "primary_margin_ms": 50,
+    "sensitivity_margins_ms": [
+      100,
+      200
+    ],
+    "summaries": {
+      "50": {
+        "node_macro_mape_percent": 108.06623590563109,
+        "F0_node_macro_mape_percent": 119.09081392307749,
+        "worst_node_group_mape_percent": 322.5187280357158,
+        "F0_worst_node_group_mape_percent": 343.2291525677759,
+        "node_groups_strictly_over_90_accuracy": 0,
+        "macro_relative_improvement": 0.09257286648966345,
+        "worst_group_ratio": 0.9396600656525803,
+        "max_workload_node_macro_mae_ratio": 0.9579035284705627
+      },
+      "100": {
+        "node_macro_mape_percent": 116.512159585756,
+        "F0_node_macro_mape_percent": 119.09081392307749,
+        "worst_node_group_mape_percent": 382.07572299363386,
+        "F0_worst_node_group_mape_percent": 343.2291525677759,
+        "node_groups_strictly_over_90_accuracy": 0,
+        "macro_relative_improvement": 0.02165283998299894,
+        "worst_group_ratio": 1.1131796939019831,
+        "max_workload_node_macro_mae_ratio": 0.9737365282676683
+      },
+      "200": {
+        "node_macro_mape_percent": 119.13731859948503,
+        "F0_node_macro_mape_percent": 119.09081392307749,
+        "worst_node_group_mape_percent": 441.25843777976854,
+        "F0_worst_node_group_mape_percent": 343.2291525677759,
+        "node_groups_strictly_over_90_accuracy": 0,
+        "macro_relative_improvement": -0.00039049759486542435,
+        "worst_group_ratio": 1.285608854838271,
+        "max_workload_node_macro_mae_ratio": 0.988915460403839
+      }
+    },
+    "report_sha256": "902011ab459e54c66cfb0350cf6600a98debc0185736d4c645eceb21386b5541",
+    "predictions_sha256": "2e01f0cac2f049fa98b29f67482aab2cb11c5df6a80d58ef9d116e0a2ba4a0dc",
+    "sample_ids_sha256": "0458ae7eb0f67db694954034291a2d450a8b6ca2e6f53596b179cc5b3ae0c558",
+    "B_separate_code_metric_replay": "verified_300_groups_15966_predictions",
+    "A_independent_review": "pending",
+    "artifact_release": "https://github.com/Learning-A/final_test/releases/tag/b19-r1-inputs-offline-20261123-v1",
+    "artifact_zip_sha256": "76c81d14092b84bd80aaeadd69c477739a4c15df17e17a2c3fc43f1738655eb0",
+    "B_metric_replay_on_windows_without_fit": "verified_300_groups_15966_predictions"
+  },
+  "validation": {
+    "current_card_external_validation_model_evaluations": 0,
+    "total_known_external_validation_model_evaluations": 1,
+    "formal_rounds_used": 0,
+    "do_not_reset_selection_history": true
+  },
+  "resource": {
+    "gpu_uuid": "GPU-ac63ac15-888b-c3fb-c42f-eb1cb26487c2",
+    "peer_gpu_uuid": "GPU-8923f552-5691-b49b-d2c8-87cb9292ae92",
+    "cpu_threads": 4,
+    "workers": 0,
+    "max_simultaneous_fits_per_owner": 1,
+    "locks": "shared legacy gate -> exclusive UUID slot -> exclusive owner slot; inherited until worker exits",
+    "parallel_distinct_slots_verified": true
+  },
+  "limitations": {
+    "clock_uncertainty_ns": null,
+    "model_service_arrival_proof": false,
+    "online_time_eligibility": false,
+    "formal_acceptance": false,
+    "all_margins_passing_groups": 0,
+    "offline_component_p95_ms": 53.01117735,
+    "includes_network_and_publication": false
+  },
+  "next_actions": [
+    "Freeze current artifacts and deliver once to A for independent replay.",
+    "Resolve discrepancies without repeated fitting.",
+    "Assess timing sensitivity and cost before R2 card design; no new fitting for this handoff update.",
+    "Later stages remain conditional: fixed-input L0-L3 -> light/uniform/MMoE -> causal calibration -> stability/freeze."
+  ],
+  "heartbeat": {
+    "id": "idfs-b",
+    "status": "ACTIVE",
+    "interval_minutes": 10,
+    "prompt_sha256": "eae78a5ed031293d67de89429f10942d68ce247fc81bd547391210059e8c92c1",
+    "first_read": "docs/B19_LOCAL_CONTINUATION_PLAN.md"
+  }
+}
