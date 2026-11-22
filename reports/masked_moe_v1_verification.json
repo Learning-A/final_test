@@ -1,0 +1,8 @@
+{
+  "prediction_hash_verified": true,
+  "sample_hash_verified": true,
+  "independent_metric_groups_recomputed": 400,
+  "raw_equals_final": true,
+  "causal_source_availability_checked": true,
+  "actual_network_arrival_certified": false
+}

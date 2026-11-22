@@ -2,6 +2,8 @@
 
 experiment_id=masked-multigroup-moe-v1；job_id=masked_multigroup_moe_v1_a01。沿用Issue17/PR16，不重复先前两个已完成测试。原五负载首轮ZIP SHA256 f28fc45ba4e6d80c80da815b06d4e05573a7e9c788cbe199e0a1f01898b40b49，保留健康候选train角色及边界pending、非独立/非正式属性。固定原时间轴，masked144训练1514秒/开发762秒；同时报告旧严格15秒697开发秒共同交集。绝不补标签。
 
+实际执行：a01在训练统计处因确定性CUDA median失败，无拟合；a02保持统计定义、移到b507 CPU计算后四组成功，固定源码06dc5e7116ca0abca05690b83640cf3b52fb479f，结果见MASKED_MOE_STUDY_V1_RESULTS.md。未覆盖a01或自动扩预算。
+
 ## 四组预先固定对照
 
 - single_log：同144输入的共享MLP单专家，八节点共享骨干/节点bias，另有集群头。
