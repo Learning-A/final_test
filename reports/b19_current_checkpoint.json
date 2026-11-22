@@ -1,6 +1,6 @@
 {
   "schema": "b19_local_checkpoint_v1",
-  "updated_at": "2026-11-23T01:26:30.390285+08:00",
+  "updated_at": "2026-11-23T01:30:51.528735+08:00",
   "owner": "B",
   "owner_thread": "01a203f5-3aa6-7b21-8a1f-8fece4787432",
   "worktree": "F:/sessions/26.9.8_\u6d4b\u8bd5\u5927\u7eb2/work/idfs-model-b",
@@ -281,5 +281,22 @@
     "artifact_zip_sha256": "d2385a916fb6e757837ba34388927dc1cb279712816f1f09d1feeb6180782e39",
     "artifact_release_id": 454615959,
     "artifact_published": true
+  },
+  "future_loss_card": {
+    "path": "docs/B19_R2_LOSS_CARD_DRAFT.md",
+    "state": "design_only_not_running",
+    "configurations": [
+      "L0",
+      "L1",
+      "L2",
+      "L3"
+    ],
+    "proposed_total_group_budget_seconds": 1800,
+    "new_fit_started": false,
+    "preprocessing_fitted": false,
+    "registered_job_id": null,
+    "implementation_ready": false,
+    "external_validation_new_evaluations": 0,
+    "requires_exact_feature_mask_and_scaling_spec": true
   }
 }
