@@ -1,0 +1,25 @@
+{
+  "job_id": "frozen_independent_rounds_v1_a01",
+  "code_commit": "48f7d52119464e542a9d9d48184681e905a19995",
+  "cpu_threads": 4,
+  "gpu_used": false,
+  "fit_performed": false,
+  "checkpoint_selection_performed": false,
+  "budget_seconds": 1800,
+  "command": [
+    "/home/lmj/miniconda3/envs/tsfm/bin/python",
+    "/home/lmj/idfs_forecast_lab/model_b_20261122T074416Z/frozen_independent_rounds_v1_a01/source/scripts/evaluate_frozen_independent_rounds.py",
+    "--index",
+    "/home/lmj/idfs_forecast_lab/model_b_20261122T074416Z/frozen_independent_rounds_v1_a01/dataset_index.json",
+    "--validation",
+    "/home/lmj/idfs_forecast_lab/model_b_20261122T074416Z/frozen_independent_rounds_v1_a01/validation.zip",
+    "--gru-source",
+    "/home/lmj/idfs_forecast_lab/model_b_20261122T074416Z/legacy_core_current1s_v1_a01/results",
+    "--moe-source",
+    "/home/lmj/idfs_forecast_lab/model_b_20261122T074416Z/masked_multigroup_moe_v1_a02/results",
+    "--output",
+    "/home/lmj/idfs_forecast_lab/model_b_20261122T074416Z/frozen_independent_rounds_v1_a01/results"
+  ],
+  "exit_code": 0,
+  "wall_seconds": 23.651067769154906
+}
