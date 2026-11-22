@@ -121,6 +121,13 @@
 
 ## 后续条目模板
 
+### 2026-11-22 B：Graph R0实际数据核验通过，限定交付范围
+
+- 已接收A发布graph-fine-context-r0-20261122-v1，ZIP SHA9f25bff3f4870ccb9f2b7e96e82d79d1d544dc4b627101061d881564a78d6752；原request_id将回复verified，限Graph train03核心与标签一致性，线上/单位/其他轮范围不冒充通过。
+- 59,562 fine行与41,031 raw邻域行及文件哈希核验；5,921有效node/client秒窗read/write/total、36个不完整标记一致；原始累计计数独立重建360个事件100ms桶一致。24原始文件SHA匹配原quality；544个内部开发秒与旧P2样本清单完全一致。
+- 七事件的原96OSS/节点/集群/client标签核对一致，A的Vdbench审计原日志尚未独立收到。目标53的事件前0.8秒左右已呈持续低活动，其他事件前兆不同；仅源时钟事后诊断，不证明总体预测力或线上可用。验证三事件不用于拟合/选模。
+- 新增可复算脚本scripts/audit_graph_fine_r0.py、reports/graph_r0_b_receipt.json和曲线、docs/GRAPH_R0_B_RECEIPT.md。实际数据核验执行通过，无训练或新模型评分。下一步与A约定剩余14个train轮的同schema核心及时间/导出来源证据，不重复已有train03；R1不越过数据范围与时间门槛。
+
 ### 2026-11-22 B：R1配对样本和CPU共享训练租约准备
 
 - 接续a1ebecf，核对#18/#19后仍无A实际样例交付。原request_id保留，不重复催单、不提前verified；R0/R1等待数据依赖，未拟合。
