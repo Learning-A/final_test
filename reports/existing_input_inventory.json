@@ -1,0 +1,446 @@
+{
+  "archive_sha256": "f28fc45ba4e6d80c80da815b06d4e05573a7e9c788cbe199e0a1f01898b40b49",
+  "fit_performed": false,
+  "scope": "existing 1s handoff windows only, recording interval pending boundary review",
+  "workloads": {
+    "ai_training_ses": {
+      "client_nfs_rpc": {
+        "entity_count": 16,
+        "window_rows": 9584,
+        "complete_rows": 9584,
+        "positive_total_rows": 590,
+        "zero_total_rows": 8994,
+        "fields": [
+          "available_epoch_ns",
+          "complete",
+          "entity",
+          "n_ticks",
+          "read_iops",
+          "scope",
+          "total_iops",
+          "unit",
+          "window_end_ns",
+          "window_start_ns",
+          "write_iops"
+        ],
+        "total_iops_max": 3405
+      },
+      "cluster_oss": {
+        "entity_count": 1,
+        "window_rows": 599,
+        "complete_rows": 592,
+        "positive_total_rows": 591,
+        "zero_total_rows": 1,
+        "fields": [
+          "available_epoch_ns",
+          "complete",
+          "entity",
+          "n_ticks",
+          "read_iops",
+          "scope",
+          "total_iops",
+          "unit",
+          "window_end_ns",
+          "window_start_ns",
+          "write_iops"
+        ],
+        "total_iops_max": 3758
+      },
+      "host_oss": {
+        "entity_count": 8,
+        "window_rows": 4792,
+        "complete_rows": 4785,
+        "positive_total_rows": 4730,
+        "zero_total_rows": 55,
+        "fields": [
+          "available_epoch_ns",
+          "complete",
+          "entity",
+          "n_ticks",
+          "read_iops",
+          "scope",
+          "total_iops",
+          "unit",
+          "window_end_ns",
+          "window_start_ns",
+          "write_iops"
+        ],
+        "total_iops_max": 1300
+      },
+      "oss": {
+        "entity_count": 96,
+        "window_rows": 57504,
+        "complete_rows": 57437,
+        "positive_total_rows": 56291,
+        "zero_total_rows": 1146,
+        "fields": [
+          "available_epoch_ns",
+          "complete",
+          "entity",
+          "n_ticks",
+          "read_iops",
+          "scope",
+          "total_iops",
+          "unit",
+          "window_end_ns",
+          "window_start_ns",
+          "write_iops"
+        ],
+        "total_iops_max": 973
+      }
+    },
+    "ai_inference_ses": {
+      "client_nfs_rpc": {
+        "entity_count": 16,
+        "window_rows": 9584,
+        "complete_rows": 9584,
+        "positive_total_rows": 592,
+        "zero_total_rows": 8992,
+        "fields": [
+          "available_epoch_ns",
+          "complete",
+          "entity",
+          "n_ticks",
+          "read_iops",
+          "scope",
+          "total_iops",
+          "unit",
+          "window_end_ns",
+          "window_start_ns",
+          "write_iops"
+        ],
+        "total_iops_max": 6930
+      },
+      "cluster_oss": {
+        "entity_count": 1,
+        "window_rows": 599,
+        "complete_rows": 590,
+        "positive_total_rows": 590,
+        "zero_total_rows": 0,
+        "fields": [
+          "available_epoch_ns",
+          "complete",
+          "entity",
+          "n_ticks",
+          "read_iops",
+          "scope",
+          "total_iops",
+          "unit",
+          "window_end_ns",
+          "window_start_ns",
+          "write_iops"
+        ],
+        "total_iops_max": 7177
+      },
+      "host_oss": {
+        "entity_count": 8,
+        "window_rows": 4792,
+        "complete_rows": 4783,
+        "positive_total_rows": 4748,
+        "zero_total_rows": 35,
+        "fields": [
+          "available_epoch_ns",
+          "complete",
+          "entity",
+          "n_ticks",
+          "read_iops",
+          "scope",
+          "total_iops",
+          "unit",
+          "window_end_ns",
+          "window_start_ns",
+          "write_iops"
+        ],
+        "total_iops_max": 2128
+      },
+      "oss": {
+        "entity_count": 96,
+        "window_rows": 57504,
+        "complete_rows": 57493,
+        "positive_total_rows": 56745,
+        "zero_total_rows": 748,
+        "fields": [
+          "available_epoch_ns",
+          "complete",
+          "entity",
+          "n_ticks",
+          "read_iops",
+          "scope",
+          "total_iops",
+          "unit",
+          "window_end_ns",
+          "window_start_ns",
+          "write_iops"
+        ],
+        "total_iops_max": 1393
+      }
+    },
+    "bigdata_baleen": {
+      "client_nfs_rpc": {
+        "entity_count": 16,
+        "window_rows": 9584,
+        "complete_rows": 9584,
+        "positive_total_rows": 589,
+        "zero_total_rows": 8995,
+        "fields": [
+          "available_epoch_ns",
+          "complete",
+          "entity",
+          "n_ticks",
+          "read_iops",
+          "scope",
+          "total_iops",
+          "unit",
+          "window_end_ns",
+          "window_start_ns",
+          "write_iops"
+        ],
+        "total_iops_max": 5596
+      },
+      "cluster_oss": {
+        "entity_count": 1,
+        "window_rows": 599,
+        "complete_rows": 592,
+        "positive_total_rows": 592,
+        "zero_total_rows": 0,
+        "fields": [
+          "available_epoch_ns",
+          "complete",
+          "entity",
+          "n_ticks",
+          "read_iops",
+          "scope",
+          "total_iops",
+          "unit",
+          "window_end_ns",
+          "window_start_ns",
+          "write_iops"
+        ],
+        "total_iops_max": 2941
+      },
+      "host_oss": {
+        "entity_count": 8,
+        "window_rows": 4792,
+        "complete_rows": 4785,
+        "positive_total_rows": 4725,
+        "zero_total_rows": 60,
+        "fields": [
+          "available_epoch_ns",
+          "complete",
+          "entity",
+          "n_ticks",
+          "read_iops",
+          "scope",
+          "total_iops",
+          "unit",
+          "window_end_ns",
+          "window_start_ns",
+          "write_iops"
+        ],
+        "total_iops_max": 424
+      },
+      "oss": {
+        "entity_count": 96,
+        "window_rows": 57504,
+        "complete_rows": 57486,
+        "positive_total_rows": 55902,
+        "zero_total_rows": 1584,
+        "fields": [
+          "available_epoch_ns",
+          "complete",
+          "entity",
+          "n_ticks",
+          "read_iops",
+          "scope",
+          "total_iops",
+          "unit",
+          "window_end_ns",
+          "window_start_ns",
+          "write_iops"
+        ],
+        "total_iops_max": 158
+      }
+    },
+    "graph_zipf": {
+      "client_nfs_rpc": {
+        "entity_count": 16,
+        "window_rows": 9584,
+        "complete_rows": 9584,
+        "positive_total_rows": 592,
+        "zero_total_rows": 8992,
+        "fields": [
+          "available_epoch_ns",
+          "complete",
+          "entity",
+          "n_ticks",
+          "read_iops",
+          "scope",
+          "total_iops",
+          "unit",
+          "window_end_ns",
+          "window_start_ns",
+          "write_iops"
+        ],
+        "total_iops_max": 9970
+      },
+      "cluster_oss": {
+        "entity_count": 1,
+        "window_rows": 599,
+        "complete_rows": 586,
+        "positive_total_rows": 586,
+        "zero_total_rows": 0,
+        "fields": [
+          "available_epoch_ns",
+          "complete",
+          "entity",
+          "n_ticks",
+          "read_iops",
+          "scope",
+          "total_iops",
+          "unit",
+          "window_end_ns",
+          "window_start_ns",
+          "write_iops"
+        ],
+        "total_iops_max": 9950
+      },
+      "host_oss": {
+        "entity_count": 8,
+        "window_rows": 4792,
+        "complete_rows": 4779,
+        "positive_total_rows": 4738,
+        "zero_total_rows": 41,
+        "fields": [
+          "available_epoch_ns",
+          "complete",
+          "entity",
+          "n_ticks",
+          "read_iops",
+          "scope",
+          "total_iops",
+          "unit",
+          "window_end_ns",
+          "window_start_ns",
+          "write_iops"
+        ],
+        "total_iops_max": 2628
+      },
+      "oss": {
+        "entity_count": 96,
+        "window_rows": 57504,
+        "complete_rows": 57480,
+        "positive_total_rows": 56813,
+        "zero_total_rows": 667,
+        "fields": [
+          "available_epoch_ns",
+          "complete",
+          "entity",
+          "n_ticks",
+          "read_iops",
+          "scope",
+          "total_iops",
+          "unit",
+          "window_end_ns",
+          "window_start_ns",
+          "write_iops"
+        ],
+        "total_iops_max": 761
+      }
+    },
+    "hpc_wrf": {
+      "client_nfs_rpc": {
+        "entity_count": 16,
+        "window_rows": 9584,
+        "complete_rows": 9584,
+        "positive_total_rows": 596,
+        "zero_total_rows": 8988,
+        "fields": [
+          "available_epoch_ns",
+          "complete",
+          "entity",
+          "n_ticks",
+          "read_iops",
+          "scope",
+          "total_iops",
+          "unit",
+          "window_end_ns",
+          "window_start_ns",
+          "write_iops"
+        ],
+        "total_iops_max": 4577
+      },
+      "cluster_oss": {
+        "entity_count": 1,
+        "window_rows": 599,
+        "complete_rows": 585,
+        "positive_total_rows": 585,
+        "zero_total_rows": 0,
+        "fields": [
+          "available_epoch_ns",
+          "complete",
+          "entity",
+          "n_ticks",
+          "read_iops",
+          "scope",
+          "total_iops",
+          "unit",
+          "window_end_ns",
+          "window_start_ns",
+          "write_iops"
+        ],
+        "total_iops_max": 3309
+      },
+      "host_oss": {
+        "entity_count": 8,
+        "window_rows": 4792,
+        "complete_rows": 4778,
+        "positive_total_rows": 4763,
+        "zero_total_rows": 15,
+        "fields": [
+          "available_epoch_ns",
+          "complete",
+          "entity",
+          "n_ticks",
+          "read_iops",
+          "scope",
+          "total_iops",
+          "unit",
+          "window_end_ns",
+          "window_start_ns",
+          "write_iops"
+        ],
+        "total_iops_max": 927
+      },
+      "oss": {
+        "entity_count": 96,
+        "window_rows": 57504,
+        "complete_rows": 57470,
+        "positive_total_rows": 56729,
+        "zero_total_rows": 741,
+        "fields": [
+          "available_epoch_ns",
+          "complete",
+          "entity",
+          "n_ticks",
+          "read_iops",
+          "scope",
+          "total_iops",
+          "unit",
+          "window_end_ns",
+          "window_start_ns",
+          "write_iops"
+        ],
+        "total_iops_max": 793
+      }
+    }
+  },
+  "unavailable_in_this_package": [
+    "100ms buckets",
+    "queue",
+    "inflight",
+    "latency",
+    "CPU",
+    "network bytes"
+  ],
+  "availability_evidence": "source read end only, no actual receiver arrival certification"
+}
