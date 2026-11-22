@@ -2,7 +2,7 @@
 import concurrent.futures
 import hashlib
 import json
-from pathlib import Path
+from pathlib import Path, PurePosixPath
 import shutil
 import shlex
 import threading
@@ -21,6 +21,18 @@ def development_rounds():
                  run_id=workload+'_'+role+'_%02d' % index)
             for role, index in [('train', 1), ('train', 2), ('train', 3), ('validation', 1)]
             for alias, workload in aliases]
+
+
+def workload_command(release, manifest, action, alias, *extra):
+    args = [release['release']+'/workloads.sh', action, '--case', alias]
+    config_root = manifest.get('config_root')
+    if config_root is not None:
+        root = PurePosixPath(config_root)
+        expected = root/manifest['id']/'rendered'/'manifest.json'
+        if not root.is_absolute() or '..' in root.parts or expected != PurePosixPath(manifest['path']):
+            raise ValueError('config_root must resolve to the pinned workload manifest')
+        args.extend(('--config-root', config_root))
+    return shlex.join([*args, *extra])
 
 
 def run(root, site_path='config/site_smoke.json', protocol_path='config/protocol.json',
@@ -58,8 +70,8 @@ def run(root, site_path='config/site_smoke.json', protocol_path='config/protocol
                     "($1 ~ /^python/ && ($0 ~ /idfs_forecast_inference|idfs[-_]workloads?|python3 -B -/)) {print}'")
                 if active['exit'] or active['stdout'].strip():
                     raise RuntimeError('existing workload/preparation/copy/collector task: refuse overlapping load')
-                ready = connection.run(target, shlex.join([release['release']+'/workloads.sh',
-                                              'verify', '--case', spec['alias']]), timeout=60)
+                ready = connection.run(target, workload_command(
+                    release, manifest, 'verify', spec['alias']), timeout=60)
                 save(dest/'data_readiness.json', ready)
                 if ready['exit']:
                     raise RuntimeError('existing dataset not ready; no automatic preparation')
@@ -94,8 +106,8 @@ def run(root, site_path='config/site_smoke.json', protocol_path='config/protocol
                         save(dest/'recording_start.json',dict(event='recording_start',
                              epoch_ns=int(anchor['stdout'].strip()),clock_host=site['control_host'],
                              first_io_claimed=False))
-                        command=shlex.join([release['release']+'/workloads.sh','run','--case',
-                                           spec['alias'],'--results',remote,'--execute'])
+                        command=workload_command(release, manifest, 'run', spec['alias'],
+                                                 '--results', remote, '--execute')
                         save(dest/'execution.json',dict(**spec,command=command,remote_results=remote,
                              manifest_sha256=hashlib.sha256(data).hexdigest(),development_only=True))
                         print('LOAD '+spec['run_id'],flush=True)
