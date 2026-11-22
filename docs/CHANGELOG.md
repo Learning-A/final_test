@@ -121,6 +121,13 @@
 
 ## 后续条目模板
 
+### 2026-11-22 B：15轮核心与时间覆盖独立验收
+
+- 实际下载校验R1新包d6fc9b0e、15轮索引b4efd63c、14轮清单975dc0e、A导出脚本962e9064；包内索引与独立清单逐字节相同。15原train身份/分区/成员/来源哈希一致，Graph参考包复用，不混validation。
+- 14轮82,881个有效node/client秒窗read/write/total/available与508个不完整标记独立复算一致。15轮配对样本仍5328拟合/2661内部开发秒，原sample_ids不变。69,820个单节点完整窗的七档源时间余量覆盖逐轮与A@fa335371一致。
+- 新增可复算脚本verify_r1_training_core_batch.py、报告r1_core_b_receipt_v1.json和R1_CORE_B_RECEIPT_V1.md。回执verified仅限数据/覆盖，Windows采集接收不是服务端到达，时钟界unknown未变；无模型训练/新评分/外部验证消费。
+- 数据等待已解除，B回复原request_id并将#19恢复running，后续先登记时间假设和敏感性范围的离线执行卡，不重复请求已交付14轮或现场补采。功能检查结果及提交SHA在#19回执登记。
+
 ### 2026-11-22 B：固定R1全范围格式及core-only出口
 
 - 已读取A18-R0-RECEIPT-PINS补充，Graph样例哈希与既有verified一致，不重复核验；A明确归档未发现逐节点时钟测量和独立GC日志，未知保持，不要求现场补采。
