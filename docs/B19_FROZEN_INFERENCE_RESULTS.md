@@ -15,10 +15,10 @@
 
 该结果解决了所测环境、固定样本上模型和预索引特征的离线组件成本矛盾。ZIP 读取、索引预处理、实际服务接收、网络、发布与跨机时钟误差不在联合计时内。逐轮时钟界仍 unknown，`online_time_eligibility=false`，不能据此宣布现场 30 ms 或正式准确率通过。原 R1 的 100/200 ms 敏感性失败和三档 0/40 精度组也不因执行加速而改变。
 
-B 另用标准库重算 600 条计时的样本键、交替顺序、分位数、分量加和，核对 NPZ、计时、报告和锁记录哈希。该复算没有再次执行模型或重新计时。A 对新导出执行版本的独立输出复核仍待完成。
+B 另用标准库重算 600 条计时的样本键、交替顺序、分位数、分量加和，核对 NPZ、计时、报告和锁记录哈希。该复算没有再次执行模型或重新计时。A 随后在 `aed6d99c79f9584d92ef52d6899d32d72c5a7163` 独立加载包内 NPZ，按原固定内部输入重建2,661样本九目标输出，最大相对差同为0；并复算原600条计时，联合和逐轮 P95 均一致。A 未重新跑计时，复核不改变线上时间资格。
 
 导出 `primary_forest.npz` SHA256：`bdde922b9e70cefcb71f5bf3a43c0c26d363bb55f5465aa69452d188d9c8f8e1`。报告 SHA256：`e038b4b7273c5af4d8c5ae6b739e398961a9912d847909e902313cf4bf56083c`。原始计时 SHA256：`2d4e2e60448aec3b6f39548c54cdb2dc60ee6869206f4ccacea2d3a1355706dd`。
 
-证据为 [报告](../reports/frozen_inference_v1.json)、[计时独立复算](../reports/frozen_inference_v1_verification.json) 与原 [固定卡](B19_FROZEN_INFERENCE_CARD_DRAFT.md)。本作业置为 do_not_repeat。后续先交 A 核对新导出版本；不重复 R1 拟合，不自动重测本卡，不因成本降低直接启动损失或架构搜索。
+证据为 [报告](../reports/frozen_inference_v1.json)、[计时独立复算](../reports/frozen_inference_v1_verification.json)、原 [固定卡](B19_FROZEN_INFERENCE_CARD_DRAFT.md) 及 A 在 `aed6d99` 的 `reports/a_r1_frozen_inference_review.json`。本作业置为 do_not_repeat。新导出版本对拍已由A复核，不重复请求验收；不重复 R1 拟合，不自动重测本卡，不因成本降低直接启动损失或架构搜索。
 
 [冻结执行包](https://github.com/Learning-A/final_test/releases/tag/b19-frozen-inference-20261123-v1)含实际源码、NPZ、报告、原始计时、对拍摘要、锁记录、日志及父冻结包引用，共 17 个成员。ZIP SHA256 为 `d2385a916fb6e757837ba34388927dc1cb279712816f1f09d1feeb6180782e39`，其余 16 个成员由 `MANIFEST.json` 逐项记录大小与哈希。
