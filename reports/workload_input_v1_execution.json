@@ -1,0 +1,22 @@
+{
+  "job_id": "workload_causal_input_v1_a01",
+  "code_commit": "e7f1db65aa8c963a8261532df7f260e9c9c814a0",
+  "cpu_threads": 4,
+  "gpu_used": false,
+  "workers": 0,
+  "budget_seconds": 1800,
+  "command": [
+    "/home/lmj/miniconda3/envs/tsfm/bin/python",
+    "/home/lmj/idfs_forecast_lab/model_b_20261122T074416Z/workload_causal_input_v1_a01/source/scripts/run_workload_input_study.py",
+    "--train",
+    "/home/lmj/idfs_forecast_lab/model_b_20261122T074416Z/workload_causal_input_v1_a01/train.zip",
+    "--index",
+    "/home/lmj/idfs_forecast_lab/model_b_20261122T074416Z/workload_causal_input_v1_a01/dataset_index.json",
+    "--topology",
+    "/home/lmj/idfs_forecast_lab/model_b_20261122T074416Z/workload_causal_input_v1_a01/topology.json",
+    "--output",
+    "/home/lmj/idfs_forecast_lab/model_b_20261122T074416Z/workload_causal_input_v1_a01/results"
+  ],
+  "exit_code": 0,
+  "wall_seconds": 95.96513951569796
+}
