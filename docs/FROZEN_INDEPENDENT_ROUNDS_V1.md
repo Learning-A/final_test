@@ -1,0 +1,11 @@
+# 首次独立开发轮冻结推理卡
+
+唯一ID frozen-first-independent-rounds-v1，job frozen_independent_rounds_v1_a01。用户已停止定时，本聊天手动执行。新Release development-all-20-rounds-20261122-v1收齐15train/5validation和遥测。四文件哈希及149成员核验通过；旧首轮5个windows/recording_start与旧包字节相同，不能重复当新训练数据。
+
+在读取新验证轮数值标签进行选模前固定：只比较last_available、mean_five、旧首轮开发已选定的gru_global_mae_mape（九独立目标）、moe_combo（八节点+集群联合）。四方案全报告；不重训、不更新归一化、checkpoint或校准，不挑验证轮最优单节点组合。旧GRU两个归一化组完整恢复，TCN预算超时未完成，不参与本次比较。
+
+验证只读取index中5个原role=validation轮；禁止train/validation run混合。使用recording_start+[0,600)且完整15秒共同因果历史/完整八节点标签，原角色、来源、边界pending保留。完整轮与训练采集独立，但跨机时钟/实际发布到达仍待核验，因此不是正式验收。旧权重只在首轮部分训练秒拟合，尚未利用新增10个train轮，不把该测试说成20轮重训结果。
+
+冻结源：legacy_core_current1s_v1_a01/results的gru_global_mae_mape_<host>.ts及progress.json哈希；masked_multigroup_moe_v1_a02/results的moe_combo.ts及report.json哈希。新index SHA52e0bf86ff62079e6104a78b58126f59d0f63210ecb405d86b1614d98e92fd2d，validation.zip SHA0c7bcbf682db0b895569211966eed82cf37bd77663c126ab29269aae8cb05ecf。
+
+仅b507新目录CPU4/workers0，GPU不可见，无拟合，1800秒上限。保存数据/模型/源码哈希、逐窗口raw/final、每节点/负载/直接与求和集群MAPE/MAE/WAPE/零值、覆盖拒绝和独立复算。MAPE只排实际零，不能用容限曲线替代门槛。此开发验证集消费计数从1开始登记，后续再选模型须说明重复选择偏差；正式独立三轮仍保留。
