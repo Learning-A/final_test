@@ -1,6 +1,6 @@
 {
   "schema": "b19_local_checkpoint_v1",
-  "updated_at": "2026-11-23T01:45:45.821175+08:00",
+  "updated_at": "2026-11-23T01:56:39.402410+08:00",
   "owner": "B",
   "owner_thread": "01a203f5-3aa6-7b21-8a1f-8fece4787432",
   "worktree": "F:/sessions/26.9.8_\u6d4b\u8bd5\u5927\u7eb2/work/idfs-model-b",
@@ -9,7 +9,7 @@
   "issue": 19,
   "pr": 16,
   "state": "running",
-  "substage": "frozen_execution_A_verified_R2_scaling_implemented",
+  "substage": "R2_inputs_and_fixed_loss_controls_verified",
   "training_running": false,
   "sources": {
     "handoff_sha256": "2e7ac9ddcc68da042a1f06269b6c6021e977e167482face0699e199fee47cf90",
@@ -177,8 +177,8 @@
     "includes_network_and_publication": false
   },
   "next_actions": [
-    "Continue the fixed R2 preparation with the shared backbone, four loss controls, and pinned run input assembly.",
-    "Register the real R2 job after the executable card and functional verification are complete.",
+    "Connect fixed R2 loss arms to a shared minibatch, checkpoint and early-stopping runner and verify its artifact handling.",
+    "Register the runnable R2 card with exact environment, checksums and job identity before using the shared resource locks.",
     "Reuse completed R1 artifacts and preserve the documented online timing and accuracy limits."
   ],
   "heartbeat": {
@@ -293,7 +293,7 @@
   },
   "future_loss_card": {
     "path": "docs/B19_R2_LOSS_CARD_DRAFT.md",
-    "state": "scaling_implemented_and_functionally_checked",
+    "state": "verified_input_assembly_and_loss_controls_training_runner_pending",
     "configurations": [
       "L0",
       "L1",
@@ -322,9 +322,37 @@
       "fixtures": "synthetic features and hand-supplied state"
     },
     "full_suite": {
-      "passed": 140,
+      "passed": 143,
       "failed": 0,
       "linux_only_skipped": 5
+    },
+    "loss_module": "idfs_forecast_lab/idfs_lab/r2_loss_controls.py",
+    "loss_module_sha256": "1a916e9fc0728a0c75d9a61c40ce644d1ee157b2cf51e525bc8efc239371a663",
+    "input_preflight_entry": "scripts/prepare_r2_inputs.py",
+    "input_preflight_sha256": "36a1271baae0190a8da321f2b149848e12a0e38fde6a6b1ec4cf6d52b687b966",
+    "input_preflight": {
+      "captures": 15,
+      "samples": {
+        "fit": 5328,
+        "internal_dev": 2661
+      },
+      "input_sha256": {
+        "train": "889d303141802a9c826497eb3cf5f31ddac7c7a5d4db63c48698c5894d1d4425",
+        "original_index": "52e0bf86ff62079e6104a78b58126f59d0f63210ecb405d86b1614d98e92fd2d",
+        "index": "b4efd63c33aa44dd124c3553233857a5d9d896e6f4c53e42b2ed8f59747381ce",
+        "archive": "d6fc9b0e6227d4ea67fbc53c914702c278cf1d4ec2b8d68ec189a538eb9bd0f9",
+        "reference_archive": "9f25bff3f4870ccb9f2b7e96e82d79d1d544dc4b627101061d881564a78d6752",
+        "sample_ids": "0458ae7eb0f67db694954034291a2d450a8b6ca2e6f53596b179cc5b3ae0c558",
+        "schema_index": "f88ec8872529a97f001629a28fdcbcf738806eb96167ac201a3a2037256b73e2"
+      },
+      "feature_contract_sha256": "faf89520c65b69e630d27a9ad0fb8165175c21617b5b0868a669964219c7e550",
+      "fitting_performed": false,
+      "external_validation_read": false
+    },
+    "loss_forward_checks": {
+      "passed": 3,
+      "parameter_count": 21089,
+      "fixture": "synthetic features and supplied scales"
     }
   }
 }
