@@ -80,7 +80,10 @@ class FrozenForests:
         feature=[];threshold=[];left=[];right=[];value=[];roots=[];tree_model=[]
         feature_counts=[];tree_counts=[];max_depth=0
         for mi, model in enumerate(models):
-            if (getattr(model,'_estimator_type',None) != 'regressor'
+            kind=getattr(model,'_estimator_type',None)
+            if kind is None and callable(getattr(model,'__sklearn_tags__',None)):
+                kind=model.__sklearn_tags__().estimator_type
+            if (kind != 'regressor'
                     or getattr(model,'n_outputs_',None) != 1 or not model.estimators_):
                 raise ValueError('frozen scalar regression estimators required')
             feature_counts.append(int(model.n_features_in_));tree_counts.append(len(model.estimators_))

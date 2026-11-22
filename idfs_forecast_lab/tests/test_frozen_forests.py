@@ -77,3 +77,13 @@ class FrozenForestTests(unittest.TestCase):
         arrays={k:np.array(v,copy=True) for k,v in self.runtime.from_models(self.models()).arrays.items()}
         arrays['max_depth'][0]=0
         with self.assertRaises(ValueError):self.runtime(arrays)
+
+    def test_public_tags_support_new_sklearn_without_legacy_type_marker(self):
+        models=self.models()
+        for model in models:
+            del model._estimator_type
+            model.__sklearn_tags__=lambda:NS(estimator_type='regressor')
+        r=self.runtime.from_models(models)
+        np.testing.assert_array_equal(r.predict_row([[0.],[-999.,2.]]),[3.,20.])
+        models[0].__sklearn_tags__=lambda:NS(estimator_type='classifier')
+        with self.assertRaises(ValueError):self.runtime.from_models(models)
