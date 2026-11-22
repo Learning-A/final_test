@@ -1,6 +1,6 @@
 {
   "schema": "b19_local_checkpoint_v1",
-  "updated_at": "2026-11-23T00:43:42.555462+08:00",
+  "updated_at": "2026-11-23T00:51:21.960395+08:00",
   "owner": "B",
   "owner_thread": "01a203f5-3aa6-7b21-8a1f-8fece4787432",
   "worktree": "F:/sessions/26.9.8_\u6d4b\u8bd5\u5927\u7eb2/work/idfs-model-b",
@@ -144,7 +144,9 @@
       "scope": "frozen data/sample/labels/metrics/member hashes only",
       "new_model_fit": false,
       "model_deserialization": false,
-      "timing_remeasured": false
+      "timing_remeasured": false,
+      "screen_review_code_sha": "555725f",
+      "screen_result": "primary50_passes; sensitivity100_200_fail; not formal acceptance"
     },
     "artifact_release": "https://github.com/Learning-A/final_test/releases/tag/b19-r1-inputs-offline-20261123-v1",
     "artifact_zip_sha256": "76c81d14092b84bd80aaeadd69c477739a4c15df17e17a2c3fc43f1738655eb0",
@@ -175,9 +177,9 @@
     "includes_network_and_publication": false
   },
   "next_actions": [
-    "Do not repeat R1 training, data receipt or A metric replay.",
-    "Clarify timing-budget inconsistency from existing evidence; no new fit or timing run in this check-in.",
-    "Design separately registered bounded execution-chain or lightweight-backbone comparison before conditional losses/architecture/calibration stages."
+    "Keep all existing experiments do_not_repeat.",
+    "Prepare one frozen-model execution candidate only after code/shape/parity checks and a registered bounded card; no fitting or extra margin selection.",
+    "Resolve component timing inconsistency before conditional loss/backbone stages."
   ],
   "heartbeat": {
     "id": "idfs-b",
@@ -185,5 +187,16 @@
     "interval_minutes": 10,
     "prompt_sha256": "eae78a5ed031293d67de89429f10942d68ce247fc81bd547391210059e8c92c1",
     "first_read": "docs/B19_LOCAL_CONTINUATION_PLAN.md"
+  },
+  "proposed_next_card": {
+    "path": "docs/B19_FROZEN_INFERENCE_CARD_DRAFT.md",
+    "state": "planned_not_running",
+    "fitting_required": false,
+    "registered_job_id": null,
+    "proposed_cpu_seconds": 180,
+    "sample_scope": "existing2661 internal train03 output parity; fixed100 Graph timing keys",
+    "candidate_count": 1,
+    "new_accuracy_selection": false,
+    "external_validation_used": false
   }
 }
