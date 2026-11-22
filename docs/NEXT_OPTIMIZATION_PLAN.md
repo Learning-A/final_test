@@ -1,6 +1,6 @@
 # 后续优化执行计划（2026-11-22用户确认后）
 
-> 最新用户要求：先调研并制定详细方案，不直接开展实验。当前入口为[B19负载与实验驱动调研方案](B19_RESEARCH_OPTIMIZATION_PLAN_V1.md)，任务#19保持accepted，research_plan_ready；本页下方P1“当前执行”等为历史计划，不触发重跑或新训练。
+> 最新用户已授权两端按方案开始并保持交互。当前入口为[B19调研方案](B19_RESEARCH_OPTIMIZATION_PLAN_V1.md)与[R0执行/首张R1卡](B19_R0_EXECUTION_AND_R1_CARD.md)，任务#19=running/R0；先核验A交付，再按前置条件登记训练。本页下方P1“当前执行”等为历史计划，不触发重跑。
 
 恢复来源work/idfs-b-state.json；沿用Issue17、候选分支/PR16。目标仍是八节点未来完整一秒及集群候选，正式100-MAPE/只排零/严格>90%不变。业务容限仅辅助曲线，未经用户另行确认不改验收。
 

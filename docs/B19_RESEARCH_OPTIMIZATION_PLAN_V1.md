@@ -1,5 +1,7 @@
 # B19：面向现有五类负载的优化调研与分阶段方案 v1
 
+> 最新用户已授权开始，当前执行状态见[R0执行与首张R1卡](B19_R0_EXECUTION_AND_R1_CARD.md)。下文“本次仅方案/尚未执行”保留为本方案制定时的历史事实；新的执行从证据门槛开始，不跳过交付核验。首张输入卡采纳A建议，仅先F0/F0+F1两臂，其他臂分步登记。
+
 ## Material Passport
 
 - Origin Skill: academic-research-suite / experiment-agent。
