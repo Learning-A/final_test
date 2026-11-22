@@ -1,6 +1,6 @@
 {
   "schema": "b19_local_checkpoint_v1",
-  "updated_at": "2026-11-23T02:07:07.067583+08:00",
+  "updated_at": "2026-11-23T02:15:19.115846+08:00",
   "owner": "B",
   "owner_thread": "01a203f5-3aa6-7b21-8a1f-8fece4787432",
   "worktree": "F:/sessions/26.9.8_\u6d4b\u8bd5\u5927\u7eb2/work/idfs-model-b",
@@ -9,7 +9,7 @@
   "issue": 19,
   "pr": 16,
   "state": "running",
-  "substage": "R2_training_runner_preflight_checked",
+  "substage": "R2_completed_delivered_A_metrics_review_pending",
   "training_running": false,
   "sources": {
     "handoff_sha256": "2e7ac9ddcc68da042a1f06269b6c6021e977e167482face0699e199fee47cf90",
@@ -177,9 +177,9 @@
     "includes_network_and_publication": false
   },
   "next_actions": [
-    "Connect fixed R2 loss arms to a shared minibatch, checkpoint and early-stopping runner and verify its artifact handling.",
-    "Register the runnable R2 card with exact environment, checksums and job identity before using the shared resource locks.",
-    "Reuse completed R1 artifacts and preserve the documented online timing and accuracy limits."
+    "Collect A independent R2 metric and promotion-rule verification.",
+    "Retain the completed R2 artifacts and the measured trade-off between MAPE and MAE.",
+    "Evaluate admission to the next model comparison against the registered progression rules."
   ],
   "heartbeat": {
     "id": "idfs-b",
@@ -293,7 +293,7 @@
   },
   "future_loss_card": {
     "path": "docs/B19_R2_LOSS_CARD_DRAFT.md",
-    "state": "runner_preflight_checked",
+    "state": "completed_do_not_repeat",
     "configurations": [
       "L0",
       "L1",
@@ -301,9 +301,9 @@
       "L3"
     ],
     "proposed_total_group_budget_seconds": 1800,
-    "new_fit_started": false,
+    "new_fit_started": true,
     "preprocessing_fitted": false,
-    "registered_job_id": null,
+    "registered_job_id": "b19_r2_loss_controls_v1_a01",
     "implementation_ready": true,
     "external_validation_new_evaluations": 0,
     "requires_exact_feature_mask_and_scaling_spec": true,
@@ -313,7 +313,7 @@
     "continuous_columns": 181,
     "preserved_columns": 77,
     "shared_MLP_parameters_proposed": 21089,
-    "statistics_fitted": false,
+    "statistics_fitted": true,
     "scaling_module": "idfs_forecast_lab/idfs_lab/r2_scaling.py",
     "scaling_module_sha256": "b590ba27a6bea086a509f976e1e5586dfc3e54b3ba074ee464a5f860094c792f",
     "scaling_contract_sha256": "faf89520c65b69e630d27a9ad0fb8165175c21617b5b0868a669964219c7e550",
@@ -365,6 +365,83 @@
       "zero-only MAPE",
       "multi-metric promotion screen",
       "prediction and report artifacts"
-    ]
+    ],
+    "do_not_repeat": true,
+    "worker_sha": "77fd0da98011306d65187e445c5fdbb66973d9d5",
+    "registration": "https://github.com/Learning-A/final_test/issues/19#issuecomment-7083366195",
+    "release_url": "https://github.com/Learning-A/final_test/releases/tag/b19-r2-loss-controls-20261123-v1",
+    "archive_sha256": "b671e0029e8d0703b34a34a8b26f36624af7be1ed19a72f8726990add077bcf6",
+    "elapsed_seconds": 179.9948377609253,
+    "report_sha256": "ab2cf84157b0aef5826647ab727a69aee1d06aebf88d992c91d62b7b505b9f26",
+    "B_verification": "10644 prediction rows; 21288 original node labels; 180 grouped metrics; checkpoint and report hashes",
+    "scores": {
+      "L0": {
+        "macro_mape": 112.3163378994816,
+        "worst_group_mape": 341.46116906195067,
+        "workload_node_mean_mae": {
+          "ai_inference_ses": 172.1126757173695,
+          "ai_training_ses": 89.23275430825464,
+          "bigdata_baleen": 44.010084573938215,
+          "graph_zipf": 156.56261211283066,
+          "hpc_wrf": 53.341057084327524
+        },
+        "groups_mape_lt_10": 0,
+        "best_epoch": 4,
+        "internal_checkpoint_evaluations": 13,
+        "macro_mape_relative_improvement": 0.0,
+        "screen_passes": false
+      },
+      "L1": {
+        "macro_mape": 101.73789134830409,
+        "worst_group_mape": 314.560769871936,
+        "workload_node_mean_mae": {
+          "ai_inference_ses": 177.18622757878555,
+          "ai_training_ses": 99.92078650911102,
+          "bigdata_baleen": 48.209004108183976,
+          "graph_zipf": 174.2902355404461,
+          "hpc_wrf": 56.26601145064184
+        },
+        "groups_mape_lt_10": 0,
+        "best_epoch": 13,
+        "internal_checkpoint_evaluations": 22,
+        "macro_mape_relative_improvement": 0.09418439693648817,
+        "screen_passes": false
+      },
+      "L2": {
+        "macro_mape": 107.75078038920154,
+        "worst_group_mape": 329.2455746650207,
+        "workload_node_mean_mae": {
+          "ai_inference_ses": 170.4828531345458,
+          "ai_training_ses": 87.2516618702407,
+          "bigdata_baleen": 43.646693329417374,
+          "graph_zipf": 156.0932453660404,
+          "hpc_wrf": 50.20101546317108
+        },
+        "groups_mape_lt_10": 0,
+        "best_epoch": 28,
+        "internal_checkpoint_evaluations": 37,
+        "macro_mape_relative_improvement": 0.040649095186543915,
+        "screen_passes": false
+      },
+      "L3": {
+        "macro_mape": 94.01160482851267,
+        "worst_group_mape": 293.0297577601964,
+        "workload_node_mean_mae": {
+          "ai_inference_ses": 209.67219957529517,
+          "ai_training_ses": 107.54534283133995,
+          "bigdata_baleen": 52.47065946596478,
+          "graph_zipf": 197.36086850657182,
+          "hpc_wrf": 57.66986499645913
+        },
+        "groups_mape_lt_10": 0,
+        "best_epoch": 15,
+        "internal_checkpoint_evaluations": 24,
+        "macro_mape_relative_improvement": 0.16297480325035962,
+        "screen_passes": false
+      }
+    },
+    "internal_checkpoint_evaluations": 96,
+    "any_arm_passes_screen": false,
+    "A_independent_review": "pending"
   }
 }
