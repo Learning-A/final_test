@@ -53,3 +53,13 @@ python scripts/verify_existing_fine_delivery.py --directory $sample --manifest-s
 ## A接下来需要的动作
 
 在原request_id下交小样例+来源/manifest及包SHA、Graph事件证据/单位/时钟限制；若缺现有日志，明确未知或不存在。B收到后回复verified/needs_fix及限定范围，再确认训练角色全范围批量；不要求A立刻导出全15轮、不重复审计。首卡代码准备可独立推进，但实际拟合等待门槛满足。
+
+## 续接实现：固定样本配对与CPU共享锁
+
+`idfs_lab.fine_paired_dataset.paired_capture`只构造单run原train角色的F0/F1配对，不拟合、不自动放行来源。必须由调用者先核验包/原始身份/标签及时间假设；保留train01/02拟合、train03内部留出，精确沿用P2的16秒暖启和masked短历史条件。若提供固定baseline starts，任何新增/丢失/重复/不对齐都报错；F1全缺失只mask，不额外删除窗口。真实零标签保留，标签不完整按原规则排除，不补零。
+
+每节点F0=144维、F0+F1=258维；直接集群F0=928维（8×112自身+一份32空间），F0+F1=1840维（再加8×114近端）。标签和输入分别存储，目标/未来标签变化不会改变该目标的输入。处理预算和时钟上界对两臂共同检查；如因此改变旧样本清单，不得直接复用旧指标或暗中筛选，须先登记卡修订。
+
+`idfs_lab.cpu_training_lease.cpu_lease`用于未来R1 CPU拟合，复用同一`coordination/gpu_training.lock`，不另建锁、不占GPU。要求b507 lmj授权新job、固定40位代码SHA/数据SHA256、最多1800秒、CPU4且GPU不可见；记录owner/PID/预算/源码/数据/状态。锁忙不改旧记录；同job记录已存在拒绝复用；context须包住整个训练子进程，失败保留failed_or_interrupted。该上下文不替代子进程timeout，未来runner必须另设1800秒硬超时并保证子进程结束前父进程不释放锁。
+
+功能检查包括相同F0向量/样本、当前/未来标签不入输入、真实零与不完整标签、固定样本不一致拒绝、处理预算，以及CPU锁忙/重复job/失败记录/预算/主机与环境拒绝。Windows锁分支以mock测试，不能写成Linux实际flock并发验证；实际b507运行前仍须资源复查。当前只是模块准备，R1训练runner和来源全范围清单尚须A交付后接入；没有以合成测试代替实际数据核验。
