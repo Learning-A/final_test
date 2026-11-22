@@ -121,6 +121,13 @@
 
 ## 后续条目模板
 
+### 2026-11-22 B：固定R1全范围格式及core-only出口
+
+- 已读取A18-R0-RECEIPT-PINS补充，Graph样例哈希与既有verified一致，不重复核验；A明确归档未发现逐节点时钟测量和独立GC日志，未知保持，不要求现场补采。
+- 为原request_id=B19-R1-TRAIN-CORE-20261122-01固定docs/R1_TRAINING_CORE_DELIVERY_V1.md和15轮索引模板；模板state=template_not_delivery，Graph train03引用已verified包，其余14轮pending_export，不假装数据已到位。
+- 现有export_existing_fine_context.py新增--core-only，与事件模式互斥。仍检查raw来源哈希、全录制范围core、原秒窗/完整性，不复制原始事件行；自动记录实际导出脚本/依赖SHA和windows SHA。无采集/训练/源数据修改。
+- 126项检查通过、0失败/跳过，新增2项CLI端到端检查；git diff --check通过。真实14轮导出/交付仍由A执行，本机没有拟合或新模型评分。格式与代码在同request_id交A确认，既有样例不重导出。
+
 ### 2026-11-22 B：Graph R0实际数据核验通过，限定交付范围
 
 - 已接收A发布graph-fine-context-r0-20261122-v1，ZIP SHA9f25bff3f4870ccb9f2b7e96e82d79d1d544dc4b627101061d881564a78d6752；原request_id将回复verified，限Graph train03核心与标签一致性，线上/单位/其他轮范围不冒充通过。

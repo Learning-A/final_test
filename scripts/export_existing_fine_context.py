@@ -14,7 +14,9 @@ def sha(path):
 
 
 def main():
-    p=argparse.ArgumentParser();p.add_argument('--handoff-manifest',required=True);p.add_argument('--quality',required=True);p.add_argument('--windows',required=True);p.add_argument('--raw',required=True);p.add_argument('--buckets',required=True);p.add_argument('--topology',required=True);p.add_argument('--event-start-ns',type=int,action='append',required=True);p.add_argument('--output',required=True);a=p.parse_args()
+    p=argparse.ArgumentParser();p.add_argument('--handoff-manifest',required=True);p.add_argument('--quality',required=True);p.add_argument('--windows',required=True);p.add_argument('--raw',required=True);p.add_argument('--buckets',required=True);p.add_argument('--topology',required=True);p.add_argument('--event-start-ns',type=int,action='append',default=[]);p.add_argument('--core-only',action='store_true');p.add_argument('--output',required=True);a=p.parse_args()
+    if a.core_only and a.event_start_ns:p.error('--core-only cannot include diagnostic events')
+    if not a.core_only and not a.event_start_ns:p.error('diagnostic events required unless --core-only')
     manifest=Path(a.handoff_manifest);quality=Path(a.quality);raw=Path(a.raw);buckets=Path(a.buckets);dest=Path(a.output)
     if dest.exists():raise ValueError('fresh output required')
     m=json.loads(manifest.read_text(encoding='utf-8'));q=json.loads(quality.read_text(encoding='utf-8'))
@@ -53,6 +55,7 @@ def main():
             path=raw/name
             if sha(path)!=expected:raise ValueError('raw checksum mismatch: '+name)
             raw_hashes[name]=expected
+            if a.core_only:continue
             with path.open(encoding='utf-8') as f:
                 for line in f:
                     r=json.loads(line);t=r['scheduled_epoch_ns']
@@ -60,7 +63,9 @@ def main():
                         if any(target-5*10**9<=t<=target+6*10**9 for target in a.event_start_ns):
                             out.write(json.dumps({k:v for k,v in r.items() if k in allowed},allow_nan=False,separators=(',',':'))+'\n');selected+=1
     report={'dataset_id':m['dataset_id'],'source_run_id':m['source_run_id'],'source_role':m['role'],'fault_affected':m['fault_affected'],'formal_acceptance':False,
-        'input_manifest_sha256':sha(manifest),'quality_sha256':sha(quality),'topology_sha256':sha(Path(a.topology)),'processed_buckets_sha256':sha(buckets),'source_raw_files_sha256':raw_hashes,
+        'input_manifest_sha256':sha(manifest),'quality_sha256':sha(quality),'windows_sha256':sha(Path(a.windows)),'topology_sha256':sha(Path(a.topology)),'processed_buckets_sha256':sha(buckets),'source_raw_files_sha256':raw_hashes,
+        'export_scope':'full_capture_core_only' if a.core_only else 'full_capture_core_and_diagnostic_events','exporter_script_sha256':sha(Path(__file__)),
+        'exporter_dependency_sha256':{name:sha(Path(__file__).resolve().parents[1]/'idfs_forecast_lab/idfs_lab'/name) for name in ('fine_export.py','dataset.py','counters.py')},
         'fine_rows':fine_rows,'raw_event_rows':selected,'original_complete_windows_recomputed':compared,'diagnostic_event_start_ns':a.event_start_ns,'diagnostic_radius':'minus5sec to plus6sec, never a future predictor input',
         'availability_evidence':q['availability_evidence'],'auxiliary_units':'preserve raw fields; latency/rpc_fields semantics require audit before deriving rates',
         'collection_started':False,'fitting_performed':False,'original_labels_modified':False,'files':[{'name':p.name,'bytes':p.stat().st_size,'sha256':sha(p)} for p in (fine,event)]}

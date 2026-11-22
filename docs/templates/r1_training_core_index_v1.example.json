@@ -1,0 +1,326 @@
+{
+  "schema_version": "r1_training_core_batch_v1",
+  "state": "template_not_delivery",
+  "request_id": "B19-R1-TRAIN-CORE-20261122-01",
+  "source_dataset_index_sha256": "52e0bf86ff62079e6104a78b58126f59d0f63210ecb405d86b1614d98e92fd2d",
+  "source_train_zip_sha256": "889d303141802a9c826497eb3cf5f31ddac7c7a5d4db63c48698c5894d1d4425",
+  "topology_sha256": "81ddb8350790e2a1e165757e01c9c3d6cdcd328d956179778f1b7298230eb98b",
+  "packages": [],
+  "captures": [
+    {
+      "dataset_id": "ai_training_20261122_train01_attempt02",
+      "source_run_id": "ai_training_ses_train_01",
+      "source_role": "train",
+      "index": 1,
+      "workload": "ai_training_ses",
+      "original_handoff_manifest_sha256": "e80d7a3eabbc8211ca1ae4bd4890cf453e981a85d96870d188ab701160aa28bd",
+      "development_partition": "fit_run01_02",
+      "status": "pending_export",
+      "delivery": {
+        "kind": "archive_member",
+        "archive_url": null,
+        "archive_sha256": null,
+        "directory": "ai_training_20261122_train01_attempt02"
+      },
+      "export_manifest_sha256": null,
+      "availability_evidence": null,
+      "clock_uncertainty_ns": null,
+      "online_receive_proof": false,
+      "training_time_eligibility": "pending_review"
+    },
+    {
+      "dataset_id": "dev_20261122_ai_inference_ses_train_01_a01",
+      "source_run_id": "ai_inference_ses_train_01",
+      "source_role": "train",
+      "index": 1,
+      "workload": "ai_inference_ses",
+      "original_handoff_manifest_sha256": "b4ee4813381aae83303f57340a981ba40ac58f2816fd4b2970f598d9e07e297d",
+      "development_partition": "fit_run01_02",
+      "status": "pending_export",
+      "delivery": {
+        "kind": "archive_member",
+        "archive_url": null,
+        "archive_sha256": null,
+        "directory": "dev_20261122_ai_inference_ses_train_01_a01"
+      },
+      "export_manifest_sha256": null,
+      "availability_evidence": null,
+      "clock_uncertainty_ns": null,
+      "online_receive_proof": false,
+      "training_time_eligibility": "pending_review"
+    },
+    {
+      "dataset_id": "dev_20261122_bigdata_baleen_train_01_a01",
+      "source_run_id": "bigdata_baleen_train_01",
+      "source_role": "train",
+      "index": 1,
+      "workload": "bigdata_baleen",
+      "original_handoff_manifest_sha256": "497ee02d1f7e1d63a483985a975140fc27c9cce2fffeb10ab97bcbb671d82ef2",
+      "development_partition": "fit_run01_02",
+      "status": "pending_export",
+      "delivery": {
+        "kind": "archive_member",
+        "archive_url": null,
+        "archive_sha256": null,
+        "directory": "dev_20261122_bigdata_baleen_train_01_a01"
+      },
+      "export_manifest_sha256": null,
+      "availability_evidence": null,
+      "clock_uncertainty_ns": null,
+      "online_receive_proof": false,
+      "training_time_eligibility": "pending_review"
+    },
+    {
+      "dataset_id": "dev_20261122_graph_zipf_train_01_a01",
+      "source_run_id": "graph_zipf_train_01",
+      "source_role": "train",
+      "index": 1,
+      "workload": "graph_zipf",
+      "original_handoff_manifest_sha256": "a1751766305e419269f49793cf5d6ea7acf1afc7ef4fc2aff4a6be4b2c101013",
+      "development_partition": "fit_run01_02",
+      "status": "pending_export",
+      "delivery": {
+        "kind": "archive_member",
+        "archive_url": null,
+        "archive_sha256": null,
+        "directory": "dev_20261122_graph_zipf_train_01_a01"
+      },
+      "export_manifest_sha256": null,
+      "availability_evidence": null,
+      "clock_uncertainty_ns": null,
+      "online_receive_proof": false,
+      "training_time_eligibility": "pending_review"
+    },
+    {
+      "dataset_id": "dev_20261122_hpc_wrf_train_01_a01",
+      "source_run_id": "hpc_wrf_train_01",
+      "source_role": "train",
+      "index": 1,
+      "workload": "hpc_wrf",
+      "original_handoff_manifest_sha256": "43df448bf717afe7bf0cb2a90b8e3a10bad9d79f00915b5c6de20462eb045048",
+      "development_partition": "fit_run01_02",
+      "status": "pending_export",
+      "delivery": {
+        "kind": "archive_member",
+        "archive_url": null,
+        "archive_sha256": null,
+        "directory": "dev_20261122_hpc_wrf_train_01_a01"
+      },
+      "export_manifest_sha256": null,
+      "availability_evidence": null,
+      "clock_uncertainty_ns": null,
+      "online_receive_proof": false,
+      "training_time_eligibility": "pending_review"
+    },
+    {
+      "dataset_id": "dev_20261122_ai_training_ses_train_02_a01",
+      "source_run_id": "ai_training_ses_train_02",
+      "source_role": "train",
+      "index": 2,
+      "workload": "ai_training_ses",
+      "original_handoff_manifest_sha256": "89aeff7ae16e77705f23a398c5cb14c4c2fb19e38dd9c9dd19c38d8938e63669",
+      "development_partition": "fit_run01_02",
+      "status": "pending_export",
+      "delivery": {
+        "kind": "archive_member",
+        "archive_url": null,
+        "archive_sha256": null,
+        "directory": "dev_20261122_ai_training_ses_train_02_a01"
+      },
+      "export_manifest_sha256": null,
+      "availability_evidence": null,
+      "clock_uncertainty_ns": null,
+      "online_receive_proof": false,
+      "training_time_eligibility": "pending_review"
+    },
+    {
+      "dataset_id": "dev_20261122_ai_inference_ses_train_02_a01",
+      "source_run_id": "ai_inference_ses_train_02",
+      "source_role": "train",
+      "index": 2,
+      "workload": "ai_inference_ses",
+      "original_handoff_manifest_sha256": "e0cba900157ffff9a7db6419aa13ebf56936d883865cbe5d269a85d8b8ea226c",
+      "development_partition": "fit_run01_02",
+      "status": "pending_export",
+      "delivery": {
+        "kind": "archive_member",
+        "archive_url": null,
+        "archive_sha256": null,
+        "directory": "dev_20261122_ai_inference_ses_train_02_a01"
+      },
+      "export_manifest_sha256": null,
+      "availability_evidence": null,
+      "clock_uncertainty_ns": null,
+      "online_receive_proof": false,
+      "training_time_eligibility": "pending_review"
+    },
+    {
+      "dataset_id": "dev_20261122_bigdata_baleen_train_02_a01",
+      "source_run_id": "bigdata_baleen_train_02",
+      "source_role": "train",
+      "index": 2,
+      "workload": "bigdata_baleen",
+      "original_handoff_manifest_sha256": "6cd5900e74d3aa8505a2b6c6ad612025b9fd338d5ff3eeefb014f9073bee0ddd",
+      "development_partition": "fit_run01_02",
+      "status": "pending_export",
+      "delivery": {
+        "kind": "archive_member",
+        "archive_url": null,
+        "archive_sha256": null,
+        "directory": "dev_20261122_bigdata_baleen_train_02_a01"
+      },
+      "export_manifest_sha256": null,
+      "availability_evidence": null,
+      "clock_uncertainty_ns": null,
+      "online_receive_proof": false,
+      "training_time_eligibility": "pending_review"
+    },
+    {
+      "dataset_id": "dev_20261122_graph_zipf_train_02_a01",
+      "source_run_id": "graph_zipf_train_02",
+      "source_role": "train",
+      "index": 2,
+      "workload": "graph_zipf",
+      "original_handoff_manifest_sha256": "27c1ee4e0c6fa0298d140a6ddf7247ae12010516a3ad97036da38f5df07ce989",
+      "development_partition": "fit_run01_02",
+      "status": "pending_export",
+      "delivery": {
+        "kind": "archive_member",
+        "archive_url": null,
+        "archive_sha256": null,
+        "directory": "dev_20261122_graph_zipf_train_02_a01"
+      },
+      "export_manifest_sha256": null,
+      "availability_evidence": null,
+      "clock_uncertainty_ns": null,
+      "online_receive_proof": false,
+      "training_time_eligibility": "pending_review"
+    },
+    {
+      "dataset_id": "dev_20261122_hpc_wrf_train_02_a01",
+      "source_run_id": "hpc_wrf_train_02",
+      "source_role": "train",
+      "index": 2,
+      "workload": "hpc_wrf",
+      "original_handoff_manifest_sha256": "9afbb3a8616c642477fe740892419548bf5f2c712368f3b5c26bb26ce79d4a44",
+      "development_partition": "fit_run01_02",
+      "status": "pending_export",
+      "delivery": {
+        "kind": "archive_member",
+        "archive_url": null,
+        "archive_sha256": null,
+        "directory": "dev_20261122_hpc_wrf_train_02_a01"
+      },
+      "export_manifest_sha256": null,
+      "availability_evidence": null,
+      "clock_uncertainty_ns": null,
+      "online_receive_proof": false,
+      "training_time_eligibility": "pending_review"
+    },
+    {
+      "dataset_id": "dev_20261122_ai_training_ses_train_03_a01",
+      "source_run_id": "ai_training_ses_train_03",
+      "source_role": "train",
+      "index": 3,
+      "workload": "ai_training_ses",
+      "original_handoff_manifest_sha256": "b1f6bbaded97ddd3da29e62fd2e5c6386b2e84f4a554eebc2b3ec7c96aff4a82",
+      "development_partition": "internal_run03",
+      "status": "pending_export",
+      "delivery": {
+        "kind": "archive_member",
+        "archive_url": null,
+        "archive_sha256": null,
+        "directory": "dev_20261122_ai_training_ses_train_03_a01"
+      },
+      "export_manifest_sha256": null,
+      "availability_evidence": null,
+      "clock_uncertainty_ns": null,
+      "online_receive_proof": false,
+      "training_time_eligibility": "pending_review"
+    },
+    {
+      "dataset_id": "dev_20261122_ai_inference_ses_train_03_a01",
+      "source_run_id": "ai_inference_ses_train_03",
+      "source_role": "train",
+      "index": 3,
+      "workload": "ai_inference_ses",
+      "original_handoff_manifest_sha256": "7228c4bd2735563e60cede3820aa2b786aa2bcce26c0e4557cc644740fe90ccb",
+      "development_partition": "internal_run03",
+      "status": "pending_export",
+      "delivery": {
+        "kind": "archive_member",
+        "archive_url": null,
+        "archive_sha256": null,
+        "directory": "dev_20261122_ai_inference_ses_train_03_a01"
+      },
+      "export_manifest_sha256": null,
+      "availability_evidence": null,
+      "clock_uncertainty_ns": null,
+      "online_receive_proof": false,
+      "training_time_eligibility": "pending_review"
+    },
+    {
+      "dataset_id": "dev_20261122_bigdata_baleen_train_03_a01",
+      "source_run_id": "bigdata_baleen_train_03",
+      "source_role": "train",
+      "index": 3,
+      "workload": "bigdata_baleen",
+      "original_handoff_manifest_sha256": "ce996c0e0560266c76144851988176630ad98cd2a0ef17db2cfcb6aac147e6b2",
+      "development_partition": "internal_run03",
+      "status": "pending_export",
+      "delivery": {
+        "kind": "archive_member",
+        "archive_url": null,
+        "archive_sha256": null,
+        "directory": "dev_20261122_bigdata_baleen_train_03_a01"
+      },
+      "export_manifest_sha256": null,
+      "availability_evidence": null,
+      "clock_uncertainty_ns": null,
+      "online_receive_proof": false,
+      "training_time_eligibility": "pending_review"
+    },
+    {
+      "dataset_id": "dev_20261122_graph_zipf_train_03_a01",
+      "source_run_id": "graph_zipf_train_03",
+      "source_role": "train",
+      "index": 3,
+      "workload": "graph_zipf",
+      "original_handoff_manifest_sha256": "18389bf61a62588194a66512bd0aaaef1fb9c890871185cf7cec85830e172047",
+      "development_partition": "internal_run03",
+      "status": "previously_verified",
+      "delivery": {
+        "kind": "existing_release",
+        "archive_url": "https://github.com/Learning-A/final_test/releases/download/graph-fine-context-r0-20261122-v1/graph-fine-context-r0-20261122-v1.zip",
+        "archive_sha256": "9f25bff3f4870ccb9f2b7e96e82d79d1d544dc4b627101061d881564a78d6752",
+        "directory": ""
+      },
+      "export_manifest_sha256": "0760df3be375363cee7f67ef3f0b329da14fa7a665138be6859ebb83cd4d985b",
+      "availability_evidence": "source_read_end_only_not_online_reception_proof",
+      "clock_uncertainty_ns": null,
+      "online_receive_proof": false,
+      "training_time_eligibility": "pending_review"
+    },
+    {
+      "dataset_id": "dev_20261122_hpc_wrf_train_03_a01",
+      "source_run_id": "hpc_wrf_train_03",
+      "source_role": "train",
+      "index": 3,
+      "workload": "hpc_wrf",
+      "original_handoff_manifest_sha256": "c6196d2836f51ff16bdddbab6c6258783d64baa132d4a20616d65546388f6679",
+      "development_partition": "internal_run03",
+      "status": "pending_export",
+      "delivery": {
+        "kind": "archive_member",
+        "archive_url": null,
+        "archive_sha256": null,
+        "directory": "dev_20261122_hpc_wrf_train_03_a01"
+      },
+      "export_manifest_sha256": null,
+      "availability_evidence": null,
+      "clock_uncertainty_ns": null,
+      "online_receive_proof": false,
+      "training_time_eligibility": "pending_review"
+    }
+  ]
+}
