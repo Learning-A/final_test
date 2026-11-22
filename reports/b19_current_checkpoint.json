@@ -1,6 +1,6 @@
 {
   "schema": "b19_local_checkpoint_v1",
-  "updated_at": "2026-11-23T01:39:14.803452+08:00",
+  "updated_at": "2026-11-23T01:45:45.821175+08:00",
   "owner": "B",
   "owner_thread": "01a203f5-3aa6-7b21-8a1f-8fece4787432",
   "worktree": "F:/sessions/26.9.8_\u6d4b\u8bd5\u5927\u7eb2/work/idfs-model-b",
@@ -9,7 +9,7 @@
   "issue": 19,
   "pr": 16,
   "state": "running",
-  "substage": "frozen_execution_A_verified_R2_schema_design",
+  "substage": "frozen_execution_A_verified_R2_scaling_implemented",
   "training_running": false,
   "sources": {
     "handoff_sha256": "2e7ac9ddcc68da042a1f06269b6c6021e977e167482face0699e199fee47cf90",
@@ -177,9 +177,9 @@
     "includes_network_and_publication": false
   },
   "next_actions": [
-    "Do not repeat completed R1 fitting, frozen execution card, or A export parity review.",
-    "Implement and functionally verify fixed R2 schema/mask/scaling and loss controls before registering any fitting job.",
-    "Keep unknown online clocks/arrival/publication and existing sensitivity/accuracy limitations explicit."
+    "Continue the fixed R2 preparation with the shared backbone, four loss controls, and pinned run input assembly.",
+    "Register the real R2 job after the executable card and functional verification are complete.",
+    "Reuse completed R1 artifacts and preserve the documented online timing and accuracy limits."
   ],
   "heartbeat": {
     "id": "idfs-b",
@@ -293,7 +293,7 @@
   },
   "future_loss_card": {
     "path": "docs/B19_R2_LOSS_CARD_DRAFT.md",
-    "state": "design_only_not_running",
+    "state": "scaling_implemented_and_functionally_checked",
     "configurations": [
       "L0",
       "L1",
@@ -313,6 +313,18 @@
     "continuous_columns": 181,
     "preserved_columns": 77,
     "shared_MLP_parameters_proposed": 21089,
-    "statistics_fitted": false
+    "statistics_fitted": false,
+    "scaling_module": "idfs_forecast_lab/idfs_lab/r2_scaling.py",
+    "scaling_module_sha256": "b590ba27a6bea086a509f976e1e5586dfc3e54b3ba074ee464a5f860094c792f",
+    "scaling_contract_sha256": "faf89520c65b69e630d27a9ad0fb8165175c21617b5b0868a669964219c7e550",
+    "scaling_checks": {
+      "passed": 7,
+      "fixtures": "synthetic features and hand-supplied state"
+    },
+    "full_suite": {
+      "passed": 140,
+      "failed": 0,
+      "linux_only_skipped": 5
+    }
   }
 }
