@@ -1,6 +1,6 @@
 {
   "schema": "b19_local_checkpoint_v1",
-  "updated_at": "2026-11-23T01:07:38.100395+08:00",
+  "updated_at": "2026-11-23T01:15:33.319806+08:00",
   "owner": "B",
   "owner_thread": "01a203f5-3aa6-7b21-8a1f-8fece4787432",
   "worktree": "F:/sessions/26.9.8_\u6d4b\u8bd5\u5927\u7eb2/work/idfs-model-b",
@@ -190,9 +190,9 @@
   },
   "proposed_next_card": {
     "path": "docs/B19_FROZEN_INFERENCE_CARD_DRAFT.md",
-    "state": "implementation_functionally_checked_not_running",
+    "state": "runner_ready_queued_not_started",
     "fitting_required": false,
-    "registered_job_id": null,
+    "registered_job_id": "b19_r1_frozen_inference_v1_a01",
     "proposed_cpu_seconds": 180,
     "sample_scope": "existing2661 internal train03 output parity; fixed100 Graph timing keys",
     "candidate_count": 1,
@@ -209,6 +209,14 @@
       "server_sklearn_api_only": "1.9.0 public regression tag checked without opening model files"
     },
     "real_frozen_models_exported": false,
-    "new_timing_or_accuracy_run": false
+    "new_timing_or_accuracy_run": false,
+    "cpu_seconds": 180,
+    "fit_count": 0,
+    "benchmark_rounds": 3,
+    "benchmark_samples_per_round": 100,
+    "warmup_samples": 5,
+    "scope": "same frozen outputs; no new accuracy selections",
+    "source_schema_index_sha256": "f88ec8872529a97f001629a28fdcbcf738806eb96167ac201a3a2037256b73e2",
+    "runner_sha256": "e05a2de19ac2239ba548ecf4ab8e9e4268dc0f03bc649d523236fec518c65e22"
   }
 }
