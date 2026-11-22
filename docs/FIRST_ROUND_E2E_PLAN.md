@@ -25,3 +25,11 @@ AI推理：dev_20261122_ai_inference_ses_train_01_a01，ZIP5b825034e3d2807bab862
 共享GPU协调规则尚待A回复；B已获用户直接训练授权，这不需要再次请求用户许可。任务登记后先准备数据/代码，执行前使用双方可见锁和作业记录，避免与A运行中的任务冲突。
 
 检查同test_id的issue、远端目录与本地状态；已有running/completed不重复。数据到位并核验后才将状态从awaiting_handoff改为ready/running，不提前声称训练或完整测试已启动。配置、代码SHA、数据哈希、环境、预算及seed2026均在实际实验卡固定。
+
+## 可执行的只读交接门槛
+
+`python scripts/check_first_round_gate.py --plan <条目列表JSON> --output <新报告路径>`仅核验数据，不启动全流程或拟合。每条含workload、dataset_id、archive、archive_sha256、manifest_sha256、time_boundary_reviewed、quality_approved_for_development、review_evidence_reference。后3项必须来自实际质检/时间证据，不能猜测或为启动测试擅自填true。
+
+模块核验五负载唯一性、ZIP及manifest/成员哈希、数据身份/源角色/非故障标记、必需证据文件、负载manifest.id、recording_start事件与成功退出；报告保留batch/attempt/run身份。它核验交接及已记录的审核状态，不替代原始时序/健康质检，也不认证正式数据。
+
+状态区分awaiting_handoff、pending_quality_review、ready，缺包不表示现场未采集。2026-11-22 16:47检查中两包各6成员再次核验通过，仍待边界/开发审核；三包尚未交接，ready=false。该状态不同于训练running或completed。
