@@ -1,6 +1,6 @@
 # 冻结树模型执行链对照草案
 
-状态：implementation_functionally_checked_not_running。数组运行时已实现并通过手工树功能检查，尚未导出真实 R1 权重、创建服务器 job 或执行计时。此卡复用 R1 权重，不重新拟合模型、归一化或校准参数，也不启动 R2 损失实验。
+状态：completed_do_not_repeat。唯一作业 `b19_r1_frozen_inference_v1_a01` 已按本卡完成，源码 `f14df09f77a9587a6bb788a165f00330a56ff1a7`；原 2,661 个样本九目标输出差为 0，数组实现三轮联合 P95 均低于 50 ms。详见[结果](B19_FROZEN_INFERENCE_RESULTS.md)。本卡无任何拟合，也未启动 R2；下文登记、功能检查和准入条件保留执行时内容。
 
 ## 执行登记版本
 

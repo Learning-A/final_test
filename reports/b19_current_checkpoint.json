@@ -1,6 +1,6 @@
 {
   "schema": "b19_local_checkpoint_v1",
-  "updated_at": "2026-11-23T01:15:33.319806+08:00",
+  "updated_at": "2026-11-23T01:26:30.390285+08:00",
   "owner": "B",
   "owner_thread": "01a203f5-3aa6-7b21-8a1f-8fece4787432",
   "worktree": "F:/sessions/26.9.8_\u6d4b\u8bd5\u5927\u7eb2/work/idfs-model-b",
@@ -9,7 +9,7 @@
   "issue": 19,
   "pr": 16,
   "state": "running",
-  "substage": "R1_A_verified_limited_scope_timing_consistency_review",
+  "substage": "frozen_execution_completed_delivery_and_A_review",
   "training_running": false,
   "sources": {
     "handoff_sha256": "2e7ac9ddcc68da042a1f06269b6c6021e977e167482face0699e199fee47cf90",
@@ -177,20 +177,20 @@
     "includes_network_and_publication": false
   },
   "next_actions": [
-    "Keep all existing experiments do_not_repeat.",
-    "Prepare one frozen-model execution candidate only after code/shape/parity checks and a registered bounded card; no fitting or extra margin selection.",
-    "Resolve component timing inconsistency before conditional loss/backbone stages."
+    "Freeze and deliver exported same-model execution artifact to A for independent equivalence review.",
+    "Do not repeat existing fitting or this completed parity/timing card.",
+    "Preserve arrival/clock/publication limitations and R1 sensitivity failures before conditional loss or architecture cards."
   ],
   "heartbeat": {
     "id": "idfs-b",
     "status": "ACTIVE",
     "interval_minutes": 10,
-    "prompt_sha256": "eae78a5ed031293d67de89429f10942d68ce247fc81bd547391210059e8c92c1",
+    "prompt_sha256": "9b9f40fcfbff8b037ebb14c7ba11e6e01179a9ed11fa4e9697ea2c9883d3f4b7",
     "first_read": "docs/B19_LOCAL_CONTINUATION_PLAN.md"
   },
   "proposed_next_card": {
     "path": "docs/B19_FROZEN_INFERENCE_CARD_DRAFT.md",
-    "state": "runner_ready_queued_not_started",
+    "state": "completed_do_not_repeat",
     "fitting_required": false,
     "registered_job_id": "b19_r1_frozen_inference_v1_a01",
     "proposed_cpu_seconds": 180,
@@ -208,8 +208,8 @@
       "linux_only_skipped": 5,
       "server_sklearn_api_only": "1.9.0 public regression tag checked without opening model files"
     },
-    "real_frozen_models_exported": false,
-    "new_timing_or_accuracy_run": false,
+    "real_frozen_models_exported": true,
+    "new_timing_or_accuracy_run": "bounded600_timing_records_no_new_accuracy_selection",
     "cpu_seconds": 180,
     "fit_count": 0,
     "benchmark_rounds": 3,
@@ -217,6 +217,69 @@
     "warmup_samples": 5,
     "scope": "same frozen outputs; no new accuracy selections",
     "source_schema_index_sha256": "f88ec8872529a97f001629a28fdcbcf738806eb96167ac201a3a2037256b73e2",
-    "runner_sha256": "e05a2de19ac2239ba548ecf4ab8e9e4268dc0f03bc649d523236fec518c65e22"
+    "runner_sha256": "e05a2de19ac2239ba548ecf4ab8e9e4268dc0f03bc649d523236fec518c65e22",
+    "do_not_repeat": true,
+    "code_sha": "f14df09f77a9587a6bb788a165f00330a56ff1a7",
+    "new_models": 0,
+    "fitting_performed": false,
+    "lease_elapsed_seconds": 40.52610516548157,
+    "parity": {
+      "sample_count": 2661,
+      "target_count": 9,
+      "max_relative_error": 0.0,
+      "per_target_max_relative_error": {
+        "idfs44": 0.0,
+        "idfs45": 0.0,
+        "idfs46": 0.0,
+        "idfs47": 0.0,
+        "idfs64": 0.0,
+        "idfs65": 0.0,
+        "idfs66": 0.0,
+        "idfs67": 0.0,
+        "cluster": 0.0
+      }
+    },
+    "stats": {
+      "sklearn": {
+        "feature_ms": {
+          "p50_ms": 4.394361,
+          "p95_ms": 4.56230475,
+          "p99_ms": 4.58403165
+        },
+        "model_ms": {
+          "p50_ms": 45.509750499999996,
+          "p95_ms": 45.6962355,
+          "p99_ms": 45.85848125
+        },
+        "combined_ms": {
+          "p50_ms": 49.9483225,
+          "p95_ms": 50.1219258,
+          "p99_ms": 50.41560296
+        }
+      },
+      "arrays": {
+        "feature_ms": {
+          "p50_ms": 4.394389,
+          "p95_ms": 4.548964450000001,
+          "p99_ms": 4.58249765
+        },
+        "model_ms": {
+          "p50_ms": 0.4761455,
+          "p95_ms": 0.49569715,
+          "p99_ms": 0.50506623
+        },
+        "combined_ms": {
+          "p50_ms": 4.871290500000001,
+          "p95_ms": 5.0289447,
+          "p99_ms": 5.058385319999999
+        }
+      }
+    },
+    "exported_npz_sha256": "bdde922b9e70cefcb71f5bf3a43c0c26d363bb55f5465aa69452d188d9c8f8e1",
+    "artifact_release": "https://github.com/Learning-A/final_test/releases/tag/b19-frozen-inference-20261123-v1",
+    "A_export_equivalence_review": "pending",
+    "artifact_zip_sha256": "d2385a916fb6e757837ba34388927dc1cb279712816f1f09d1feeb6180782e39",
+    "artifact_release_id": 454615959,
+    "artifact_published": true
   }
 }

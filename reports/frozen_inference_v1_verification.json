@@ -1,0 +1,31 @@
+{
+  "status": "verified",
+  "scope": "independent stdlib recomputation of fixed-sample timing records and artifact/lease hashes",
+  "source_code_sha": "f14df09f77a9587a6bb788a165f00330a56ff1a7",
+  "report_sha256": "e038b4b7273c5af4d8c5ae6b739e398961a9912d847909e902313cf4bf56083c",
+  "npz_sha256": "bdde922b9e70cefcb71f5bf3a43c0c26d363bb55f5465aa69452d188d9c8f8e1",
+  "timings_sha256": "2d4e2e60448aec3b6f39548c54cdb2dc60ee6869206f4ccacea2d3a1355706dd",
+  "timing_records_checked": 600,
+  "fixed_Graph_samples": 100,
+  "rounds": 3,
+  "model_outputs_recomputed_here": false,
+  "reported_frozen_parity": {
+    "sample_count": 2661,
+    "target_count": 9,
+    "max_relative_error": 0.0,
+    "per_target_max_relative_error": {
+      "idfs44": 0.0,
+      "idfs45": 0.0,
+      "idfs46": 0.0,
+      "idfs47": 0.0,
+      "idfs64": 0.0,
+      "idfs65": 0.0,
+      "idfs66": 0.0,
+      "idfs67": 0.0,
+      "cluster": 0.0
+    }
+  },
+  "lease_elapsed_seconds": 40.52610516548157,
+  "fitting_performed": false,
+  "online_time_eligibility": false
+}
