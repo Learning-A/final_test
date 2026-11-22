@@ -2,6 +2,7 @@ import copy
 from pathlib import Path
 import tempfile
 import unittest
+from unittest.mock import patch
 from idfs_lab.io import load, save, append_event
 from idfs_lab.joint import TARGET, causal_features, feature_rows, host_windows, index_windows, topology
 from idfs_lab.joint_training import read_split, train_joint
@@ -136,7 +137,9 @@ class JointTests(unittest.TestCase):
         self.assertEqual(len(plan["missing_inputs"]), 20)
 
     def test_joint_fit_is_forbidden_on_windows(self):
-        with self.assertRaisesRegex(RuntimeError, "restricted"):
+        # Make the non-training-host condition explicit on Linux test runners.
+        with patch('idfs_lab.placement.socket.gethostname', return_value='windows-test'), \
+                self.assertRaisesRegex(RuntimeError, "restricted"):
             train_joint([], [], "unused", {}, {}, {})
 
     def test_preprocessing_export_requires_provenance_and_refuses_formal(self):
