@@ -1,6 +1,6 @@
 {
   "schema": "b19_local_checkpoint_v1",
-  "updated_at": "2026-11-23T00:51:21.960395+08:00",
+  "updated_at": "2026-11-23T01:05:11.636920+08:00",
   "owner": "B",
   "owner_thread": "01a203f5-3aa6-7b21-8a1f-8fece4787432",
   "worktree": "F:/sessions/26.9.8_\u6d4b\u8bd5\u5927\u7eb2/work/idfs-model-b",
@@ -190,13 +190,25 @@
   },
   "proposed_next_card": {
     "path": "docs/B19_FROZEN_INFERENCE_CARD_DRAFT.md",
-    "state": "planned_not_running",
+    "state": "implementation_functionally_checked_not_running",
     "fitting_required": false,
     "registered_job_id": null,
     "proposed_cpu_seconds": 180,
     "sample_scope": "existing2661 internal train03 output parity; fixed100 Graph timing keys",
     "candidate_count": 1,
     "new_accuracy_selection": false,
-    "external_validation_used": false
+    "external_validation_used": false,
+    "module": "idfs_forecast_lab/idfs_lab/frozen_forests.py",
+    "module_sha256": "3ff32509d0e980521a0e97bb51e41826485c18a2a473aa8acc6eb288f04c1427",
+    "functional_checks": {
+      "fixture": "hand-authored trees; no fitting",
+      "targeted_passed": 5,
+      "full_suite_discovered": 137,
+      "full_suite_passed": 132,
+      "linux_only_skipped": 5,
+      "final_type_guard_targeted_passed": 5
+    },
+    "real_frozen_models_exported": false,
+    "new_timing_or_accuracy_run": false
   }
 }
