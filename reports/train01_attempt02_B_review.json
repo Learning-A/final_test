@@ -1,0 +1,270 @@
+{
+  "dataset_id": "ai_training_20261122_train01_attempt02",
+  "source_run_id": "ai_training_ses_train_01",
+  "role": "train",
+  "source_batch": "workload_development_20261122_v2",
+  "source_attempt": 2,
+  "fault_affected": false,
+  "normal_training_certified": false,
+  "formal_acceptance": false,
+  "independent_validation": false,
+  "fitting_performed": false,
+  "review_status": "candidate_pending_time_boundary_review",
+  "archive_sha256": "4505b0240625bfa16ae840ec66f7d82fc4cf67a8a821805e84e50db52cf59314",
+  "manifest_sha256": "1b8196d7a0da8ed218936224ff5370af294a5dd04e5ad1fcedfe31e2004611a3",
+  "members_verified": 6,
+  "source_windows_sha256": "f20992e08df6b7760f5f5b14ba7084ddd6d8754f5a525db1607fa26a9cbff0ed",
+  "review_code_sha256": "7cc36f4dc704e691f9f63a00cc9f83052c6950a521af9cf2d5e4a1e3c6bf7bc9",
+  "baseline_code_sha256": "fda7826c43fd55a790194d4a2f5c0de68cb5450493d8ed9103b41c64ee775e75",
+  "interval": "provisional recording_start+[0,600)s; actual workload boundary review pending",
+  "t0_epoch_ns": 1795293250606789482,
+  "workload_exit": {
+    "exit": 0,
+    "end_local_ns": 1795293874193710300
+  },
+  "availability_evidence": "source_read_end_only_not_online_reception_proof",
+  "local_end_minus_source_record_start_seconds": 623.586920818,
+  "cross_clock_duration_certified": false,
+  "nodes": {
+    "idfs44": {
+      "observed_seconds": 599,
+      "complete_seconds": 599,
+      "incomplete_seconds": 0,
+      "zero_seconds": 8,
+      "min_positive": 1,
+      "max_iops": 1300,
+      "mean_iops": 388.9565943238731,
+      "median_iops": 360
+    },
+    "idfs45": {
+      "observed_seconds": 599,
+      "complete_seconds": 597,
+      "incomplete_seconds": 2,
+      "zero_seconds": 9,
+      "min_positive": 6,
+      "max_iops": 1225,
+      "mean_iops": 332.48743718592965,
+      "median_iops": 292
+    },
+    "idfs46": {
+      "observed_seconds": 599,
+      "complete_seconds": 597,
+      "incomplete_seconds": 2,
+      "zero_seconds": 9,
+      "min_positive": 4,
+      "max_iops": 1252,
+      "mean_iops": 329.56951423785597,
+      "median_iops": 298
+    },
+    "idfs47": {
+      "observed_seconds": 599,
+      "complete_seconds": 597,
+      "incomplete_seconds": 2,
+      "zero_seconds": 8,
+      "min_positive": 1,
+      "max_iops": 1246,
+      "mean_iops": 356.01842546063654,
+      "median_iops": 304
+    },
+    "idfs64": {
+      "observed_seconds": 599,
+      "complete_seconds": 599,
+      "incomplete_seconds": 0,
+      "zero_seconds": 2,
+      "min_positive": 1,
+      "max_iops": 1285,
+      "mean_iops": 378.68280467445743,
+      "median_iops": 326
+    },
+    "idfs65": {
+      "observed_seconds": 599,
+      "complete_seconds": 599,
+      "incomplete_seconds": 0,
+      "zero_seconds": 8,
+      "min_positive": 1,
+      "max_iops": 1274,
+      "mean_iops": 401.91652754590984,
+      "median_iops": 304
+    },
+    "idfs66": {
+      "observed_seconds": 599,
+      "complete_seconds": 598,
+      "incomplete_seconds": 1,
+      "zero_seconds": 2,
+      "min_positive": 1,
+      "max_iops": 1255,
+      "mean_iops": 357.54013377926424,
+      "median_iops": 316
+    },
+    "idfs67": {
+      "observed_seconds": 599,
+      "complete_seconds": 599,
+      "incomplete_seconds": 0,
+      "zero_seconds": 9,
+      "min_positive": 3,
+      "max_iops": 1253,
+      "mean_iops": 341.84474123539235,
+      "median_iops": 300
+    }
+  },
+  "common_causal_windows": 562,
+  "baseline_metrics": {
+    "last_available": {
+      "cluster": {
+        "n": 562,
+        "zero_actual": 0,
+        "mae_iops": 883.9715302491103,
+        "wape_percent": 30.283571690256494,
+        "mape_percent": 310.42563467470745,
+        "accuracy_percent": -210.42563467470745
+      },
+      "nodes": {
+        "idfs44": {
+          "n": 562,
+          "zero_actual": 4,
+          "mae_iops": 164.16370106761565,
+          "wape_percent": 41.29738053033965,
+          "mape_percent": 79.9137223491942,
+          "accuracy_percent": 20.086277650805798
+        },
+        "idfs45": {
+          "n": 562,
+          "zero_actual": 4,
+          "mae_iops": 156.26868327402136,
+          "wape_percent": 45.92940856531721,
+          "mape_percent": 81.29367470693465,
+          "accuracy_percent": 18.706325293065348
+        },
+        "idfs46": {
+          "n": 562,
+          "zero_actual": 4,
+          "mae_iops": 136.36832740213524,
+          "wape_percent": 41.02378811236725,
+          "mape_percent": 78.0403851543199,
+          "accuracy_percent": 21.959614845680093
+        },
+        "idfs47": {
+          "n": 562,
+          "zero_actual": 4,
+          "mae_iops": 163.23309608540924,
+          "wape_percent": 45.438425304492974,
+          "mape_percent": 88.87201517485228,
+          "accuracy_percent": 11.12798482514772
+        },
+        "idfs64": {
+          "n": 562,
+          "zero_actual": 0,
+          "mae_iops": 165.48754448398577,
+          "wape_percent": 43.799979278320414,
+          "mape_percent": 197.4280879951302,
+          "accuracy_percent": -97.4280879951302
+        },
+        "idfs65": {
+          "n": 562,
+          "zero_actual": 4,
+          "mae_iops": 189.50711743772243,
+          "wape_percent": 47.02742085044377,
+          "mape_percent": 88.76324765818629,
+          "accuracy_percent": 11.236752341813713
+        },
+        "idfs66": {
+          "n": 562,
+          "zero_actual": 0,
+          "mae_iops": 140.0693950177936,
+          "wape_percent": 39.037247521708295,
+          "mape_percent": 119.53721448022075,
+          "accuracy_percent": -19.537214480220754
+        },
+        "idfs67": {
+          "n": 562,
+          "zero_actual": 4,
+          "mae_iops": 156.61743772241994,
+          "wape_percent": 44.751934594929885,
+          "mape_percent": 84.40835051110167,
+          "accuracy_percent": 15.591649488898327
+        }
+      }
+    },
+    "mean_five": {
+      "cluster": {
+        "n": 562,
+        "zero_actual": 0,
+        "mae_iops": 736.8583629893238,
+        "wape_percent": 25.24368975419804,
+        "mape_percent": 286.8065660891105,
+        "accuracy_percent": -186.8065660891105
+      },
+      "nodes": {
+        "idfs44": {
+          "n": 562,
+          "zero_actual": 4,
+          "mae_iops": 175.543772241993,
+          "wape_percent": 44.16017618305852,
+          "mape_percent": 78.59388463925539,
+          "accuracy_percent": 21.406115360744607
+        },
+        "idfs45": {
+          "n": 562,
+          "zero_actual": 4,
+          "mae_iops": 159.31565836298932,
+          "wape_percent": 46.82495437025725,
+          "mape_percent": 83.12511444374921,
+          "accuracy_percent": 16.87488555625079
+        },
+        "idfs46": {
+          "n": 562,
+          "zero_actual": 4,
+          "mae_iops": 151.92348754448403,
+          "wape_percent": 45.70325882151424,
+          "mape_percent": 76.23249554710857,
+          "accuracy_percent": 23.76750445289143
+        },
+        "idfs47": {
+          "n": 562,
+          "zero_actual": 4,
+          "mae_iops": 179.476868327402,
+          "wape_percent": 49.96012739421373,
+          "mape_percent": 90.65814732373579,
+          "accuracy_percent": 9.34185267626421
+        },
+        "idfs64": {
+          "n": 562,
+          "zero_actual": 0,
+          "mae_iops": 178.85871886120992,
+          "wape_percent": 47.33895958330585,
+          "mape_percent": 142.30961230835305,
+          "accuracy_percent": -42.30961230835305
+        },
+        "idfs65": {
+          "n": 562,
+          "zero_actual": 4,
+          "mae_iops": 228.83451957295378,
+          "wape_percent": 56.78677087472956,
+          "mape_percent": 110.53996160431527,
+          "accuracy_percent": -10.539961604315266
+        },
+        "idfs66": {
+          "n": 562,
+          "zero_actual": 0,
+          "mae_iops": 147.02669039145914,
+          "wape_percent": 40.9762411294762,
+          "mape_percent": 117.63277924692919,
+          "accuracy_percent": -17.63277924692919
+        },
+        "idfs67": {
+          "n": 562,
+          "zero_actual": 4,
+          "mae_iops": 167.5434163701067,
+          "wape_percent": 47.873928473373255,
+          "mape_percent": 84.09162944408477,
+          "accuracy_percent": 15.908370555915226
+        }
+      }
+    }
+  },
+  "notes": [
+    "Do not replace pinned fault diagnostic training data with this new candidate.",
+    "Health check count is package metadata, not independent raw health-log verification.",
+    "Absolute timestamps from different hosts do not certify duration or clock alignment."
+  ]
+}
