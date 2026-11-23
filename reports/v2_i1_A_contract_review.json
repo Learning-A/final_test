@@ -1,0 +1,19 @@
+{
+  "state": "reviewed_static_I1_contract_pending_B_full_receipt",
+  "scope": "Read-only review of drafted card, feature visibility/masks and input loader; not runtime verification or approval of unregistered job",
+  "files": {
+    "../work/idfs-model-b/docs/B19_V2_I1_EXECUTION_CARD_DRAFT.md": "6fe5132acfd036bacfb3bd61e40ed258f339d812d95a610464888789995def1f",
+    "../work/idfs-model-b/idfs_forecast_lab/idfs_lab/v2_auxiliary_inputs.py": "b0b94f57b4517bb8b13d46386ba47e130f01bd046249077876597f39e4c4d619",
+    "../work/idfs-model-b/scripts/prepare_v2_i1_inputs.py": "0298c634f536807f7a576f3c66cef4a294eca50f16edd4075343611ea67a4fe3"
+  },
+  "checks": [
+    "Same original C258 schema and exact5328/2661 sample keys",
+    "B180/P80 extensions use only fixed20 absolute slots and max(end,source_available)<=S-80ms",
+    "Zero ops invalidates ratio while real zero bytes remain observed",
+    "Independent bytes and gauge masks, latency excluded",
+    "All valid core count/availability matched and no new valid buckets",
+    "I1 C reuse, at most16 new tree fits within1800s total",
+    "No external validation or online eligibility claim"
+  ],
+  "next": "B complete full15 manifest receipt, freeze actual code and tree params, register unique job then execute; A reviews frozen metrics after handoff."
+}

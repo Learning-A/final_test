@@ -1,5 +1,5 @@
 {
-  "state": "D1_all15_A_verified_delivered_B_I1_preflight",
+  "state": "D1_published_B_full_receipt_I1_preparing",
   "execution_authorized": true,
   "plan_commit": "1e286c3",
   "A_script": "scripts/analyze_v2_d0.py",
@@ -8,8 +8,8 @@
   "D1_sample": "reports/v2_d1_sample_audit.json",
   "new_fit_count": 0,
   "next_actions": [
-    "Publish verified auxiliary package; B verifies then registers I1.",
-    "A independently review I1 configuration and frozen results when delivered; no duplicate fits."
+    "B completes full15 receipt and I1 registration/execution; do not duplicate fits.",
+    "A reviews actual frozen I1 results and time/mask evidence on handoff; keep D1 artifacts immutable."
   ],
   "boundaries": {
     "cluster_operations": false,
@@ -34,5 +34,6 @@
     "registration": ".local/v2_d1_export_registration.json",
     "state": "completed"
   },
-  "D1_delivery": "reports/v2_d1_delivery.json"
+  "D1_delivery": "reports/v2_d1_delivery.json",
+  "I1_static_review": "reports/v2_i1_A_contract_review.json"
 }
