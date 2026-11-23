@@ -1,6 +1,6 @@
 {
   "schema": "b19_local_checkpoint_v1",
-  "updated_at": "2026-11-23T16:37:40.021315+08:00",
+  "updated_at": "2026-11-23T16:45:29.992975+08:00",
   "owner": "B",
   "owner_thread": "01a203f5-3aa6-7b21-8a1f-8fece4787432",
   "worktree": "F:/sessions/26.9.8_测试大纲/work/idfs-model-b",
@@ -9,7 +9,7 @@
   "issue": 19,
   "pr": 16,
   "state": "running",
-  "substage": "cluster_horizon_two_paths_registered_before_fit",
+  "substage": "cluster_horizon_two_paths_complete_A_review_pending",
   "training_running": false,
   "sources": {
     "handoff_sha256": "2e7ac9ddcc68da042a1f06269b6c6021e977e167482face0699e199fee47cf90",
@@ -177,7 +177,7 @@
     "includes_network_and_publication": false
   },
   "next_actions": [
-    "Execute the newly authorized matched cluster multihorizon paths; old jobs remain do_not_repeat."
+    "A independently reviews frozen cluster multihorizon outputs and final package; no additional model fits."
   ],
   "heartbeat": {
     "id": "idfs-b",
@@ -1821,7 +1821,7 @@
     "next_training_card": "suggested_direct_cluster_MAE_WAPE_objective_not_registered_or_started"
   },
   "cluster_horizon": {
-    "state": "registered_before_fit",
+    "state": "completed_A_review_pending",
     "card": "docs/B19_CLUSTER_HORIZON_EXECUTION_CARD.md",
     "user_request": "测试一下，同时是否能输出更长时间尺度，例如3、5、10等",
     "user_output_preference": "同时给出窗口平均IOPS和逐秒轨迹",
@@ -1834,13 +1834,100 @@
     "fit_samples": 4615,
     "internal_dev_samples": 2297,
     "new_fit_limit": 2,
-    "new_fit_count": 0,
+    "new_fit_count": 2,
     "preparation_charged_seconds_per_arm": 300,
     "worker_budget_seconds": 1500,
     "full_card_budget_seconds_per_arm": 1800,
     "input_receipt": "reports/cluster_horizon_input_receipt.json",
     "source_clock_offline_only": true,
     "external_validation_new_evaluations": 0,
-    "parameter_count": 124161
+    "parameter_count": 124161,
+    "direct_seconds": {
+      "state": "completed_A_review_pending",
+      "job_id": "b19_cluster_horizon_direct_seconds_v1_a01",
+      "code_sha": "8e7df79a2da8c8515a96939c827c0ace103576ef",
+      "do_not_repeat": true,
+      "report": "reports/cluster_horizon_direct_seconds.json",
+      "window_macro": {
+        "1": {
+          "mape_percent": 256.2245315935105,
+          "wape_percent": 17.830970454274073,
+          "mae_iops": 691.2549736106705,
+          "mdape_percent": 7.813765184443841,
+          "pred20_percent": 75.9542408959184,
+          "log_mae": 0.250781761002965
+        },
+        "3": {
+          "mape_percent": 17.638188605300137,
+          "wape_percent": 14.155301483490963,
+          "mae_iops": 562.2803681853832,
+          "mdape_percent": 8.537005894422139,
+          "pred20_percent": 72.54124513773273,
+          "log_mae": 0.14896686441929918
+        },
+        "5": {
+          "mape_percent": 14.3682976425041,
+          "wape_percent": 12.615933445428723,
+          "mae_iops": 508.27932570062364,
+          "mdape_percent": 9.227368730084379,
+          "pred20_percent": 75.99491652735952,
+          "log_mae": 0.12789258617924884
+        },
+        "10": {
+          "mape_percent": 12.038134333009534,
+          "wape_percent": 11.217737199804919,
+          "mae_iops": 458.6628781730192,
+          "mdape_percent": 9.466511662921528,
+          "pred20_percent": 81.86147503198038,
+          "log_mae": 0.1105122165461924
+        }
+      },
+      "lease_seconds": 14.382791996002197
+    },
+    "results": "docs/B19_CLUSTER_HORIZON_RESULTS.md",
+    "verification": "reports/cluster_horizon_B_verification.json",
+    "csv_directory": "outputs/cluster_horizon_20261123",
+    "fine100ms": {
+      "state": "completed_A_review_pending",
+      "job_id": "b19_cluster_horizon_fine100ms_v1_a01",
+      "code_sha": "8e7df79a2da8c8515a96939c827c0ace103576ef",
+      "do_not_repeat": true,
+      "report": "reports/cluster_horizon_fine100ms.json",
+      "window_macro": {
+        "1": {
+          "mape_percent": 259.73423954876745,
+          "wape_percent": 17.99201201881463,
+          "mae_iops": 695.7332170836463,
+          "mdape_percent": 7.701487768580314,
+          "pred20_percent": 75.18846515970317,
+          "log_mae": 0.25214403889199055
+        },
+        "3": {
+          "mape_percent": 18.226201621712352,
+          "wape_percent": 14.648134968876269,
+          "mae_iops": 575.4143529561336,
+          "mdape_percent": 9.365705049496693,
+          "pred20_percent": 70.97247820834163,
+          "log_mae": 0.15342574108758494
+        },
+        "5": {
+          "mape_percent": 15.128502256007504,
+          "wape_percent": 13.299768470531953,
+          "mae_iops": 527.4823769535573,
+          "mdape_percent": 10.65208106923196,
+          "pred20_percent": 73.6518167509897,
+          "log_mae": 0.13415813722900727
+        },
+        "10": {
+          "mape_percent": 12.934887036324861,
+          "wape_percent": 12.064509588091921,
+          "mae_iops": 480.9281551970257,
+          "mdape_percent": 10.611100927892942,
+          "pred20_percent": 79.36278685286473,
+          "log_mae": 0.11835398204467289
+        }
+      },
+      "lease_seconds": 13.932297229766846
+    }
   }
 }
