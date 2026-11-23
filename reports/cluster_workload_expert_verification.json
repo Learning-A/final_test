@@ -1,0 +1,46 @@
+{
+  "state": "verified_preparation",
+  "fit_samples": 4615,
+  "internal_dev_samples": 2297,
+  "fit_workload_counts": {
+    "ai_inference_ses": 949,
+    "ai_training_ses": 945,
+    "bigdata_baleen": 933,
+    "graph_zipf": 912,
+    "hpc_wrf": 876
+  },
+  "internal_dev_workload_counts": {
+    "ai_inference_ses": 500,
+    "ai_training_ses": 404,
+    "bigdata_baleen": 482,
+    "graph_zipf": 494,
+    "hpc_wrf": 417
+  },
+  "feature_dimensions": {
+    "C": 2064,
+    "CBP": 4144
+  },
+  "target_shape": {
+    "fit": [
+      4615,
+      10
+    ],
+    "internal_dev": [
+      2297,
+      10
+    ]
+  },
+  "join": {
+    "fit_exact": true,
+    "internal_dev_exact": true,
+    "fit_index_sha256": "f6c0e7a6ea42320bd29531aa55a8b775264e829ec5867bd81060f0ab38a5d346",
+    "internal_dev_index_sha256": "b40862ba43294a0e16ae2e82054182a38b1b43e06cdd62df928f080e3299c33f"
+  },
+  "input_sha256": {
+    "i1": "ffc01763d54e6185eb62772769e489eed63b6eef817bf79171adfbbb24d41170",
+    "horizon": "0780bba9ae4b63814f741077a0b8adc73ed8e3c8fc82ac62e2b7a9a9f50b137d",
+    "metadata": "0a3ba9fcd90a6142b46a1431ca123299b83725e761455ac968d35236baebb69e",
+    "sample_ids": "e0ef8aeb45e2b89cda63419d783c464c1ebca42ff999b036bc2f6f8c772e9320"
+  },
+  "fit_performed": false
+}
