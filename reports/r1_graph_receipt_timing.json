@@ -1,0 +1,428 @@
+{
+  "scope": "Archived Graph train01/02/03 raw OSS records",
+  "clock_bound_ns": null,
+  "online_receiver_proof": false,
+  "note": "Source and receiver wall clocks differ. The offset plus SSH/read pipeline delay is not one-way latency. Same-grid spread uses a single receiver monotonic clock, but includes unknown source clock and sampling variation. Monotonic differences are relative to the first row of each host stream.",
+  "runs": {
+    "graph_zipf_train_01": {
+      "hosts": {
+        "idfs44": {
+          "rows": 79212,
+          "clock_step_flags": 0,
+          "receiver_minus_source_wall_ms_min_p50_p95_max": [
+            16778.832,
+            16820.714,
+            16979.451,
+            17377.388
+          ],
+          "relative_monotonic_difference_ms_min_p50_p95_max": [
+            -3.976,
+            43.081,
+            200.802,
+            601.95
+          ]
+        },
+        "idfs45": {
+          "rows": 79212,
+          "clock_step_flags": 0,
+          "receiver_minus_source_wall_ms_min_p50_p95_max": [
+            16778.833,
+            16816.282,
+            16973.392,
+            17400.709
+          ],
+          "relative_monotonic_difference_ms_min_p50_p95_max": [
+            -2.96,
+            38.377,
+            194.247,
+            620.753
+          ]
+        },
+        "idfs46": {
+          "rows": 79212,
+          "clock_step_flags": 0,
+          "receiver_minus_source_wall_ms_min_p50_p95_max": [
+            16777.751,
+            16819.979,
+            16978.304,
+            17358.605
+          ],
+          "relative_monotonic_difference_ms_min_p50_p95_max": [
+            -3.774,
+            42.697,
+            200.044,
+            578.294
+          ]
+        },
+        "idfs47": {
+          "rows": 79212,
+          "clock_step_flags": 0,
+          "receiver_minus_source_wall_ms_min_p50_p95_max": [
+            16778.325,
+            16821.037,
+            16978.982,
+            17387.177
+          ],
+          "relative_monotonic_difference_ms_min_p50_p95_max": [
+            -2.756,
+            44.192,
+            200.799,
+            607.181
+          ]
+        },
+        "idfs64": {
+          "rows": 79212,
+          "clock_step_flags": 0,
+          "receiver_minus_source_wall_ms_min_p50_p95_max": [
+            16777.899,
+            16818.506,
+            16976.642,
+            17350.876
+          ],
+          "relative_monotonic_difference_ms_min_p50_p95_max": [
+            -16.843,
+            28.692,
+            186.766,
+            558.343
+          ]
+        },
+        "idfs65": {
+          "rows": 79212,
+          "clock_step_flags": 0,
+          "receiver_minus_source_wall_ms_min_p50_p95_max": [
+            16779.394,
+            16821.759,
+            16981.217,
+            17384.149
+          ],
+          "relative_monotonic_difference_ms_min_p50_p95_max": [
+            -4.261,
+            43.169,
+            202.367,
+            602.71
+          ]
+        },
+        "idfs66": {
+          "rows": 79212,
+          "clock_step_flags": 0,
+          "receiver_minus_source_wall_ms_min_p50_p95_max": [
+            16778.665,
+            16816.647,
+            16976.592,
+            17374.936
+          ],
+          "relative_monotonic_difference_ms_min_p50_p95_max": [
+            -30.161,
+            12.477,
+            172.173,
+            568.25
+          ]
+        },
+        "idfs67": {
+          "rows": 79212,
+          "clock_step_flags": 0,
+          "receiver_minus_source_wall_ms_min_p50_p95_max": [
+            16777.797,
+            16816.355,
+            16973.993,
+            17395.177
+          ],
+          "relative_monotonic_difference_ms_min_p50_p95_max": [
+            -31.645,
+            11.677,
+            169.911,
+            587.948
+          ]
+        }
+      },
+      "missing_timestamps_on_valid_rows": 0,
+      "complete_96_oss_grids": 6600,
+      "same_grid_receiver_spread_ms_min_p50_p95_max": [
+        6.741,
+        48.602,
+        156.956,
+        606.862
+      ]
+    },
+    "graph_zipf_train_02": {
+      "hosts": {
+        "idfs44": {
+          "rows": 79212,
+          "clock_step_flags": 0,
+          "receiver_minus_source_wall_ms_min_p50_p95_max": [
+            16820.642,
+            16868.887,
+            17043.345,
+            17388.396
+          ],
+          "relative_monotonic_difference_ms_min_p50_p95_max": [
+            -16.762,
+            34.869,
+            210.497,
+            550.809
+          ]
+        },
+        "idfs45": {
+          "rows": 79212,
+          "clock_step_flags": 0,
+          "receiver_minus_source_wall_ms_min_p50_p95_max": [
+            16819.25,
+            16863.155,
+            17035.622,
+            17373.99
+          ],
+          "relative_monotonic_difference_ms_min_p50_p95_max": [
+            -20.859,
+            27.121,
+            200.634,
+            534.496
+          ]
+        },
+        "idfs46": {
+          "rows": 79212,
+          "clock_step_flags": 0,
+          "receiver_minus_source_wall_ms_min_p50_p95_max": [
+            16819.158,
+            16862.38,
+            17036.109,
+            17365.709
+          ],
+          "relative_monotonic_difference_ms_min_p50_p95_max": [
+            -16.686,
+            30.436,
+            204.375,
+            537.352
+          ]
+        },
+        "idfs47": {
+          "rows": 79212,
+          "clock_step_flags": 0,
+          "receiver_minus_source_wall_ms_min_p50_p95_max": [
+            16818.986,
+            16863.989,
+            17037.494,
+            17351.89
+          ],
+          "relative_monotonic_difference_ms_min_p50_p95_max": [
+            -35.47,
+            12.509,
+            186.971,
+            496.902
+          ]
+        },
+        "idfs64": {
+          "rows": 79212,
+          "clock_step_flags": 0,
+          "receiver_minus_source_wall_ms_min_p50_p95_max": [
+            16819.211,
+            16864.437,
+            17038.654,
+            17335.016
+          ],
+          "relative_monotonic_difference_ms_min_p50_p95_max": [
+            -34.51,
+            15.04,
+            189.426,
+            484.877
+          ]
+        },
+        "idfs65": {
+          "rows": 79212,
+          "clock_step_flags": 0,
+          "receiver_minus_source_wall_ms_min_p50_p95_max": [
+            16818.534,
+            16864.426,
+            17037.03,
+            17342.518
+          ],
+          "relative_monotonic_difference_ms_min_p50_p95_max": [
+            -31.37,
+            18.815,
+            191.639,
+            497.018
+          ]
+        },
+        "idfs66": {
+          "rows": 79212,
+          "clock_step_flags": 0,
+          "receiver_minus_source_wall_ms_min_p50_p95_max": [
+            16819.195,
+            16863.87,
+            17038.533,
+            17415.418
+          ],
+          "relative_monotonic_difference_ms_min_p50_p95_max": [
+            -20.108,
+            28.375,
+            204.261,
+            575.902
+          ]
+        },
+        "idfs67": {
+          "rows": 79212,
+          "clock_step_flags": 0,
+          "receiver_minus_source_wall_ms_min_p50_p95_max": [
+            16818.76,
+            16865.135,
+            17041.732,
+            17350.261
+          ],
+          "relative_monotonic_difference_ms_min_p50_p95_max": [
+            -29.172,
+            21.395,
+            198.182,
+            504.421
+          ]
+        }
+      },
+      "missing_timestamps_on_valid_rows": 0,
+      "complete_96_oss_grids": 6591,
+      "same_grid_receiver_spread_ms_min_p50_p95_max": [
+        7.67,
+        52.673,
+        179.701,
+        587.299
+      ]
+    },
+    "graph_zipf_train_03": {
+      "hosts": {
+        "idfs44": {
+          "rows": 79212,
+          "clock_step_flags": 0,
+          "receiver_minus_source_wall_ms_min_p50_p95_max": [
+            16869.282,
+            16911.157,
+            17088.393,
+            17510.405
+          ],
+          "relative_monotonic_difference_ms_min_p50_p95_max": [
+            -7.99,
+            35.905,
+            213.568,
+            635.028
+          ]
+        },
+        "idfs45": {
+          "rows": 79212,
+          "clock_step_flags": 0,
+          "receiver_minus_source_wall_ms_min_p50_p95_max": [
+            16868.934,
+            16909.798,
+            17088.965,
+            17495.091
+          ],
+          "relative_monotonic_difference_ms_min_p50_p95_max": [
+            -3.3,
+            39.601,
+            218.684,
+            624.051
+          ]
+        },
+        "idfs46": {
+          "rows": 79212,
+          "clock_step_flags": 0,
+          "receiver_minus_source_wall_ms_min_p50_p95_max": [
+            16868.491,
+            16912.714,
+            17092.122,
+            17499.066
+          ],
+          "relative_monotonic_difference_ms_min_p50_p95_max": [
+            -13.084,
+            32.794,
+            212.867,
+            618.414
+          ]
+        },
+        "idfs47": {
+          "rows": 79212,
+          "clock_step_flags": 0,
+          "receiver_minus_source_wall_ms_min_p50_p95_max": [
+            16868.471,
+            16911.367,
+            17091.364,
+            17500.135
+          ],
+          "relative_monotonic_difference_ms_min_p50_p95_max": [
+            -5.508,
+            39.293,
+            219.29,
+            627.152
+          ]
+        },
+        "idfs64": {
+          "rows": 79212,
+          "clock_step_flags": 0,
+          "receiver_minus_source_wall_ms_min_p50_p95_max": [
+            16868.477,
+            16912.104,
+            17094.973,
+            17523.651
+          ],
+          "relative_monotonic_difference_ms_min_p50_p95_max": [
+            -6.283,
+            39.459,
+            222.712,
+            650.882
+          ]
+        },
+        "idfs65": {
+          "rows": 79212,
+          "clock_step_flags": 0,
+          "receiver_minus_source_wall_ms_min_p50_p95_max": [
+            16868.908,
+            16911.958,
+            17091.439,
+            17497.115
+          ],
+          "relative_monotonic_difference_ms_min_p50_p95_max": [
+            -9.006,
+            35.885,
+            215.499,
+            620.31
+          ]
+        },
+        "idfs66": {
+          "rows": 79212,
+          "clock_step_flags": 0,
+          "receiver_minus_source_wall_ms_min_p50_p95_max": [
+            16869.122,
+            16911.78,
+            17092.603,
+            17500.659
+          ],
+          "relative_monotonic_difference_ms_min_p50_p95_max": [
+            -7.413,
+            37.417,
+            218.628,
+            626.151
+          ]
+        },
+        "idfs67": {
+          "rows": 79212,
+          "clock_step_flags": 0,
+          "receiver_minus_source_wall_ms_min_p50_p95_max": [
+            16868.234,
+            16913.515,
+            17095.739,
+            17505.99
+          ],
+          "relative_monotonic_difference_ms_min_p50_p95_max": [
+            -11.647,
+            35.597,
+            218.224,
+            627.285
+          ]
+        }
+      },
+      "missing_timestamps_on_valid_rows": 0,
+      "complete_96_oss_grids": 6589,
+      "same_grid_receiver_spread_ms_min_p50_p95_max": [
+        6.502,
+        49.167,
+        150.982,
+        640.615
+      ]
+    }
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "state": "verified_against_pinned_core_pilot",
+  "datasets": [
+    {
+      "dataset_id": "dev_20261122_graph_zipf_train_01_a01",
+      "counts": {
+        "rows": 52808,
+        "read_bytes_valid": 52774,
+        "write_bytes_valid": 52774,
+        "op_wip_valid": 52774,
+        "original_valid_core_matched": 52774
+      }
+    }
+  ],
+  "manifest_sha256": "0044ec00ceb2e8bdece2eca352e2c3d654f58331ba0c2596295ec2fa255c8e52",
+  "scope": "all valid core counts, availability, field masks and null/zero semantics; original raw hashes verified by exporter",
+  "fit_count": 0,
+  "latency_included": false,
+  "online_time_eligibility": false
+}

@@ -1,0 +1,53 @@
+{
+  "state": "V2_completed_no_promotion",
+  "execution_authorized": true,
+  "plan_commit": "1e286c3",
+  "A_script": "scripts/analyze_v2_d0.py",
+  "A_result": "reports/v2_d0_a_summary.json",
+  "B_result": "../work/idfs-model-b/reports/v2_d0_frozen_error_final.json",
+  "D1_sample": "reports/v2_d1_sample_audit.json",
+  "new_fit_count": 0,
+  "next_actions": [],
+  "boundaries": {
+    "cluster_operations": false,
+    "external_validation_new_evaluations": 0,
+    "formal_acceptance": false,
+    "online_time_eligibility": false
+  },
+  "failed_analysis_attempts": [
+    "v2_d0 old Graph manifest mismatch",
+    "v2_d0_a02 absent pinned fine member"
+  ],
+  "final_delivery_directory": ".local/v2_d0_a03",
+  "canonical_exchange_directory": ".local/v2_d0",
+  "heartbeat_execution_mode": true,
+  "D0_independent_phase_review": "reports/v2_d0_a_independent_phase_review.json",
+  "D1_B_sample_verification": "../work/idfs-model-b/reports/v2_d1_sample_B_verification.json",
+  "D1_running_job": {
+    "job_id": "a_v2_d1_export_20261123_a01",
+    "output": ".local/v2_d1_export_a01",
+    "exec_session_id": 22226,
+    "budget_seconds": 1800,
+    "registration": ".local/v2_d1_export_registration.json",
+    "state": "completed"
+  },
+  "D1_delivery": "reports/v2_d1_delivery.json",
+  "I1_static_review": "reports/v2_i1_A_contract_review.json",
+  "I1_independent_review": "reports/v2_i1_A_independent_review.json",
+  "I1_completed": {
+    "job_id": "b19_v2_i1_aux_inputs_v1_a01",
+    "new_fit_count_B": 16,
+    "groups_below10_all_arms": 0,
+    "no_input_promoted": true,
+    "next_input": "C258"
+  },
+  "M1_static_review": "reports/v2_m1_A_static_review.json",
+  "M1_independent_review": "reports/v2_m1_A_independent_review.json",
+  "M2_independent_review": "reports/v2_m2_A_independent_review.json",
+  "M3_independent_review": "reports/v2_m3_A_independent_review.json",
+  "closeout": {
+    "S1": "Skipped: insufficient precursor reliability and matched train-run out-of-fold calibration evidence",
+    "G1_F1": "Skipped: no promoted candidate",
+    "formal_acceptance": false
+  }
+}

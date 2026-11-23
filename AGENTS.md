@@ -1,5 +1,9 @@
 # 两台电脑的共同工作约定
 
+## 采集完成后的当前分工（2026-11-22）
+
+当前执行 [docs/POST_CAPTURE_COORDINATION.md](docs/POST_CAPTURE_COORDINATION.md)。20轮开发采集已完成并发布，集群已交付、A心跳暂停。A负责数据证据与独立复核，B负责模型优化及授权目录内的训练执行；B沿用已登记的共享flock和任务预算。下文“训练仅由A提交”等采集阶段约定由此替代。禁止启动新现场任务或自动恢复心跳。A/B任务指示分别见 docs/TASK_A_DATA_EVIDENCE.md、docs/TASK_B_MODEL_OPTIMIZATION.md。
+
 先读 `docs/STATUS.md`、`docs/COLLABORATION.md` 和 `data_catalog/datasets.json`。这些文件定义当前状态；`docs/history/` 和工程内旧文档只作历史参考。用户在当前会话的最新授权优先。
 
 ## 角色

@@ -1,0 +1,50 @@
+{
+  "state": "independently_verified_no_promotion",
+  "zip_sha256": "94cfb6bc7a3e97735481583e7318407247c000a71f80f650b28fe57eac97165d",
+  "manifest_members": 10,
+  "labels_matched_to_previously_verified_R2": 21288,
+  "samples": 2661,
+  "groups_recomputed": 80,
+  "best_epoch": 4,
+  "scoring_count": 13,
+  "macro_relative_improvement": -0.028133694210109583,
+  "screen_passes": false,
+  "A_fits": 0,
+  "lease_seconds": 946.9679317474365,
+  "arms": {
+    "M0": {
+      "macro_mape": 112.31633789948161,
+      "worst": 341.4611690619506,
+      "groups_lt10": 0,
+      "workload_mae": {
+        "dev_20261122_ai_training_ses_train_03_a01": 89.23275430825464,
+        "dev_20261122_ai_inference_ses_train_03_a01": 172.1126757173695,
+        "dev_20261122_bigdata_baleen_train_03_a01": 44.010084573938215,
+        "dev_20261122_graph_zipf_train_03_a01": 156.56261211283066,
+        "dev_20261122_hpc_wrf_train_03_a01": 53.341057084327524
+      },
+      "phase": {
+        "ordinary": 32.82682605023474,
+        "known_recovery": 0.4534439418446137,
+        "known_onset": 79.03606790740227
+      }
+    },
+    "M3": {
+      "macro_mape": 115.47621140474496,
+      "worst": 347.6438291488107,
+      "groups_lt10": 0,
+      "workload_mae": {
+        "dev_20261122_ai_training_ses_train_03_a01": 94.42173120315042,
+        "dev_20261122_ai_inference_ses_train_03_a01": 178.24630612472728,
+        "dev_20261122_bigdata_baleen_train_03_a01": 44.04483484740651,
+        "dev_20261122_graph_zipf_train_03_a01": 147.7166173177607,
+        "dev_20261122_hpc_wrf_train_03_a01": 53.371496274489765
+      },
+      "phase": {
+        "ordinary": 32.838377257299115,
+        "known_recovery": 0.4759644982990082,
+        "known_onset": 82.16186964914712
+      }
+    }
+  }
+}

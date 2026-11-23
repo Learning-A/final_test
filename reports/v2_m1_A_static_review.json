@@ -1,0 +1,22 @@
+{
+  "state": "reviewed_static_M1_specification_and_module",
+  "scope": "Source and card review only, no model fitting or real-data scoring",
+  "files": {
+    "../work/idfs-model-b/docs/B19_V2_M1_EXECUTION_CARD.md": "c90871edfafa7ca52c9c769c956cffe0417f322d517d5febf36c036ff03c48f7",
+    "../work/idfs-model-b/idfs_forecast_lab/idfs_lab/v2_local_residual.py": "0203c7acdc5f2b7e2b631ecb46f1c57bb21c5b01bc7f3ecf590f8702facaa997"
+  },
+  "checks": [
+    "Historical indices2/5/8/11/14 correspond to complete five-second core totals; no target/current bucket used for local baseline",
+    "Existing b507-fitted global preprocessing and s are reused; no train03-fitted statistic",
+    "History-only mean/std and1IOPS/0.05s floor fixed before results",
+    "Four descriptors and21345-parameter model are a bundled change, not isolated RevIN or scale causal attribution",
+    "Epoch0 b=max(mean,1) and signed delta followed by nonnegative recovery match card",
+    "M0 R2L0 reused; at most1new configuration;1800s total; no external validation"
+  ],
+  "limitations": [
+    "ReLU recovery can produce zero gradients for preactivation below0; report this if observed rather than alter floor post hoc",
+    "Historical-mean epoch0 is a new internal development checkpoint candidate and must remain in evaluation count",
+    "Current class docstring says nonnegative residual but implementation correctly uses signed correction and nonnegative final prediction"
+  ],
+  "next": "B freeze execution source, pins, resource preflight and actual job; A independently recomputes results after delivery."
+}

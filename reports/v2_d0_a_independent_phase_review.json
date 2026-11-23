@@ -1,0 +1,28 @@
+{
+  "state": "R2_phase_contributions_independently_recomputed",
+  "report_sha256": "bc06dd8e0c164e32a1f444c1d4706ed41f9cbdf38a4919e83dbaa1fd105ce648",
+  "arms": {
+    "L0": {
+      "ordinary": 32.82682605023474,
+      "known_recovery": 0.4534439418446137,
+      "known_onset": 79.03606790740227
+    },
+    "L1": {
+      "ordinary": 31.970346609184045,
+      "known_recovery": 0.4646489455980644,
+      "known_onset": 69.30289579352191
+    },
+    "L2": {
+      "ordinary": 31.806884705816373,
+      "known_recovery": 0.48913815415486644,
+      "known_onset": 75.45475752923042
+    },
+    "L3": {
+      "ordinary": 32.60108247537987,
+      "known_recovery": 0.5127506521894908,
+      "known_onset": 60.89777170094316
+    }
+  },
+  "scope": "R2 four arms; phase keys and cluster actual checked; no new fit or inference",
+  "B_report_phase_contributions_match": true
+}

@@ -1,0 +1,74 @@
+{
+  "state": "A_independently_verified_I1_no_promotion",
+  "zip_sha256": "77d96a5c8bf033f0237ecaac0de095794a6d05aa9dcb0485e90a9e57e86b3131",
+  "manifest_members": 29,
+  "lease_hash_scope": "whole pinned ZIP; not separately listed in manifest",
+  "prediction_rows": 7983,
+  "original_node_labels_checked": 21288,
+  "source_label_evidence": "exact equality to independently verified R1 original labels; no fresh raw replay",
+  "node_prediction_pairs_checked": 63864,
+  "groups_recomputed": 120,
+  "summaries": {
+    "C": {
+      "macro_mape": 108.06623590563106,
+      "worst": 322.518728035716,
+      "groups_below10": 0,
+      "workload_mae": {
+        "ai_training_ses": 92.9719864739982,
+        "ai_inference_ses": 174.8549931100054,
+        "bigdata_baleen": 45.11900462282847,
+        "graph_zipf": 173.1610561220659,
+        "hpc_wrf": 54.049487024158296
+      },
+      "phase_contributions": {
+        "ordinary": 33.08814046645515,
+        "known_recovery": 0.449606743199907,
+        "known_onset": 74.52848869597602
+      },
+      "improvement_vs_C": 0.0,
+      "screen_vs_C": false
+    },
+    "CB": {
+      "macro_mape": 107.76346559024171,
+      "worst": 324.14326475152654,
+      "groups_below10": 0,
+      "workload_mae": {
+        "ai_training_ses": 91.4948438644977,
+        "ai_inference_ses": 174.58229753999888,
+        "bigdata_baleen": 45.0482904704898,
+        "graph_zipf": 172.67879936935768,
+        "hpc_wrf": 53.46419183888283
+      },
+      "phase_contributions": {
+        "ordinary": 32.81063930359117,
+        "known_recovery": 0.44918641026032763,
+        "known_onset": 74.50363987638993
+      },
+      "improvement_vs_C": 0.0028017105699299494,
+      "screen_vs_C": false
+    },
+    "CBP": {
+      "macro_mape": 107.92139857788193,
+      "worst": 320.7244007837355,
+      "groups_below10": 0,
+      "workload_mae": {
+        "ai_training_ses": 91.43688680056897,
+        "ai_inference_ses": 174.5294712464745,
+        "bigdata_baleen": 45.07459127541334,
+        "graph_zipf": 173.04645706890759,
+        "hpc_wrf": 53.62268276113526
+      },
+      "phase_contributions": {
+        "ordinary": 32.823559614483614,
+        "known_recovery": 0.45912401285718246,
+        "known_onset": 74.63871495054099
+      },
+      "improvement_vs_C": 0.0013402643900320976,
+      "screen_vs_C": false
+    }
+  },
+  "models_loaded": false,
+  "new_fit_count": 0,
+  "online_time_eligibility": false,
+  "formal_acceptance": false
+}

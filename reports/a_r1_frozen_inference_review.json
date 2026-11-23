@@ -1,0 +1,19 @@
+{
+  "review": "A independently replayed packaged NPZ on pinned original internal inputs; recomputed stored B timings, no new benchmark",
+  "code_sha": "f14df09f77a9587a6bb788a165f00330a56ff1a7",
+  "sample_count": 2661,
+  "target_count": 9,
+  "max_relative_error": 0.0,
+  "raw_timing_count": 600,
+  "combined_p95_ms": {
+    "sklearn": 50.1219258,
+    "arrays": 5.0289447
+  },
+  "arrays_round_p95_ms": [
+    5.0379173,
+    5.0288660499999995,
+    5.027315150000001
+  ],
+  "formal_acceptance": false,
+  "online_time_eligibility": false
+}

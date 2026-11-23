@@ -1,0 +1,12 @@
+{
+  "state": "independent_auxiliary_tensor_spotcheck_passed",
+  "input_array_sha256": "ffc01763d54e6185eb62772769e489eed63b6eef817bf79171adfbbb24d41170",
+  "datasets": 15,
+  "seconds_per_dataset": 3,
+  "node_feature_rows_checked": 360,
+  "scalar_components_checked": 93600,
+  "unavailable_slot_checks": 364,
+  "zero_ops_ratio_mask_checks": 3638,
+  "scope": "Independent direct field arithmetic for first/middle/last registered second in all15train,8nodes each; not all-row tensor verification",
+  "new_fit_count": 0
+}

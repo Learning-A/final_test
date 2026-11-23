@@ -1,0 +1,53 @@
+{
+  "state": "independently_verified_no_promotion",
+  "zip_sha256": "87dbc9a6a8dec9aad0adf52455d1431b9b11a3870383e392c9f76e446f9479a5",
+  "manifest_members": 8,
+  "source_label_scope": "equality to independently verified R2 L0 original labels",
+  "samples": 2661,
+  "distinct_labels": 21288,
+  "prediction_label_pairs": 42576,
+  "groups_recomputed": 80,
+  "best_epoch": 12,
+  "internal_scoring_count": 21,
+  "relative_macro_improvement": 0.008028776925878112,
+  "screen_passes": false,
+  "fits_run_by_A": 0,
+  "arms": {
+    "M0": {
+      "macro_mape": 112.31633789948161,
+      "worst_mape": 341.4611690619506,
+      "groups_below_10": 0,
+      "mean_node_mae_by_dataset": {
+        "dev_20261122_ai_training_ses_train_03_a01": 89.23275430825464,
+        "dev_20261122_ai_inference_ses_train_03_a01": 172.1126757173695,
+        "dev_20261122_bigdata_baleen_train_03_a01": 44.010084573938215,
+        "dev_20261122_graph_zipf_train_03_a01": 156.56261211283066,
+        "dev_20261122_hpc_wrf_train_03_a01": 53.341057084327524
+      },
+      "phase_contributions": {
+        "ordinary": 32.82682605023474,
+        "known_recovery": 0.4534439418446137,
+        "known_onset": 79.03606790740227
+      },
+      "positive_labels_with_zero_prediction": 0
+    },
+    "M1": {
+      "macro_mape": 111.41457507735512,
+      "worst_mape": 341.80634095029046,
+      "groups_below_10": 0,
+      "mean_node_mae_by_dataset": {
+        "dev_20261122_ai_training_ses_train_03_a01": 90.63082412839638,
+        "dev_20261122_ai_inference_ses_train_03_a01": 173.44002947903203,
+        "dev_20261122_bigdata_baleen_train_03_a01": 43.92343051105465,
+        "dev_20261122_graph_zipf_train_03_a01": 152.83747520166284,
+        "dev_20261122_hpc_wrf_train_03_a01": 54.475363223127616
+      },
+      "phase_contributions": {
+        "ordinary": 32.519797826175456,
+        "known_recovery": 0.44058004693680075,
+        "known_onset": 78.454197204243
+      },
+      "positive_labels_with_zero_prediction": 22
+    }
+  }
+}

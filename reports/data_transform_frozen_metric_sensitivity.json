@@ -1,0 +1,48 @@
+{
+  "state": "retrospective_metric_sensitivity_only_no_fit",
+  "scope": "same frozen R2 2661 seconds each;40groups equal mean;zero included in logMAE/RMSLE/WAPE,excluded from percentage metrics as labelled",
+  "results": {
+    "L0": {
+      "raw_mape_percent": 112.3163378994816,
+      "log1p_mae": 0.28529338186525777,
+      "rmsle": 0.6161289360726248,
+      "wape_percent": 22.150343713642386,
+      "mape_on_log1p_positive_only_percent": 6.419855323579115,
+      "maape_radians_positive_only": 0.24125053759462672
+    },
+    "L1": {
+      "raw_mape_percent": 101.73789134830409,
+      "log1p_mae": 0.30911769543947143,
+      "rmsle": 0.602091430827742,
+      "wape_percent": 23.929735200102634,
+      "mape_on_log1p_positive_only_percent": 6.71939547104372,
+      "maape_radians_positive_only": 0.25496208973983603
+    },
+    "L2": {
+      "raw_mape_percent": 107.75078038920152,
+      "log1p_mae": 0.28310227640225244,
+      "rmsle": 0.6114869388537101,
+      "wape_percent": 21.617803494836135,
+      "mape_on_log1p_positive_only_percent": 6.343179725547676,
+      "maape_radians_positive_only": 0.23646072029835608
+    },
+    "L3": {
+      "raw_mape_percent": 94.01160482851267,
+      "log1p_mae": 0.33602962639118716,
+      "rmsle": 0.6058973648636778,
+      "wape_percent": 26.264426803529812,
+      "mape_on_log1p_positive_only_percent": 7.077915790008892,
+      "maape_radians_positive_only": 0.2709256527699344
+    }
+  },
+  "example": {
+    "actual": 1,
+    "prediction": 100,
+    "raw_APE_percent": 9900,
+    "log1p_APE_percent": 565.8211482751796,
+    "log1p_absolute_error": 3.9219733362813143
+  },
+  "formal_metric_unchanged": true,
+  "new_model_evaluations": 0,
+  "interpretation": "New diagnostic scoring of already-viewed internal predictions; not a fresh holdout or model improvement"
+}

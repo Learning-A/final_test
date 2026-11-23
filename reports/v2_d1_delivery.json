@@ -1,0 +1,15 @@
+{
+  "state": "all15_exported_A_verified_pending_B_receipt",
+  "tag": "v2-d1-auxiliary-train15-20261123-v1",
+  "zip_sha256": "50cecf52a17d921e0158990627aa5b4eb9237dcb99ccba0833ef9174cc9cff36",
+  "zip_bytes": 24432903,
+  "manifest_sha256": "6a0847f7bb03a2740a15d028c382845dfd98b5167e6beef20caa3592d985472b",
+  "export_elapsed_seconds": 345.74523800000316,
+  "rows": 792120,
+  "valid_core_matched": 791680,
+  "latency_included": false,
+  "new_fit_count": 0,
+  "release_url": "https://github.com/Learning-A/final_test/releases/tag/v2-d1-auxiliary-train15-20261123-v1",
+  "asset_url": "https://github.com/Learning-A/final_test/releases/download/untagged-d4fe9e21e183154afe60/v2-d1-auxiliary-train15-20261123-v1.zip",
+  "asset_digest": "sha256:50cecf52a17d921e0158990627aa5b4eb9237dcb99ccba0833ef9174cc9cff36"
+}

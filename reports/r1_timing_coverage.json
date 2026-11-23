@@ -1,0 +1,713 @@
+{
+  "request_id": "B19-R1-TRAIN-CORE-20261122-01",
+  "scope": "15 train captures, complete node labels within recording_start+[16s,600s); coverage only",
+  "time_evidence": "source read-end; additional margins are hypothetical, not clock bounds",
+  "published_deadline_before_target_ms": 30,
+  "captures": {
+    "ai_training_20261122_train01_attempt02": {
+      "eligible_node_windows": 4657,
+      "margins": {
+        "0": {
+          "usable_slots": 88460,
+          "no_usable_slots": 0,
+          "at_least_one_last_500ms_slot": 4657,
+          "mean_usable_slots": 18.995061198196264
+        },
+        "25": {
+          "usable_slots": 88460,
+          "no_usable_slots": 0,
+          "at_least_one_last_500ms_slot": 4657,
+          "mean_usable_slots": 18.995061198196264
+        },
+        "50": {
+          "usable_slots": 88459,
+          "no_usable_slots": 0,
+          "at_least_one_last_500ms_slot": 4657,
+          "mean_usable_slots": 18.994846467683058
+        },
+        "75": {
+          "usable_slots": 83805,
+          "no_usable_slots": 0,
+          "at_least_one_last_500ms_slot": 4657,
+          "mean_usable_slots": 17.995490659222675
+        },
+        "100": {
+          "usable_slots": 83805,
+          "no_usable_slots": 0,
+          "at_least_one_last_500ms_slot": 4657,
+          "mean_usable_slots": 17.995490659222675
+        },
+        "200": {
+          "usable_slots": 79151,
+          "no_usable_slots": 0,
+          "at_least_one_last_500ms_slot": 4656,
+          "mean_usable_slots": 16.996134850762292
+        },
+        "500": {
+          "usable_slots": 65185,
+          "no_usable_slots": 0,
+          "at_least_one_last_500ms_slot": 0,
+          "mean_usable_slots": 13.997208503328324
+        }
+      }
+    },
+    "dev_20261122_ai_inference_ses_train_01_a01": {
+      "eligible_node_windows": 4655,
+      "margins": {
+        "0": {
+          "usable_slots": 88414,
+          "no_usable_slots": 0,
+          "at_least_one_last_500ms_slot": 4655,
+          "mean_usable_slots": 18.993340494092372
+        },
+        "25": {
+          "usable_slots": 88414,
+          "no_usable_slots": 0,
+          "at_least_one_last_500ms_slot": 4655,
+          "mean_usable_slots": 18.993340494092372
+        },
+        "50": {
+          "usable_slots": 88414,
+          "no_usable_slots": 0,
+          "at_least_one_last_500ms_slot": 4655,
+          "mean_usable_slots": 18.993340494092372
+        },
+        "75": {
+          "usable_slots": 83760,
+          "no_usable_slots": 0,
+          "at_least_one_last_500ms_slot": 4655,
+          "mean_usable_slots": 17.99355531686359
+        },
+        "100": {
+          "usable_slots": 83760,
+          "no_usable_slots": 0,
+          "at_least_one_last_500ms_slot": 4655,
+          "mean_usable_slots": 17.99355531686359
+        },
+        "200": {
+          "usable_slots": 79107,
+          "no_usable_slots": 0,
+          "at_least_one_last_500ms_slot": 4653,
+          "mean_usable_slots": 16.993984962406014
+        },
+        "500": {
+          "usable_slots": 65150,
+          "no_usable_slots": 0,
+          "at_least_one_last_500ms_slot": 0,
+          "mean_usable_slots": 13.995703544575726
+        }
+      }
+    },
+    "dev_20261122_bigdata_baleen_train_01_a01": {
+      "eligible_node_windows": 4657,
+      "margins": {
+        "0": {
+          "usable_slots": 88457,
+          "no_usable_slots": 0,
+          "at_least_one_last_500ms_slot": 4657,
+          "mean_usable_slots": 18.994417006656647
+        },
+        "25": {
+          "usable_slots": 88457,
+          "no_usable_slots": 0,
+          "at_least_one_last_500ms_slot": 4657,
+          "mean_usable_slots": 18.994417006656647
+        },
+        "50": {
+          "usable_slots": 88454,
+          "no_usable_slots": 0,
+          "at_least_one_last_500ms_slot": 4657,
+          "mean_usable_slots": 18.99377281511703
+        },
+        "75": {
+          "usable_slots": 83803,
+          "no_usable_slots": 0,
+          "at_least_one_last_500ms_slot": 4657,
+          "mean_usable_slots": 17.995061198196264
+        },
+        "100": {
+          "usable_slots": 83803,
+          "no_usable_slots": 0,
+          "at_least_one_last_500ms_slot": 4657,
+          "mean_usable_slots": 17.995061198196264
+        },
+        "200": {
+          "usable_slots": 79147,
+          "no_usable_slots": 0,
+          "at_least_one_last_500ms_slot": 4656,
+          "mean_usable_slots": 16.995275928709468
+        },
+        "500": {
+          "usable_slots": 65180,
+          "no_usable_slots": 0,
+          "at_least_one_last_500ms_slot": 0,
+          "mean_usable_slots": 13.996134850762294
+        }
+      }
+    },
+    "dev_20261122_graph_zipf_train_01_a01": {
+      "eligible_node_windows": 4652,
+      "margins": {
+        "0": {
+          "usable_slots": 88346,
+          "no_usable_slots": 0,
+          "at_least_one_last_500ms_slot": 4652,
+          "mean_usable_slots": 18.99097162510748
+        },
+        "25": {
+          "usable_slots": 88346,
+          "no_usable_slots": 0,
+          "at_least_one_last_500ms_slot": 4652,
+          "mean_usable_slots": 18.99097162510748
+        },
+        "50": {
+          "usable_slots": 88346,
+          "no_usable_slots": 0,
+          "at_least_one_last_500ms_slot": 4652,
+          "mean_usable_slots": 18.99097162510748
+        },
+        "75": {
+          "usable_slots": 83696,
+          "no_usable_slots": 0,
+          "at_least_one_last_500ms_slot": 4652,
+          "mean_usable_slots": 17.99140154772141
+        },
+        "100": {
+          "usable_slots": 83696,
+          "no_usable_slots": 0,
+          "at_least_one_last_500ms_slot": 4652,
+          "mean_usable_slots": 17.99140154772141
+        },
+        "200": {
+          "usable_slots": 79047,
+          "no_usable_slots": 0,
+          "at_least_one_last_500ms_slot": 4652,
+          "mean_usable_slots": 16.992046431642304
+        },
+        "500": {
+          "usable_slots": 65099,
+          "no_usable_slots": 0,
+          "at_least_one_last_500ms_slot": 0,
+          "mean_usable_slots": 13.993766122098023
+        }
+      }
+    },
+    "dev_20261122_hpc_wrf_train_01_a01": {
+      "eligible_node_windows": 4651,
+      "margins": {
+        "0": {
+          "usable_slots": 88319,
+          "no_usable_slots": 0,
+          "at_least_one_last_500ms_slot": 4651,
+          "mean_usable_slots": 18.989249623736832
+        },
+        "25": {
+          "usable_slots": 88319,
+          "no_usable_slots": 0,
+          "at_least_one_last_500ms_slot": 4651,
+          "mean_usable_slots": 18.989249623736832
+        },
+        "50": {
+          "usable_slots": 88318,
+          "no_usable_slots": 0,
+          "at_least_one_last_500ms_slot": 4651,
+          "mean_usable_slots": 18.98903461621157
+        },
+        "75": {
+          "usable_slots": 83669,
+          "no_usable_slots": 0,
+          "at_least_one_last_500ms_slot": 4651,
+          "mean_usable_slots": 17.989464631262095
+        },
+        "100": {
+          "usable_slots": 83669,
+          "no_usable_slots": 0,
+          "at_least_one_last_500ms_slot": 4651,
+          "mean_usable_slots": 17.989464631262095
+        },
+        "200": {
+          "usable_slots": 79020,
+          "no_usable_slots": 0,
+          "at_least_one_last_500ms_slot": 4649,
+          "mean_usable_slots": 16.98989464631262
+        },
+        "500": {
+          "usable_slots": 65076,
+          "no_usable_slots": 0,
+          "at_least_one_last_500ms_slot": 0,
+          "mean_usable_slots": 13.99182971403999
+        }
+      }
+    },
+    "dev_20261122_ai_training_ses_train_02_a01": {
+      "eligible_node_windows": 4653,
+      "margins": {
+        "0": {
+          "usable_slots": 88364,
+          "no_usable_slots": 0,
+          "at_least_one_last_500ms_slot": 4653,
+          "mean_usable_slots": 18.990758650333117
+        },
+        "25": {
+          "usable_slots": 88364,
+          "no_usable_slots": 0,
+          "at_least_one_last_500ms_slot": 4653,
+          "mean_usable_slots": 18.990758650333117
+        },
+        "50": {
+          "usable_slots": 88361,
+          "no_usable_slots": 0,
+          "at_least_one_last_500ms_slot": 4653,
+          "mean_usable_slots": 18.990113905007522
+        },
+        "75": {
+          "usable_slots": 83712,
+          "no_usable_slots": 0,
+          "at_least_one_last_500ms_slot": 4653,
+          "mean_usable_slots": 17.99097356544165
+        },
+        "100": {
+          "usable_slots": 83712,
+          "no_usable_slots": 0,
+          "at_least_one_last_500ms_slot": 4653,
+          "mean_usable_slots": 17.99097356544165
+        },
+        "200": {
+          "usable_slots": 79059,
+          "no_usable_slots": 0,
+          "at_least_one_last_500ms_slot": 4650,
+          "mean_usable_slots": 16.99097356544165
+        },
+        "500": {
+          "usable_slots": 65112,
+          "no_usable_slots": 0,
+          "at_least_one_last_500ms_slot": 0,
+          "mean_usable_slots": 13.993552546744036
+        }
+      }
+    },
+    "dev_20261122_ai_inference_ses_train_02_a01": {
+      "eligible_node_windows": 4657,
+      "margins": {
+        "0": {
+          "usable_slots": 88456,
+          "no_usable_slots": 0,
+          "at_least_one_last_500ms_slot": 4657,
+          "mean_usable_slots": 18.99420227614344
+        },
+        "25": {
+          "usable_slots": 88456,
+          "no_usable_slots": 0,
+          "at_least_one_last_500ms_slot": 4657,
+          "mean_usable_slots": 18.99420227614344
+        },
+        "50": {
+          "usable_slots": 88454,
+          "no_usable_slots": 0,
+          "at_least_one_last_500ms_slot": 4657,
+          "mean_usable_slots": 18.99377281511703
+        },
+        "75": {
+          "usable_slots": 83800,
+          "no_usable_slots": 0,
+          "at_least_one_last_500ms_slot": 4657,
+          "mean_usable_slots": 17.994417006656647
+        },
+        "100": {
+          "usable_slots": 83800,
+          "no_usable_slots": 0,
+          "at_least_one_last_500ms_slot": 4657,
+          "mean_usable_slots": 17.994417006656647
+        },
+        "200": {
+          "usable_slots": 79145,
+          "no_usable_slots": 0,
+          "at_least_one_last_500ms_slot": 4657,
+          "mean_usable_slots": 16.994846467683058
+        },
+        "500": {
+          "usable_slots": 65178,
+          "no_usable_slots": 0,
+          "at_least_one_last_500ms_slot": 0,
+          "mean_usable_slots": 13.995705389735882
+        }
+      }
+    },
+    "dev_20261122_bigdata_baleen_train_02_a01": {
+      "eligible_node_windows": 4653,
+      "margins": {
+        "0": {
+          "usable_slots": 88369,
+          "no_usable_slots": 0,
+          "at_least_one_last_500ms_slot": 4653,
+          "mean_usable_slots": 18.99183322587578
+        },
+        "25": {
+          "usable_slots": 88369,
+          "no_usable_slots": 0,
+          "at_least_one_last_500ms_slot": 4653,
+          "mean_usable_slots": 18.99183322587578
+        },
+        "50": {
+          "usable_slots": 88367,
+          "no_usable_slots": 0,
+          "at_least_one_last_500ms_slot": 4653,
+          "mean_usable_slots": 18.991403395658715
+        },
+        "75": {
+          "usable_slots": 83719,
+          "no_usable_slots": 0,
+          "at_least_one_last_500ms_slot": 4653,
+          "mean_usable_slots": 17.992477971201374
+        },
+        "100": {
+          "usable_slots": 83719,
+          "no_usable_slots": 0,
+          "at_least_one_last_500ms_slot": 4653,
+          "mean_usable_slots": 17.992477971201374
+        },
+        "200": {
+          "usable_slots": 79069,
+          "no_usable_slots": 0,
+          "at_least_one_last_500ms_slot": 4652,
+          "mean_usable_slots": 16.993122716526972
+        },
+        "500": {
+          "usable_slots": 65115,
+          "no_usable_slots": 0,
+          "at_least_one_last_500ms_slot": 0,
+          "mean_usable_slots": 13.994197292069632
+        }
+      }
+    },
+    "dev_20261122_graph_zipf_train_02_a01": {
+      "eligible_node_windows": 4656,
+      "margins": {
+        "0": {
+          "usable_slots": 88435,
+          "no_usable_slots": 0,
+          "at_least_one_last_500ms_slot": 4656,
+          "mean_usable_slots": 18.99377147766323
+        },
+        "25": {
+          "usable_slots": 88435,
+          "no_usable_slots": 0,
+          "at_least_one_last_500ms_slot": 4656,
+          "mean_usable_slots": 18.99377147766323
+        },
+        "50": {
+          "usable_slots": 88429,
+          "no_usable_slots": 0,
+          "at_least_one_last_500ms_slot": 4656,
+          "mean_usable_slots": 18.992482817869416
+        },
+        "75": {
+          "usable_slots": 83780,
+          "no_usable_slots": 0,
+          "at_least_one_last_500ms_slot": 4655,
+          "mean_usable_slots": 17.993986254295532
+        },
+        "100": {
+          "usable_slots": 83780,
+          "no_usable_slots": 0,
+          "at_least_one_last_500ms_slot": 4655,
+          "mean_usable_slots": 17.993986254295532
+        },
+        "200": {
+          "usable_slots": 79126,
+          "no_usable_slots": 0,
+          "at_least_one_last_500ms_slot": 4655,
+          "mean_usable_slots": 16.994415807560138
+        },
+        "500": {
+          "usable_slots": 65161,
+          "no_usable_slots": 0,
+          "at_least_one_last_500ms_slot": 0,
+          "mean_usable_slots": 13.995060137457045
+        }
+      }
+    },
+    "dev_20261122_hpc_wrf_train_02_a01": {
+      "eligible_node_windows": 4656,
+      "margins": {
+        "0": {
+          "usable_slots": 88438,
+          "no_usable_slots": 0,
+          "at_least_one_last_500ms_slot": 4656,
+          "mean_usable_slots": 18.994415807560138
+        },
+        "25": {
+          "usable_slots": 88438,
+          "no_usable_slots": 0,
+          "at_least_one_last_500ms_slot": 4656,
+          "mean_usable_slots": 18.994415807560138
+        },
+        "50": {
+          "usable_slots": 88437,
+          "no_usable_slots": 0,
+          "at_least_one_last_500ms_slot": 4656,
+          "mean_usable_slots": 18.994201030927837
+        },
+        "75": {
+          "usable_slots": 83784,
+          "no_usable_slots": 0,
+          "at_least_one_last_500ms_slot": 4656,
+          "mean_usable_slots": 17.99484536082474
+        },
+        "100": {
+          "usable_slots": 83784,
+          "no_usable_slots": 0,
+          "at_least_one_last_500ms_slot": 4656,
+          "mean_usable_slots": 17.99484536082474
+        },
+        "200": {
+          "usable_slots": 79129,
+          "no_usable_slots": 0,
+          "at_least_one_last_500ms_slot": 4655,
+          "mean_usable_slots": 16.995060137457045
+        },
+        "500": {
+          "usable_slots": 65165,
+          "no_usable_slots": 0,
+          "at_least_one_last_500ms_slot": 0,
+          "mean_usable_slots": 13.995919243986254
+        }
+      }
+    },
+    "dev_20261122_ai_training_ses_train_03_a01": {
+      "eligible_node_windows": 4651,
+      "margins": {
+        "0": {
+          "usable_slots": 88327,
+          "no_usable_slots": 0,
+          "at_least_one_last_500ms_slot": 4651,
+          "mean_usable_slots": 18.99096968393894
+        },
+        "25": {
+          "usable_slots": 88327,
+          "no_usable_slots": 0,
+          "at_least_one_last_500ms_slot": 4651,
+          "mean_usable_slots": 18.99096968393894
+        },
+        "50": {
+          "usable_slots": 88326,
+          "no_usable_slots": 0,
+          "at_least_one_last_500ms_slot": 4651,
+          "mean_usable_slots": 18.990754676413676
+        },
+        "75": {
+          "usable_slots": 83677,
+          "no_usable_slots": 0,
+          "at_least_one_last_500ms_slot": 4651,
+          "mean_usable_slots": 17.991184691464202
+        },
+        "100": {
+          "usable_slots": 83677,
+          "no_usable_slots": 0,
+          "at_least_one_last_500ms_slot": 4651,
+          "mean_usable_slots": 17.991184691464202
+        },
+        "200": {
+          "usable_slots": 79030,
+          "no_usable_slots": 0,
+          "at_least_one_last_500ms_slot": 4651,
+          "mean_usable_slots": 16.992044721565254
+        },
+        "500": {
+          "usable_slots": 65085,
+          "no_usable_slots": 0,
+          "at_least_one_last_500ms_slot": 0,
+          "mean_usable_slots": 13.993764781767362
+        }
+      }
+    },
+    "dev_20261122_ai_inference_ses_train_03_a01": {
+      "eligible_node_windows": 4657,
+      "margins": {
+        "0": {
+          "usable_slots": 88455,
+          "no_usable_slots": 0,
+          "at_least_one_last_500ms_slot": 4657,
+          "mean_usable_slots": 18.993987545630233
+        },
+        "25": {
+          "usable_slots": 88455,
+          "no_usable_slots": 0,
+          "at_least_one_last_500ms_slot": 4657,
+          "mean_usable_slots": 18.993987545630233
+        },
+        "50": {
+          "usable_slots": 88452,
+          "no_usable_slots": 0,
+          "at_least_one_last_500ms_slot": 4657,
+          "mean_usable_slots": 18.993343354090616
+        },
+        "75": {
+          "usable_slots": 83798,
+          "no_usable_slots": 0,
+          "at_least_one_last_500ms_slot": 4657,
+          "mean_usable_slots": 17.993987545630233
+        },
+        "100": {
+          "usable_slots": 83798,
+          "no_usable_slots": 0,
+          "at_least_one_last_500ms_slot": 4657,
+          "mean_usable_slots": 17.993987545630233
+        },
+        "200": {
+          "usable_slots": 79142,
+          "no_usable_slots": 0,
+          "at_least_one_last_500ms_slot": 4655,
+          "mean_usable_slots": 16.99420227614344
+        },
+        "500": {
+          "usable_slots": 65178,
+          "no_usable_slots": 0,
+          "at_least_one_last_500ms_slot": 0,
+          "mean_usable_slots": 13.995705389735882
+        }
+      }
+    },
+    "dev_20261122_bigdata_baleen_train_03_a01": {
+      "eligible_node_windows": 4657,
+      "margins": {
+        "0": {
+          "usable_slots": 88455,
+          "no_usable_slots": 0,
+          "at_least_one_last_500ms_slot": 4657,
+          "mean_usable_slots": 18.993987545630233
+        },
+        "25": {
+          "usable_slots": 88455,
+          "no_usable_slots": 0,
+          "at_least_one_last_500ms_slot": 4657,
+          "mean_usable_slots": 18.993987545630233
+        },
+        "50": {
+          "usable_slots": 88445,
+          "no_usable_slots": 0,
+          "at_least_one_last_500ms_slot": 4657,
+          "mean_usable_slots": 18.991840240498174
+        },
+        "75": {
+          "usable_slots": 83798,
+          "no_usable_slots": 0,
+          "at_least_one_last_500ms_slot": 4657,
+          "mean_usable_slots": 17.993987545630233
+        },
+        "100": {
+          "usable_slots": 83798,
+          "no_usable_slots": 0,
+          "at_least_one_last_500ms_slot": 4657,
+          "mean_usable_slots": 17.993987545630233
+        },
+        "200": {
+          "usable_slots": 79143,
+          "no_usable_slots": 0,
+          "at_least_one_last_500ms_slot": 4656,
+          "mean_usable_slots": 16.994417006656647
+        },
+        "500": {
+          "usable_slots": 65179,
+          "no_usable_slots": 0,
+          "at_least_one_last_500ms_slot": 0,
+          "mean_usable_slots": 13.995920120249087
+        }
+      }
+    },
+    "dev_20261122_graph_zipf_train_03_a01": {
+      "eligible_node_windows": 4656,
+      "margins": {
+        "0": {
+          "usable_slots": 88442,
+          "no_usable_slots": 0,
+          "at_least_one_last_500ms_slot": 4656,
+          "mean_usable_slots": 18.995274914089347
+        },
+        "25": {
+          "usable_slots": 88442,
+          "no_usable_slots": 0,
+          "at_least_one_last_500ms_slot": 4656,
+          "mean_usable_slots": 18.995274914089347
+        },
+        "50": {
+          "usable_slots": 88439,
+          "no_usable_slots": 0,
+          "at_least_one_last_500ms_slot": 4656,
+          "mean_usable_slots": 18.99463058419244
+        },
+        "75": {
+          "usable_slots": 83786,
+          "no_usable_slots": 0,
+          "at_least_one_last_500ms_slot": 4656,
+          "mean_usable_slots": 17.995274914089347
+        },
+        "100": {
+          "usable_slots": 83786,
+          "no_usable_slots": 0,
+          "at_least_one_last_500ms_slot": 4656,
+          "mean_usable_slots": 17.995274914089347
+        },
+        "200": {
+          "usable_slots": 79133,
+          "no_usable_slots": 0,
+          "at_least_one_last_500ms_slot": 4656,
+          "mean_usable_slots": 16.995919243986254
+        },
+        "500": {
+          "usable_slots": 65168,
+          "no_usable_slots": 0,
+          "at_least_one_last_500ms_slot": 0,
+          "mean_usable_slots": 13.996563573883162
+        }
+      }
+    },
+    "dev_20261122_hpc_wrf_train_03_a01": {
+      "eligible_node_windows": 4652,
+      "margins": {
+        "0": {
+          "usable_slots": 88345,
+          "no_usable_slots": 0,
+          "at_least_one_last_500ms_slot": 4652,
+          "mean_usable_slots": 18.990756663800514
+        },
+        "25": {
+          "usable_slots": 88345,
+          "no_usable_slots": 0,
+          "at_least_one_last_500ms_slot": 4652,
+          "mean_usable_slots": 18.990756663800514
+        },
+        "50": {
+          "usable_slots": 88340,
+          "no_usable_slots": 0,
+          "at_least_one_last_500ms_slot": 4652,
+          "mean_usable_slots": 18.98968185726569
+        },
+        "75": {
+          "usable_slots": 83695,
+          "no_usable_slots": 0,
+          "at_least_one_last_500ms_slot": 4652,
+          "mean_usable_slots": 17.991186586414447
+        },
+        "100": {
+          "usable_slots": 83695,
+          "no_usable_slots": 0,
+          "at_least_one_last_500ms_slot": 4652,
+          "mean_usable_slots": 17.991186586414447
+        },
+        "200": {
+          "usable_slots": 79046,
+          "no_usable_slots": 0,
+          "at_least_one_last_500ms_slot": 4651,
+          "mean_usable_slots": 16.991831470335338
+        },
+        "500": {
+          "usable_slots": 65101,
+          "no_usable_slots": 0,
+          "at_least_one_last_500ms_slot": 0,
+          "mean_usable_slots": 13.994196044711952
+        }
+      }
+    }
+  }
+}
