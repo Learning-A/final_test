@@ -1,0 +1,52 @@
+{
+  "method": "independent NumPy matrix aggregation of original frozen prediction archive rows",
+  "numpy": "2.5.4",
+  "report_sha256": "648a77b91e728d1d65a879901638aa8bb8c41fa5d8857bac07417824fe911b8d",
+  "arms": {
+    "R1_F0_50": {
+      "macro_mape_percent": 119.09081392307746,
+      "groups_mape_lt10": 0,
+      "verified_node_rows": 21288
+    },
+    "R1_F0_F1_50": {
+      "macro_mape_percent": 108.06623590563106,
+      "groups_mape_lt10": 0,
+      "verified_node_rows": 21288
+    },
+    "R2_L0": {
+      "macro_mape_percent": 112.31633789948162,
+      "groups_mape_lt10": 0,
+      "verified_node_rows": 21288
+    },
+    "R2_L1": {
+      "macro_mape_percent": 101.73789134830409,
+      "groups_mape_lt10": 0,
+      "verified_node_rows": 21288
+    },
+    "R2_L2": {
+      "macro_mape_percent": 107.75078038920151,
+      "groups_mape_lt10": 0,
+      "verified_node_rows": 21288
+    },
+    "R2_L3": {
+      "macro_mape_percent": 94.01160482851267,
+      "groups_mape_lt10": 0,
+      "verified_node_rows": 21288
+    }
+  },
+  "fit_count": 0,
+  "source_raw_replayed": false,
+  "tests_passed": 4,
+  "final_report_sha256": "bc06dd8e0c164e32a1f444c1d4706ed41f9cbdf38a4919e83dbaa1fd105ce648",
+  "final_phase_join": {
+    "complete_2661_keys": true,
+    "phase_contributions_additive": true,
+    "nonphase_statistics_unchanged": true
+  },
+  "functional_suite": {
+    "discovered": 152,
+    "passed": 147,
+    "skipped": 5,
+    "failed": 0
+  }
+}

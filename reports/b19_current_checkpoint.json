@@ -1,15 +1,15 @@
 {
   "schema": "b19_local_checkpoint_v1",
-  "updated_at": "2026-11-23T02:29:05.888844+08:00",
+  "updated_at": "2026-11-23T10:52:52.143942+08:00",
   "owner": "B",
   "owner_thread": "01a203f5-3aa6-7b21-8a1f-8fece4787432",
-  "worktree": "F:/sessions/26.9.8_\u6d4b\u8bd5\u5927\u7eb2/work/idfs-model-b",
+  "worktree": "F:/sessions/26.9.8_测试大纲/work/idfs-model-b",
   "local_branch": "model/local-b-r1",
   "remote_branch": "model/causal-multiscale-inputs",
   "issue": 19,
   "pr": 16,
   "state": "running",
-  "substage": "R2_verified_error_attribution_A_source_audit",
+  "substage": "V2_D0_B_frozen_error_complete_A_D1_evidence",
   "training_running": false,
   "sources": {
     "handoff_sha256": "2e7ac9ddcc68da042a1f06269b6c6021e977e167482face0699e199fee47cf90",
@@ -177,14 +177,15 @@
     "includes_network_and_publication": false
   },
   "next_actions": [
-    "Review existing capture evidence for three AI inference train03 low-activity seconds with A.",
-    "Preserve the independently verified R2 no-promotion decision and evaluate the input signal before designing a new comparison."
+    "Deliver final complete-key phase attribution to A; combine with all-run precursor false positives and misses.",
+    "A prepares D1 field semantics and fixed sample package. B prepares I1/M1 matched schema and configuration; reuse identical R1 C and R2 L0 without fitting.",
+    "Execute eligible separately registered new cards under original data/budget/UUID locks. No rerun of completed experiments, field work, or external validation."
   ],
   "heartbeat": {
     "id": "idfs-b",
     "status": "ACTIVE",
     "interval_minutes": 10,
-    "prompt_sha256": "85c67b02d9f15b2c226b2655fb04cbd90fd337dd93bc519760f4342559942a79",
+    "prompt_sha256": "83cd849bf65d38de7c43dd655929b5fb3f972434a4fec3b49a7394a3c8a58bcb",
     "first_read": "docs/B19_LOCAL_CONTINUATION_PLAN.md"
   },
   "proposed_next_card": {
@@ -459,6 +460,137 @@
       "file": "reports/b19_r2_error_attribution.json",
       "sha256": "dcaaf0cc06e8cd9ff24f100e3150fb3fc78bcbb6703a720cbcdbb0bf1d9626d8",
       "scope": "retrospective attribution of frozen train03 prediction errors, without fitting or changing metrics"
+    },
+    "source_event_audit": {
+      "status": "A_raw_audit_completed_B_report_checked",
+      "request_handoff_id": "B19-R2-AI-INFERENCE-EVENT-AUDIT-20261123-01",
+      "request_url": "https://github.com/Learning-A/final_test/issues/19#issuecomment-7083642798",
+      "receipt_handoff_id": "A18-R2-AI-INFERENCE-EVENT-AUDIT-20261123-01",
+      "A_workspace_report": "F:/sessions/26.9.8_测试大纲/collaboration_repo/.local/a_ai_inference_event_audit.json",
+      "report_sha256": "b2b87bb6b0761df3ed9ddb9254363f05f06a5ab6d94bbf7684b63b850230a5da",
+      "dataset_id": "dev_20261122_ai_inference_ses_train_03_a01",
+      "raw_log_count": 24,
+      "lookback_seconds": 2,
+      "client_count": 16,
+      "oss_count": 96,
+      "complete_100ms_deltas": true,
+      "input_cutoff_relative_ms": -80,
+      "planned_publication_relative_ms": -30,
+      "events": [
+        {
+          "target_start_epoch_ns": "1795341186000000000",
+          "source_clock_precursor_by_cutoff": false,
+          "oss": {
+            "target_total": 35,
+            "S_minus_200_ms_bucket": 697,
+            "S_minus_100_ms_bucket": 683,
+            "S_bucket": 301
+          },
+          "client_nfs_rpc": {
+            "target_total": 0,
+            "S_minus_200_ms_bucket": 668,
+            "S_minus_100_ms_bucket": 637,
+            "S_bucket": 288
+          }
+        },
+        {
+          "target_start_epoch_ns": "1795341311000000000",
+          "source_clock_precursor_by_cutoff": false,
+          "oss": {
+            "target_total": 14,
+            "S_minus_200_ms_bucket": 703,
+            "S_minus_100_ms_bucket": 649,
+            "S_bucket": 184
+          },
+          "client_nfs_rpc": {
+            "target_total": 0,
+            "S_minus_200_ms_bucket": 684,
+            "S_minus_100_ms_bucket": 591,
+            "S_bucket": 187
+          }
+        },
+        {
+          "target_start_epoch_ns": "1795341464000000000",
+          "source_clock_precursor_by_cutoff": true,
+          "oss": {
+            "target_total": 10,
+            "S_minus_200_ms_bucket": 576,
+            "S_minus_100_ms_bucket": 0,
+            "S_bucket": 2
+          },
+          "client_nfs_rpc": {
+            "target_total": 0,
+            "S_minus_200_ms_bucket": 552,
+            "S_minus_100_ms_bucket": 0,
+            "S_bucket": 0
+          }
+        }
+      ],
+      "third_event_latest_source_read_relative_ms_approx": -95.68,
+      "workstation_collector_timestamps_present": true,
+      "cross_host_clock_bound_ns": null,
+      "model_service_arrival_proof": false,
+      "online_time_eligibility": false,
+      "population_recall_estimable": false,
+      "B_check_scope": "A report hash, delta completeness, target totals and cutoff bucket counts; no raw replay",
+      "B_receipt_url": "https://github.com/Learning-A/final_test/issues/19#issuecomment-7083889678"
+    }
+  },
+  "research_replan_v2": {
+    "status": "execution_started_D0_B_complete",
+    "A_handoff_id": "A18-RESEARCH-REPLAN-V2-PUBLISHED-20261123-01",
+    "A_handoff_url": "https://github.com/Learning-A/final_test/issues/19#issuecomment-7088671078",
+    "A_plan_commit": "36f81799f5cd20b98391b83faa2204ad1e786764",
+    "A_plan_source_sha256": "937282bd749c204e94df9b79121acfd608b796b0fb8f950c01fe1ffa1462a7d8",
+    "B_review_path": "docs/B19_REPLAN_V2_REVIEW.md",
+    "B_review_sha256": "b57a085bafe1cd1668ddcd72c3ee6b22f0c432885af0a1b9d8071bbf589c8555",
+    "B_review_access": "shared workspace; A reads the file directly",
+    "next_stage": "combine_A_D0_findings_and_D1_schema_then_register_I1_M1",
+    "configuration_executions_max_plan_only": 17,
+    "execution_started": true,
+    "new_fit_started": false,
+    "A_revision_handoff_id": "A18-REPLAN-V2-REVIEW-FIXES-20261123-01",
+    "A_revision_commit": "66dcf356e62ea991408a01e34bc3139a5936fba3",
+    "A_D0_draft_path": "docs/IDFS_V2_D0_SPEC_DRAFT.md",
+    "A_D0_draft_sha256": "af6342ca75fd5a4e74e321298fb207f46bd457458a9f44788a4f55a946fcee83",
+    "B_first_review_sha256": "2f5d7d7e623585c4854d9cc2486e3471c381ac263f320aa32f9f8f9db503828c",
+    "B_frozen_prediction_spec_ready": true,
+    "A_D0_boundary_handoff_id": "A18-D0-BOUNDARY-FIXES-20261123-01",
+    "A_D0_reviewed_commit": "840f6dd837ca81d9be9eca2067fa3e34531ade5e",
+    "A_D0_reviewed_spec_sha256": "a8b9fd474902a46ab1b2e5178eb5bed825051ebdb252d80b3bc57f7f069724b1",
+    "B_second_review_sha256": "b63a13a73a7e43df90614e269780f2785b13307ba7c35b89c84f017062135f9d",
+    "open_spec_dependencies": [],
+    "A_review_archive": {
+      "commit": "1e286c3e5a9596f19d5926d4e0701206f4291465",
+      "handoff_id": "A18-V2-RESEARCH-REVIEW-COMPLETE-20261123-01",
+      "receipt_url": "https://github.com/Learning-A/final_test/issues/19#issuecomment-7088671078",
+      "review_url": "https://github.com/Learning-A/final_test/blob/1e286c3/docs/reviews/B19_REPLAN_V2_REVIEW_20261123.md",
+      "review_sha256": "b57a085bafe1cd1668ddcd72c3ee6b22f0c432885af0a1b9d8071bbf589c8555"
+    },
+    "execution_handoff_id": "A18-V2-EXECUTE-D0-20261123-01",
+    "execution_user_message_id": "01a20645-db75-7ec3-bafc-9101e3d5fe8a"
+  },
+  "v2_d0": {
+    "state": "B_complete_A_review_pending",
+    "job_id": "b19_v2_d0_frozen_error_v1_a01",
+    "report": "reports/v2_d0_frozen_error_final.json",
+    "report_sha256": "bc06dd8e0c164e32a1f444c1d4706ed41f9cbdf38a4919e83dbaa1fd105ce648",
+    "verification": "reports/v2_d0_frozen_error_verification.json",
+    "samples": 2661,
+    "node_prediction_rows_all_arms": 127728,
+    "phase_matched_keys": 2661,
+    "phase_missing_keys": 0,
+    "source_phase_sha256": "c9ee23e7be1abe4b6a8b2f594b088b32e6d7fe60bda806c24d21e7908ce6bd7e",
+    "fit_count": 0,
+    "new_model_inference_count": 0,
+    "new_external_validation_evaluations": 0,
+    "do_not_repeat": true,
+    "B_analysis_elapsed_seconds": 3.0065457000164315,
+    "functional_checks": {
+      "discovered": 152,
+      "passed": 147,
+      "skipped": 5,
+      "failed": 0
     }
   }
 }
