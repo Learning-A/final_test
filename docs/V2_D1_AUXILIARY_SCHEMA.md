@@ -1,6 +1,6 @@
 # V2-D1 辅助字段样例契约
 
-状态：sample_delivered_pending_B_review。当前只导出3轮固定400ms样例；全15轮尚未导出。来源为既有raw，不连接现场。样例在`.local/v2_d1_sample_a01`，脚本`scripts/audit_v2_d1_sample.py`。
+状态：all15_exported_A_verified_pending_B_receipt。B已独立核验3轮固定400ms样例；A随后导出全15train并重算全部源OSS日志SHA，792,120行节点辅助桶中791,680个原有效core桶的read/write计数及available逐项一致。耗时345.745秒，无拟合。报告见[交付索引](../reports/v2_d1_delivery.json)与[全量复核](../reports/v2_d1_auxiliary_A_verification.json)。来源为既有raw，不连接现场。原样例在`.local/v2_d1_sample_a01`，全量在`.local/v2_d1_export_a01`。
 
 拟议全量包每行：dataset_id、scope=host_oss、entity=node_id、bucket_start_ns/end_ns、sample_ok、available_epoch_ns、expected_oss=12、observed_oss、read_bytes/write_bytes、read_count/write_count、op_wip_sum/op_wip_max、字段各自valid/mask。不能只用sample_ok替代各辅助字段有效性。
 

@@ -1,0 +1,160 @@
+{
+  "state": "verified_against_pinned_core_all15",
+  "datasets": [
+    {
+      "dataset_id": "ai_training_20261122_train01_attempt02",
+      "counts": {
+        "rows": 52808,
+        "read_bytes_valid": 52786,
+        "write_bytes_valid": 52786,
+        "op_wip_valid": 52786,
+        "original_valid_core_matched": 52786
+      }
+    },
+    {
+      "dataset_id": "dev_20261122_ai_inference_ses_train_01_a01",
+      "counts": {
+        "rows": 52808,
+        "read_bytes_valid": 52784,
+        "write_bytes_valid": 52784,
+        "op_wip_valid": 52784,
+        "original_valid_core_matched": 52784
+      }
+    },
+    {
+      "dataset_id": "dev_20261122_bigdata_baleen_train_01_a01",
+      "counts": {
+        "rows": 52808,
+        "read_bytes_valid": 52782,
+        "write_bytes_valid": 52782,
+        "op_wip_valid": 52782,
+        "original_valid_core_matched": 52782
+      }
+    },
+    {
+      "dataset_id": "dev_20261122_graph_zipf_train_01_a01",
+      "counts": {
+        "rows": 52808,
+        "read_bytes_valid": 52774,
+        "write_bytes_valid": 52774,
+        "op_wip_valid": 52774,
+        "original_valid_core_matched": 52774
+      }
+    },
+    {
+      "dataset_id": "dev_20261122_hpc_wrf_train_01_a01",
+      "counts": {
+        "rows": 52808,
+        "read_bytes_valid": 52767,
+        "write_bytes_valid": 52767,
+        "op_wip_valid": 52767,
+        "original_valid_core_matched": 52767
+      }
+    },
+    {
+      "dataset_id": "dev_20261122_ai_training_ses_train_02_a01",
+      "counts": {
+        "rows": 52808,
+        "read_bytes_valid": 52772,
+        "write_bytes_valid": 52772,
+        "op_wip_valid": 52772,
+        "original_valid_core_matched": 52772
+      }
+    },
+    {
+      "dataset_id": "dev_20261122_ai_inference_ses_train_02_a01",
+      "counts": {
+        "rows": 52808,
+        "read_bytes_valid": 52784,
+        "write_bytes_valid": 52784,
+        "op_wip_valid": 52784,
+        "original_valid_core_matched": 52784
+      }
+    },
+    {
+      "dataset_id": "dev_20261122_bigdata_baleen_train_02_a01",
+      "counts": {
+        "rows": 52808,
+        "read_bytes_valid": 52776,
+        "write_bytes_valid": 52776,
+        "op_wip_valid": 52776,
+        "original_valid_core_matched": 52776
+      }
+    },
+    {
+      "dataset_id": "dev_20261122_graph_zipf_train_02_a01",
+      "counts": {
+        "rows": 52808,
+        "read_bytes_valid": 52779,
+        "write_bytes_valid": 52779,
+        "op_wip_valid": 52779,
+        "original_valid_core_matched": 52779
+      }
+    },
+    {
+      "dataset_id": "dev_20261122_hpc_wrf_train_02_a01",
+      "counts": {
+        "rows": 52808,
+        "read_bytes_valid": 52778,
+        "write_bytes_valid": 52778,
+        "op_wip_valid": 52778,
+        "original_valid_core_matched": 52778
+      }
+    },
+    {
+      "dataset_id": "dev_20261122_ai_training_ses_train_03_a01",
+      "counts": {
+        "rows": 52808,
+        "read_bytes_valid": 52774,
+        "write_bytes_valid": 52774,
+        "op_wip_valid": 52774,
+        "original_valid_core_matched": 52774
+      }
+    },
+    {
+      "dataset_id": "dev_20261122_ai_inference_ses_train_03_a01",
+      "counts": {
+        "rows": 52808,
+        "read_bytes_valid": 52780,
+        "write_bytes_valid": 52780,
+        "op_wip_valid": 52780,
+        "original_valid_core_matched": 52780
+      }
+    },
+    {
+      "dataset_id": "dev_20261122_bigdata_baleen_train_03_a01",
+      "counts": {
+        "rows": 52808,
+        "read_bytes_valid": 52786,
+        "write_bytes_valid": 52786,
+        "op_wip_valid": 52786,
+        "original_valid_core_matched": 52786
+      }
+    },
+    {
+      "dataset_id": "dev_20261122_graph_zipf_train_03_a01",
+      "counts": {
+        "rows": 52808,
+        "read_bytes_valid": 52784,
+        "write_bytes_valid": 52784,
+        "op_wip_valid": 52784,
+        "original_valid_core_matched": 52784
+      }
+    },
+    {
+      "dataset_id": "dev_20261122_hpc_wrf_train_03_a01",
+      "counts": {
+        "rows": 52808,
+        "read_bytes_valid": 52774,
+        "write_bytes_valid": 52774,
+        "op_wip_valid": 52774,
+        "original_valid_core_matched": 52774
+      }
+    }
+  ],
+  "manifest_sha256": "6a0847f7bb03a2740a15d028c382845dfd98b5167e6beef20caa3592d985472b",
+  "scope": "all valid core counts, availability, field masks and null/zero semantics; original raw hashes verified by exporter",
+  "fit_count": 0,
+  "latency_included": false,
+  "online_time_eligibility": false
+}

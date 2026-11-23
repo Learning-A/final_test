@@ -1,5 +1,6 @@
 """Check exported auxiliary fields against pinned core counts and zero semantics."""
 from collections import Counter
+import argparse
 import gzip
 import hashlib
 import json
@@ -7,11 +8,19 @@ from pathlib import Path
 
 
 def main():
+    parser=argparse.ArgumentParser()
+    parser.add_argument('--pilot-dataset')
+    args=parser.parse_args()
     output=Path('.local/v2_d1_export_a01')
     manifest=json.loads((output/'manifest.json').read_bytes())
-    assert manifest['state']=='completed' and len(manifest['datasets'])==15
+    if args.pilot_dataset:
+        selected=[d for d in manifest['datasets'] if d['dataset_id']==args.pilot_dataset]
+        assert len(selected)==1
+    else:
+        assert manifest['state']=='completed' and len(manifest['datasets'])==15
+        selected=manifest['datasets']
     checks=[]
-    for item in manifest['datasets']:
+    for item in selected:
         dataset=item['dataset_id']
         fine=(Path('.local/v2_graph_pinned/fine_context.jsonl.gz') if 'graph_zipf_train_03' in dataset
               else Path('.local/r0_artifacts/r1-train-core')/dataset/'fine_context.jsonl.gz')
@@ -50,11 +59,12 @@ def main():
         assert counts['original_valid_core_matched']==sum(r['sample_ok'] for r in core.values())
         checks.append(dict(dataset_id=dataset,counts=dict(counts)))
         print(dataset,dict(counts),flush=True)
-    result=dict(state='verified_against_pinned_core_all15',datasets=checks,
+    result=dict(state='verified_against_pinned_core_pilot' if args.pilot_dataset else 'verified_against_pinned_core_all15',datasets=checks,
                 manifest_sha256=hashlib.sha256((output/'manifest.json').read_bytes()).hexdigest(),
                 scope='all valid core counts, availability, field masks and null/zero semantics; original raw hashes verified by exporter',
                 fit_count=0,latency_included=False,online_time_eligibility=False)
-    Path('reports/v2_d1_auxiliary_A_verification.json').write_text(json.dumps(result,indent=2)+'\n',encoding='utf8')
+    target='reports/v2_d1_auxiliary_A_pilot_verification.json' if args.pilot_dataset else 'reports/v2_d1_auxiliary_A_verification.json'
+    Path(target).write_text(json.dumps(result,indent=2)+'\n',encoding='utf8')
 
 
 if __name__=='__main__':
