@@ -3,7 +3,7 @@ import hashlib, os, subprocess, sys
 from pathlib import Path
 from idfs_lab.cpu_training_lease import cpu_lease
 
-ROOT = Path(__file__).resolve().parent.parent
+ROOT = Path(__file__).resolve().parent
 JOB = "b20_cluster_workload_expert_v1_a01"
 CODE_SHA = "075131e4604af4f3dd04e01f4257bd7ab3b6b053"
 def sh(p): return hashlib.sha256(Path(p).read_bytes()).hexdigest()
