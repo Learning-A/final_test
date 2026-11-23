@@ -1,6 +1,6 @@
 {
   "schema": "b19_local_checkpoint_v1",
-  "updated_at": "2026-11-23T15:37:28.008469+08:00",
+  "updated_at": "2026-11-23T15:43:44.308866+08:00",
   "owner": "B",
   "owner_thread": "01a203f5-3aa6-7b21-8a1f-8fece4787432",
   "worktree": "F:/sessions/26.9.8_测试大纲/work/idfs-model-b",
@@ -8,8 +8,8 @@
   "remote_branch": "model/causal-multiscale-inputs",
   "issue": 19,
   "pr": 16,
-  "state": "running",
-  "substage": "data_transform_T1_T2_complete_no_promotion_A_review_pending",
+  "state": "completed",
+  "substage": "data_transform_completed_no_promotion_A_package_verified",
   "training_running": false,
   "sources": {
     "handoff_sha256": "2e7ac9ddcc68da042a1f06269b6c6021e977e167482face0699e199fee47cf90",
@@ -176,17 +176,15 @@
     "offline_component_p95_ms": 53.01117735,
     "includes_network_and_publication": false
   },
-  "next_actions": [
-    "A independently verifies frozen T1/T2 outputs. T3 skipped; no more fitting authorized in this card."
-  ],
+  "next_actions": [],
   "heartbeat": {
     "id": "idfs-b",
-    "status": "ACTIVE",
+    "status": "DELETED",
     "interval_minutes": 10,
     "first_read": "docs/B19_LOCAL_CONTINUATION_PLAN.md",
-    "last_active_prompt_sha256": "644f1f8c9c5450c912d41364b428308794da7f7df320d657ea380d0296f1fc56",
+    "last_active_prompt_sha256": "5d74e3776b4506aa534c1e8ba9b64c81a04dc828f8c268dca6380ff0fb260a57",
     "scope": "new_data_transform_cycle",
-    "prompt_sha256": "5d74e3776b4506aa534c1e8ba9b64c81a04dc828f8c268dca6380ff0fb260a57"
+    "delete_status": "deleted"
   },
   "proposed_next_card": {
     "path": "docs/B19_FROZEN_INFERENCE_CARD_DRAFT.md",
@@ -1038,7 +1036,7 @@
     }
   },
   "data_transform": {
-    "state": "completed_no_promotion_A_review_pending",
+    "state": "completed_no_promotion_A_package_verified",
     "card": "docs/B19_DATA_TRANSFORM_EXECUTION_CARD.md",
     "authorization_handoff_ids": [
       "A18-DATA-TRANSFORM-EXECUTE-20261123-01",
@@ -1724,7 +1722,7 @@
     "baseline": "frozen_R2_L0",
     "external_validation_new_evaluations": 0,
     "T1": {
-      "state": "completed_no_promotion_A_review_pending",
+      "state": "completed_no_promotion_A_verified",
       "job_id": "b19_data_transform_t1_v1_a01",
       "code_sha": "25b5a3c8908eebef033e6148026cefe241f0974b",
       "do_not_repeat": true,
@@ -1751,7 +1749,7 @@
       "no_fit": true
     },
     "T2": {
-      "state": "completed_no_promotion_A_review_pending",
+      "state": "completed_no_promotion_A_verified",
       "job_id": "b19_data_transform_t2_v1_a01",
       "code_sha": "25b5a3c8908eebef033e6148026cefe241f0974b",
       "do_not_repeat": true,
@@ -1772,6 +1770,29 @@
       "lease_elapsed_seconds": 22.542911291122437
     },
     "results": "docs/B19_DATA_TRANSFORM_RESULTS.md",
-    "verification": "reports/data_transform_B_verification.json"
+    "verification": "reports/data_transform_B_verification.json",
+    "A_independent_review": {
+      "status": "A_independent_frozen_T1_T2_metrics_verified",
+      "commit": "d2b4d3ea9b72e68c7cc8aa371e71b4c4175a4e2b",
+      "path": "reports/data_transform_A_independent_review.json",
+      "sha256": "60074f8a591136de1fa375c76497c94dc9b73de81af89a34b25d300e60c14c6f",
+      "checkout_sha256": "45012beb95d06cd3f8a96d3d97924f527a24d5ab0d215b5e7bf212b06a091f1f",
+      "package_review_pending": false,
+      "final_package": {
+        "zip_sha256": "8f3f5a4e3769681063ab95ac7489ca945c8e43cc65302f2baa7b88a44bda7312",
+        "manifest_members": 26,
+        "all_member_hashes_verified": true,
+        "prediction_and_transform_bytes_equal_reviewed_local": true
+      },
+      "handoff_id": "A18-TRANSFORM-PACKAGE-VERIFIED-20261123-01",
+      "metadata_count_discrepancy": {
+        "reported": 42624,
+        "expected": 42576,
+        "scope": "summary field only; original records and group metrics verified",
+        "correction_already_requested": true
+      }
+    },
+    "release_url": "https://github.com/Learning-A/final_test/releases/tag/b19-data-transform-controls-20261123-v1",
+    "package_sha256": "8f3f5a4e3769681063ab95ac7489ca945c8e43cc65302f2baa7b88a44bda7312"
   }
 }

@@ -1,6 +1,6 @@
 # T0–T3 数据变换对照实际结果
 
-2026-11-23，北京时间。T1/T2已完成，T0精确复用R2 L0，没有旧实验重训。T3因训练分布准入条件不满足跳过；没有尝试其它替代变换。两张新卡均未通过原研发筛选，待A独立复核，不声称正式达标。
+2026-11-23，北京时间。T1/T2已完成，T0精确复用R2 L0，没有旧实验重训。T3因训练分布准入条件不满足跳过；没有尝试其它替代变换。A已独立复核冻结成员、原标签、指标及最终ZIP一致，两张新卡均未通过原研发筛选，本轮结案。
 
 | 同2661内部开发秒、40组等权 | T0，冻结R2 L0 | T1，log输入+robust | T2，固定T1输入+显式log目标 |
 | --- | ---: | ---: | ---: |
@@ -29,3 +29,7 @@ B另写冻结输出核验代码，每臂核对2661个唯一键、21288个原始�
 这支持本卡处理包不足以取得整体改善；没有证据表明单调变换已经补上突降先兆。T2存在指标权衡，不能用其MAPE改善或RMSLE下降就宣布所有误差变好。用户授权研究指标修订，当前结果仍按原口径与辅助口径并列；尚未另定正式阈值。
 
 [执行卡](B19_DATA_TRANSFORM_EXECUTION_CARD.md) · [T1报告](../reports/data_transform_T1.json) · [T2报告](../reports/data_transform_T2.json) · [B独立复算](../reports/data_transform_B_verification.json)。完整checkpoint、输入状态、逐窗原/log预测、epoch、mask/age上下文和租约在本机.local/data_transform/T1、T2以及b507原job目录保留，交付包不重复放入原始大数据。
+
+[最终交付包](https://github.com/Learning-A/final_test/releases/tag/b19-data-transform-controls-20261123-v1) 为4220614字节，SHA256为8f3f5a4e3769681063ab95ac7489ca945c8e43cc65302f2baa7b88a44bda7312。B逐一核验26个manifest成员，另含MANIFEST本身。A的本机冻结成员复核见 [独立报告](https://github.com/Learning-A/final_test/blob/experiment/postcapture-collaboration/reports/data_transform_A_independent_review.json)。
+
+A于d2b4d3e归档最终包验收，26个成员hash/size全部一致，并确认其预测和状态字节与已审本机成员一致。A报告的prediction_pairs_checked汇总字段写42624，按2661秒×8节点×2新臂应为42576；B已向A指出此元数据计数差异，本报告和B逐臂复核使用正确分母。该差异不改变逐样本标签、重算指标或无晋级判定；保留A原件只读。
