@@ -1,6 +1,6 @@
 {
   "schema": "b19_local_checkpoint_v1",
-  "updated_at": "2026-11-23T10:52:52.143942+08:00",
+  "updated_at": "2026-11-23T10:56:09.192048+08:00",
   "owner": "B",
   "owner_thread": "01a203f5-3aa6-7b21-8a1f-8fece4787432",
   "worktree": "F:/sessions/26.9.8_测试大纲/work/idfs-model-b",
@@ -185,7 +185,7 @@
     "id": "idfs-b",
     "status": "ACTIVE",
     "interval_minutes": 10,
-    "prompt_sha256": "83cd849bf65d38de7c43dd655929b5fb3f972434a4fec3b49a7394a3c8a58bcb",
+    "prompt_sha256": "05d17bf4016f48840811e63813e514d951cdad9e69a4f3a92830d4ec726e4842",
     "first_read": "docs/B19_LOCAL_CONTINUATION_PLAN.md"
   },
   "proposed_next_card": {
@@ -591,6 +591,8 @@
       "passed": 147,
       "skipped": 5,
       "failed": 0
-    }
+    },
+    "delivery_url": "https://github.com/Learning-A/final_test/issues/19#issuecomment-7090320141",
+    "code_sha": "42a0610"
   }
 }
