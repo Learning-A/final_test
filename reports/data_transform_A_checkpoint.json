@@ -21,5 +21,16 @@
     "IQRzero/allmissing fallback fixed before scoring",
     "inverse-target scaling and epoch0 declared",
     "no externalvalidation selection or new cluster work"
-  ]
+  ],
+  "A_heartbeat": {
+    "id": "idfs-a",
+    "status": "ACTIVE",
+    "interval_minutes": 10
+  },
+  "B_heartbeat": {
+    "id": "idfs-b",
+    "status": "observed_present_after_restore"
+  },
+  "A_column_contract": "reports/data_transform_A_column_contract.json",
+  "dispatch_status": "B received request and acknowledged preparation; no new fitted result delivered"
 }
