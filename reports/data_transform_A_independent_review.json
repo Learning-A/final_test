@@ -1,0 +1,97 @@
+{
+  "state": "A_independent_frozen_T1_T2_metrics_verified",
+  "arms": {
+    "T0": {
+      "macro_mape": 112.3163378994816,
+      "worst": 341.4611690619506,
+      "groups_lt10": 0,
+      "workload_mae": {
+        "dev_20261122_ai_training_ses_train_03_a01": 89.23275430825464,
+        "dev_20261122_ai_inference_ses_train_03_a01": 172.1126757173695,
+        "dev_20261122_bigdata_baleen_train_03_a01": 44.010084573938215,
+        "dev_20261122_graph_zipf_train_03_a01": 156.56261211283066,
+        "dev_20261122_hpc_wrf_train_03_a01": 53.341057084327524
+      },
+      "macro_log_mae": 0.28529338186525777,
+      "macro_rmsle": 0.6161289360726248,
+      "macro_wape": 22.150343713642386
+    },
+    "T1": {
+      "macro_mape": 112.18062425309101,
+      "worst": 336.47337110498796,
+      "groups_lt10": 0,
+      "workload_mae": {
+        "dev_20261122_ai_training_ses_train_03_a01": 96.12440729422279,
+        "dev_20261122_ai_inference_ses_train_03_a01": 180.8278078431403,
+        "dev_20261122_bigdata_baleen_train_03_a01": 44.7272630884013,
+        "dev_20261122_graph_zipf_train_03_a01": 171.3232440667994,
+        "dev_20261122_hpc_wrf_train_03_a01": 58.137881240179375
+      },
+      "macro_log_mae": 0.2963833294782908,
+      "macro_rmsle": 0.624155467175554,
+      "macro_wape": 23.633943744329823,
+      "relative_mape_improvement": 0.0012083161624451,
+      "workload_mae_ratios": {
+        "dev_20261122_ai_training_ses_train_03_a01": 1.07723232393075,
+        "dev_20261122_ai_inference_ses_train_03_a01": 1.0506362014851371,
+        "dev_20261122_bigdata_baleen_train_03_a01": 1.016295776784028,
+        "dev_20261122_graph_zipf_train_03_a01": 1.0942794180217887,
+        "dev_20261122_hpc_wrf_train_03_a01": 1.0899274296020887
+      },
+      "screen": false
+    },
+    "T2": {
+      "macro_mape": 105.95792939621361,
+      "worst": 335.28888982471705,
+      "groups_lt10": 0,
+      "workload_mae": {
+        "dev_20261122_ai_training_ses_train_03_a01": 96.72734159196055,
+        "dev_20261122_ai_inference_ses_train_03_a01": 178.98241072381,
+        "dev_20261122_bigdata_baleen_train_03_a01": 44.70208730785125,
+        "dev_20261122_graph_zipf_train_03_a01": 163.90876915875603,
+        "dev_20261122_hpc_wrf_train_03_a01": 53.65116237207901
+      },
+      "macro_log_mae": 0.29394043045104623,
+      "macro_rmsle": 0.6094879630713927,
+      "macro_wape": 22.92308667044695,
+      "relative_mape_improvement": 0.056611608089986776,
+      "workload_mae_ratios": {
+        "dev_20261122_ai_training_ses_train_03_a01": 1.0839891959158388,
+        "dev_20261122_ai_inference_ses_train_03_a01": 1.039914172374622,
+        "dev_20261122_bigdata_baleen_train_03_a01": 1.0157237310632852,
+        "dev_20261122_graph_zipf_train_03_a01": 1.046921528369948,
+        "dev_20261122_hpc_wrf_train_03_a01": 1.005813632213198
+      },
+      "screen": false
+    }
+  },
+  "evidence": {
+    "T1": {
+      "report_sha256": "9aef0657831ec1c1c492b527057008d9c2220a3b8acd7b7cee04d9b01f327cb8",
+      "transform_sha256": "17e00f3644b8325288647a81a88502592932713d5bae820a85212b29dc9d8abf",
+      "predictions_sha256": "de8eec0b37c2dfd2a86678c2bcde3642c018c5c194d5635769968da1423a3168",
+      "best_epoch": 4,
+      "scoring_count": 13,
+      "preserved_values_checked": 1639176,
+      "t3_eligible_columns": 0,
+      "t3_admitted": false,
+      "lease_seconds": 21.29969573020935
+    },
+    "T2": {
+      "report_sha256": "f444df2be7c90f6389c0e257f61eacd452daa3fc7875a4a5e747d9e0aab5d7ff",
+      "transform_sha256": "17e00f3644b8325288647a81a88502592932713d5bae820a85212b29dc9d8abf",
+      "predictions_sha256": "61e244bdad64335db2db84b8a33c5c930f2a062771e259f418e426b5c76e3af6",
+      "best_epoch": 6,
+      "scoring_count": 15,
+      "preserved_values_checked": 1639176,
+      "t3_eligible_columns": 0,
+      "t3_admitted": false,
+      "lease_seconds": 22.542911291122437
+    }
+  },
+  "original_labels_matched": 21288,
+  "prediction_pairs_checked": 42624,
+  "new_A_fit_count": 0,
+  "scope": "Immutable local reports/prediction hashes, labels, log values, preserved context, epoch selection, stored T3 gate; no transform statistics refit or weight load",
+  "formal_metric_replaced": false
+}
