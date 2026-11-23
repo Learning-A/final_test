@@ -12,5 +12,13 @@
     "S1": "Explicit OOF and calibration fit/config/time accounting; skip if not accommodated.",
     "budget": "Per-card total budgets and actual scalar-tree vs shared-network fit counts."
   },
-  "remaining": "B must rereview before any execution card is accepted; D0 remains specification only."
+  "remaining": "B to confirm revised D0 boundary definitions; no diagnosis, export or fit executed.",
+  "route_review": "B_reviewed_route_at_66dcf35",
+  "second_review_sha256": "b63a13a73a7e43df90614e269780f2785b13307ba7c35b89c84f017062135f9d",
+  "D0_second_review_resolution": {
+    "precision": "Known-label alerts only, unknown-label alerts separately counted.",
+    "freshness": "Exactly S-100ms nominal latest slot; no fallback, preceding nine nominal reference slots, max(end, source_available) across participating inputs.",
+    "censoring": "Known immediate previous nonquiet required for onset; left/right censor flags; no recovery across gaps; exclusive phases.",
+    "frozen_error": "Added B exact key/label matching and full-positive-group denominator for additive error contributions."
+  }
 }
