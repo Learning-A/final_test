@@ -1,6 +1,6 @@
 {
   "schema": "b19_local_checkpoint_v1",
-  "updated_at": "2026-11-23T11:55:52.616351+08:00",
+  "updated_at": "2026-11-23T12:17:29.242275+08:00",
   "owner": "B",
   "owner_thread": "01a203f5-3aa6-7b21-8a1f-8fece4787432",
   "worktree": "F:/sessions/26.9.8_测试大纲/work/idfs-model-b",
@@ -9,7 +9,7 @@
   "issue": 19,
   "pr": 16,
   "state": "running",
-  "substage": "V2_M2_completed_no_promotion_next_M3",
+  "substage": "V2_all_training_cards_completed_no_promotion_A_M3_review_pending",
   "training_running": false,
   "sources": {
     "handoff_sha256": "2e7ac9ddcc68da042a1f06269b6c6021e977e167482face0699e199fee47cf90",
@@ -177,14 +177,13 @@
     "includes_network_and_publication": false
   },
   "next_actions": [
-    "A independently reviews M2 frozen predictions.",
-    "Implement and preregister the short causal TCN on the retained R2 L0 backbone and original 20 input slots."
+    "A independently verifies M3 and its screening decision. Preserve frozen outputs."
   ],
   "heartbeat": {
     "id": "idfs-b",
     "status": "ACTIVE",
     "interval_minutes": 10,
-    "prompt_sha256": "702626e162cae5f134532f3f3ac750aa7f604c554bac33e179a46533aed91bb4",
+    "prompt_sha256": "644f1f8c9c5450c912d41364b428308794da7f7df320d657ea380d0296f1fc56",
     "first_read": "docs/B19_LOCAL_CONTINUATION_PLAN.md"
   },
   "proposed_next_card": {
@@ -544,7 +543,7 @@
     "B_review_path": "docs/B19_REPLAN_V2_REVIEW.md",
     "B_review_sha256": "b57a085bafe1cd1668ddcd72c3ee6b22f0c432885af0a1b9d8071bbf589c8555",
     "B_review_access": "shared workspace; A reads the file directly",
-    "next_stage": "M3_short_causal_TCN_on_R2_L0",
+    "next_stage": "A_independent_M3_review_then_close_V2",
     "configuration_executions_max_plan_only": 17,
     "execution_started": true,
     "new_fit_started": false,
@@ -567,7 +566,14 @@
       "review_sha256": "b57a085bafe1cd1668ddcd72c3ee6b22f0c432885af0a1b9d8071bbf589c8555"
     },
     "execution_handoff_id": "A18-V2-EXECUTE-D0-20261123-01",
-    "execution_user_message_id": "01a20645-db75-7ec3-bafc-9101e3d5fe8a"
+    "execution_user_message_id": "01a20645-db75-7ec3-bafc-9101e3d5fe8a",
+    "conditional_cards": {
+      "S1": "not_entered_insufficient_precursor_and_matched_OOF_calibration_evidence",
+      "G1": "not_entered_no_promoted_candidate",
+      "F1": "not_entered_no_promoted_candidate"
+    },
+    "new_configuration_executions": 5,
+    "new_model_fits": 19
   },
   "v2_d0": {
     "state": "B_complete_A_R2_phase_review_verified",
@@ -860,7 +866,7 @@
     }
   },
   "v2_m2": {
-    "state": "completed_no_gain_A_review_pending",
+    "state": "completed_no_gain_A_independently_verified",
     "job_id": "b19_v2_m2_workload_adapter_v1_a01",
     "do_not_repeat": true,
     "new_fit_count": 1,
@@ -937,6 +943,84 @@
       "passes": false
     },
     "conditional_known_workload": true,
+    "external_validation_new_evaluations": 0,
+    "A_independent_review": {
+      "commit": "c5e984d",
+      "path": "reports/v2_m2_A_independent_review.json",
+      "sha256": "a39bf6134acc0e8a70ef7f55053cd7284003a89023918a6f7bb61dae5f2f91ad"
+    }
+  },
+  "v2_m3": {
+    "state": "completed_no_gain_A_review_pending",
+    "job_id": "b19_v2_m3_short_causal_tcn_v1_a01",
+    "code_sha": "eecdc78bb056dd24a2c9720328eb922dc8016b69",
+    "budget_seconds": 1800,
+    "registration_url": "https://github.com/Learning-A/final_test/issues/19#issuecomment-7091177275",
+    "baseline": "frozen R2 L0",
+    "planned_new_fits": 1,
+    "do_not_repeat": true,
+    "new_fit_count": 1,
+    "report": "reports/v2_m3_short_causal_tcn.json",
+    "report_sha256": "2f8fd27bc556199cb642ad1b0d26c08795378a939566954be23508cb1de6347c",
+    "release_url": "https://github.com/Learning-A/final_test/releases/tag/b19-v2-m3-short-causal-tcn-20261123-v1",
+    "package_sha256": "94cfb6bc7a3e97735481583e7318407247c000a71f80f650b28fe57eac97165d",
+    "verification": "reports/v2_m3_result_verification.json",
+    "scores": {
+      "M0_reused": {
+        "macro_mape": 112.31633789948161,
+        "worst": 341.4611690619506,
+        "groups_below10": 0,
+        "workload_mae": {
+          "ai_training_ses": 89.23275430825464,
+          "ai_inference_ses": 172.1126757173695,
+          "bigdata_baleen": 44.010084573938215,
+          "graph_zipf": 156.56261211283066,
+          "hpc_wrf": 53.341057084327524
+        },
+        "phase_contributions_pp": {
+          "ordinary": 32.82682605023474,
+          "known_recovery": 0.4534439418446137,
+          "known_onset": 79.03606790740227
+        }
+      },
+      "M3": {
+        "macro_mape": 115.47621140474496,
+        "worst": 347.6438291488107,
+        "groups_below10": 0,
+        "workload_mae": {
+          "ai_training_ses": 94.42173120315042,
+          "ai_inference_ses": 178.24630612472728,
+          "bigdata_baleen": 44.04483484740651,
+          "graph_zipf": 147.7166173177607,
+          "hpc_wrf": 53.371496274489765
+        },
+        "phase_contributions_pp": {
+          "ordinary": 32.838377257299115,
+          "known_recovery": 0.4759644982990082,
+          "known_onset": 82.16186964914712
+        }
+      }
+    },
+    "comparison": {
+      "relative_macro_improvement": -0.02813369421010936,
+      "worst_group_ratio": 1.018106480756933,
+      "workload_mae_ratios": {
+        "ai_inference_ses": 1.0356372962176825,
+        "ai_training_ses": 1.0581510336100401,
+        "bigdata_baleen": 1.0007895979706634,
+        "graph_zipf": 0.9434986764995023,
+        "hpc_wrf": 1.0005706521735054
+      },
+      "passes": false
+    },
+    "best_epoch": 4,
+    "epochs_trained": 12,
+    "internal_checkpoint_evaluations": 13,
+    "lease_elapsed_seconds": 946.9679317474365,
+    "cpu_forward_p95_ms": {
+      "M0": 0.176926,
+      "M3": 0.9676092
+    },
     "external_validation_new_evaluations": 0
   }
 }
