@@ -1,6 +1,6 @@
 {
   "schema": "b19_local_checkpoint_v1",
-  "updated_at": "2026-11-23T11:48:13.707301+08:00",
+  "updated_at": "2026-11-23T11:55:52.616351+08:00",
   "owner": "B",
   "owner_thread": "01a203f5-3aa6-7b21-8a1f-8fece4787432",
   "worktree": "F:/sessions/26.9.8_测试大纲/work/idfs-model-b",
@@ -9,7 +9,7 @@
   "issue": 19,
   "pr": 16,
   "state": "running",
-  "substage": "V2_M1_completed_no_promotion_next_M2",
+  "substage": "V2_M2_completed_no_promotion_next_M3",
   "training_running": false,
   "sources": {
     "handoff_sha256": "2e7ac9ddcc68da042a1f06269b6c6021e977e167482face0699e199fee47cf90",
@@ -177,9 +177,8 @@
     "includes_network_and_publication": false
   },
   "next_actions": [
-    "A independently recomputes M1 frozen results. Preserve M1 no-promotion decision and reuse R2 L0 as M2 baseline.",
-    "Freeze a single C258 workload adapter on the R2 L0 backbone with unknown-workload fallback and identical loss, split and selection. Treat the result as conditional on workload metadata availability.",
-    "Register and execute eligible M2 on B GPU under existing budget and locks. Preserve R1/R2/I1/M1 and existing validation accounting."
+    "A independently reviews M2 frozen predictions.",
+    "Implement and preregister the short causal TCN on the retained R2 L0 backbone and original 20 input slots."
   ],
   "heartbeat": {
     "id": "idfs-b",
@@ -545,7 +544,7 @@
     "B_review_path": "docs/B19_REPLAN_V2_REVIEW.md",
     "B_review_sha256": "b57a085bafe1cd1668ddcd72c3ee6b22f0c432885af0a1b9d8071bbf589c8555",
     "B_review_access": "shared workspace; A reads the file directly",
-    "next_stage": "M2_fixed_core_R2_L0_workload_adapter",
+    "next_stage": "M3_short_causal_TCN_on_R2_L0",
     "configuration_executions_max_plan_only": 17,
     "execution_started": true,
     "new_fit_started": false,
@@ -734,7 +733,7 @@
     }
   },
   "v2_m1": {
-    "state": "completed_no_gain_A_review_pending",
+    "state": "completed_no_gain_A_independently_verified",
     "job_id": "b19_v2_m1_local_residual_v1_a01",
     "card": "docs/B19_V2_M1_EXECUTION_CARD.md",
     "configuration_fits": 1,
@@ -853,6 +852,91 @@
         "hpc_wrf": 1.02126516047492
       },
       "passes": false
+    },
+    "A_independent_review": {
+      "sha256": "9a71cf595dda08ab80090e59627563424dda418b82febc12995b54196caecef6",
+      "commit": "c056bc8",
+      "path": "reports/v2_m1_A_independent_review.json"
     }
+  },
+  "v2_m2": {
+    "state": "completed_no_gain_A_review_pending",
+    "job_id": "b19_v2_m2_workload_adapter_v1_a01",
+    "do_not_repeat": true,
+    "new_fit_count": 1,
+    "code_sha": "b8a23f4748ea0f094b07c866bebcbcff9e3ddfae",
+    "registration_url": "https://github.com/Learning-A/final_test/issues/19#issuecomment-7091091776",
+    "release_url": "https://github.com/Learning-A/final_test/releases/tag/b19-v2-m2-workload-adapter-20261123-v1",
+    "package_sha256": "68f17a50ec8266758319d0fc7b6e9fd66c9abdfb85840a8b05b01af2902d6bb5",
+    "report": "reports/v2_m2_workload_adapter.json",
+    "report_sha256": "a643bf08dcc31d6eab692f970eb9f109c1bd9d9b51f2e9e7c90677a649c17735",
+    "verification": "reports/v2_m2_result_verification.json",
+    "lease_elapsed_seconds": 35.46095681190491,
+    "best_epoch": 13,
+    "internal_checkpoint_evaluations": 22,
+    "scores": {
+      "M0_reused": {
+        "macro_mape": 112.31633789948161,
+        "worst_group_mape": 341.4611690619506,
+        "groups_below10": 0,
+        "workload_mae": {
+          "ai_training_ses": 89.23275430825464,
+          "ai_inference_ses": 172.1126757173695,
+          "bigdata_baleen": 44.010084573938215,
+          "graph_zipf": 156.56261211283066,
+          "hpc_wrf": 53.341057084327524
+        },
+        "phase_contribution_pp": {
+          "ordinary": 32.82682605023474,
+          "known_recovery": 0.4534439418446137,
+          "known_onset": 79.03606790740227
+        },
+        "ordinary_mae_by_workload": {
+          "ai_training_ses": 84.46979772874634,
+          "ai_inference_ses": 163.3915752280842,
+          "bigdata_baleen": 43.43298050215857,
+          "graph_zipf": 144.88033663191885,
+          "hpc_wrf": 50.55430365377857
+        }
+      },
+      "M2": {
+        "macro_mape": 109.84595434974197,
+        "worst_group_mape": 335.0065933295006,
+        "groups_below10": 0,
+        "workload_mae": {
+          "ai_training_ses": 86.30479851968163,
+          "ai_inference_ses": 163.90838050842285,
+          "bigdata_baleen": 43.05247288975147,
+          "graph_zipf": 147.25489962802214,
+          "hpc_wrf": 49.96446310457333
+        },
+        "phase_contribution_pp": {
+          "ordinary": 31.53745976028902,
+          "known_recovery": 0.4211190047387803,
+          "known_onset": 77.88737558471414
+        },
+        "ordinary_mae_by_workload": {
+          "ai_training_ses": 81.44628504191785,
+          "ai_inference_ses": 155.15327787038052,
+          "bigdata_baleen": 42.47188161261201,
+          "graph_zipf": 134.66468497222326,
+          "hpc_wrf": 47.321147252475065
+        }
+      }
+    },
+    "comparison": {
+      "relative_macro_improvement": 0.021994872660026976,
+      "worst_group_ratio": 0.9810971896154931,
+      "workload_mae_ratios": {
+        "ai_inference_ses": 0.9523318362534837,
+        "ai_training_ses": 0.9671874323361309,
+        "bigdata_baleen": 0.9782410851181638,
+        "graph_zipf": 0.94054958358704,
+        "hpc_wrf": 0.9366980302918241
+      },
+      "passes": false
+    },
+    "conditional_known_workload": true,
+    "external_validation_new_evaluations": 0
   }
 }

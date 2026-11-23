@@ -1,0 +1,62 @@
+{
+  "state": "verified_frozen_M2_metrics_no_promotion",
+  "original_labels": 21288,
+  "compared_node_predictions": 42576,
+  "common_seconds": 2661,
+  "lease_elapsed_seconds": 35.46095681190491,
+  "phase_source_sha256": "c9ee23e7be1abe4b6a8b2f594b088b32e6d7fe60bda806c24d21e7908ce6bd7e",
+  "model_loaded": false,
+  "additional_fits": 0,
+  "scores": {
+    "M0_reused": {
+      "macro_mape": 112.31633789948161,
+      "worst_group_mape": 341.4611690619506,
+      "groups_below10": 0,
+      "workload_mae": {
+        "ai_training_ses": 89.23275430825464,
+        "ai_inference_ses": 172.1126757173695,
+        "bigdata_baleen": 44.010084573938215,
+        "graph_zipf": 156.56261211283066,
+        "hpc_wrf": 53.341057084327524
+      },
+      "phase_contribution_pp": {
+        "ordinary": 32.82682605023474,
+        "known_recovery": 0.4534439418446137,
+        "known_onset": 79.03606790740227
+      },
+      "ordinary_mae_by_workload": {
+        "ai_training_ses": 84.46979772874634,
+        "ai_inference_ses": 163.3915752280842,
+        "bigdata_baleen": 43.43298050215857,
+        "graph_zipf": 144.88033663191885,
+        "hpc_wrf": 50.55430365377857
+      }
+    },
+    "M2": {
+      "macro_mape": 109.84595434974197,
+      "worst_group_mape": 335.0065933295006,
+      "groups_below10": 0,
+      "workload_mae": {
+        "ai_training_ses": 86.30479851968163,
+        "ai_inference_ses": 163.90838050842285,
+        "bigdata_baleen": 43.05247288975147,
+        "graph_zipf": 147.25489962802214,
+        "hpc_wrf": 49.96446310457333
+      },
+      "phase_contribution_pp": {
+        "ordinary": 31.53745976028902,
+        "known_recovery": 0.4211190047387803,
+        "known_onset": 77.88737558471414
+      },
+      "ordinary_mae_by_workload": {
+        "ai_training_ses": 81.44628504191785,
+        "ai_inference_ses": 155.15327787038052,
+        "bigdata_baleen": 42.47188161261201,
+        "graph_zipf": 134.66468497222326,
+        "hpc_wrf": 47.321147252475065
+      }
+    }
+  },
+  "relative_macro_improvement": 0.021994872660026754,
+  "screen_passes": false
+}
