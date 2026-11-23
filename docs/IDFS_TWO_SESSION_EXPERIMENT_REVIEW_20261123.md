@@ -89,6 +89,8 @@ T1宏MAPE112.1806%，相对T0仅改善0.12%，五类MAE均恶化；T2为105.9579
 
 截至本文，尚未完成正式独立轮、线上实际服务接收/发布验证、逐轮有界跨机时钟、晋级候选三折与多seed复核、可靠OOF校准或可验证物理暂停根因。这些缺口不能用已有工作流、模型数量或辅助评分替代。
 
+用户随后优先集群总量与1秒目标。对既有预测的 [指标可达性复审](CLUSTER_TARGET_AND_METRIC_REASSESSMENT_20261123.md) 确认，R1已经有独立集群头，WAPE分数约80.86；较好R2 L2节点求和约82.03。MdAPE典型误差补分约90.36，但不表示90%秒准确，也不是所有负载通过。本次没有新训练、延长目标窗口或修改正式指标。
+
 ## 证据入口
 
 B：[首轮输入/损失](INPUT_LOSS_STUDY_V1_RESULTS.md)、[MoE](MASKED_MOE_STUDY_V1_RESULTS.md)、[冻结通路](EXPERT_DIAGNOSTICS_V1_RESULTS.md)、[旧核心与独立轮](LEGACY_AND_INDEPENDENT_RESULTS.md)、[秒级辅助输入](WORKLOAD_INPUT_STUDY_V1_RESULTS.md)、[低状态](LOW_STATE_STUDY_V1_RESULTS.md)、[R1与本机总账](B19_LOCAL_CONTINUATION_PLAN.md)、[R2](B19_R2_LOSS_RESULTS.md)、[D0](B19_V2_D0_RESULTS.md)、[I1](B19_V2_I1_RESULTS.md)、[M1](B19_V2_M1_RESULTS.md)、[M2](B19_V2_M2_RESULTS.md)、[M3](B19_V2_M3_RESULTS.md)。A：[D0](https://github.com/Learning-A/final_test/blob/experiment/postcapture-collaboration/docs/V2_D0_A_RESULTS.md)、[四轮比较](https://github.com/Learning-A/final_test/blob/experiment/postcapture-collaboration/docs/WORKLOAD_FOUR_ROUND_COMPARISON_20261123.md)、[处理方式研究](https://github.com/Learning-A/final_test/blob/experiment/postcapture-collaboration/docs/DATA_TRANSFORM_RESEARCH_20261123.md)。

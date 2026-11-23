@@ -1,6 +1,6 @@
 {
   "schema": "b19_local_checkpoint_v1",
-  "updated_at": "2026-11-23T15:43:44.308866+08:00",
+  "updated_at": "2026-11-23T16:15:12.955976+08:00",
   "owner": "B",
   "owner_thread": "01a203f5-3aa6-7b21-8a1f-8fece4787432",
   "worktree": "F:/sessions/26.9.8_测试大纲/work/idfs-model-b",
@@ -9,7 +9,7 @@
   "issue": 19,
   "pr": 16,
   "state": "completed",
-  "substage": "data_transform_completed_no_promotion_A_package_verified",
+  "substage": "cluster_1s_target_metric_review_completed_no_new_fit",
   "training_running": false,
   "sources": {
     "handoff_sha256": "2e7ac9ddcc68da042a1f06269b6c6021e977e167482face0699e199fee47cf90",
@@ -1794,5 +1794,28 @@
     },
     "release_url": "https://github.com/Learning-A/final_test/releases/tag/b19-data-transform-controls-20261123-v1",
     "package_sha256": "8f3f5a4e3769681063ab95ac7489ca945c8e43cc65302f2baa7b88a44bda7312"
+  },
+  "metric_definition_review": {
+    "state": "completed_development_diagnostic",
+    "research_priority": "cluster_total_next_complete_1_second",
+    "report": "docs/CLUSTER_TARGET_AND_METRIC_REASSESSMENT_20261123.md",
+    "calculations": "reports/cluster_metric_feasibility_20261123.json",
+    "sources": "reports/metric_feasibility_sources_20261123.json",
+    "formal_metric_replaced": false,
+    "formal_target_changed": false,
+    "new_fit_count": 0,
+    "checkpoint_reselected": false,
+    "new_external_validation_model_evaluations": 0,
+    "frozen_prediction_configurations": 15,
+    "cluster_paths": 19,
+    "direct_R1_WAPE_score": 80.85535624677094,
+    "R2_L2_sum_WAPE_score": 82.03229999670657,
+    "R2_L2_sum_typical_MdAPE_score": 90.36008815519672,
+    "MdAPE_groups_above90": 2,
+    "cautions": [
+      "MdAPE complementary score is a proposed typical-error display, not 90 percent successful seconds.",
+      "44.0585 is old model MAPE contribution, not an irreducible error bound."
+    ],
+    "next_training_card": "suggested_direct_cluster_MAE_WAPE_objective_not_registered_or_started"
   }
 }
