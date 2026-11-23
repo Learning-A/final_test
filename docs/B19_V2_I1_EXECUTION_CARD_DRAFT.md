@@ -1,6 +1,6 @@
 # V2-I1：字节与压力输入对照草案
 
-2026-11-23。状态：`implementation_ready / all15_inputs_verified / before_fit_registration`。用户已要求执行新版计划，D1 pilot和全15轮已验收，[前检回执](B19_V2_D1_FULL_RECEIPT.md)记录了范围。原5,328/2,661秒的 C/B/P 张量已构造；没有启动拟合。
+2026-11-23。状态：`completed_no_gain / do_not_repeat`。[实际结果](B19_V2_I1_RESULTS.md)已交付，以下保留执行前规格。C复用原模型预测，CB/CBP共16个新增森林已完成，不再次拟合。两组新增输入均未达到预登记门槛，后续固定C。
 
 ## 问题与准入
 
