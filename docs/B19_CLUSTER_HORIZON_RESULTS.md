@@ -17,6 +17,8 @@
 
 未来10秒窗口均值并不是第10秒IOPS。模型对第10个单独秒的宏WAPE为直接整秒18.3908%、100ms聚合18.5938%，明显高于对应10秒均值的11.2177%和12.0645%。更长窗口平均可以抵消部分时间上的正负偏差，也减少瞬时低谷在整窗比例误差中的影响；不表示远期逐秒轨迹反而更容易。
 
+输出轨迹本身很平滑。按2297起点各自10秒内的标准差再取中位数，真实值为684.97 IOPS，直接预测为0.61、fine聚合为2.96 IOPS；实际相邻秒绝对变化平均942.73 IOPS，而预测为0.24/0.72 IOPS。该描述没有重新选模或拟合，见[轨迹诊断](../reports/cluster_horizon_trajectory_diagnostics.json)。说明本卡主要给出随输入条件变化的负荷水平，未能表达真实未来逐秒起伏；不证明这些起伏一定不可预测。此处是同容量小型共享时间decoder的有界pilot，不能据此否定所有序列到序列或100ms模型。诊断文件是最终包冻结后的补充分析，原ZIP不覆盖改写。
+
 | 未来第几秒 | 直接整秒轨迹WAPE% | 100ms聚合轨迹WAPE% |
 | --- | ---: | ---: |
 | 1 | 17.8310 | 17.9920 |
@@ -59,7 +61,7 @@
 
 唯一job为b19_cluster_horizon_direct_seconds_v1_a01、b19_cluster_horizon_fine100ms_v1_a01，b507 B固定UUID顺序执行。原共享门锁→UUID→owner覆盖worker全生命，CPU4/workers0。租约分别14.3828秒、13.9323秒，均正常退出。每卡1800秒总上限，纯准备预留300秒，worker1500秒。首准备42.27秒；追加标签核验后原60秒记账断言失败，没有训练发生，启动前保守扩大准备预留并缩短worker，记录完整保留，没有扩大总预算。
 
-工作源码固定8e7df79a2da8c8515a96939c827c0ace103576ef。功能检查172项，167通过、5个Linux专用跳过。B另写标准库指标聚合，逐行核对两臂全部2297键、100桶到10秒的单位/聚合、四窗口均值/总操作数、未来标签、native输出、原输入截止、所有epoch和产物SHA，每臂70组指标一致，无模型加载、拟合或新推理。A独立复核待回执。
+工作源码固定8e7df79a2da8c8515a96939c827c0ace103576ef。功能检查172项，167通过、5个Linux专用跳过。B另写标准库指标聚合，逐行核对两臂全部2297键、100桶到10秒的单位/聚合、四窗口均值/总操作数、未来标签、native输出、原输入截止、所有epoch和产物SHA，每臂70组指标一致，无模型加载、拟合或新推理。A已另行限定复核最终包完整性、CSV行数与报告结果范围，见 [A原始JSON快照](../reports/cluster_horizon_A_review_snapshot.json)；其范围不扩大为第二次原始标签/训练统计或现场推理验证。A源文件当时尚未提交，B将其逐字节归档到本分支，保留来源与SHA，未改动A工作区。
 
 未知历史跨机时钟界、真实推理服务接收和现场发布仍未知。A于20261123新取得的时钟偏移探针没有被套用于所有历史训练轮；本研究仍是原源时钟离线假设。
 
@@ -71,3 +73,5 @@
 - [直接路线报告](../reports/cluster_horizon_direct_seconds.json)、[100ms路线报告](../reports/cluster_horizon_fine100ms.json)、[B复算](../reports/cluster_horizon_B_verification.json)、[输入/覆盖证据](../reports/cluster_horizon_input_receipt.json)、[执行卡](B19_CLUSTER_HORIZON_EXECUTION_CARD.md)。
 
 完整native预测、checkpoint、epoch、尺度及租约保存在本机.local/cluster_horizon和b507原job目录；最终包包含上述可复核文件，不复制全部原始采集包。当前没有授权追加其它模型或把时间窗继续调到达标，后续选择应据用途而非单个好看的分数。
+
+[最终交付包](https://github.com/Learning-A/final_test/releases/tag/b19-cluster-horizon-two-paths-20261123-v1) 为29850407字节，SHA256=7f9719cc9a3246af99a01d3632ebb68a971ecb01b8b0ee4998c59f06c8c40a45，MANIFEST包含28成员，B与A均核对无缺失/不匹配。原ZIP保持冻结；补充轨迹诊断和A复核快照另存Git，不回写ZIP。当前两次作业均已结束，无新增拟合或心跳任务。

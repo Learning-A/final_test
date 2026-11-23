@@ -1,0 +1,24 @@
+{
+  "state": "A_limited_package_integrity_and_arithmetic_scope_reviewed",
+  "release": "https://github.com/Learning-A/final_test/releases/tag/b19-cluster-horizon-two-paths-20261123-v1",
+  "zip_bytes": 29850407,
+  "zip_sha256": "7f9719cc9a3246af99a01d3632ebb68a971ecb01b8b0ee4998c59f06c8c40a45",
+  "manifest_members": 28,
+  "manifest_missing": 0,
+  "manifest_mismatches": 0,
+  "outputs": {
+    "future_seconds_rows": 22970,
+    "future_seconds_starts": 2297,
+    "window_means_rows": 9188,
+    "window_mean_starts": 2297
+  },
+  "direct_seconds_wape_percent": {"1": 17.830970454274073, "3": 14.155301483490963, "5": 12.615933445428723, "10": 11.217737199804919},
+  "fine100ms_wape_percent": {"1": 17.99201201881463, "3": 14.648134968876269, "5": 13.299768470531953, "10": 12.064509588091921},
+  "no_fit": true,
+  "no_model_load": true,
+  "no_inference": true,
+  "external_validation_new_evaluations": 0,
+  "historical_clock_alignment_applied": false,
+  "formal_acceptance": false,
+  "overlapping_windows_are_independent_trials": false
+}
