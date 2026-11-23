@@ -6,4 +6,4 @@ M3 的节点宏 MAPE 为 115.4762%，比复用的 R2 L0 基线 112.3163% 相对�
 
 本卡新增一次拟合，B 专属 GPU 租约 946.968 秒。第 4 轮为最佳检查点，训练 12 轮，含第 0 轮共计 13 次内部评分。B 按冻结预测复算全部 2,661 秒、21,288 个原始节点标签和 80 组指标。外部验证新增评估为零。 [训练报告](../reports/v2_m3_short_causal_tcn.json) · [复算记录](../reports/v2_m3_result_verification.json) · [交付包](https://github.com/Learning-A/final_test/releases/tag/b19-v2-m3-short-causal-tcn-20261123-v1)
 
-I1、M1、M2、M3 均未达到晋级门槛。S1 暂无足够的低状态先兆和匹配的训练轮外预测支持校准。G1 跨轮对照和 F1 多种子复核需要已晋级候选，因此本轮在此收口。保留所有实验记录和原冻结基线，待 A 独立复核 M3。
+A 独立核对了 2,661 秒、21,288 个节点标签、80 组指标和阶段误差贡献，确认 M3 未达到晋级门槛。I1、M1、M2、M3 的晋级结论均已复核。S1 缺少可靠的低状态先兆和匹配的训练轮外预测，G1 和 F1 没有晋级候选，本轮按计划收口。 [A 复核记录](https://github.com/Learning-A/final_test/blob/6c2e8b2/reports/v2_m3_A_independent_review.json)
