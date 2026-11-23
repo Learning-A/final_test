@@ -1,0 +1,484 @@
+{
+  "state": "sample_only_pending_B_review",
+  "unit_status": "bytes_and_operations_named_by_collector; latency_seconds_not_yet_source_confirmed",
+  "datasets": [
+    {
+      "dataset_id": "dev_20261122_graph_zipf_train_01_a01",
+      "sample_start_ns": 1795334189900000000,
+      "sample_end_ns": 1795334190300000000,
+      "channels": 112,
+      "sources": [
+        {
+          "file": "client_nfs_rpc_100.7.74.12.jsonl",
+          "expected_sha256": "01a7cc902fa8045a9dca7cad1be1a06a00328e479deae915ae8546dd04fa3f97",
+          "hash_scope": "previously_verified_inventory_not_rehashed_for_sample",
+          "sample_rows": 5
+        },
+        {
+          "file": "client_nfs_rpc_100.7.74.14.jsonl",
+          "expected_sha256": "4377085ad840588b2c6c4a3ee9d75f75a18246f4689077c99b080c5c34fae8a2",
+          "hash_scope": "previously_verified_inventory_not_rehashed_for_sample",
+          "sample_rows": 5
+        },
+        {
+          "file": "client_nfs_rpc_100.7.74.16.jsonl",
+          "expected_sha256": "0e67defdb45be346e0c9703e3782b1bcd65581f90ea8a1150508d36f8b87f055",
+          "hash_scope": "previously_verified_inventory_not_rehashed_for_sample",
+          "sample_rows": 5
+        },
+        {
+          "file": "client_nfs_rpc_100.7.74.18.jsonl",
+          "expected_sha256": "12b74d30aab4c3d3a57083f4d1eb5377e156d593cce6490f52cd7badfd428d8c",
+          "hash_scope": "previously_verified_inventory_not_rehashed_for_sample",
+          "sample_rows": 5
+        },
+        {
+          "file": "client_nfs_rpc_100.7.74.19.jsonl",
+          "expected_sha256": "b4059bf5f89d1d234b79f15999176f23b31698d009ad42e50a202d9dff1e46b4",
+          "hash_scope": "previously_verified_inventory_not_rehashed_for_sample",
+          "sample_rows": 5
+        },
+        {
+          "file": "client_nfs_rpc_100.7.74.20.jsonl",
+          "expected_sha256": "655362c3af2ee8a849d03e9a19158128c96663f0001cc1288335a2fc96ef01c8",
+          "hash_scope": "previously_verified_inventory_not_rehashed_for_sample",
+          "sample_rows": 5
+        },
+        {
+          "file": "client_nfs_rpc_100.7.75.14.jsonl",
+          "expected_sha256": "4be7f86df3a024f1e42265ea9fb9a503435c23660a585081c828432960b2ac73",
+          "hash_scope": "previously_verified_inventory_not_rehashed_for_sample",
+          "sample_rows": 5
+        },
+        {
+          "file": "client_nfs_rpc_100.7.75.202.jsonl",
+          "expected_sha256": "6fb6b715f62a4efdc25b876deab97180ef757416fa82bb7e238222f1d2521f1f",
+          "hash_scope": "previously_verified_inventory_not_rehashed_for_sample",
+          "sample_rows": 5
+        },
+        {
+          "file": "client_nfs_rpc_100.7.75.203.jsonl",
+          "expected_sha256": "6389f1cda2dfb6f494ae2dd2e30d58383901712dd548e3fd2aceea6e51f2a674",
+          "hash_scope": "previously_verified_inventory_not_rehashed_for_sample",
+          "sample_rows": 5
+        },
+        {
+          "file": "client_nfs_rpc_100.7.75.204.jsonl",
+          "expected_sha256": "34bd7f1afffe017834c1b030414f01d3a176419164fbdaf5c767202a3ebd7383",
+          "hash_scope": "previously_verified_inventory_not_rehashed_for_sample",
+          "sample_rows": 5
+        },
+        {
+          "file": "client_nfs_rpc_100.7.75.205.jsonl",
+          "expected_sha256": "883283d26e0daf1b29154efad63aa0d44e92597570e9b2d5f9aa19ec3caa28cb",
+          "hash_scope": "previously_verified_inventory_not_rehashed_for_sample",
+          "sample_rows": 5
+        },
+        {
+          "file": "client_nfs_rpc_100.7.75.206.jsonl",
+          "expected_sha256": "8c995176aca38faba4e7fcd73b61aa183c68547c42240ef88e1697fea6fca7ff",
+          "hash_scope": "previously_verified_inventory_not_rehashed_for_sample",
+          "sample_rows": 5
+        },
+        {
+          "file": "client_nfs_rpc_100.7.75.210.jsonl",
+          "expected_sha256": "a9faefbad4a10eea3b2963a1a775895d13e69c6e60cdee075dc7dece7bbaa316",
+          "hash_scope": "previously_verified_inventory_not_rehashed_for_sample",
+          "sample_rows": 5
+        },
+        {
+          "file": "client_nfs_rpc_100.7.75.211.jsonl",
+          "expected_sha256": "4fe96c585075fea6bb8f6a85fe8723491644cd9eaf04b4a0088dfbf65f4856db",
+          "hash_scope": "previously_verified_inventory_not_rehashed_for_sample",
+          "sample_rows": 5
+        },
+        {
+          "file": "client_nfs_rpc_100.7.75.215.jsonl",
+          "expected_sha256": "e44bc8781ee5db771fb00b1a6211267763261ca8245e53bbb78c64449225093a",
+          "hash_scope": "previously_verified_inventory_not_rehashed_for_sample",
+          "sample_rows": 5
+        },
+        {
+          "file": "client_nfs_rpc_100.7.75.216.jsonl",
+          "expected_sha256": "89850dc445a622f9e696c3af630524265d39951f549c99bebbcad01d8aed5aa6",
+          "hash_scope": "previously_verified_inventory_not_rehashed_for_sample",
+          "sample_rows": 5
+        },
+        {
+          "file": "oss_100.7.75.44.jsonl",
+          "expected_sha256": "edc93264a4942f57f5b0b45593cac3b91806145bba4a073f651d48d8025b86af",
+          "hash_scope": "previously_verified_inventory_not_rehashed_for_sample",
+          "sample_rows": 60
+        },
+        {
+          "file": "oss_100.7.75.45.jsonl",
+          "expected_sha256": "4a52d9fcc026c325c5e049b9c6d6114401b248ee409aeeadb128d8103c2952b5",
+          "hash_scope": "previously_verified_inventory_not_rehashed_for_sample",
+          "sample_rows": 60
+        },
+        {
+          "file": "oss_100.7.75.46.jsonl",
+          "expected_sha256": "08ffb46419f43605da088d1074153622b68f61ce3b7afa288b9743a994524e62",
+          "hash_scope": "previously_verified_inventory_not_rehashed_for_sample",
+          "sample_rows": 60
+        },
+        {
+          "file": "oss_100.7.75.47.jsonl",
+          "expected_sha256": "fcc2cf7a01194de1187f7dba6c3959b5b0930521a9096f73a88b21f5c0aa5e63",
+          "hash_scope": "previously_verified_inventory_not_rehashed_for_sample",
+          "sample_rows": 60
+        },
+        {
+          "file": "oss_100.7.75.64.jsonl",
+          "expected_sha256": "d93659fe6f4f1f208d6468137767556a4346157faa4d36b4196239f1a7394f70",
+          "hash_scope": "previously_verified_inventory_not_rehashed_for_sample",
+          "sample_rows": 60
+        },
+        {
+          "file": "oss_100.7.75.65.jsonl",
+          "expected_sha256": "e6158c151a4b2775df551c28abd821d2b2e1cdbe88d8ea32cd3c1104cb0726ca",
+          "hash_scope": "previously_verified_inventory_not_rehashed_for_sample",
+          "sample_rows": 60
+        },
+        {
+          "file": "oss_100.7.75.66.jsonl",
+          "expected_sha256": "839fa367d088afccc232498dd58a330ac0284d001adb2cb77c433adea088f769",
+          "hash_scope": "previously_verified_inventory_not_rehashed_for_sample",
+          "sample_rows": 60
+        },
+        {
+          "file": "oss_100.7.75.67.jsonl",
+          "expected_sha256": "6652cce2e286c3cbc7c7616b9334ed6a591f62a39a81e12ca64ac105da6263ef",
+          "hash_scope": "previously_verified_inventory_not_rehashed_for_sample",
+          "sample_rows": 60
+        }
+      ],
+      "checks": {
+        "valid_pairs": 448,
+        "byte_pairs": 768,
+        "gauge_pairs": 384,
+        "latency_pairs": 1152,
+        "latency_nonmonotonic": 0
+      }
+    },
+    {
+      "dataset_id": "dev_20261122_hpc_wrf_train_01_a01",
+      "sample_start_ns": 1795335102100000000,
+      "sample_end_ns": 1795335102500000000,
+      "channels": 112,
+      "sources": [
+        {
+          "file": "client_nfs_rpc_100.7.74.12.jsonl",
+          "expected_sha256": "47f2d87f27de412655b7c3eb93c6b9331d92d5ffff9b686331e0fa375dbf843b",
+          "hash_scope": "previously_verified_inventory_not_rehashed_for_sample",
+          "sample_rows": 5
+        },
+        {
+          "file": "client_nfs_rpc_100.7.74.14.jsonl",
+          "expected_sha256": "5753dcebba65dce63d9433547e64626da7d9cb2e23f9e200100f667cd63aa9a5",
+          "hash_scope": "previously_verified_inventory_not_rehashed_for_sample",
+          "sample_rows": 5
+        },
+        {
+          "file": "client_nfs_rpc_100.7.74.16.jsonl",
+          "expected_sha256": "cf076c9443f18b474ff0d379ee705482d4d520f800a6b928c272553f7e854df4",
+          "hash_scope": "previously_verified_inventory_not_rehashed_for_sample",
+          "sample_rows": 5
+        },
+        {
+          "file": "client_nfs_rpc_100.7.74.18.jsonl",
+          "expected_sha256": "71c7a5e63246c77bc8fe2ddc65b797956d26563ec1204eaa554956571a7e9cb3",
+          "hash_scope": "previously_verified_inventory_not_rehashed_for_sample",
+          "sample_rows": 5
+        },
+        {
+          "file": "client_nfs_rpc_100.7.74.19.jsonl",
+          "expected_sha256": "e01609d16bc85282897a82e0c720e4fde79257eaddbb21ddf85a39cf096ef641",
+          "hash_scope": "previously_verified_inventory_not_rehashed_for_sample",
+          "sample_rows": 5
+        },
+        {
+          "file": "client_nfs_rpc_100.7.74.20.jsonl",
+          "expected_sha256": "f8e2b9d31ef59902a7fac7a79add6458f3dfd59ce5a7799bfab4bcd10e52a795",
+          "hash_scope": "previously_verified_inventory_not_rehashed_for_sample",
+          "sample_rows": 5
+        },
+        {
+          "file": "client_nfs_rpc_100.7.75.14.jsonl",
+          "expected_sha256": "d6dc998311e08ce4efff01a101ee4dfaf4c4c58d67bb1a0efbcbb7ce662d2091",
+          "hash_scope": "previously_verified_inventory_not_rehashed_for_sample",
+          "sample_rows": 5
+        },
+        {
+          "file": "client_nfs_rpc_100.7.75.202.jsonl",
+          "expected_sha256": "0bb23e30d81619b6e13b52a623826d258ec67184a50bf07af2122be24bc4d8b0",
+          "hash_scope": "previously_verified_inventory_not_rehashed_for_sample",
+          "sample_rows": 5
+        },
+        {
+          "file": "client_nfs_rpc_100.7.75.203.jsonl",
+          "expected_sha256": "020ef449cb604616762741c24c5164fb9c189b86ec01eff046d3190cd61f11ef",
+          "hash_scope": "previously_verified_inventory_not_rehashed_for_sample",
+          "sample_rows": 5
+        },
+        {
+          "file": "client_nfs_rpc_100.7.75.204.jsonl",
+          "expected_sha256": "12488c910aee2c5420a4b22ece56b90a241cff0f3e0a842af8239bd30d1db7a8",
+          "hash_scope": "previously_verified_inventory_not_rehashed_for_sample",
+          "sample_rows": 5
+        },
+        {
+          "file": "client_nfs_rpc_100.7.75.205.jsonl",
+          "expected_sha256": "1e513254d2b8b30ce79e015de6f4f536da1315fdc0033a442e9efd4fe03901ba",
+          "hash_scope": "previously_verified_inventory_not_rehashed_for_sample",
+          "sample_rows": 5
+        },
+        {
+          "file": "client_nfs_rpc_100.7.75.206.jsonl",
+          "expected_sha256": "b806ffd65bc2cbd5abf9d9385d0c71d4961109a08fe0374f7d78a42db46ccf51",
+          "hash_scope": "previously_verified_inventory_not_rehashed_for_sample",
+          "sample_rows": 5
+        },
+        {
+          "file": "client_nfs_rpc_100.7.75.210.jsonl",
+          "expected_sha256": "b523808cfc1e04d02eb089940dd630ab1c7e8eb9bcbbdfeaf1263d60eb5f8216",
+          "hash_scope": "previously_verified_inventory_not_rehashed_for_sample",
+          "sample_rows": 5
+        },
+        {
+          "file": "client_nfs_rpc_100.7.75.211.jsonl",
+          "expected_sha256": "d46a2758332a45b328d1006e7e4e3b430c55830ebf3e421413fdda11a0565e8e",
+          "hash_scope": "previously_verified_inventory_not_rehashed_for_sample",
+          "sample_rows": 5
+        },
+        {
+          "file": "client_nfs_rpc_100.7.75.215.jsonl",
+          "expected_sha256": "f580ea40761e1852a83f789efce6f6453ad61c34acb306b6ca1be057b1c98d45",
+          "hash_scope": "previously_verified_inventory_not_rehashed_for_sample",
+          "sample_rows": 5
+        },
+        {
+          "file": "client_nfs_rpc_100.7.75.216.jsonl",
+          "expected_sha256": "7e4f87c03e251b2772181ffba274bf8e255c8eef9ba315f16f3b95543979daf7",
+          "hash_scope": "previously_verified_inventory_not_rehashed_for_sample",
+          "sample_rows": 5
+        },
+        {
+          "file": "oss_100.7.75.44.jsonl",
+          "expected_sha256": "03f425f51c0c57c9ab1e89435466ae8c96b1ddc4de41e280c33c93390ebc7307",
+          "hash_scope": "previously_verified_inventory_not_rehashed_for_sample",
+          "sample_rows": 60
+        },
+        {
+          "file": "oss_100.7.75.45.jsonl",
+          "expected_sha256": "c01edcd92fb8e8f53813af58bd2a1417b338b7ad11c7f5f51ccdaa3180a8b247",
+          "hash_scope": "previously_verified_inventory_not_rehashed_for_sample",
+          "sample_rows": 60
+        },
+        {
+          "file": "oss_100.7.75.46.jsonl",
+          "expected_sha256": "57e2543f88e211f5e6e7634d0aeb753e301e3a4100e6dcb102b4e6e09756f4e2",
+          "hash_scope": "previously_verified_inventory_not_rehashed_for_sample",
+          "sample_rows": 60
+        },
+        {
+          "file": "oss_100.7.75.47.jsonl",
+          "expected_sha256": "841bc55ad876476c8b84b75e044e39bd75a2dc2001ea404e2094944305f435d6",
+          "hash_scope": "previously_verified_inventory_not_rehashed_for_sample",
+          "sample_rows": 60
+        },
+        {
+          "file": "oss_100.7.75.64.jsonl",
+          "expected_sha256": "79e58c4562ed328eec1aa5cec06a323d3320672fe14207ba475e6148cbfea10f",
+          "hash_scope": "previously_verified_inventory_not_rehashed_for_sample",
+          "sample_rows": 60
+        },
+        {
+          "file": "oss_100.7.75.65.jsonl",
+          "expected_sha256": "6bb2d73d3773b4e5bb532d55982a26aecfead5e6f75f70247cd40dfd5ea65954",
+          "hash_scope": "previously_verified_inventory_not_rehashed_for_sample",
+          "sample_rows": 60
+        },
+        {
+          "file": "oss_100.7.75.66.jsonl",
+          "expected_sha256": "9e1fb482b7e1d96576829749275d6d718d24353ca5fb3cb2de3869a2f7a7c996",
+          "hash_scope": "previously_verified_inventory_not_rehashed_for_sample",
+          "sample_rows": 60
+        },
+        {
+          "file": "oss_100.7.75.67.jsonl",
+          "expected_sha256": "0e154572f99ec4583bad41279ca223b5dead683bdfb59be871f0407758014661",
+          "hash_scope": "previously_verified_inventory_not_rehashed_for_sample",
+          "sample_rows": 60
+        }
+      ],
+      "checks": {
+        "valid_pairs": 448,
+        "byte_pairs": 768,
+        "gauge_pairs": 384,
+        "latency_pairs": 1152,
+        "latency_nonmonotonic": 0
+      }
+    },
+    {
+      "dataset_id": "dev_20261122_ai_inference_ses_train_03_a01",
+      "sample_start_ns": 1795341099900000000,
+      "sample_end_ns": 1795341100300000000,
+      "channels": 112,
+      "sources": [
+        {
+          "file": "client_nfs_rpc_100.7.74.12.jsonl",
+          "expected_sha256": "9f5cdc8ea7d5c395943d900d58c697a2a9289399d718c8dea2a3714ebdae293e",
+          "hash_scope": "previously_verified_inventory_not_rehashed_for_sample",
+          "sample_rows": 5
+        },
+        {
+          "file": "client_nfs_rpc_100.7.74.14.jsonl",
+          "expected_sha256": "86a0b4291ad10696a9e950028710bfa08eb230dc49d0a61531cd15a91da28762",
+          "hash_scope": "previously_verified_inventory_not_rehashed_for_sample",
+          "sample_rows": 5
+        },
+        {
+          "file": "client_nfs_rpc_100.7.74.16.jsonl",
+          "expected_sha256": "d9353ef50f532c03be74dca1e346da259154944e55faa1cf08e7122f6d79d2f1",
+          "hash_scope": "previously_verified_inventory_not_rehashed_for_sample",
+          "sample_rows": 5
+        },
+        {
+          "file": "client_nfs_rpc_100.7.74.18.jsonl",
+          "expected_sha256": "e815a56fb2fbf58781fe7a38a47428c597cb4bcfb56498408de2115f34541b40",
+          "hash_scope": "previously_verified_inventory_not_rehashed_for_sample",
+          "sample_rows": 5
+        },
+        {
+          "file": "client_nfs_rpc_100.7.74.19.jsonl",
+          "expected_sha256": "284377f6d385b2189faa1b277cc1e896cb6e5341d93d3ae8d86c1e2f570d2ef3",
+          "hash_scope": "previously_verified_inventory_not_rehashed_for_sample",
+          "sample_rows": 5
+        },
+        {
+          "file": "client_nfs_rpc_100.7.74.20.jsonl",
+          "expected_sha256": "38d62e9170c36adf7e087dfbb888f0ffb0c6e77f3f0894c239dd39f50a603701",
+          "hash_scope": "previously_verified_inventory_not_rehashed_for_sample",
+          "sample_rows": 5
+        },
+        {
+          "file": "client_nfs_rpc_100.7.75.14.jsonl",
+          "expected_sha256": "4726b9c53efb13d46c141f6e4b014ef381236494be5a6e8c84d357d9fd226d93",
+          "hash_scope": "previously_verified_inventory_not_rehashed_for_sample",
+          "sample_rows": 5
+        },
+        {
+          "file": "client_nfs_rpc_100.7.75.202.jsonl",
+          "expected_sha256": "77be6e5418278714b27cd95580f435ac33cb871c714e986141f7e74b852f6c0e",
+          "hash_scope": "previously_verified_inventory_not_rehashed_for_sample",
+          "sample_rows": 5
+        },
+        {
+          "file": "client_nfs_rpc_100.7.75.203.jsonl",
+          "expected_sha256": "b70b68ac5ddd636a504c103fd2db0c23aee5a8fdad8825b6619c03daac4b9318",
+          "hash_scope": "previously_verified_inventory_not_rehashed_for_sample",
+          "sample_rows": 5
+        },
+        {
+          "file": "client_nfs_rpc_100.7.75.204.jsonl",
+          "expected_sha256": "4fa4413ac9300c4bb4a45bc52d6e8681b2bb9b9ebc4e563badb276bc3a711fba",
+          "hash_scope": "previously_verified_inventory_not_rehashed_for_sample",
+          "sample_rows": 5
+        },
+        {
+          "file": "client_nfs_rpc_100.7.75.205.jsonl",
+          "expected_sha256": "9e32af8a0e460f8820695aa0dc358d729b58b6c8ea3d016114bc1e125cba94a0",
+          "hash_scope": "previously_verified_inventory_not_rehashed_for_sample",
+          "sample_rows": 5
+        },
+        {
+          "file": "client_nfs_rpc_100.7.75.206.jsonl",
+          "expected_sha256": "ea6b2a6f172e06441af5b2adeaf5041c599078535bfa3348a07d37babb3b125f",
+          "hash_scope": "previously_verified_inventory_not_rehashed_for_sample",
+          "sample_rows": 5
+        },
+        {
+          "file": "client_nfs_rpc_100.7.75.210.jsonl",
+          "expected_sha256": "b74f2e4a9b5267fe6e1d7f942d81a652d00823f7308991c67db82b46f1cd8037",
+          "hash_scope": "previously_verified_inventory_not_rehashed_for_sample",
+          "sample_rows": 5
+        },
+        {
+          "file": "client_nfs_rpc_100.7.75.211.jsonl",
+          "expected_sha256": "d2af61fa89712705dbd04253e2eff7db671848ec70ac64e9a07247f92328d8a3",
+          "hash_scope": "previously_verified_inventory_not_rehashed_for_sample",
+          "sample_rows": 5
+        },
+        {
+          "file": "client_nfs_rpc_100.7.75.215.jsonl",
+          "expected_sha256": "522fe83c8b30e8ed64564357ad4beb87d6a56d4503d8a58383901af5019ae640",
+          "hash_scope": "previously_verified_inventory_not_rehashed_for_sample",
+          "sample_rows": 5
+        },
+        {
+          "file": "client_nfs_rpc_100.7.75.216.jsonl",
+          "expected_sha256": "5dffd5829c2564db73feb877e2c0f99adf04f321407c604b58c0d13cc78e1eed",
+          "hash_scope": "previously_verified_inventory_not_rehashed_for_sample",
+          "sample_rows": 5
+        },
+        {
+          "file": "oss_100.7.75.44.jsonl",
+          "expected_sha256": "cae34bd29fc188d707cbc86957379989f670a75077eb6ad1d148cf8009ea1ff3",
+          "hash_scope": "previously_verified_inventory_not_rehashed_for_sample",
+          "sample_rows": 60
+        },
+        {
+          "file": "oss_100.7.75.45.jsonl",
+          "expected_sha256": "03e685e629afead070b8680e7e7fd5a8a71b0c6fcb105a0497c2a0f2bd08362c",
+          "hash_scope": "previously_verified_inventory_not_rehashed_for_sample",
+          "sample_rows": 60
+        },
+        {
+          "file": "oss_100.7.75.46.jsonl",
+          "expected_sha256": "de4eb73e9a8736c192a0d17cb18a9acedbf269130709f05b5b86fc356705814e",
+          "hash_scope": "previously_verified_inventory_not_rehashed_for_sample",
+          "sample_rows": 60
+        },
+        {
+          "file": "oss_100.7.75.47.jsonl",
+          "expected_sha256": "b1d16e369b27473b37dcb68c8121e38ad7bad6bf74526c0eec465daaf1d52318",
+          "hash_scope": "previously_verified_inventory_not_rehashed_for_sample",
+          "sample_rows": 60
+        },
+        {
+          "file": "oss_100.7.75.64.jsonl",
+          "expected_sha256": "5fc60af4ee424aee63185840178eb47412f8805d49e0f114108ca93cac864df8",
+          "hash_scope": "previously_verified_inventory_not_rehashed_for_sample",
+          "sample_rows": 60
+        },
+        {
+          "file": "oss_100.7.75.65.jsonl",
+          "expected_sha256": "ca6ac8eb7958eb65539fdd5d66e75050475e05ba6808f566969a1dfe80b0cad2",
+          "hash_scope": "previously_verified_inventory_not_rehashed_for_sample",
+          "sample_rows": 60
+        },
+        {
+          "file": "oss_100.7.75.66.jsonl",
+          "expected_sha256": "a300e01fb7e7411258d32cec718da7da3843da9da711b9d2191b77882d6494db",
+          "hash_scope": "previously_verified_inventory_not_rehashed_for_sample",
+          "sample_rows": 60
+        },
+        {
+          "file": "oss_100.7.75.67.jsonl",
+          "expected_sha256": "cff3e6c72e0d78bc907a5519af6b33c2ca3475ebd584fd4efa72cf5de9d0dd03",
+          "hash_scope": "previously_verified_inventory_not_rehashed_for_sample",
+          "sample_rows": 60
+        }
+      ],
+      "checks": {
+        "valid_pairs": 448,
+        "byte_pairs": 768,
+        "gauge_pairs": 384,
+        "latency_pairs": 1152,
+        "latency_nonmonotonic": 0
+      }
+    }
+  ],
+  "sample_sha256": "d9396c7923dc715d7c581a5ea3086ca3cc24db9bdb4d51f8bf8e7e9d7decf550"
+}

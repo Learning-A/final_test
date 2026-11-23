@@ -1,0 +1,28 @@
+{
+  "state": "V2_D0_A_complete_B_frozen_error_delivered_D1_sample_review",
+  "execution_authorized": true,
+  "plan_commit": "1e286c3",
+  "A_script": "scripts/analyze_v2_d0.py",
+  "A_result": "reports/v2_d0_a_summary.json",
+  "B_result": "../work/idfs-model-b/reports/v2_d0_frozen_error_final.json",
+  "D1_sample": "reports/v2_d1_sample_audit.json",
+  "new_fit_count": 0,
+  "next_actions": [
+    "B verify D1 schema/sample; A prepare auxiliary export implementation independently.",
+    "A export all15train only after schema receipt; B prepare matching I1/M1 cards without duplicating existing fits.",
+    "Review D0 common-key phase results and retain all positive labels; no direct state correction from simple probe."
+  ],
+  "boundaries": {
+    "cluster_operations": false,
+    "external_validation_new_evaluations": 0,
+    "formal_acceptance": false,
+    "online_time_eligibility": false
+  },
+  "failed_analysis_attempts": [
+    "v2_d0 old Graph manifest mismatch",
+    "v2_d0_a02 absent pinned fine member"
+  ],
+  "final_delivery_directory": ".local/v2_d0_a03",
+  "canonical_exchange_directory": ".local/v2_d0",
+  "heartbeat_execution_mode": true
+}

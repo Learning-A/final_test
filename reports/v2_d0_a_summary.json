@@ -1,0 +1,139 @@
+{
+  "state": "A_data_diagnostics_completed_pending_B_frozen_error",
+  "runs": 15,
+  "new_fit_count": 0,
+  "external_validation_evaluations": 0,
+  "capture_scope": "whole existing recording, includes pre/post workload and sustained quiet; not workload-only certification",
+  "offline_source_clock_only": true,
+  "online_time_eligibility": false,
+  "groups": {
+    "fit": {
+      "whole_capture_complete_cluster_seconds": 6466,
+      "probes": {
+        "oss": {
+          "counts": {
+            "all_alerts": 527,
+            "unknown_seconds": 20,
+            "alert_unknown_label": 0,
+            "known_seconds": 6446,
+            "observable_known": 5625,
+            "nonquiet_seconds": 5933,
+            "known_alerts": 527,
+            "false_positive": 483,
+            "quiet_seconds": 513,
+            "true_positive": 44,
+            "onsets": 165,
+            "onset_hits": 37,
+            "false_positive_segments": 459
+          },
+          "precision": 0.08349146110056926,
+          "quiet_recall": 0.08576998050682261,
+          "onset_recall": 0.22424242424242424,
+          "false_positive_per_nonquiet_minute": 4.88454407550986
+        },
+        "client7414": {
+          "counts": {
+            "all_alerts": 492,
+            "unknown_seconds": 20,
+            "alert_unknown_label": 0,
+            "known_seconds": 6446,
+            "observable_known": 5435,
+            "nonquiet_seconds": 5933,
+            "known_alerts": 492,
+            "false_positive": 457,
+            "quiet_seconds": 513,
+            "true_positive": 35,
+            "onsets": 165,
+            "onset_hits": 34,
+            "false_positive_segments": 439
+          },
+          "precision": 0.07113821138211382,
+          "quiet_recall": 0.0682261208576998,
+          "onset_recall": 0.20606060606060606,
+          "false_positive_per_nonquiet_minute": 4.621607955503118
+        }
+      }
+    },
+    "internal_dev": {
+      "whole_capture_complete_cluster_seconds": 3234,
+      "probes": {
+        "oss": {
+          "counts": {
+            "all_alerts": 284,
+            "unknown_seconds": 10,
+            "alert_unknown_label": 1,
+            "known_seconds": 3224,
+            "observable_known": 2845,
+            "quiet_seconds": 239,
+            "known_alerts": 283,
+            "true_positive": 40,
+            "nonquiet_seconds": 2985,
+            "false_positive": 243,
+            "false_positive_segments": 237,
+            "onsets": 101,
+            "onset_hits": 31
+          },
+          "precision": 0.1413427561837456,
+          "quiet_recall": 0.16736401673640167,
+          "onset_recall": 0.3069306930693069,
+          "false_positive_per_nonquiet_minute": 4.884422110552764
+        },
+        "client7414": {
+          "counts": {
+            "all_alerts": 243,
+            "unknown_seconds": 10,
+            "alert_unknown_label": 0,
+            "known_seconds": 3224,
+            "observable_known": 2726,
+            "quiet_seconds": 239,
+            "known_alerts": 243,
+            "true_positive": 9,
+            "nonquiet_seconds": 2985,
+            "false_positive": 234,
+            "false_positive_segments": 226,
+            "onsets": 101,
+            "onset_hits": 9
+          },
+          "precision": 0.037037037037037035,
+          "quiet_recall": 0.03765690376569038,
+          "onset_recall": 0.0891089108910891,
+          "false_positive_per_nonquiet_minute": 4.703517587939698
+        }
+      }
+    }
+  },
+  "failed_attempts": [
+    {
+      "directory": ".local/v2_d0",
+      "cause": "Graph old export manifest mismatch; partial outputs later replaced with final delivery; failed registration retained"
+    },
+    {
+      "directory": ".local/v2_d0_a02",
+      "cause": "pinned manifest directory had no fine member; partial retained"
+    }
+  ],
+  "final_attempt": ".local/v2_d0_a03",
+  "final_elapsed_seconds": 16.605760500009637,
+  "artifacts": {
+    "v2_d0_events.jsonl.gz": {
+      "bytes": 2610,
+      "sha256": "2f9a7eb7be30e53f752ef6312f885b0b994c34af27ab5961a50970d62ec1eff4"
+    },
+    "v2_d0_phases.jsonl.gz": {
+      "bytes": 88761,
+      "sha256": "c9ee23e7be1abe4b6a8b2f594b088b32e6d7fe60bda806c24d21e7908ce6bd7e"
+    },
+    "v2_d0_probes.jsonl.gz": {
+      "bytes": 886823,
+      "sha256": "876600924ddee813d3c26e0313263e188f6ce575ca768217a83ddf457777be60"
+    },
+    "v2_d0_report.json": {
+      "bytes": 117726,
+      "sha256": "837ca7841dfc667a096c5a589cf67aff0b967623fed051ec4a1cb88398995397"
+    },
+    "v2_d0_source_index.json": {
+      "bytes": 5680,
+      "sha256": "e9c304da09208756bc8f959b8e2a986c8f0df2a26daa74f32e8ac7a2be278bda"
+    }
+  }
+}
