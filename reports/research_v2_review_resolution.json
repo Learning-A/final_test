@@ -1,0 +1,16 @@
+{
+  "state": "A_revision_ready_pending_B_rereview",
+  "reviewed_plan_commit": "36f81799f5cd20b98391b83faa2204ad1e786764",
+  "B_review_sha256": "2f5d7d7e623585c4854d9cc2486e3471c381ac263f320aa32f9f8f9db503828c",
+  "new_experiments_executed": false,
+  "resolutions": {
+    "D0": "Added draft event definitions, cutoffs, whole-run vs common-key denominators, probe false-positive minutes, minimal event coverage and owner split.",
+    "I1": "Conditional incremental interpretation; C+P may replace an unexecuted arm before scores, no extra arm.",
+    "M1_M2": "Restricted package-level attribution; isolated scale and capacity controls must consume existing slots.",
+    "M3": "Added explicit 3-layer padding/receptive field and 20-position masked pooling for matching observable history.",
+    "G1_F1": "Per-fold relative gains then equal mean; candidate-only seeds describe candidate variability.",
+    "S1": "Explicit OOF and calibration fit/config/time accounting; skip if not accommodated.",
+    "budget": "Per-card total budgets and actual scalar-tree vs shared-network fit counts."
+  },
+  "remaining": "B must rereview before any execution card is accepted; D0 remains specification only."
+}
