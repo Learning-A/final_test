@@ -1,0 +1,18 @@
+{
+  "state": "verified_single_run_node_pilot",
+  "dataset_id": "dev_20261122_graph_zipf_train_01_a01",
+  "aux_sha256": "63735f93d911553cfde33120bcda09a071939187f9e123baee6ee83410467489",
+  "core_fine_sha256": "04cb9d8d9cb6a75b3743588281cf93c406f1b8ba962ed4b5935f9f90e97a7c3f",
+  "checks": {
+    "matched_validity": 52803,
+    "valid_core_count_and_source_time_matched": 52774,
+    "core_only_invalid": 149,
+    "aux_only_invalid": 5
+  },
+  "sample_node_buckets": 32,
+  "all_aux_rows_schema_checked": 52808,
+  "initial_check": "exact all-invalid-grid equality rejected 149 core-only synthetic invalid buckets; diagnosed, no valid core mismatch; union comparison preserves every valid key and missing input semantics",
+  "scope": "Graph train01 complete valid core parity and 32 bounded-sample auxiliary aggregates only",
+  "latency_included": false,
+  "fit_count": 0
+}

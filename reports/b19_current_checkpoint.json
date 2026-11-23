@@ -9,7 +9,7 @@
   "issue": 19,
   "pr": 16,
   "state": "running",
-  "substage": "V2_D0_B_frozen_error_complete_A_D1_evidence",
+  "substage": "V2_I1_inputs_verified_ready_for_remote_registration",
   "training_running": false,
   "sources": {
     "handoff_sha256": "2e7ac9ddcc68da042a1f06269b6c6021e977e167482face0699e199fee47cf90",
@@ -177,9 +177,8 @@
     "includes_network_and_publication": false
   },
   "next_actions": [
-    "Deliver final complete-key phase attribution to A; combine with all-run precursor false positives and misses.",
-    "A prepares D1 field semantics and fixed sample package. B prepares I1/M1 matched schema and configuration; reuse identical R1 C and R2 L0 without fitting.",
-    "Execute eligible separately registered new cards under original data/budget/UUID locks. No rerun of completed experiments, field work, or external validation."
+    "Register I1 immutable code/data hashes and remaining1709-second b507 CPU-only job under B resource slot; fit only CB and CBP (16 node forests).",
+    "Verify new predictions and promotion screen, deliver to A for independent review, then follow V2 entry conditions for M1."
   ],
   "heartbeat": {
     "id": "idfs-b",
@@ -571,7 +570,7 @@
     "execution_user_message_id": "01a20645-db75-7ec3-bafc-9101e3d5fe8a"
   },
   "v2_d0": {
-    "state": "B_complete_A_review_pending",
+    "state": "B_complete_A_R2_phase_review_verified",
     "job_id": "b19_v2_d0_frozen_error_v1_a01",
     "report": "reports/v2_d0_frozen_error_final.json",
     "report_sha256": "bc06dd8e0c164e32a1f444c1d4706ed41f9cbdf38a4919e83dbaa1fd105ce648",
@@ -593,6 +592,48 @@
       "failed": 0
     },
     "delivery_url": "https://github.com/Learning-A/final_test/issues/19#issuecomment-7090320141",
-    "code_sha": "42a0610"
+    "code_sha": "42a0610",
+    "A_independent_review": {
+      "path": "F:/sessions/26.9.8_测试大纲/collaboration_repo/reports/v2_d0_a_independent_phase_review.json",
+      "sha256": "58033da6f8df9f9fe7bdc962cd43b3a39c71e101417c639d4bc950777b1a7e41",
+      "scope": "R2 four arms; phase keys and cluster actual checked; no new fit or inference",
+      "status": "R2_phase_contributions_independently_recomputed"
+    }
+  },
+  "v2_d1": {
+    "state": "verified_all15_input_preflight",
+    "manifest_sha256": "6a0847f7bb03a2740a15d028c382845dfd98b5167e6beef20caa3592d985472b",
+    "package_release": "https://github.com/Learning-A/final_test/releases/tag/v2-d1-auxiliary-train15-20261123-v1",
+    "sample_verification": "reports/v2_d1_sample_B_verification.json",
+    "pilot_verification": "reports/v2_d1_graph_node_pilot_B_verification.json",
+    "full_preflight": "reports/v2_i1_input_preflight.json",
+    "original_valid_core_buckets_verified": 791680,
+    "input_array_sha256": "ffc01763d54e6185eb62772769e489eed63b6eef817bf79171adfbbb24d41170",
+    "latency_included": false,
+    "online_time_eligibility": false
+  },
+  "v2_i1": {
+    "state": "inputs_and_runner_ready_before_fit_registration",
+    "job_id": "b19_v2_i1_aux_inputs_v1_a01",
+    "card": "docs/B19_V2_I1_EXECUTION_CARD_DRAFT.md",
+    "new_fit_count": 0,
+    "planned_new_node_fits": 16,
+    "C_reused_without_fit": true,
+    "card_total_budget_seconds": 1800,
+    "input_preparation_seconds": 90.7470834000269,
+    "charged_input_seconds": 91,
+    "worker_hard_budget_seconds": 1709,
+    "dimensions": {
+      "C": 258,
+      "CB": 438,
+      "CBP": 518
+    },
+    "functional_checks": {
+      "discovered": 158,
+      "passed": 153,
+      "skipped": 5,
+      "failed": 0
+    },
+    "external_validation_new_evaluations": 0
   }
 }
