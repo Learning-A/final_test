@@ -9,7 +9,7 @@
   "issue": 19,
   "pr": 16,
   "state": "running",
-  "substage": "V2_I1_complete_no_gain_prepare_M1_C258",
+  "substage": "V2_M1_spec_ready_before_remote_registration",
   "training_running": false,
   "sources": {
     "handoff_sha256": "2e7ac9ddcc68da042a1f06269b6c6021e977e167482face0699e199fee47cf90",
@@ -177,9 +177,9 @@
     "includes_network_and_publication": false
   },
   "next_actions": [
-    "A independently reviews frozen I1 predictions and promotion decisions; no new training for review.",
-    "Keep original C258 input. Freeze M1 history scale/residual, masks, causal baseline, zero-history fallback and fair comparison before registering next b507 job. Reuse identical R2 L0 as M0.",
-    "Do not repeat R1/R2/I1 or add auxiliary input arms after the failed I1 screen. Existing field and external-validation boundaries remain."
+    "Register M1 code/data/batch-order hashes and unique B GPU job; run one new model with frozen R2 L0 baseline and same optimization.",
+    "Keep M1 zero-gradient/zero-output diagnostics and all internal checkpoint selections; no floor/seed/window search after scoring.",
+    "Preserve I1 no-gain and A independent receipt, do not retrain C or expand B/P."
   ],
   "heartbeat": {
     "id": "idfs-b",
@@ -614,7 +614,7 @@
     "online_time_eligibility": false
   },
   "v2_i1": {
-    "state": "completed_no_gain_A_review_pending",
+    "state": "completed_no_gain_A_independently_verified",
     "job_id": "b19_v2_i1_aux_inputs_v1_a01",
     "card": "docs/B19_V2_I1_EXECUTION_CARD_DRAFT.md",
     "new_fit_count": 16,
@@ -725,6 +725,46 @@
     "package_sha256": "77d96a5c8bf033f0237ecaac0de095794a6d05aa9dcb0485e90a9e57e86b3131",
     "next_input": "C_258_only",
     "final_delivery_handoff_id": "B19-V2-I1-FINAL-DELIVERY-20261123-01",
-    "final_delivery_code_sha": "ee84f62"
+    "final_delivery_code_sha": "ee84f62",
+    "A_independent_review": {
+      "path": "F:\\sessions\\26.9.8_测试大纲\\collaboration_repo\\reports\\v2_i1_A_independent_review.json",
+      "sha256": "430e5b7456c45ef80ca2f9c1327da15f06e97e2d4326361458e22041564cb00b",
+      "scope": "stored predictions, original label equality via R1, 120 groups, phase contributions; no model loading or fitting",
+      "status": "A_independently_verified_I1_no_promotion"
+    }
+  },
+  "v2_m1": {
+    "state": "specification_and_implementation_ready_before_registration",
+    "job_id": "b19_v2_m1_local_residual_v1_a01",
+    "card": "docs/B19_V2_M1_EXECUTION_CARD.md",
+    "configuration_fits": 1,
+    "new_fit_count": 0,
+    "baseline": "R2_L0_reused",
+    "input": "C258_plus_four_history_descriptors",
+    "model_parameters": 21345,
+    "baseline_model_parameters": 21089,
+    "history_total_columns": [
+      2,
+      5,
+      8,
+      11,
+      14
+    ],
+    "output": "relu(b+sigma*delta)",
+    "loss": "R2_L0_scaled_MAE",
+    "preprocessing": "reused_frozen_R2_no_new_fitting",
+    "budget_seconds": 1800,
+    "A_static_review": {
+      "path": "F:\\sessions\\26.9.8_测试大纲\\collaboration_repo\\reports\\v2_m1_A_static_review.json",
+      "sha256": "4e3231bd56eacfd2d36b785fd04abe3efe45860425e2fb626d7a9aace40bd51b",
+      "scope": "specification and module only; class docstring clarified after review"
+    },
+    "functional_checks": {
+      "discovered": 162,
+      "passed": 157,
+      "skipped": 5,
+      "failed": 0
+    },
+    "external_validation_new_evaluations": 0
   }
 }
