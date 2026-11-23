@@ -10,7 +10,10 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.11'
-      - run: python -m pip install paramiko
-      - name: Run core suite (optional torch tests may skip)
+      - name: Install test dependencies
+        run: |
+          python -m pip install paramiko numpy
+          python -m pip install --index-url https://download.pytorch.org/whl/cpu torch
+      - name: Run functional tests
         working-directory: idfs_forecast_lab
         run: python -m unittest discover -s tests -v
