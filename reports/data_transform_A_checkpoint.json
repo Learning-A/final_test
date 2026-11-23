@@ -1,5 +1,5 @@
 {
-  "state": "T1_T2_completed_A_independent_verified_no_promotion_T3_gate_not_met",
+  "state": "preprocessing_study_completed_no_promoted_candidate",
   "study": "data_transform_20261123",
   "execution_authorized": true,
   "metric_revision_allowed": true,
@@ -11,10 +11,7 @@
   "B_thread": "01a203f5-3aa6-7b21-8a1f-8fece4787432",
   "handoff_id": "A18-DATA-TRANSFORM-EXECUTE-20261123-01",
   "A_fit_count": 0,
-  "next_actions": [
-    "B publishes immutable package and records T3 skipped by fixed fitting-data gate",
-    "A verifies final package hash when delivered; do not repeat T1/T2 or relax T3 gate"
-  ],
+  "next_actions": [],
   "field_concerns": [
     "3 signed differences cannot ordinary log1p",
     "missing excluded from fitted stats;true0included",
@@ -24,7 +21,7 @@
   ],
   "A_heartbeat": {
     "id": "idfs-a",
-    "status": "ACTIVE",
+    "status": "deleting_on_study_closeout",
     "interval_minutes": 10
   },
   "B_heartbeat": {
@@ -32,7 +29,13 @@
     "status": "observed_present_after_restore"
   },
   "A_column_contract": "reports/data_transform_A_column_contract.json",
-  "dispatch_status": "T1/T2 completed and independently verified locally; final package pending",
+  "dispatch_status": "T1/T2 and final package independently verified; metrics revision permitted but no new formal metric selected",
   "independent_review": "reports/data_transform_A_independent_review.json",
-  "summary": "docs/DATA_TRANSFORM_A_RESULTS_20261123.md"
+  "summary": "docs/DATA_TRANSFORM_A_RESULTS_20261123.md",
+  "final_package": {
+    "release": "https://github.com/Learning-A/final_test/releases/tag/b19-data-transform-controls-20261123-v1",
+    "sha256": "8f3f5a4e3769681063ab95ac7489ca945c8e43cc65302f2baa7b88a44bda7312",
+    "A_members_verified": 26
+  },
+  "T3": "skipped_fixed_training_distribution_gate_0of18"
 }

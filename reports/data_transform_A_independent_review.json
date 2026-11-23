@@ -93,5 +93,11 @@
   "prediction_pairs_checked": 42624,
   "new_A_fit_count": 0,
   "scope": "Immutable local reports/prediction hashes, labels, log values, preserved context, epoch selection, stored T3 gate; no transform statistics refit or weight load",
-  "formal_metric_replaced": false
+  "formal_metric_replaced": false,
+  "final_package": {
+    "zip_sha256": "8f3f5a4e3769681063ab95ac7489ca945c8e43cc65302f2baa7b88a44bda7312",
+    "manifest_members": 26,
+    "all_member_hashes_verified": true,
+    "prediction_and_transform_bytes_equal_reviewed_local": true
+  }
 }
