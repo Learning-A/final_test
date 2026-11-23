@@ -1,5 +1,5 @@
 {
-  "state": "V2_D0_A_complete_B_frozen_error_delivered_D1_sample_review",
+  "state": "D1_export_running_after_B_sample_verified",
   "execution_authorized": true,
   "plan_commit": "1e286c3",
   "A_script": "scripts/analyze_v2_d0.py",
@@ -8,9 +8,9 @@
   "D1_sample": "reports/v2_d1_sample_audit.json",
   "new_fit_count": 0,
   "next_actions": [
-    "B verify D1 schema/sample; A prepare auxiliary export implementation independently.",
-    "A export all15train only after schema receipt; B prepare matching I1/M1 cards without duplicating existing fits.",
-    "Review D0 common-key phase results and retain all positive labels; no direct state correction from simple probe."
+    "Poll existing D1 export job; do not start duplicate.",
+    "After completion run scripts/verify_v2_auxiliary.py, package and deliver to B for I1.",
+    "B prepares matching I1 input card and M1 specification independently."
   ],
   "boundaries": {
     "cluster_operations": false,
@@ -24,5 +24,14 @@
   ],
   "final_delivery_directory": ".local/v2_d0_a03",
   "canonical_exchange_directory": ".local/v2_d0",
-  "heartbeat_execution_mode": true
+  "heartbeat_execution_mode": true,
+  "D0_independent_phase_review": "reports/v2_d0_a_independent_phase_review.json",
+  "D1_B_sample_verification": "../work/idfs-model-b/reports/v2_d1_sample_B_verification.json",
+  "D1_running_job": {
+    "job_id": "a_v2_d1_export_20261123_a01",
+    "output": ".local/v2_d1_export_a01",
+    "exec_session_id": 22226,
+    "budget_seconds": 1800,
+    "registration": ".local/v2_d1_export_registration.json"
+  }
 }
