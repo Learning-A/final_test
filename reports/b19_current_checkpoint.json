@@ -1,6 +1,6 @@
 {
   "schema": "b19_local_checkpoint_v1",
-  "updated_at": "2026-11-23T11:27:46.489707+08:00",
+  "updated_at": "2026-11-23T11:29:30.993266+08:00",
   "owner": "B",
   "owner_thread": "01a203f5-3aa6-7b21-8a1f-8fece4787432",
   "worktree": "F:/sessions/26.9.8_测试大纲/work/idfs-model-b",
@@ -185,7 +185,7 @@
     "id": "idfs-b",
     "status": "ACTIVE",
     "interval_minutes": 10,
-    "prompt_sha256": "05d17bf4016f48840811e63813e514d951cdad9e69a4f3a92830d4ec726e4842",
+    "prompt_sha256": "702626e162cae5f134532f3f3ac750aa7f604c554bac33e179a46533aed91bb4",
     "first_read": "docs/B19_LOCAL_CONTINUATION_PLAN.md"
   },
   "proposed_next_card": {
@@ -723,6 +723,8 @@
     "any_screen_passes": false,
     "package_release": "https://github.com/Learning-A/final_test/releases/tag/b19-v2-i1-aux-inputs-20261123-v1",
     "package_sha256": "77d96a5c8bf033f0237ecaac0de095794a6d05aa9dcb0485e90a9e57e86b3131",
-    "next_input": "C_258_only"
+    "next_input": "C_258_only",
+    "final_delivery_handoff_id": "B19-V2-I1-FINAL-DELIVERY-20261123-01",
+    "final_delivery_code_sha": "ee84f62"
   }
 }
