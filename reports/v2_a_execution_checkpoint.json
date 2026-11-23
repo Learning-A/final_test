@@ -1,5 +1,5 @@
 {
-  "state": "M2_verified_no_promotion_M3_next",
+  "state": "V2_completed_no_promotion",
   "execution_authorized": true,
   "plan_commit": "1e286c3",
   "A_script": "scripts/analyze_v2_d0.py",
@@ -7,10 +7,7 @@
   "B_result": "../work/idfs-model-b/reports/v2_d0_frozen_error_final.json",
   "D1_sample": "reports/v2_d1_sample_audit.json",
   "new_fit_count": 0,
-  "next_actions": [
-    "B registers M3 with the same 20 nominal slots and R2 L0 baseline.",
-    "A independently reviews frozen M3 results; no duplicate fitting."
-  ],
+  "next_actions": [],
   "boundaries": {
     "cluster_operations": false,
     "external_validation_new_evaluations": 0,
@@ -46,5 +43,11 @@
   },
   "M1_static_review": "reports/v2_m1_A_static_review.json",
   "M1_independent_review": "reports/v2_m1_A_independent_review.json",
-  "M2_independent_review": "reports/v2_m2_A_independent_review.json"
+  "M2_independent_review": "reports/v2_m2_A_independent_review.json",
+  "M3_independent_review": "reports/v2_m3_A_independent_review.json",
+  "closeout": {
+    "S1": "Skipped: insufficient precursor reliability and matched train-run out-of-fold calibration evidence",
+    "G1_F1": "Skipped: no promoted candidate",
+    "formal_acceptance": false
+  }
 }
