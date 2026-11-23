@@ -1,0 +1,49 @@
+{
+  "state": "independently_verified_no_promotion",
+  "zip_sha256": "68f17a50ec8266758319d0fc7b6e9fd66c9abdfb85840a8b05b01af2902d6bb5",
+  "manifest_members": 8,
+  "labels_matched": 21288,
+  "samples": 2661,
+  "groups_recomputed": 80,
+  "best_epoch": 13,
+  "scoring_count": 22,
+  "macro_relative_improvement": 0.021994872660026754,
+  "screen_passes": false,
+  "A_fits": 0,
+  "arms": {
+    "M0": {
+      "macro_mape": 112.31633789948161,
+      "worst": 341.4611690619506,
+      "groups_lt10": 0,
+      "workload_mae": {
+        "dev_20261122_ai_training_ses_train_03_a01": 89.23275430825464,
+        "dev_20261122_ai_inference_ses_train_03_a01": 172.1126757173695,
+        "dev_20261122_bigdata_baleen_train_03_a01": 44.010084573938215,
+        "dev_20261122_graph_zipf_train_03_a01": 156.56261211283066,
+        "dev_20261122_hpc_wrf_train_03_a01": 53.341057084327524
+      },
+      "phase": {
+        "ordinary": 32.82682605023474,
+        "known_recovery": 0.4534439418446137,
+        "known_onset": 79.03606790740227
+      }
+    },
+    "M2": {
+      "macro_mape": 109.84595434974197,
+      "worst": 335.0065933295006,
+      "groups_lt10": 0,
+      "workload_mae": {
+        "dev_20261122_ai_training_ses_train_03_a01": 86.30479851968163,
+        "dev_20261122_ai_inference_ses_train_03_a01": 163.90838050842285,
+        "dev_20261122_bigdata_baleen_train_03_a01": 43.05247288975147,
+        "dev_20261122_graph_zipf_train_03_a01": 147.25489962802214,
+        "dev_20261122_hpc_wrf_train_03_a01": 49.96446310457333
+      },
+      "phase": {
+        "ordinary": 31.53745976028902,
+        "known_recovery": 0.4211190047387803,
+        "known_onset": 77.88737558471414
+      }
+    }
+  }
+}
