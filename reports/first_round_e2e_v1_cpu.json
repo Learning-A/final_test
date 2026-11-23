@@ -1,0 +1,10 @@
+{
+  "scope": "b507 inference only; nine outputs sequential; no feature construction or transport",
+  "runtime_n_jobs": 1,
+  "repetitions": 30,
+  "median_ms": 44.59035117179155,
+  "p95_ms": 44.78930560871959,
+  "prediction_max_absolute_difference": 0.0,
+  "fit_performed": false,
+  "online_30ms_verified": false
+}

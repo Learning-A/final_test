@@ -1,0 +1,86 @@
+{
+  "ai_training_ses": [
+    {
+      "offset_s": 264.953809274,
+      "actual_cluster": 32,
+      "prediction_cluster": 1984.2839983326082
+    },
+    {
+      "offset_s": 462.953809274,
+      "actual_cluster": 13,
+      "prediction_cluster": 2266.942551764441
+    },
+    {
+      "offset_s": 500.953809274,
+      "actual_cluster": 81,
+      "prediction_cluster": 2099.812433878702
+    },
+    {
+      "offset_s": 564.953809274,
+      "actual_cluster": 14,
+      "prediction_cluster": 2119.483842049471
+    }
+  ],
+  "ai_inference_ses": [],
+  "bigdata_baleen": [
+    {
+      "offset_s": 37.54956608,
+      "actual_cluster": 16,
+      "prediction_cluster": 1370.0241588125361
+    },
+    {
+      "offset_s": 113.54956608,
+      "actual_cluster": 10,
+      "prediction_cluster": 1487.012493465611
+    },
+    {
+      "offset_s": 116.54956608,
+      "actual_cluster": 4,
+      "prediction_cluster": 1787.180839364238
+    }
+  ],
+  "graph_zipf": [
+    {
+      "offset_s": 194.452632969,
+      "actual_cluster": 4,
+      "prediction_cluster": 8197.771252161843
+    },
+    {
+      "offset_s": 280.452632969,
+      "actual_cluster": 5,
+      "prediction_cluster": 8483.025393537931
+    },
+    {
+      "offset_s": 498.452632969,
+      "actual_cluster": 2,
+      "prediction_cluster": 8637.257417743918
+    }
+  ],
+  "hpc_wrf": [
+    {
+      "offset_s": 200.645145544,
+      "actual_cluster": 18,
+      "prediction_cluster": 974.4823560274027
+    },
+    {
+      "offset_s": 297.645145544,
+      "actual_cluster": 2,
+      "prediction_cluster": 984.7501837537664
+    },
+    {
+      "offset_s": 355.645145544,
+      "actual_cluster": 84,
+      "prediction_cluster": 1008.3264061782447
+    },
+    {
+      "offset_s": 404.645145544,
+      "actual_cluster": 9,
+      "prediction_cluster": 1567.4125606048187
+    },
+    {
+      "offset_s": 476.645145544,
+      "actual_cluster": 14,
+      "prediction_cluster": 1251.7127712230103
+    }
+  ]
+}

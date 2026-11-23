@@ -1,0 +1,89 @@
+{
+  "state": "verified_stored_predictions_metrics_and_screen",
+  "node_prediction_labels": 63864,
+  "original_unique_node_labels": 21288,
+  "prediction_rows": 7983,
+  "source_role": "train",
+  "report_sha256": "42b8a9f0173af5badfd64023d238193e1763e2d910159c1a67f88389fdfaffe4",
+  "predictions_sha256": "d8e35d2b4e34d56adc0ddab0bc86454127cbb8b42f145aa636796ebf8fff4888",
+  "source_phase_sha256": "c9ee23e7be1abe4b6a8b2f594b088b32e6d7fe60bda806c24d21e7908ce6bd7e",
+  "runner_sha256": "bcadd8fd18a734c6c4b6166f858560227ee59a31626ab0c8c76817d7f3bf96e5",
+  "C_predictions_exact": true,
+  "new_fit_count": 0,
+  "arms": {
+    "C": {
+      "macro_mape_percent": 108.06623590563106,
+      "worst_group_mape_percent": 322.51872803571615,
+      "groups_mape_lt10": 0,
+      "workload_mean_node_mae": {
+        "ai_inference_ses": 174.8549931100054,
+        "ai_training_ses": 92.9719864739982,
+        "bigdata_baleen": 45.11900462282847,
+        "graph_zipf": 173.1610561220659,
+        "hpc_wrf": 54.049487024158296
+      },
+      "magnitude_contributions_pp": {
+        "zero": 0.0,
+        "positive_le10": 64.11053543495586,
+        "10_lt_y_le100": 21.45127876960344,
+        "100_lt_y_le1000": 20.62004258117979,
+        "gt1000": 1.884379119891966
+      },
+      "phase_contributions_pp": {
+        "ordinary": 33.08814046645514,
+        "known_recovery": 0.449606743199907,
+        "known_onset": 74.52848869597604
+      }
+    },
+    "CB": {
+      "macro_mape_percent": 107.76346559024174,
+      "worst_group_mape_percent": 324.14326475152643,
+      "groups_mape_lt10": 0,
+      "workload_mean_node_mae": {
+        "ai_inference_ses": 174.58229753999888,
+        "ai_training_ses": 91.49484386449771,
+        "bigdata_baleen": 45.04829047048981,
+        "graph_zipf": 172.67879936935768,
+        "hpc_wrf": 53.46419183888284
+      },
+      "magnitude_contributions_pp": {
+        "zero": 0.0,
+        "positive_le10": 64.14664320840991,
+        "10_lt_y_le100": 21.247241396656698,
+        "100_lt_y_le1000": 20.490788779679693,
+        "gt1000": 1.8787922054954085
+      },
+      "phase_contributions_pp": {
+        "ordinary": 32.810639303591415,
+        "known_recovery": 0.4491864102603277,
+        "known_onset": 74.50363987638997
+      }
+    },
+    "CBP": {
+      "macro_mape_percent": 107.9213985778819,
+      "worst_group_mape_percent": 320.72440078373523,
+      "groups_mape_lt10": 0,
+      "workload_mean_node_mae": {
+        "ai_inference_ses": 174.52947124647446,
+        "ai_training_ses": 91.43688680056897,
+        "bigdata_baleen": 45.07459127541333,
+        "graph_zipf": 173.04645706890759,
+        "hpc_wrf": 53.62268276113525
+      },
+      "magnitude_contributions_pp": {
+        "zero": 0.0,
+        "positive_le10": 64.28490646845682,
+        "10_lt_y_le100": 21.259674864699626,
+        "100_lt_y_le1000": 20.495024270598975,
+        "gt1000": 1.8817929741264927
+      },
+      "phase_contributions_pp": {
+        "ordinary": 32.823559614483706,
+        "known_recovery": 0.4591240128571823,
+        "known_onset": 74.63871495054103
+      }
+    }
+  },
+  "any_screen_passes": false,
+  "scope": "Frozen source labels and stored predictions, without model deserialization or timing replay"
+}

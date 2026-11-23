@@ -1,0 +1,122 @@
+[
+  {
+    "window_start_ns": 1795346566000000000,
+    "neighbors": [
+      {
+        "relative_second": -2,
+        "client_complete": true,
+        "client_total": 9405,
+        "complete_oss": 96,
+        "oss_sum": 9395
+      },
+      {
+        "relative_second": -1,
+        "client_complete": true,
+        "client_total": 7917,
+        "complete_oss": 96,
+        "oss_sum": 7863
+      },
+      {
+        "relative_second": 0,
+        "client_complete": true,
+        "client_total": 0,
+        "complete_oss": 96,
+        "oss_sum": 4
+      },
+      {
+        "relative_second": 1,
+        "client_complete": true,
+        "client_total": 7900,
+        "complete_oss": 96,
+        "oss_sum": 7905
+      },
+      {
+        "relative_second": 2,
+        "client_complete": true,
+        "client_total": 9576,
+        "complete_oss": 96,
+        "oss_sum": 9569
+      }
+    ]
+  },
+  {
+    "window_start_ns": 1795346652000000000,
+    "neighbors": [
+      {
+        "relative_second": -2,
+        "client_complete": true,
+        "client_total": 9558,
+        "complete_oss": 96,
+        "oss_sum": 9524
+      },
+      {
+        "relative_second": -1,
+        "client_complete": true,
+        "client_total": 8501,
+        "complete_oss": 96,
+        "oss_sum": 8457
+      },
+      {
+        "relative_second": 0,
+        "client_complete": true,
+        "client_total": 0,
+        "complete_oss": 96,
+        "oss_sum": 5
+      },
+      {
+        "relative_second": 1,
+        "client_complete": true,
+        "client_total": 5622,
+        "complete_oss": 96,
+        "oss_sum": 5649
+      },
+      {
+        "relative_second": 2,
+        "client_complete": true,
+        "client_total": 9696,
+        "complete_oss": 96,
+        "oss_sum": 9676
+      }
+    ]
+  },
+  {
+    "window_start_ns": 1795346870000000000,
+    "neighbors": [
+      {
+        "relative_second": -2,
+        "client_complete": true,
+        "client_total": 9169,
+        "complete_oss": 96,
+        "oss_sum": 9161
+      },
+      {
+        "relative_second": -1,
+        "client_complete": true,
+        "client_total": 7453,
+        "complete_oss": 96,
+        "oss_sum": 7406
+      },
+      {
+        "relative_second": 0,
+        "client_complete": true,
+        "client_total": 0,
+        "complete_oss": 96,
+        "oss_sum": 2
+      },
+      {
+        "relative_second": 1,
+        "client_complete": true,
+        "client_total": 9410,
+        "complete_oss": 96,
+        "oss_sum": 9411
+      },
+      {
+        "relative_second": 2,
+        "client_complete": true,
+        "client_total": 7458,
+        "complete_oss": 96,
+        "oss_sum": 7418
+      }
+    ]
+  }
+]

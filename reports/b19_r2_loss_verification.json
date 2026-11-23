@@ -1,0 +1,77 @@
+{
+  "state": "verified_offline_metrics",
+  "job_id": "b19_r2_loss_controls_v1_a01",
+  "code_sha": "77fd0da98011306d65187e445c5fdbb66973d9d5",
+  "report_sha256": "ab2cf84157b0aef5826647ab727a69aee1d06aebf88d992c91d62b7b505b9f26",
+  "samples": 2661,
+  "original_node_labels_checked": 21288,
+  "prediction_rows": 10644,
+  "arms": {
+    "L0": {
+      "macro_mape": 112.3163378994816,
+      "worst_group_mape": 341.46116906195067,
+      "workload_node_mean_mae": {
+        "ai_inference_ses": 172.1126757173695,
+        "ai_training_ses": 89.23275430825464,
+        "bigdata_baleen": 44.010084573938215,
+        "graph_zipf": 156.56261211283066,
+        "hpc_wrf": 53.341057084327524
+      },
+      "groups_mape_lt_10": 0,
+      "best_epoch": 4,
+      "internal_checkpoint_evaluations": 13,
+      "macro_mape_relative_improvement": 0.0,
+      "screen_passes": false
+    },
+    "L1": {
+      "macro_mape": 101.73789134830409,
+      "worst_group_mape": 314.560769871936,
+      "workload_node_mean_mae": {
+        "ai_inference_ses": 177.18622757878555,
+        "ai_training_ses": 99.92078650911102,
+        "bigdata_baleen": 48.209004108183976,
+        "graph_zipf": 174.2902355404461,
+        "hpc_wrf": 56.26601145064184
+      },
+      "groups_mape_lt_10": 0,
+      "best_epoch": 13,
+      "internal_checkpoint_evaluations": 22,
+      "macro_mape_relative_improvement": 0.09418439693648817,
+      "screen_passes": false
+    },
+    "L2": {
+      "macro_mape": 107.75078038920154,
+      "worst_group_mape": 329.2455746650207,
+      "workload_node_mean_mae": {
+        "ai_inference_ses": 170.4828531345458,
+        "ai_training_ses": 87.2516618702407,
+        "bigdata_baleen": 43.646693329417374,
+        "graph_zipf": 156.0932453660404,
+        "hpc_wrf": 50.20101546317108
+      },
+      "groups_mape_lt_10": 0,
+      "best_epoch": 28,
+      "internal_checkpoint_evaluations": 37,
+      "macro_mape_relative_improvement": 0.040649095186543915,
+      "screen_passes": false
+    },
+    "L3": {
+      "macro_mape": 94.01160482851267,
+      "worst_group_mape": 293.0297577601964,
+      "workload_node_mean_mae": {
+        "ai_inference_ses": 209.67219957529517,
+        "ai_training_ses": 107.54534283133995,
+        "bigdata_baleen": 52.47065946596478,
+        "graph_zipf": 197.36086850657182,
+        "hpc_wrf": 57.66986499645913
+      },
+      "groups_mape_lt_10": 0,
+      "best_epoch": 15,
+      "internal_checkpoint_evaluations": 24,
+      "macro_mape_relative_improvement": 0.16297480325035962,
+      "screen_passes": false
+    }
+  },
+  "online_time_eligibility": false,
+  "formal_acceptance": false
+}

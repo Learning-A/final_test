@@ -1,0 +1,181 @@
+{
+  "schema": "masked_host_multiscale_v1",
+  "archive_sha256": "f28fc45ba4e6d80c80da815b06d4e05573a7e9c788cbe199e0a1f01898b40b49",
+  "fitting_performed": false,
+  "formal_acceptance": false,
+  "time_boundary_review": "pending",
+  "timeline": "same15s eligible timeline as first E2E; coverage only",
+  "workloads": {
+    "ai_training_ses": {
+      "source": {
+        "dataset_id": "ai_training_20261122_train01_attempt02",
+        "workload": "ai_training_ses",
+        "run_id": "ai_training_ses_train_01",
+        "batch": "workload_development_20261122_v2",
+        "attempt": 2,
+        "health_checks_passed": 20,
+        "raw_samples": 739312,
+        "complete_label_seconds_by_node": {
+          "idfs44": 599,
+          "idfs45": 597,
+          "idfs46": 597,
+          "idfs47": 597,
+          "idfs64": 599,
+          "idfs65": 599,
+          "idfs66": 598,
+          "idfs67": 599
+        },
+        "handoff_manifest_sha256": "def4e2bb40e59696222f51b84eb139698c7af98350cde28defe6f73352e0809e"
+      },
+      "coverage": {
+        "purged_or_outside": 93,
+        "accepted_train": 310,
+        "incomplete_labels": 7,
+        "incomplete_or_late_short_history": 26,
+        "accepted_development": 163
+      },
+      "observed_long_seconds_histogram_per_accepted_node": {
+        "15": 3739,
+        "14": 42,
+        "13": 3
+      }
+    },
+    "ai_inference_ses": {
+      "source": {
+        "dataset_id": "dev_20261122_ai_inference_ses_train_01_a01",
+        "workload": "ai_inference_ses",
+        "run_id": "ai_inference_ses_train_01",
+        "batch": "workload_development_20261122_v2",
+        "attempt": 1,
+        "health_checks_passed": 20,
+        "raw_samples": 739312,
+        "complete_label_seconds_by_node": {
+          "idfs44": 595,
+          "idfs45": 599,
+          "idfs46": 599,
+          "idfs47": 599,
+          "idfs64": 598,
+          "idfs65": 596,
+          "idfs66": 599,
+          "idfs67": 598
+        },
+        "handoff_manifest_sha256": "55f6caf9df1170e58f24a62c250eb4e5ba219d1e615e945bd447a72afafe9170"
+      },
+      "coverage": {
+        "purged_or_outside": 93,
+        "accepted_train": 301,
+        "incomplete_labels": 9,
+        "incomplete_or_late_short_history": 39,
+        "accepted_development": 157
+      },
+      "observed_long_seconds_histogram_per_accepted_node": {
+        "15": 3594,
+        "13": 15,
+        "14": 55
+      }
+    },
+    "bigdata_baleen": {
+      "source": {
+        "dataset_id": "dev_20261122_bigdata_baleen_train_01_a01",
+        "workload": "bigdata_baleen",
+        "run_id": "bigdata_baleen_train_01",
+        "batch": "workload_development_20261122_v3",
+        "attempt": 1,
+        "health_checks_passed": 20,
+        "raw_samples": 739312,
+        "complete_label_seconds_by_node": {
+          "idfs44": 598,
+          "idfs45": 599,
+          "idfs46": 598,
+          "idfs47": 595,
+          "idfs64": 599,
+          "idfs65": 599,
+          "idfs66": 599,
+          "idfs67": 598
+        },
+        "handoff_manifest_sha256": "c4c49a9f51991f5f18ba8774938c6ef62b3e154da76757c59baf9ce6da1d71d2"
+      },
+      "coverage": {
+        "purged_or_outside": 93,
+        "accepted_train": 319,
+        "incomplete_labels": 7,
+        "incomplete_or_late_short_history": 35,
+        "accepted_development": 145
+      },
+      "observed_long_seconds_histogram_per_accepted_node": {
+        "15": 3654,
+        "14": 56,
+        "13": 2
+      }
+    },
+    "graph_zipf": {
+      "source": {
+        "dataset_id": "dev_20261122_graph_zipf_train_01_a01",
+        "workload": "graph_zipf",
+        "run_id": "graph_zipf_train_01",
+        "batch": "workload_development_20261122_v3",
+        "attempt": 1,
+        "health_checks_passed": 20,
+        "raw_samples": 739312,
+        "complete_label_seconds_by_node": {
+          "idfs44": 598,
+          "idfs45": 599,
+          "idfs46": 597,
+          "idfs47": 596,
+          "idfs64": 598,
+          "idfs65": 598,
+          "idfs66": 598,
+          "idfs67": 595
+        },
+        "handoff_manifest_sha256": "885371040635cd7d2bab7cb8073c8396ba1341badd805c0cd3e1c98bc5c60954"
+      },
+      "coverage": {
+        "purged_or_outside": 93,
+        "accepted_train": 303,
+        "incomplete_labels": 11,
+        "incomplete_or_late_short_history": 46,
+        "accepted_development": 146
+      },
+      "observed_long_seconds_histogram_per_accepted_node": {
+        "15": 3506,
+        "14": 73,
+        "13": 7,
+        "12": 6
+      }
+    },
+    "hpc_wrf": {
+      "source": {
+        "dataset_id": "dev_20261122_hpc_wrf_train_01_a01",
+        "workload": "hpc_wrf",
+        "run_id": "hpc_wrf_train_01",
+        "batch": "workload_development_20261122_v3",
+        "attempt": 1,
+        "health_checks_passed": 20,
+        "raw_samples": 739312,
+        "complete_label_seconds_by_node": {
+          "idfs44": 595,
+          "idfs45": 599,
+          "idfs46": 597,
+          "idfs47": 595,
+          "idfs64": 598,
+          "idfs65": 597,
+          "idfs66": 599,
+          "idfs67": 598
+        },
+        "handoff_manifest_sha256": "62170ef21fa0a2350c064e0624dac743607df688a58b39352a1655bc434fc206"
+      },
+      "coverage": {
+        "purged_or_outside": 93,
+        "incomplete_or_late_short_history": 61,
+        "incomplete_labels": 13,
+        "accepted_train": 281,
+        "accepted_development": 151
+      },
+      "observed_long_seconds_histogram_per_accepted_node": {
+        "15": 3334,
+        "14": 113,
+        "13": 9
+      }
+    }
+  }
+}

@@ -1,0 +1,72 @@
+{
+  "handoff_id": "A18-R2-INDEPENDENT-METRICS-20261123-01",
+  "status": "verified_offline_metrics",
+  "A_record_sha256": "a8f75e58b0a8da11db093103519387444989760686bc10194f16d7dc9845ed7d",
+  "verified_archive_sha256": "b671e0029e8d0703b34a34a8b26f36624af7be1ed19a72f8726990add077bcf6",
+  "manifest_members": 32,
+  "original_node_labels": 21288,
+  "prediction_rows": 10644,
+  "node_workload_groups_per_arm": 40,
+  "scope": "source labels; frozen sample list; node macro and worst-group MAPE; workload mean MAE; screen",
+  "new_fitting": false,
+  "online_time_eligibility": false,
+  "formal_acceptance": false,
+  "arms": {
+    "L0": {
+      "macro_mape": 112.31633789948161,
+      "worst": 341.4611690619506,
+      "passes": 0,
+      "mae": {
+        "dev_20261122_ai_training_ses_train_03_a01": 89.23275430825464,
+        "dev_20261122_ai_inference_ses_train_03_a01": 172.1126757173695,
+        "dev_20261122_bigdata_baleen_train_03_a01": 44.010084573938215,
+        "dev_20261122_graph_zipf_train_03_a01": 156.56261211283066,
+        "dev_20261122_hpc_wrf_train_03_a01": 53.341057084327524
+      },
+      "relative_improvement": 0.0,
+      "screen": false
+    },
+    "L1": {
+      "macro_mape": 101.73789134830409,
+      "worst": 314.56076987193603,
+      "passes": 0,
+      "mae": {
+        "dev_20261122_ai_training_ses_train_03_a01": 99.92078650911102,
+        "dev_20261122_ai_inference_ses_train_03_a01": 177.18622757878555,
+        "dev_20261122_bigdata_baleen_train_03_a01": 48.209004108183976,
+        "dev_20261122_graph_zipf_train_03_a01": 174.2902355404461,
+        "dev_20261122_hpc_wrf_train_03_a01": 56.26601145064184
+      },
+      "relative_improvement": 0.09418439693648828,
+      "screen": false
+    },
+    "L2": {
+      "macro_mape": 107.75078038920152,
+      "worst": 329.2455746650207,
+      "passes": 0,
+      "mae": {
+        "dev_20261122_ai_training_ses_train_03_a01": 87.2516618702407,
+        "dev_20261122_ai_inference_ses_train_03_a01": 170.4828531345458,
+        "dev_20261122_bigdata_baleen_train_03_a01": 43.646693329417374,
+        "dev_20261122_graph_zipf_train_03_a01": 156.0932453660404,
+        "dev_20261122_hpc_wrf_train_03_a01": 50.20101546317108
+      },
+      "relative_improvement": 0.04064909518654414,
+      "screen": false
+    },
+    "L3": {
+      "macro_mape": 94.01160482851267,
+      "worst": 293.02975776019645,
+      "passes": 0,
+      "mae": {
+        "dev_20261122_ai_training_ses_train_03_a01": 107.54534283133995,
+        "dev_20261122_ai_inference_ses_train_03_a01": 209.67219957529517,
+        "dev_20261122_bigdata_baleen_train_03_a01": 52.47065946596478,
+        "dev_20261122_graph_zipf_train_03_a01": 197.36086850657182,
+        "dev_20261122_hpc_wrf_train_03_a01": 57.66986499645913
+      },
+      "relative_improvement": 0.16297480325035973,
+      "screen": false
+    }
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "scope": "Post-fit descriptive trajectory smoothness only; no refit, checkpoint reselection, model load or external validation.",
+  "arms": {
+    "direct_seconds": {
+      "predictions_sha256": "79464bd845da1fab35a55d8085ff7e04171dd8126cadec9f56d2fb3bd0604fc9",
+      "samples": 2297,
+      "median_actual_10s_within_origin_std_iops": 684.9661962462089,
+      "median_predicted_10s_within_origin_std_iops": 0.6054468950818744,
+      "mean_actual_adjacent_second_absolute_change_iops": 942.7315338847773,
+      "mean_predicted_adjacent_second_absolute_change_iops": 0.2360172126875937
+    },
+    "fine100ms": {
+      "predictions_sha256": "91cb90a9999360695aaff2ff8a358780ea42616b4de7c39a5000f54c36c26acb",
+      "samples": 2297,
+      "median_actual_10s_within_origin_std_iops": 684.9661962462089,
+      "median_predicted_10s_within_origin_std_iops": 2.962309894782022,
+      "mean_actual_adjacent_second_absolute_change_iops": 942.7315338847773,
+      "mean_predicted_adjacent_second_absolute_change_iops": 0.7221269881287647
+    }
+  }
+}

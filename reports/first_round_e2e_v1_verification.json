@@ -1,0 +1,44 @@
+{
+  "prediction_sha256_verified": true,
+  "independent_metric_groups_recomputed": 180,
+  "windows_per_family": 697,
+  "causal_availability_checks_passed": true,
+  "cluster_labels_equal_node_sum": true,
+  "error_diagnosis": {
+    "ai_training_ses": {
+      "lowest_actual_decile_count": 16,
+      "lowest_actual_decile_max_iops": 1859,
+      "lowest_decile_share_of_total_ape_percent": 59.56602431646873,
+      "cluster_actual_min": 196,
+      "cluster_actual_max": 3758
+    },
+    "ai_inference_ses": {
+      "lowest_actual_decile_count": 14,
+      "lowest_actual_decile_max_iops": 1877,
+      "lowest_decile_share_of_total_ape_percent": 93.82125394827953,
+      "cluster_actual_min": 12,
+      "cluster_actual_max": 7177
+    },
+    "bigdata_baleen": {
+      "lowest_actual_decile_count": 12,
+      "lowest_actual_decile_max_iops": 908,
+      "lowest_decile_share_of_total_ape_percent": 68.22313353576321,
+      "cluster_actual_min": 179,
+      "cluster_actual_max": 2346
+    },
+    "graph_zipf": {
+      "lowest_actual_decile_count": 12,
+      "lowest_actual_decile_max_iops": 3736,
+      "lowest_decile_share_of_total_ape_percent": 68.45484355184414,
+      "cluster_actual_min": 789,
+      "cluster_actual_max": 9821
+    },
+    "hpc_wrf": {
+      "lowest_actual_decile_count": 13,
+      "lowest_actual_decile_max_iops": 1051,
+      "lowest_decile_share_of_total_ape_percent": 72.78226732547567,
+      "cluster_actual_min": 116,
+      "cluster_actual_max": 1840
+    }
+  }
+}

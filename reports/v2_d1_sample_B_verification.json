@@ -1,0 +1,128 @@
+{
+  "state": "verified_limited_sample_schema",
+  "sample_sha256": "d9396c7923dc715d7c581a5ea3086ca3cc24db9bdb4d51f8bf8e7e9d7decf550",
+  "source_hash_scope": "inherited previously verified whole-file inventory plus independently re-read bounded slice hashes",
+  "scope": "three fixed 400ms slices; no assertion of full-round coverage",
+  "datasets": [
+    {
+      "dataset_id": "dev_20261122_graph_zipf_train_01_a01",
+      "channels": 112,
+      "checks": {
+        "valid_pairs": 448,
+        "byte_pairs": 768,
+        "gauge_pairs": 384,
+        "latency_pairs": 1152
+      },
+      "raw_slice_sha256": {
+        "client_nfs_rpc_100.7.74.12.jsonl": "fa5e57a1919771e02d00924238e5a067da32638a38873954ef46ebf5dc8c2496",
+        "client_nfs_rpc_100.7.74.14.jsonl": "3488dbd5adad71a9d31bb2bf936efe0d7167f3bedf326300a1a0b57e07771562",
+        "client_nfs_rpc_100.7.74.16.jsonl": "43044173da0193d0e235b24f55b547e7d599b51c13cc406b77ea7408e2f5994e",
+        "client_nfs_rpc_100.7.74.18.jsonl": "f1baa09c10c083f94cdc7b16b4c4245e55f6874d4e028e844c73d68b647180bb",
+        "client_nfs_rpc_100.7.74.19.jsonl": "da8eac24a9efe9811b9cb9eb6e351c334a4ac860176745ccb17f9bee554250f4",
+        "client_nfs_rpc_100.7.74.20.jsonl": "59d80cafc8752200e04fe21ace37ebfe40466960c1798985cb18ae522e4cca01",
+        "client_nfs_rpc_100.7.75.14.jsonl": "21e8c711368381dbe7ce422aae8ffbc8f10ebb7d162a1917600f78895b7967f1",
+        "client_nfs_rpc_100.7.75.202.jsonl": "bf0bbdafd869d195dd6bed405a287dd361901cc03b498735979038da134c67e3",
+        "client_nfs_rpc_100.7.75.203.jsonl": "27fbeccb9899cd8d864932c80bb73c08b88c5bab882af545eda381058913b3d3",
+        "client_nfs_rpc_100.7.75.204.jsonl": "432b1c99df674e956055d5f205a0f2426dcd5902efc849f2078a120e132ec559",
+        "client_nfs_rpc_100.7.75.205.jsonl": "9d8e62e8f6b84cf99e564ae92474af4007bc05a67e6d52b264eba8d6a5865164",
+        "client_nfs_rpc_100.7.75.206.jsonl": "44fd541b83c9d0c0f422eaa1d9187951f7cdc357fcd6d6b07c3d7e8b9eb0f16e",
+        "client_nfs_rpc_100.7.75.210.jsonl": "6571a04fbe571839b4bcee9d271d0c6e61e11d61866135fea93cec54a5237ef3",
+        "client_nfs_rpc_100.7.75.211.jsonl": "a95c2e142f3dcce69dd5db66f20d6c577e5ac5257cdd42cbb59d8f6e1014627d",
+        "client_nfs_rpc_100.7.75.215.jsonl": "c6cdfcf322299526cf86c60d10b41f975478b9d7b57ab123da7595fc61e245e4",
+        "client_nfs_rpc_100.7.75.216.jsonl": "40bf5809e0d91d35388111b9150ab1e8ec4aea1d277ea228f480442a1863084f",
+        "oss_100.7.75.44.jsonl": "15afcecbcd62fa79207123271a4fee9d8ac8aeb2053438f71045f0c9267dff21",
+        "oss_100.7.75.45.jsonl": "fe9487e8af6f20642b12fe2359a97df44ae2ff47b10cc8995b954f57f2081c3e",
+        "oss_100.7.75.46.jsonl": "0021cd3ba5a2bd6b5de6d3a7bf7b8e741c9fd87f79e653940f213f1283403c6e",
+        "oss_100.7.75.47.jsonl": "b939e46bbea34eb6d10cd3035da07b3e405c4bf6ed3f1599c69eccf49e96b36b",
+        "oss_100.7.75.64.jsonl": "353a2c364221e2cf7f1a0591fa810a48f0f807e6a816350318496044b9b0bd15",
+        "oss_100.7.75.65.jsonl": "4022c6056f3bd160b55e28d45a4e8b80116bd71c2c2c218b4ba345f88b0c5575",
+        "oss_100.7.75.66.jsonl": "138ddb20fe0ee4455218855a164192a6b852ed9a695d2583bc26f8250c5eeb0b",
+        "oss_100.7.75.67.jsonl": "dc4ab0b8b8ba4bcde036679ad2a144239bef5db1a1ee66da0b323806095de2ef"
+      }
+    },
+    {
+      "dataset_id": "dev_20261122_hpc_wrf_train_01_a01",
+      "channels": 112,
+      "checks": {
+        "valid_pairs": 448,
+        "byte_pairs": 768,
+        "gauge_pairs": 384,
+        "latency_pairs": 1152
+      },
+      "raw_slice_sha256": {
+        "client_nfs_rpc_100.7.74.12.jsonl": "b45777f0b3a1709a1bdfb27d6238580bdc89e61113178b4d7f41cbc8cf3093e3",
+        "client_nfs_rpc_100.7.74.14.jsonl": "769af54ab42aa52125896716344a97fe773756fedaaa9733553a5760ccf3298a",
+        "client_nfs_rpc_100.7.74.16.jsonl": "b1ebdda08b1ca80042b558664fe9076c18955d9ca155dbc9ba09d30b05fd278b",
+        "client_nfs_rpc_100.7.74.18.jsonl": "eb9448bbaaafe28e6bb90a716aa9723708c4e2e1adc9b0dc3de14e2c466a640e",
+        "client_nfs_rpc_100.7.74.19.jsonl": "a1ea0e3684ce312035b67b59c499ce607b24387e4cfca3347a6d45e8b8961699",
+        "client_nfs_rpc_100.7.74.20.jsonl": "63f6efbaf7358edda631bff4b27473c9623af2e6be4bb33fb7839cc7859170d5",
+        "client_nfs_rpc_100.7.75.14.jsonl": "f5884318a2d6bf8be0c82280bd9505a2469b1aeee05f7d63ad4954f5d9716570",
+        "client_nfs_rpc_100.7.75.202.jsonl": "7b8a8ae2d7f69b344f8833881212b602fb5702f74a78d170016cba3bbdab0351",
+        "client_nfs_rpc_100.7.75.203.jsonl": "0297d53f7776afa88784f30e9e091856cd723abd1c631f7fbc576c17787ce31c",
+        "client_nfs_rpc_100.7.75.204.jsonl": "1b3b79b4c793165612a7cab7909a80aa3c9d2beaaeabd9a793bdb6f24c561cfc",
+        "client_nfs_rpc_100.7.75.205.jsonl": "a033d39769bbfb9fb7f948e6cee132211b4584595946a12de4e071e102dba85c",
+        "client_nfs_rpc_100.7.75.206.jsonl": "e8c789258706485d096db3f93b69b86e6e1a330b41bb5277187ac7377a8f6409",
+        "client_nfs_rpc_100.7.75.210.jsonl": "f62f596784e22e07b5ecca9bbed86a96e88790dfcde821c7449c197d13717d59",
+        "client_nfs_rpc_100.7.75.211.jsonl": "657d66c3c373c97d0718766d97191a9606391af698ffb789dea6e0a4165d5784",
+        "client_nfs_rpc_100.7.75.215.jsonl": "b5e3fbfc39fc7d53d0486175d5ced0a41e4019d212374c229ea81169a3bdf1a9",
+        "client_nfs_rpc_100.7.75.216.jsonl": "c2015c3849214feccc35269aafd96e7d52dc48911f00d0e64e29b78db91bd263",
+        "oss_100.7.75.44.jsonl": "c6e47e1da978afb613101c9abd39d44d8e554f994e072eecff0520b67120c280",
+        "oss_100.7.75.45.jsonl": "c7db28ebc44a788276693e4de18b83ee9438b48ffd90b6d38a67157d55fae0cd",
+        "oss_100.7.75.46.jsonl": "c0a8afdac8132540f03aabe18f52b61a14c4e8faf8f6c86e3c245c575d2424aa",
+        "oss_100.7.75.47.jsonl": "62aeb405cd81fe31043e3ee4e00e9968264ae38967d349e22c8cacd975487882",
+        "oss_100.7.75.64.jsonl": "38c30e5b28f89d23e0b58dac297e5b9f5c320fbfa5aff3e99ef40ab163091916",
+        "oss_100.7.75.65.jsonl": "2c4f256f2c2cdfba8b0fb8fefa121904b692a16124ac1a0cbda2d539ef551ef6",
+        "oss_100.7.75.66.jsonl": "8c33dd1a38adb6ddcd955a1657e345a66c221d16a6467b9a21f460cb29ea0e46",
+        "oss_100.7.75.67.jsonl": "6c16738ab0d82fac88010e7d13a066da036bfcd73c6f0b6523c3cb20e5a1922b"
+      }
+    },
+    {
+      "dataset_id": "dev_20261122_ai_inference_ses_train_03_a01",
+      "channels": 112,
+      "checks": {
+        "valid_pairs": 448,
+        "byte_pairs": 768,
+        "gauge_pairs": 384,
+        "latency_pairs": 1152
+      },
+      "raw_slice_sha256": {
+        "client_nfs_rpc_100.7.74.12.jsonl": "4ebdccfdbc06edb3f71c31da8d28b033cd21ff77d95f890cbbc87dc768a7dcd3",
+        "client_nfs_rpc_100.7.74.14.jsonl": "2d833559473371f8ab7a0743afcb95e86d2aabc02efae498149b105bb0755049",
+        "client_nfs_rpc_100.7.74.16.jsonl": "e51b98c1a775e8bb09cb32cc3e9b73baeca20036a242c208fbbf0cba7fe955b2",
+        "client_nfs_rpc_100.7.74.18.jsonl": "c6e516c5a1d4d0196253409128c271b8f715a81f88fdadf0ce3b85e1ce2a7160",
+        "client_nfs_rpc_100.7.74.19.jsonl": "55dfdf4fa5259691eadaf8bf168f2026d0267ef7259d14955785644ad96d2ed7",
+        "client_nfs_rpc_100.7.74.20.jsonl": "96a653d7ade9b46ca708b457253b2e0f73c118bab482466c199a1a886a0f8767",
+        "client_nfs_rpc_100.7.75.14.jsonl": "d8ea50f16a717800a52bef26303cd6887f1734a8e09ec459835f75b03e9add3d",
+        "client_nfs_rpc_100.7.75.202.jsonl": "87c6ea6c048040877f8a7892019126d813bb80508336ae7d294245faa189b8d0",
+        "client_nfs_rpc_100.7.75.203.jsonl": "03cb29639044a3cf2693aeb2897aa2c7ba0a501fd224b8d3508eb5f8288b6123",
+        "client_nfs_rpc_100.7.75.204.jsonl": "dd2a727743f8ec375b604b132d592612d696250341dc6c03d6a8ecfa4b2a46a0",
+        "client_nfs_rpc_100.7.75.205.jsonl": "4a0b29c2f18abb0a2948466820e96793d2afb98b408da436d8a70b9afcf4ed4b",
+        "client_nfs_rpc_100.7.75.206.jsonl": "ab6f7fc2c5cbaa03f32347180375baf4b82f2a588cce89dc13fb8854ac424388",
+        "client_nfs_rpc_100.7.75.210.jsonl": "9fe3489cbae4ffcc369b73f20e6442c004f5798185b2b16dc4a8246660448b5c",
+        "client_nfs_rpc_100.7.75.211.jsonl": "c5a3d93823765c13c16bc81bdd5954d678cee9d913673d93311eb5679c8a5bdc",
+        "client_nfs_rpc_100.7.75.215.jsonl": "e88369488b5f55561ec11881e49e61c73203955a5f73f74bfbb2b238c021fe3b",
+        "client_nfs_rpc_100.7.75.216.jsonl": "22cf275491ba8d609a4064276549b14ca90ad9a814d641c794f006f6d941db38",
+        "oss_100.7.75.44.jsonl": "00e898e584635b6f7ca0cbd268889191a48e6a53e2fac377549bfee3af764206",
+        "oss_100.7.75.45.jsonl": "79a6cc19aeb75aab378d7fb8beacf49db16384bbb394d714609f93df28ec08d6",
+        "oss_100.7.75.46.jsonl": "16c60c3ebe7eceb2ffdbc8e9062a70e99ab6a7d4eb284eb314814da0d575620f",
+        "oss_100.7.75.47.jsonl": "754fa87cc6a6cd5e75bc0f016cd0d0a76ced1ead204f76be32f82c10ba595862",
+        "oss_100.7.75.64.jsonl": "27e0e0e30301461fca8430d68643eb0e9cfbf3ca064d29e30d8488392ba6f6b1",
+        "oss_100.7.75.65.jsonl": "f00942892d5f8a2894d49b565bb08e5c234bcdcfb0997db627dfd9209fe2d3fe",
+        "oss_100.7.75.66.jsonl": "933c4c274e1eaeed9b500b6d3f39949e2537d70f7322a432b32e2aa7a9a0d5ac",
+        "oss_100.7.75.67.jsonl": "f3519a2eec45dc7d820493e205a25d924fa90ceb8c9971499fc4851c223d9716"
+      }
+    }
+  ],
+  "checks": {
+    "valid_pairs": 1344,
+    "byte_pairs": 2304,
+    "gauge_pairs": 1152,
+    "latency_pairs": 3456
+  },
+  "complete_node_buckets": 96,
+  "latency_training_eligible": false,
+  "online_time_eligibility": false,
+  "fit_count": 0,
+  "elapsed_seconds": 0.19183859997428954,
+  "runner_sha256": "0fecc8a834363671e268549d17a62300fe7d40d3028ad5b788a22015666fb9dd"
+}

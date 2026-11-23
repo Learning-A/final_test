@@ -1,0 +1,1633 @@
+{
+  "scope": "Previous2661 train03 origins;15 immutable configurations and19 direct/summed paths, not the new2297-origin horizon cohort. No model fit, load or inference.",
+  "input_hashes_matched_prior_audit": true,
+  "independent_stdlib_moments_verified": true,
+  "models": {
+    "R1_F0": {
+      "direct_cluster": {
+        "groups": {
+          "ai_inference_ses": {
+            "n": 547,
+            "mae_iops": 1345.6303319071778,
+            "rmse_iops": 1738.1370070489415,
+            "r2": 0.012742239478216844,
+            "pearson_r": 0.1274243855302915,
+            "actual_std_iops": 1749.3178519862124,
+            "prediction_std_iops": 316.96321995814435,
+            "bias_iops": 42.982266534059534
+          },
+          "ai_training_ses": {
+            "n": 509,
+            "mae_iops": 654.9504942817031,
+            "rmse_iops": 854.8644866384551,
+            "r2": -0.03647289840241963,
+            "pearson_r": -0.025138646308536183,
+            "actual_std_iops": 839.6886837432264,
+            "prediction_std_iops": 140.62766636574884,
+            "bias_iops": 1.7741720939567598
+          },
+          "bigdata_baleen": {
+            "n": 545,
+            "mae_iops": 331.5569224595702,
+            "rmse_iops": 446.52964809536644,
+            "r2": 0.02170655497251972,
+            "pearson_r": 0.15559764250985095,
+            "actual_std_iops": 451.456310603591,
+            "prediction_std_iops": 85.41400717714086,
+            "bias_iops": -16.74154509676597
+          },
+          "graph_zipf": {
+            "n": 544,
+            "mae_iops": 1522.3435231699336,
+            "rmse_iops": 2088.2712311058986,
+            "r2": -0.09250271564206902,
+            "pearson_r": -0.017255021442340635,
+            "actual_std_iops": 1997.9087223834272,
+            "prediction_std_iops": 561.4018218236243,
+            "bias_iops": -123.92732008343849
+          },
+          "hpc_wrf": {
+            "n": 516,
+            "mae_iops": 313.3879972349726,
+            "rmse_iops": 438.75723837478336,
+            "r2": 0.3967931607819558,
+            "pearson_r": 0.6309785907407964,
+            "actual_std_iops": 564.925483268178,
+            "prediction_std_iops": 376.95338829563684,
+            "bias_iops": 2.7862377940994683
+          }
+        },
+        "macro": {
+          "mae_iops": {
+            "mean": 833.5738538106715,
+            "defined_groups": 5
+          },
+          "rmse_iops": {
+            "mean": 1113.311922252689,
+            "defined_groups": 5
+          },
+          "r2": {
+            "mean": 0.060453268237640745,
+            "defined_groups": 5
+          },
+          "pearson_r": {
+            "mean": 0.17432139020601242,
+            "defined_groups": 5
+          },
+          "actual_std_iops": {
+            "mean": 1120.6594103969271,
+            "defined_groups": 5
+          },
+          "prediction_std_iops": {
+            "mean": 296.2720207240591,
+            "defined_groups": 5
+          },
+          "bias_iops": {
+            "mean": -18.62523775161774,
+            "defined_groups": 5
+          }
+        }
+      },
+      "summed_node_cluster": {
+        "groups": {
+          "ai_inference_ses": {
+            "n": 547,
+            "mae_iops": 1385.651002382369,
+            "rmse_iops": 1784.918104172939,
+            "r2": -0.041116028556591466,
+            "pearson_r": 0.020575129416696366,
+            "actual_std_iops": 1749.3178519862124,
+            "prediction_std_iops": 389.62015522940754,
+            "bias_iops": 45.41571332776475
+          },
+          "ai_training_ses": {
+            "n": 509,
+            "mae_iops": 680.3912303306964,
+            "rmse_iops": 885.5076193590979,
+            "r2": -0.1121106613025118,
+            "pearson_r": -0.028806893084701708,
+            "actual_std_iops": 839.6886837432264,
+            "prediction_std_iops": 255.68603797083267,
+            "bias_iops": -36.08074462325777
+          },
+          "bigdata_baleen": {
+            "n": 545,
+            "mae_iops": 319.3267637334919,
+            "rmse_iops": 449.1648929426401,
+            "r2": 0.010125464778201088,
+            "pearson_r": 0.1544879500277378,
+            "actual_std_iops": 451.456310603591,
+            "prediction_std_iops": 111.76952942820287,
+            "bias_iops": 32.16374126002741
+          },
+          "graph_zipf": {
+            "n": 544,
+            "mae_iops": 1462.9687496320298,
+            "rmse_iops": 2029.6009678324565,
+            "r2": -0.03197704432727444,
+            "pearson_r": -0.012083412181811241,
+            "actual_std_iops": 1997.9087223834272,
+            "prediction_std_iops": 328.2728498707051,
+            "bias_iops": -63.4643824088806
+          },
+          "hpc_wrf": {
+            "n": 516,
+            "mae_iops": 332.46640380280706,
+            "rmse_iops": 469.9060336164501,
+            "r2": 0.30810576619963526,
+            "pearson_r": 0.5809538430908937,
+            "actual_std_iops": 564.925483268178,
+            "prediction_std_iops": 421.70678450977584,
+            "bias_iops": 25.276763893362908
+          }
+        },
+        "macro": {
+          "mae_iops": {
+            "mean": 836.1608299762788,
+            "defined_groups": 5
+          },
+          "rmse_iops": {
+            "mean": 1123.8195235847168,
+            "defined_groups": 5
+          },
+          "r2": {
+            "mean": 0.026605499358291727,
+            "defined_groups": 5
+          },
+          "pearson_r": {
+            "mean": 0.14302532345376298,
+            "defined_groups": 5
+          },
+          "actual_std_iops": {
+            "mean": 1120.6594103969271,
+            "defined_groups": 5
+          },
+          "prediction_std_iops": {
+            "mean": 301.4110714017848,
+            "defined_groups": 5
+          },
+          "bias_iops": {
+            "mean": 0.662218289803338,
+            "defined_groups": 5
+          }
+        }
+      }
+    },
+    "R1_F1_50": {
+      "direct_cluster": {
+        "groups": {
+          "ai_inference_ses": {
+            "n": 547,
+            "mae_iops": 1234.7421526482278,
+            "rmse_iops": 1648.4290301546184,
+            "r2": 0.11202027040410978,
+            "pearson_r": 0.3362232771009709,
+            "actual_std_iops": 1749.3178519862124,
+            "prediction_std_iops": 643.240802334696,
+            "bias_iops": 10.265840320665683
+          },
+          "ai_training_ses": {
+            "n": 509,
+            "mae_iops": 622.3874356621596,
+            "rmse_iops": 834.0646724382432,
+            "r2": 0.013350608024400357,
+            "pearson_r": 0.19069864488845495,
+            "actual_std_iops": 839.6886837432264,
+            "prediction_std_iops": 286.5769912216549,
+            "bias_iops": -15.431502124779769
+          },
+          "bigdata_baleen": {
+            "n": 545,
+            "mae_iops": 303.54855917610564,
+            "rmse_iops": 419.5117429456524,
+            "r2": 0.13651104279080206,
+            "pearson_r": 0.37490975569748763,
+            "actual_std_iops": 451.456310603591,
+            "prediction_std_iops": 140.5424324375081,
+            "bias_iops": 0.5010130016919744
+          },
+          "graph_zipf": {
+            "n": 544,
+            "mae_iops": 1418.2947848112333,
+            "rmse_iops": 2024.3559532963,
+            "r2": -0.0266501443798024,
+            "pearson_r": 0.13973979178219947,
+            "actual_std_iops": 1997.9087223834272,
+            "prediction_std_iops": 699.6135575451556,
+            "bias_iops": -86.97782184252404
+          },
+          "hpc_wrf": {
+            "n": 516,
+            "mae_iops": 287.10647450785063,
+            "rmse_iops": 412.3577814075256,
+            "r2": 0.4671977415283193,
+            "pearson_r": 0.690169724218704,
+            "actual_std_iops": 564.925483268178,
+            "prediction_std_iops": 440.6150257248927,
+            "bias_iops": 18.527190593522057
+          }
+        },
+        "macro": {
+          "mae_iops": {
+            "mean": 773.2158813611154,
+            "defined_groups": 5
+          },
+          "rmse_iops": {
+            "mean": 1067.743836048468,
+            "defined_groups": 5
+          },
+          "r2": {
+            "mean": 0.1404859036735658,
+            "defined_groups": 5
+          },
+          "pearson_r": {
+            "mean": 0.3463482387375634,
+            "defined_groups": 5
+          },
+          "actual_std_iops": {
+            "mean": 1120.6594103969271,
+            "defined_groups": 5
+          },
+          "prediction_std_iops": {
+            "mean": 442.1177618527814,
+            "defined_groups": 5
+          },
+          "bias_iops": {
+            "mean": -14.623056010284818,
+            "defined_groups": 5
+          }
+        }
+      },
+      "summed_node_cluster": {
+        "groups": {
+          "ai_inference_ses": {
+            "n": 547,
+            "mae_iops": 1250.7266688098418,
+            "rmse_iops": 1651.5673501563228,
+            "r2": 0.10863593628824109,
+            "pearson_r": 0.33023412701146304,
+            "actual_std_iops": 1749.3178519862124,
+            "prediction_std_iops": 609.6726333390635,
+            "bias_iops": -16.05768521813664
+          },
+          "ai_training_ses": {
+            "n": 509,
+            "mae_iops": 637.7632251308837,
+            "rmse_iops": 844.843476811233,
+            "r2": -0.012315553690972036,
+            "pearson_r": 0.14671177206750935,
+            "actual_std_iops": 839.6886837432264,
+            "prediction_std_iops": 273.89967171867823,
+            "bias_iops": -33.86737232052082
+          },
+          "bigdata_baleen": {
+            "n": 545,
+            "mae_iops": 296.31404366271323,
+            "rmse_iops": 421.9786020752731,
+            "r2": 0.1263260193958362,
+            "pearson_r": 0.3741486917302684,
+            "actual_std_iops": 451.456310603591,
+            "prediction_std_iops": 122.83125911003025,
+            "bias_iops": 25.70831003123396
+          },
+          "graph_zipf": {
+            "n": 544,
+            "mae_iops": 1372.6236856261146,
+            "rmse_iops": 1970.000198501959,
+            "r2": 0.027742607380674356,
+            "pearson_r": 0.18895955772187978,
+            "actual_std_iops": 1997.9087223834272,
+            "prediction_std_iops": 553.2184074101697,
+            "bias_iops": -30.287092578854953
+          },
+          "hpc_wrf": {
+            "n": 516,
+            "mae_iops": 309.874423997056,
+            "rmse_iops": 431.6852646983897,
+            "r2": 0.4160816580120279,
+            "pearson_r": 0.6493350192844608,
+            "actual_std_iops": 564.925483268178,
+            "prediction_std_iops": 408.90864681372943,
+            "bias_iops": 1.2841703604269303
+          }
+        },
+        "macro": {
+          "mae_iops": {
+            "mean": 773.4604094453218,
+            "defined_groups": 5
+          },
+          "rmse_iops": {
+            "mean": 1064.0149784486355,
+            "defined_groups": 5
+          },
+          "r2": {
+            "mean": 0.1332941334771615,
+            "defined_groups": 5
+          },
+          "pearson_r": {
+            "mean": 0.3378778335631163,
+            "defined_groups": 5
+          },
+          "actual_std_iops": {
+            "mean": 1120.6594103969271,
+            "defined_groups": 5
+          },
+          "prediction_std_iops": {
+            "mean": 393.7061236783342,
+            "defined_groups": 5
+          },
+          "bias_iops": {
+            "mean": -10.643933945170305,
+            "defined_groups": 5
+          }
+        }
+      }
+    },
+    "R1_F1_100": {
+      "direct_cluster": {
+        "groups": {
+          "ai_inference_ses": {
+            "n": 547,
+            "mae_iops": 1327.0716562951668,
+            "rmse_iops": 1737.7940020839837,
+            "r2": 0.01313185306912834,
+            "pearson_r": 0.1820585057806302,
+            "actual_std_iops": 1749.3178519862124,
+            "prediction_std_iops": 565.9377540222963,
+            "bias_iops": -2.6782292319544694
+          },
+          "ai_training_ses": {
+            "n": 509,
+            "mae_iops": 643.17243829257,
+            "rmse_iops": 848.8024595590291,
+            "r2": -0.021825315360787467,
+            "pearson_r": 0.07938331240476205,
+            "actual_std_iops": 839.6886837432264,
+            "prediction_std_iops": 207.33028783760903,
+            "bias_iops": -6.543933980382254
+          },
+          "bigdata_baleen": {
+            "n": 545,
+            "mae_iops": 322.8857845776831,
+            "rmse_iops": 438.2941450498828,
+            "r2": 0.057459800251726034,
+            "pearson_r": 0.2416079707991853,
+            "actual_std_iops": 451.456310603591,
+            "prediction_std_iops": 113.50316860551524,
+            "bias_iops": -12.915290846481824
+          },
+          "graph_zipf": {
+            "n": 544,
+            "mae_iops": 1439.4540911495142,
+            "rmse_iops": 2038.5279939570974,
+            "r2": -0.04107513439196375,
+            "pearson_r": 0.11285480830518317,
+            "actual_std_iops": 1997.9087223834272,
+            "prediction_std_iops": 678.5435632539109,
+            "bias_iops": -97.58626870133537
+          },
+          "hpc_wrf": {
+            "n": 516,
+            "mae_iops": 298.37732866377013,
+            "rmse_iops": 421.7819554290978,
+            "r2": 0.4425657358502054,
+            "pearson_r": 0.6714096449793981,
+            "actual_std_iops": 564.925483268178,
+            "prediction_std_iops": 425.7041292869255,
+            "bias_iops": 21.709754893656662
+          }
+        },
+        "macro": {
+          "mae_iops": {
+            "mean": 806.1922597957408,
+            "defined_groups": 5
+          },
+          "rmse_iops": {
+            "mean": 1097.0401112158181,
+            "defined_groups": 5
+          },
+          "r2": {
+            "mean": 0.09005138788366171,
+            "defined_groups": 5
+          },
+          "pearson_r": {
+            "mean": 0.25746284845383177,
+            "defined_groups": 5
+          },
+          "actual_std_iops": {
+            "mean": 1120.6594103969271,
+            "defined_groups": 5
+          },
+          "prediction_std_iops": {
+            "mean": 398.20378060125137,
+            "defined_groups": 5
+          },
+          "bias_iops": {
+            "mean": -19.60279357329945,
+            "defined_groups": 5
+          }
+        }
+      },
+      "summed_node_cluster": {
+        "groups": {
+          "ai_inference_ses": {
+            "n": 547,
+            "mae_iops": 1312.3517621378023,
+            "rmse_iops": 1714.8826518638186,
+            "r2": 0.038982364268709935,
+            "pearson_r": 0.2101747446984248,
+            "actual_std_iops": 1749.3178519862124,
+            "prediction_std_iops": 493.6552453912828,
+            "bias_iops": -3.322377075605413
+          },
+          "ai_training_ses": {
+            "n": 509,
+            "mae_iops": 663.2413432607931,
+            "rmse_iops": 863.5053254852637,
+            "r2": -0.05753181086588621,
+            "pearson_r": 0.028746335612820938,
+            "actual_std_iops": 839.6886837432264,
+            "prediction_std_iops": 223.54083027574708,
+            "bias_iops": -37.22235427212963
+          },
+          "bigdata_baleen": {
+            "n": 545,
+            "mae_iops": 306.97833410661116,
+            "rmse_iops": 432.9720523097622,
+            "r2": 0.08021087130785298,
+            "pearson_r": 0.29457682830345916,
+            "actual_std_iops": 451.456310603591,
+            "prediction_std_iops": 105.0499981124484,
+            "bias_iops": 23.609177216693773
+          },
+          "graph_zipf": {
+            "n": 544,
+            "mae_iops": 1395.423220079915,
+            "rmse_iops": 1979.5846960967806,
+            "r2": 0.01825908834779355,
+            "pearson_r": 0.16503653702975987,
+            "actual_std_iops": 1997.9087223834272,
+            "prediction_std_iops": 512.9876857002048,
+            "bias_iops": -47.46243597910956
+          },
+          "hpc_wrf": {
+            "n": 516,
+            "mae_iops": 317.12681773913556,
+            "rmse_iops": 438.3960868946463,
+            "r2": 0.39778577977675267,
+            "pearson_r": 0.6358127018145215,
+            "actual_std_iops": 564.925483268178,
+            "prediction_std_iops": 404.6096031472063,
+            "bias_iops": 1.5006198145326302
+          }
+        },
+        "macro": {
+          "mae_iops": {
+            "mean": 799.0242954648514,
+            "defined_groups": 5
+          },
+          "rmse_iops": {
+            "mean": 1085.8681625300542,
+            "defined_groups": 5
+          },
+          "r2": {
+            "mean": 0.09554125856704458,
+            "defined_groups": 5
+          },
+          "pearson_r": {
+            "mean": 0.26686942949179726,
+            "defined_groups": 5
+          },
+          "actual_std_iops": {
+            "mean": 1120.6594103969271,
+            "defined_groups": 5
+          },
+          "prediction_std_iops": {
+            "mean": 347.9686725253779,
+            "defined_groups": 5
+          },
+          "bias_iops": {
+            "mean": -12.579474059123639,
+            "defined_groups": 5
+          }
+        }
+      }
+    },
+    "R1_F1_200": {
+      "direct_cluster": {
+        "groups": {
+          "ai_inference_ses": {
+            "n": 547,
+            "mae_iops": 1322.9695723590294,
+            "rmse_iops": 1717.3245828126778,
+            "r2": 0.0362435068429694,
+            "pearson_r": 0.19652512636831632,
+            "actual_std_iops": 1749.3178519862124,
+            "prediction_std_iops": 427.46632039628753,
+            "bias_iops": 16.621161039482118
+          },
+          "ai_training_ses": {
+            "n": 509,
+            "mae_iops": 647.989073718517,
+            "rmse_iops": 851.6649632835461,
+            "r2": -0.028728949630960843,
+            "pearson_r": 0.019926739807214912,
+            "actual_std_iops": 839.6886837432264,
+            "prediction_std_iops": 160.01996065445576,
+            "bias_iops": -2.174115571898668
+          },
+          "bigdata_baleen": {
+            "n": 545,
+            "mae_iops": 330.1063188431616,
+            "rmse_iops": 446.0654082776839,
+            "r2": 0.02373968618633271,
+            "pearson_r": 0.1651447730157264,
+            "actual_std_iops": 451.456310603591,
+            "prediction_std_iops": 97.31685557091159,
+            "bias_iops": -14.213392788396535
+          },
+          "graph_zipf": {
+            "n": 544,
+            "mae_iops": 1490.8482220637898,
+            "rmse_iops": 2054.961249487807,
+            "r2": -0.05792769804261577,
+            "pearson_r": 0.0031977463165584453,
+            "actual_std_iops": 1997.9087223834272,
+            "prediction_std_iops": 475.5968162230442,
+            "bias_iops": -105.40936011281322
+          },
+          "hpc_wrf": {
+            "n": 516,
+            "mae_iops": 302.34057028071516,
+            "rmse_iops": 422.6244963493063,
+            "r2": 0.44033647846524415,
+            "pearson_r": 0.6656069791253844,
+            "actual_std_iops": 564.925483268178,
+            "prediction_std_iops": 402.54874528776986,
+            "bias_iops": 12.513847600789664
+          }
+        },
+        "macro": {
+          "mae_iops": {
+            "mean": 818.8507514530426,
+            "defined_groups": 5
+          },
+          "rmse_iops": {
+            "mean": 1098.5281400422043,
+            "defined_groups": 5
+          },
+          "r2": {
+            "mean": 0.08273260476419393,
+            "defined_groups": 5
+          },
+          "pearson_r": {
+            "mean": 0.21008027292664008,
+            "defined_groups": 5
+          },
+          "actual_std_iops": {
+            "mean": 1120.6594103969271,
+            "defined_groups": 5
+          },
+          "prediction_std_iops": {
+            "mean": 312.5897396264938,
+            "defined_groups": 5
+          },
+          "bias_iops": {
+            "mean": -18.53237196656733,
+            "defined_groups": 5
+          }
+        }
+      },
+      "summed_node_cluster": {
+        "groups": {
+          "ai_inference_ses": {
+            "n": 547,
+            "mae_iops": 1346.9986273655395,
+            "rmse_iops": 1731.8954220860123,
+            "r2": 0.019819920140243807,
+            "pearson_r": 0.1573799204905037,
+            "actual_std_iops": 1749.3178519862124,
+            "prediction_std_iops": 397.58786178698045,
+            "bias_iops": -13.803694700550091
+          },
+          "ai_training_ses": {
+            "n": 509,
+            "mae_iops": 677.4566204621455,
+            "rmse_iops": 871.9088238815335,
+            "r2": -0.0782154358464433,
+            "pearson_r": -0.029144175455628422,
+            "actual_std_iops": 839.6886837432264,
+            "prediction_std_iops": 206.18094799029416,
+            "bias_iops": -50.4578414940455
+          },
+          "bigdata_baleen": {
+            "n": 545,
+            "mae_iops": 312.61446815186986,
+            "rmse_iops": 439.8481926548943,
+            "r2": 0.05076407263206939,
+            "pearson_r": 0.23328143552406744,
+            "actual_std_iops": 451.456310603591,
+            "prediction_std_iops": 100.48792258097761,
+            "bias_iops": 26.867402783568505
+          },
+          "graph_zipf": {
+            "n": 544,
+            "mae_iops": 1437.9247937453715,
+            "rmse_iops": 2007.7687326642924,
+            "r2": -0.009894686941012809,
+            "pearson_r": 0.06239612275072033,
+            "actual_std_iops": 1997.9087223834272,
+            "prediction_std_iops": 352.5275370694615,
+            "bias_iops": -55.801088209320014
+          },
+          "hpc_wrf": {
+            "n": 516,
+            "mae_iops": 317.8441899943575,
+            "rmse_iops": 445.14810080808866,
+            "r2": 0.3790927683606462,
+            "pearson_r": 0.6214225041655965,
+            "actual_std_iops": 564.925483268178,
+            "prediction_std_iops": 397.1257897022982,
+            "bias_iops": 11.620598396563427
+          }
+        },
+        "macro": {
+          "mae_iops": {
+            "mean": 818.5677399438567,
+            "defined_groups": 5
+          },
+          "rmse_iops": {
+            "mean": 1099.3138544189642,
+            "defined_groups": 5
+          },
+          "r2": {
+            "mean": 0.07231332766910066,
+            "defined_groups": 5
+          },
+          "pearson_r": {
+            "mean": 0.20906716149505192,
+            "defined_groups": 5
+          },
+          "actual_std_iops": {
+            "mean": 1120.6594103969271,
+            "defined_groups": 5
+          },
+          "prediction_std_iops": {
+            "mean": 290.7820118260024,
+            "defined_groups": 5
+          },
+          "bias_iops": {
+            "mean": -16.314924644756736,
+            "defined_groups": 5
+          }
+        }
+      }
+    },
+    "R2_L0": {
+      "summed_node_cluster": {
+        "groups": {
+          "ai_inference_ses": {
+            "n": 547,
+            "mae_iops": 1202.7611911362224,
+            "rmse_iops": 1681.2803997357266,
+            "r2": 0.0762746894521581,
+            "pearson_r": 0.29626712975039965,
+            "actual_std_iops": 1749.3178519862124,
+            "prediction_std_iops": 662.1077295468474,
+            "bias_iops": 120.41269266801517
+          },
+          "ai_training_ses": {
+            "n": 509,
+            "mae_iops": 598.352455363995,
+            "rmse_iops": 833.9939778167766,
+            "r2": 0.013517856084607316,
+            "pearson_r": 0.21341065491893982,
+            "actual_std_iops": 839.6886837432264,
+            "prediction_std_iops": 323.2007572523855,
+            "bias_iops": 42.945656886972
+          },
+          "bigdata_baleen": {
+            "n": 545,
+            "mae_iops": 279.5507158331915,
+            "rmse_iops": 414.81753551197784,
+            "r2": 0.15572727795215024,
+            "pearson_r": 0.42563042939677953,
+            "actual_std_iops": 451.456310603591,
+            "prediction_std_iops": 197.32244838485298,
+            "bias_iops": 71.81263135157594
+          },
+          "graph_zipf": {
+            "n": 544,
+            "mae_iops": 1223.6181081884047,
+            "rmse_iops": 1981.987545153681,
+            "r2": 0.015874338750798023,
+            "pearson_r": 0.20498761175110686,
+            "actual_std_iops": 1997.9087223834272,
+            "prediction_std_iops": 419.0341991795468,
+            "bias_iops": 322.9144109838149
+          },
+          "hpc_wrf": {
+            "n": 516,
+            "mae_iops": 299.8513821298762,
+            "rmse_iops": 465.0571421748529,
+            "r2": 0.32231120441976824,
+            "pearson_r": 0.6265985896505425,
+            "actual_std_iops": 564.925483268178,
+            "prediction_std_iops": 482.2161521241415,
+            "bias_iops": 77.43468769576198
+          }
+        },
+        "macro": {
+          "mae_iops": {
+            "mean": 720.826770530338,
+            "defined_groups": 5
+          },
+          "rmse_iops": {
+            "mean": 1075.4273200786029,
+            "defined_groups": 5
+          },
+          "r2": {
+            "mean": 0.11674107333189639,
+            "defined_groups": 5
+          },
+          "pearson_r": {
+            "mean": 0.3533788830935537,
+            "defined_groups": 5
+          },
+          "actual_std_iops": {
+            "mean": 1120.6594103969271,
+            "defined_groups": 5
+          },
+          "prediction_std_iops": {
+            "mean": 416.7762572975548,
+            "defined_groups": 5
+          },
+          "bias_iops": {
+            "mean": 127.104015917228,
+            "defined_groups": 5
+          }
+        }
+      }
+    },
+    "R2_L1": {
+      "summed_node_cluster": {
+        "groups": {
+          "ai_inference_ses": {
+            "n": 547,
+            "mae_iops": 1246.5940926672117,
+            "rmse_iops": 1696.2445202208291,
+            "r2": 0.05975840697682344,
+            "pearson_r": 0.3029375021220977,
+            "actual_std_iops": 1749.3178519862124,
+            "prediction_std_iops": 842.8647247243365,
+            "bias_iops": -6.074381157074812
+          },
+          "ai_training_ses": {
+            "n": 509,
+            "mae_iops": 720.107407830319,
+            "rmse_iops": 873.6666453612988,
+            "r2": -0.08256731469348777,
+            "pearson_r": 0.20499926624415687,
+            "actual_std_iops": 839.6886837432264,
+            "prediction_std_iops": 353.480630217238,
+            "bias_iops": -234.43749911564976
+          },
+          "bigdata_baleen": {
+            "n": 545,
+            "mae_iops": 342.33396439858535,
+            "rmse_iops": 425.3572531657233,
+            "r2": 0.11227954044114652,
+            "pearson_r": 0.4378270153387844,
+            "actual_std_iops": 451.456310603591,
+            "prediction_std_iops": 170.42001538309975,
+            "bias_iops": -124.27136657434866
+          },
+          "graph_zipf": {
+            "n": 544,
+            "mae_iops": 1374.7745791603538,
+            "rmse_iops": 1975.3984828783694,
+            "r2": 0.0224068586676186,
+            "pearson_r": 0.2043403226775742,
+            "actual_std_iops": 1997.9087223834272,
+            "prediction_std_iops": 685.7469944168748,
+            "bias_iops": 15.097269563113942
+          },
+          "hpc_wrf": {
+            "n": 516,
+            "mae_iops": 384.3265654837438,
+            "rmse_iops": 470.04341232954994,
+            "r2": 0.3077011515449213,
+            "pearson_r": 0.6421389679004057,
+            "actual_std_iops": 564.925483268178,
+            "prediction_std_iops": 465.0125813838695,
+            "bias_iops": -151.45908734225486
+          }
+        },
+        "macro": {
+          "mae_iops": {
+            "mean": 813.6273219080427,
+            "defined_groups": 5
+          },
+          "rmse_iops": {
+            "mean": 1088.142062791154,
+            "defined_groups": 5
+          },
+          "r2": {
+            "mean": 0.08391572858740441,
+            "defined_groups": 5
+          },
+          "pearson_r": {
+            "mean": 0.3584486148566038,
+            "defined_groups": 5
+          },
+          "actual_std_iops": {
+            "mean": 1120.6594103969271,
+            "defined_groups": 5
+          },
+          "prediction_std_iops": {
+            "mean": 503.5049892250837,
+            "defined_groups": 5
+          },
+          "bias_iops": {
+            "mean": -100.22901292524283,
+            "defined_groups": 5
+          }
+        }
+      }
+    },
+    "R2_L2": {
+      "summed_node_cluster": {
+        "groups": {
+          "ai_inference_ses": {
+            "n": 547,
+            "mae_iops": 1180.9658702173879,
+            "rmse_iops": 1723.7903161071863,
+            "r2": 0.028972751954014275,
+            "pearson_r": 0.29244665617018606,
+            "actual_std_iops": 1749.3178519862124,
+            "prediction_std_iops": 876.0280387913629,
+            "bias_iops": 200.58815560349598
+          },
+          "ai_training_ses": {
+            "n": 509,
+            "mae_iops": 588.9767216530671,
+            "rmse_iops": 875.3170353252283,
+            "r2": -0.08666120055732751,
+            "pearson_r": 0.14012162371467277,
+            "actual_std_iops": 839.6886837432264,
+            "prediction_std_iops": 340.2712533820673,
+            "bias_iops": 159.34220976164391
+          },
+          "bigdata_baleen": {
+            "n": 545,
+            "mae_iops": 290.10382794021467,
+            "rmse_iops": 405.71676724272027,
+            "r2": 0.19236625515223327,
+            "pearson_r": 0.43996468336154276,
+            "actual_std_iops": 451.456310603591,
+            "prediction_std_iops": 188.21365751505328,
+            "bias_iops": -11.693008674831566
+          },
+          "graph_zipf": {
+            "n": 544,
+            "mae_iops": 1208.186767690322,
+            "rmse_iops": 2025.9297533278302,
+            "r2": -0.02824706718590786,
+            "pearson_r": 0.20861139393435477,
+            "actual_std_iops": 1997.9087223834272,
+            "prediction_std_iops": 779.1572703729702,
+            "bias_iops": 393.89154658598056
+          },
+          "hpc_wrf": {
+            "n": 516,
+            "mae_iops": 279.70797109973523,
+            "rmse_iops": 423.6865953581367,
+            "r2": 0.43751995933942467,
+            "pearson_r": 0.6738264145284192,
+            "actual_std_iops": 564.925483268178,
+            "prediction_std_iops": 431.4397744872957,
+            "bias_iops": 51.90816449010095
+          }
+        },
+        "macro": {
+          "mae_iops": {
+            "mean": 709.5882317201454,
+            "defined_groups": 5
+          },
+          "rmse_iops": {
+            "mean": 1090.8880934722204,
+            "defined_groups": 5
+          },
+          "r2": {
+            "mean": 0.10879013974048737,
+            "defined_groups": 5
+          },
+          "pearson_r": {
+            "mean": 0.3509941543418351,
+            "defined_groups": 5
+          },
+          "actual_std_iops": {
+            "mean": 1120.6594103969271,
+            "defined_groups": 5
+          },
+          "prediction_std_iops": {
+            "mean": 523.0219989097499,
+            "defined_groups": 5
+          },
+          "bias_iops": {
+            "mean": 158.80741355327797,
+            "defined_groups": 5
+          }
+        }
+      }
+    },
+    "R2_L3": {
+      "summed_node_cluster": {
+        "groups": {
+          "ai_inference_ses": {
+            "n": 547,
+            "mae_iops": 1540.1894593596242,
+            "rmse_iops": 1864.3734784854564,
+            "r2": -0.13586933788577582,
+            "pearson_r": 0.2838891441392099,
+            "actual_std_iops": 1749.3178519862124,
+            "prediction_std_iops": 1033.355041628142,
+            "bias_iops": -611.8060351690818
+          },
+          "ai_training_ses": {
+            "n": 509,
+            "mae_iops": 778.2744710955966,
+            "rmse_iops": 928.9201349792037,
+            "r2": -0.22382734425075546,
+            "pearson_r": 0.19392548256867792,
+            "actual_std_iops": 839.6886837432264,
+            "prediction_std_iops": 429.40110075671544,
+            "bias_iops": -336.56355838738165
+          },
+          "bigdata_baleen": {
+            "n": 545,
+            "mae_iops": 389.9229199330741,
+            "rmse_iops": 455.34612611918726,
+            "r2": -0.017306539046136216,
+            "pearson_r": 0.44555276809608696,
+            "actual_std_iops": 451.456310603591,
+            "prediction_std_iops": 180.60210504497547,
+            "bias_iops": -208.7235899758995
+          },
+          "graph_zipf": {
+            "n": 544,
+            "mae_iops": 1563.0998665024254,
+            "rmse_iops": 2065.9794828987756,
+            "r2": -0.06930284591315616,
+            "pearson_r": 0.21912179606454404,
+            "actual_std_iops": 1997.9087223834272,
+            "prediction_std_iops": 1009.350981615983,
+            "bias_iops": -376.29868111890903
+          },
+          "hpc_wrf": {
+            "n": 516,
+            "mae_iops": 385.63848360933997,
+            "rmse_iops": 468.21720297869825,
+            "r2": 0.3130701306926065,
+            "pearson_r": 0.6307042976454331,
+            "actual_std_iops": 564.925483268178,
+            "prediction_std_iops": 408.6052499531134,
+            "bias_iops": -155.8882884387822
+          }
+        },
+        "macro": {
+          "mae_iops": {
+            "mean": 931.425040100012,
+            "defined_groups": 5
+          },
+          "rmse_iops": {
+            "mean": 1156.5672850922642,
+            "defined_groups": 5
+          },
+          "r2": {
+            "mean": -0.026647187280643435,
+            "defined_groups": 5
+          },
+          "pearson_r": {
+            "mean": 0.3546386977027904,
+            "defined_groups": 5
+          },
+          "actual_std_iops": {
+            "mean": 1120.6594103969271,
+            "defined_groups": 5
+          },
+          "prediction_std_iops": {
+            "mean": 612.2628957997858,
+            "defined_groups": 5
+          },
+          "bias_iops": {
+            "mean": -337.85603061801083,
+            "defined_groups": 5
+          }
+        }
+      }
+    },
+    "I1_CB": {
+      "summed_node_cluster": {
+        "groups": {
+          "ai_inference_ses": {
+            "n": 547,
+            "mae_iops": 1245.7288089737617,
+            "rmse_iops": 1650.4218945883333,
+            "r2": 0.1098719305247281,
+            "pearson_r": 0.33224286972938133,
+            "actual_std_iops": 1749.3178519862124,
+            "prediction_std_iops": 619.5348241371098,
+            "bias_iops": -10.067810349788408
+          },
+          "ai_training_ses": {
+            "n": 509,
+            "mae_iops": 620.9641057928396,
+            "rmse_iops": 836.0008640290748,
+            "r2": 0.0087644898341257,
+            "pearson_r": 0.1710394912604211,
+            "actual_std_iops": 839.6886837432264,
+            "prediction_std_iops": 263.6974960612633,
+            "bias_iops": -5.330946073959581
+          },
+          "bigdata_baleen": {
+            "n": 545,
+            "mae_iops": 305.8182980624785,
+            "rmse_iops": 421.75230225245525,
+            "r2": 0.12726284060527837,
+            "pearson_r": 0.3948803364035682,
+            "actual_std_iops": 451.456310603591,
+            "prediction_std_iops": 102.44763032212771,
+            "bias_iops": -9.67549273454601
+          },
+          "graph_zipf": {
+            "n": 544,
+            "mae_iops": 1369.9563726417482,
+            "rmse_iops": 1967.2883872452333,
+            "r2": 0.030417494264076472,
+            "pearson_r": 0.1898731710308502,
+            "actual_std_iops": 1997.9087223834272,
+            "prediction_std_iops": 527.5340642288119,
+            "bias_iops": -23.05353057639936
+          },
+          "hpc_wrf": {
+            "n": 516,
+            "mae_iops": 302.4563085730479,
+            "rmse_iops": 423.9703764243165,
+            "r2": 0.43676621993046594,
+            "pearson_r": 0.6633545129005325,
+            "actual_std_iops": 564.925483268178,
+            "prediction_std_iops": 406.7911994901212,
+            "bias_iops": 4.200164960478246
+          }
+        },
+        "macro": {
+          "mae_iops": {
+            "mean": 768.9847788087752,
+            "defined_groups": 5
+          },
+          "rmse_iops": {
+            "mean": 1059.8867649078827,
+            "defined_groups": 5
+          },
+          "r2": {
+            "mean": 0.1426165950317349,
+            "defined_groups": 5
+          },
+          "pearson_r": {
+            "mean": 0.35027807626495067,
+            "defined_groups": 5
+          },
+          "actual_std_iops": {
+            "mean": 1120.6594103969271,
+            "defined_groups": 5
+          },
+          "prediction_std_iops": {
+            "mean": 384.00104284788677,
+            "defined_groups": 5
+          },
+          "bias_iops": {
+            "mean": -8.785522954843023,
+            "defined_groups": 5
+          }
+        }
+      }
+    },
+    "I1_CBP": {
+      "summed_node_cluster": {
+        "groups": {
+          "ai_inference_ses": {
+            "n": 547,
+            "mae_iops": 1245.1777705850893,
+            "rmse_iops": 1652.832781619109,
+            "r2": 0.1072694861066873,
+            "pearson_r": 0.32875875078375755,
+            "actual_std_iops": 1749.3178519862124,
+            "prediction_std_iops": 624.7527488989092,
+            "bias_iops": -4.723257978822784
+          },
+          "ai_training_ses": {
+            "n": 509,
+            "mae_iops": 620.63942679482,
+            "rmse_iops": 835.1821650802084,
+            "r2": 0.01070498090556371,
+            "pearson_r": 0.17365572517795538,
+            "actual_std_iops": 839.6886837432264,
+            "prediction_std_iops": 262.85443603796625,
+            "bias_iops": -4.106880715835899
+          },
+          "bigdata_baleen": {
+            "n": 545,
+            "mae_iops": 305.8905425319491,
+            "rmse_iops": 421.7144049104138,
+            "r2": 0.12741967641854302,
+            "pearson_r": 0.39576457860037645,
+            "actual_std_iops": 451.456310603591,
+            "prediction_std_iops": 102.03547931563249,
+            "bias_iops": -8.969005784570314
+          },
+          "graph_zipf": {
+            "n": 544,
+            "mae_iops": 1370.944365211027,
+            "rmse_iops": 1968.4901385985645,
+            "r2": 0.029232560742223468,
+            "pearson_r": 0.18837865458203032,
+            "actual_std_iops": 1997.9087223834272,
+            "prediction_std_iops": 532.3984741909135,
+            "bias_iops": -24.831060918453606
+          },
+          "hpc_wrf": {
+            "n": 516,
+            "mae_iops": 302.75766880176553,
+            "rmse_iops": 422.4174583855167,
+            "r2": 0.4408846871703762,
+            "pearson_r": 0.6668088919219507,
+            "actual_std_iops": 564.925483268178,
+            "prediction_std_iops": 411.240648986936,
+            "bias_iops": 1.8301865562490154
+          }
+        },
+        "macro": {
+          "mae_iops": {
+            "mean": 769.0819547849302,
+            "defined_groups": 5
+          },
+          "rmse_iops": {
+            "mean": 1060.1273897187625,
+            "defined_groups": 5
+          },
+          "r2": {
+            "mean": 0.14310227826867875,
+            "defined_groups": 5
+          },
+          "pearson_r": {
+            "mean": 0.35067332021321407,
+            "defined_groups": 5
+          },
+          "actual_std_iops": {
+            "mean": 1120.6594103969271,
+            "defined_groups": 5
+          },
+          "prediction_std_iops": {
+            "mean": 386.6563574860715,
+            "defined_groups": 5
+          },
+          "bias_iops": {
+            "mean": -8.160003768286717,
+            "defined_groups": 5
+          }
+        }
+      }
+    },
+    "V2_M1": {
+      "summed_node_cluster": {
+        "groups": {
+          "ai_inference_ses": {
+            "n": 547,
+            "mae_iops": 1225.0987991249322,
+            "rmse_iops": 1702.793832712185,
+            "r2": 0.05248371982409439,
+            "pearson_r": 0.28668495821494,
+            "actual_std_iops": 1749.3178519862124,
+            "prediction_std_iops": 792.3424513702921,
+            "bias_iops": 79.44648951891354
+          },
+          "ai_training_ses": {
+            "n": 509,
+            "mae_iops": 617.326769875637,
+            "rmse_iops": 835.551454911217,
+            "r2": 0.009829920647923762,
+            "pearson_r": 0.22131396094400826,
+            "actual_std_iops": 839.6886837432264,
+            "prediction_std_iops": 350.98439353419565,
+            "bias_iops": -18.148082320957148
+          },
+          "bigdata_baleen": {
+            "n": 545,
+            "mae_iops": 284.81916254726025,
+            "rmse_iops": 415.8411633017146,
+            "r2": 0.1515553843012557,
+            "pearson_r": 0.4050442823669897,
+            "actual_std_iops": 451.456310603591,
+            "prediction_std_iops": 203.41739129585986,
+            "bias_iops": 46.11034081135321
+          },
+          "graph_zipf": {
+            "n": 544,
+            "mae_iops": 1183.0762303296258,
+            "rmse_iops": 2030.230918819529,
+            "r2": -0.03261775731155292,
+            "pearson_r": 0.19415935539129855,
+            "actual_std_iops": 1997.9087223834272,
+            "prediction_std_iops": 572.54103511569,
+            "bias_iops": 496.5751974442426
+          },
+          "hpc_wrf": {
+            "n": 516,
+            "mae_iops": 315.74216291146683,
+            "rmse_iops": 450.4179534264686,
+            "r2": 0.3643046212747765,
+            "pearson_r": 0.6470876871675794,
+            "actual_std_iops": 564.925483268178,
+            "prediction_std_iops": 497.2818006883031,
+            "bias_iops": 3.9187139023182005
+          }
+        },
+        "macro": {
+          "mae_iops": {
+            "mean": 725.2126249577844,
+            "defined_groups": 5
+          },
+          "rmse_iops": {
+            "mean": 1086.9670646342229,
+            "defined_groups": 5
+          },
+          "r2": {
+            "mean": 0.10911117774729948,
+            "defined_groups": 5
+          },
+          "pearson_r": {
+            "mean": 0.3508580488169632,
+            "defined_groups": 5
+          },
+          "actual_std_iops": {
+            "mean": 1120.6594103969271,
+            "defined_groups": 5
+          },
+          "prediction_std_iops": {
+            "mean": 483.31341440086817,
+            "defined_groups": 5
+          },
+          "bias_iops": {
+            "mean": 121.58053187117407,
+            "defined_groups": 5
+          }
+        }
+      }
+    },
+    "V2_M2": {
+      "summed_node_cluster": {
+        "groups": {
+          "ai_inference_ses": {
+            "n": 547,
+            "mae_iops": 1171.5460562418323,
+            "rmse_iops": 1709.0142344529074,
+            "r2": 0.045548414753448174,
+            "pearson_r": 0.28606451758698936,
+            "actual_std_iops": 1749.3178519862124,
+            "prediction_std_iops": 710.6136373462633,
+            "bias_iops": 258.5582033537424
+          },
+          "ai_training_ses": {
+            "n": 509,
+            "mae_iops": 615.8857861052328,
+            "rmse_iops": 845.616781673345,
+            "r2": -0.01416959371550286,
+            "pearson_r": 0.1633745092083946,
+            "actual_std_iops": 839.6886837432264,
+            "prediction_std_iops": 304.9313498498885,
+            "bias_iops": 25.89914237211636
+          },
+          "bigdata_baleen": {
+            "n": 545,
+            "mae_iops": 286.2100425790209,
+            "rmse_iops": 409.0380926222927,
+            "r2": 0.17908904199828124,
+            "pearson_r": 0.4363064413195641,
+            "actual_std_iops": 451.456310603591,
+            "prediction_std_iops": 150.30319855340247,
+            "bias_iops": 10.942680708858944
+          },
+          "graph_zipf": {
+            "n": 544,
+            "mae_iops": 1132.0950314016902,
+            "rmse_iops": 2038.110527968418,
+            "r2": -0.04064877874734685,
+            "pearson_r": 0.23091002527460888,
+            "actual_std_iops": 1997.9087223834272,
+            "prediction_std_iops": 506.7351311275957,
+            "bias_iops": 610.758752822876
+          },
+          "hpc_wrf": {
+            "n": 516,
+            "mae_iops": 320.00408889711366,
+            "rmse_iops": 447.25831402115716,
+            "r2": 0.3731920254964043,
+            "pearson_r": 0.6610989863796174,
+            "actual_std_iops": 564.925483268178,
+            "prediction_std_iops": 514.4280727093075,
+            "bias_iops": -22.617976240409437
+          }
+        },
+        "macro": {
+          "mae_iops": {
+            "mean": 705.148201044978,
+            "defined_groups": 5
+          },
+          "rmse_iops": {
+            "mean": 1089.807590147624,
+            "defined_groups": 5
+          },
+          "r2": {
+            "mean": 0.1086022219570568,
+            "defined_groups": 5
+          },
+          "pearson_r": {
+            "mean": 0.3555508959538349,
+            "defined_groups": 5
+          },
+          "actual_std_iops": {
+            "mean": 1120.6594103969271,
+            "defined_groups": 5
+          },
+          "prediction_std_iops": {
+            "mean": 437.4022779172915,
+            "defined_groups": 5
+          },
+          "bias_iops": {
+            "mean": 176.70816060343685,
+            "defined_groups": 5
+          }
+        }
+      }
+    },
+    "V2_M3": {
+      "summed_node_cluster": {
+        "groups": {
+          "ai_inference_ses": {
+            "n": 547,
+            "mae_iops": 1226.424640160374,
+            "rmse_iops": 1711.8348025840155,
+            "r2": 0.0423953488563924,
+            "pearson_r": 0.25296322645623887,
+            "actual_std_iops": 1749.3178519862124,
+            "prediction_std_iops": 665.3059985128685,
+            "bias_iops": 128.24428272421662
+          },
+          "ai_training_ses": {
+            "n": 509,
+            "mae_iops": 634.8569853357342,
+            "rmse_iops": 852.0076693703393,
+            "r2": -0.029557027855360074,
+            "pearson_r": 0.1634655394601069,
+            "actual_std_iops": 839.6886837432264,
+            "prediction_std_iops": 335.13786536914074,
+            "bias_iops": -22.907438926471944
+          },
+          "bigdata_baleen": {
+            "n": 545,
+            "mae_iops": 284.87559621268457,
+            "rmse_iops": 413.8729529153573,
+            "r2": 0.15956789351642975,
+            "pearson_r": 0.41204575545098937,
+            "actual_std_iops": 451.456310603591,
+            "prediction_std_iops": 197.04616400292315,
+            "bias_iops": 44.27350925830526
+          },
+          "graph_zipf": {
+            "n": 544,
+            "mae_iops": 1134.853468390072,
+            "rmse_iops": 2061.3993572935065,
+            "r2": -0.06456696867997214,
+            "pearson_r": 0.2004811434624401,
+            "actual_std_iops": 1997.9087223834272,
+            "prediction_std_iops": 403.47632766880497,
+            "bias_iops": 646.6484037287095
+          },
+          "hpc_wrf": {
+            "n": 516,
+            "mae_iops": 320.1249253916186,
+            "rmse_iops": 453.1290010273132,
+            "r2": 0.35662914139100665,
+            "pearson_r": 0.6425341079426306,
+            "actual_std_iops": 564.925483268178,
+            "prediction_std_iops": 496.4847641039544,
+            "bias_iops": 10.950450897216797
+          }
+        },
+        "macro": {
+          "mae_iops": {
+            "mean": 720.2271230980967,
+            "defined_groups": 5
+          },
+          "rmse_iops": {
+            "mean": 1098.4487566381063,
+            "defined_groups": 5
+          },
+          "r2": {
+            "mean": 0.09289367744569932,
+            "defined_groups": 5
+          },
+          "pearson_r": {
+            "mean": 0.33429795455448114,
+            "defined_groups": 5
+          },
+          "actual_std_iops": {
+            "mean": 1120.6594103969271,
+            "defined_groups": 5
+          },
+          "prediction_std_iops": {
+            "mean": 419.49022393153837,
+            "defined_groups": 5
+          },
+          "bias_iops": {
+            "mean": 161.44184153639523,
+            "defined_groups": 5
+          }
+        }
+      }
+    },
+    "T1": {
+      "summed_node_cluster": {
+        "groups": {
+          "ai_inference_ses": {
+            "n": 547,
+            "mae_iops": 1249.2286549904666,
+            "rmse_iops": 1683.4411967719752,
+            "r2": 0.07389880314377739,
+            "pearson_r": 0.296859708522694,
+            "actual_std_iops": 1749.3178519862124,
+            "prediction_std_iops": 727.892655256489,
+            "bias_iops": 5.079712806715608
+          },
+          "ai_training_ses": {
+            "n": 509,
+            "mae_iops": 610.6514619478777,
+            "rmse_iops": 849.9854219954146,
+            "r2": -0.024675503364752327,
+            "pearson_r": 0.2088742024841303,
+            "actual_std_iops": 839.6886837432264,
+            "prediction_std_iops": 394.3758470633014,
+            "bias_iops": 14.298042971867709
+          },
+          "bigdata_baleen": {
+            "n": 545,
+            "mae_iops": 279.2469916947391,
+            "rmse_iops": 424.3349437449782,
+            "r2": 0.11654153152315716,
+            "pearson_r": 0.43194322219296344,
+            "actual_std_iops": 451.456310603591,
+            "prediction_std_iops": 187.53323089633585,
+            "bias_iops": 119.2388432773975
+          },
+          "graph_zipf": {
+            "n": 544,
+            "mae_iops": 1345.508164798512,
+            "rmse_iops": 1974.8653511623388,
+            "r2": 0.022934464194538484,
+            "pearson_r": 0.17827012306750298,
+            "actual_std_iops": 1997.9087223834272,
+            "prediction_std_iops": 538.0284675027333,
+            "bias_iops": 47.28316385605756
+          },
+          "hpc_wrf": {
+            "n": 516,
+            "mae_iops": 309.41794676374093,
+            "rmse_iops": 490.15841927776546,
+            "r2": 0.24718094724992934,
+            "pearson_r": 0.6029416060882138,
+            "actual_std_iops": 564.925483268178,
+            "prediction_std_iops": 491.9665363825922,
+            "bias_iops": 119.28038319136745
+          }
+        },
+        "macro": {
+          "mae_iops": {
+            "mean": 758.8106440390673,
+            "defined_groups": 5
+          },
+          "rmse_iops": {
+            "mean": 1084.5570665904945,
+            "defined_groups": 5
+          },
+          "r2": {
+            "mean": 0.08717604854933,
+            "defined_groups": 5
+          },
+          "pearson_r": {
+            "mean": 0.3437777724711009,
+            "defined_groups": 5
+          },
+          "actual_std_iops": {
+            "mean": 1120.6594103969271,
+            "defined_groups": 5
+          },
+          "prediction_std_iops": {
+            "mean": 467.9593474202903,
+            "defined_groups": 5
+          },
+          "bias_iops": {
+            "mean": 61.036029220681165,
+            "defined_groups": 5
+          }
+        }
+      }
+    },
+    "T2": {
+      "summed_node_cluster": {
+        "groups": {
+          "ai_inference_ses": {
+            "n": 547,
+            "mae_iops": 1215.7334290666597,
+            "rmse_iops": 1725.5345971993265,
+            "r2": 0.0270066179156343,
+            "pearson_r": 0.28181546067989555,
+            "actual_std_iops": 1749.3178519862124,
+            "prediction_std_iops": 868.4809801551926,
+            "bias_iops": 139.2600407295297
+          },
+          "ai_training_ses": {
+            "n": 509,
+            "mae_iops": 648.7620832372039,
+            "rmse_iops": 876.5278535128512,
+            "r2": -0.0896696172206981,
+            "pearson_r": 0.2051447090196986,
+            "actual_std_iops": 839.6886837432264,
+            "prediction_std_iops": 465.9999995831561,
+            "bias_iops": -81.31519137759106
+          },
+          "bigdata_baleen": {
+            "n": 545,
+            "mae_iops": 300.8557488677699,
+            "rmse_iops": 413.00493099275985,
+            "r2": 0.16308949828900354,
+            "pearson_r": 0.4217568365909392,
+            "actual_std_iops": 451.456310603591,
+            "prediction_std_iops": 230.49507083354374,
+            "bias_iops": -37.51031813315295
+          },
+          "graph_zipf": {
+            "n": 544,
+            "mae_iops": 1285.3428764343262,
+            "rmse_iops": 1987.364276843812,
+            "r2": 0.010527628207946838,
+            "pearson_r": 0.20466885289245976,
+            "actual_std_iops": 1997.9087223834272,
+            "prediction_std_iops": 735.7229506598567,
+            "bias_iops": 135.5644784815171
+          },
+          "hpc_wrf": {
+            "n": 516,
+            "mae_iops": 335.3306056103965,
+            "rmse_iops": 441.9263646372579,
+            "r2": 0.38804781226856244,
+            "pearson_r": 0.6624806311624577,
+            "actual_std_iops": 564.925483268178,
+            "prediction_std_iops": 465.85451490124257,
+            "bias_iops": -88.49760773385218
+          }
+        },
+        "macro": {
+          "mae_iops": {
+            "mean": 757.2049486432712,
+            "defined_groups": 5
+          },
+          "rmse_iops": {
+            "mean": 1088.8716046372015,
+            "defined_groups": 5
+          },
+          "r2": {
+            "mean": 0.09980038789208981,
+            "defined_groups": 5
+          },
+          "pearson_r": {
+            "mean": 0.35517329806909015,
+            "defined_groups": 5
+          },
+          "actual_std_iops": {
+            "mean": 1120.6594103969271,
+            "defined_groups": 5
+          },
+          "prediction_std_iops": {
+            "mean": 553.3107032265983,
+            "defined_groups": 5
+          },
+          "bias_iops": {
+            "mean": 13.500280393290122,
+            "defined_groups": 5
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,2158 @@
+{
+  "state": "completed",
+  "job_id": "b19_v2_m2_workload_adapter_v1_a01",
+  "code_sha": "b8a23f4748ea0f094b07c866bebcbcff9e3ddfae",
+  "budget_seconds": 1800,
+  "elapsed_seconds": 33.24672722443938,
+  "inputs": {
+    "arrays": {
+      "file": "C_source_inputs.npz",
+      "bytes": 22700403,
+      "sha256": "ffc01763d54e6185eb62772769e489eed63b6eef817bf79171adfbbb24d41170"
+    },
+    "receipt": {
+      "file": "C_source_receipt.json",
+      "bytes": 52322,
+      "sha256": "fa3f1b745d65f9c638b6b30e812d8dd141263204021eaedef21f13afb4b2bdf3"
+    },
+    "metadata": {
+      "file": "metadata.json",
+      "bytes": 2388,
+      "sha256": "40f6c1e539aca36a298462431713a3b88ee3b99d3731212cd760e4362d23fde9"
+    },
+    "samples": {
+      "file": "sample_ids.json",
+      "bytes": 521111,
+      "sha256": "0458ae7eb0f67db694954034291a2d450a8b6ca2e6f53596b179cc5b3ae0c558"
+    },
+    "r2_report": {
+      "file": "r2_report.json",
+      "bytes": 171466,
+      "sha256": "ab2cf84157b0aef5826647ab727a69aee1d06aebf88d992c91d62b7b505b9f26"
+    },
+    "preprocessing": {
+      "file": "r2_preprocessing.json",
+      "bytes": 29228,
+      "sha256": "b47162c6a15270fc142355898bc54684335d6912a3de49648f4c78d5d7cb99fc"
+    },
+    "baseline": {
+      "file": "r2_L0_predictions.jsonl.gz",
+      "bytes": 235077,
+      "sha256": "4b8fbc189fb215beddef096598cc1952a483f9445b4ffe513a7a7fdd16724a0e"
+    }
+  },
+  "parameters": 21414,
+  "new_fit_count": 1,
+  "new_preprocessing_fit_count": 0,
+  "baseline_fit_count": 0,
+  "external_validation_evaluations": 0,
+  "online_time_eligibility": false,
+  "conditional_known_workload": true,
+  "workload_order": [
+    "ai_inference_ses",
+    "ai_training_ses",
+    "bigdata_baleen",
+    "graph_zipf",
+    "hpc_wrf"
+  ],
+  "batch_permutations_sha256": "2c7d48fb24dd050e01444ce474273c93750fc2f8c1a45642ef3eab3b5126c227",
+  "epoch0_prediction_sha256": "07e1d1b8d83cd62e6e617dc79fa0d960924e2328b7f1b8b8a6a06051d4cfb5ac",
+  "arms": {
+    "M0_reused": {
+      "groups": {
+        "ai_inference_ses": {
+          "idfs44": {
+            "count": 547,
+            "positive_count": 546,
+            "zero_count": 1,
+            "mape_percent": 341.46116906195067,
+            "mae": 160.27311553118216,
+            "bias": 15.327341529525395,
+            "wape_percent": 22.53746695207552
+          },
+          "idfs45": {
+            "count": 547,
+            "positive_count": 547,
+            "zero_count": 0,
+            "mape_percent": 285.8754640048505,
+            "mae": 175.99057743274753,
+            "bias": 13.268702588961808,
+            "wape_percent": 23.99915384585215
+          },
+          "idfs46": {
+            "count": 547,
+            "positive_count": 547,
+            "zero_count": 0,
+            "mape_percent": 321.83992325709704,
+            "mae": 158.0258930771181,
+            "bias": 27.001141033835122,
+            "wape_percent": 23.562359042674284
+          },
+          "idfs47": {
+            "count": 547,
+            "positive_count": 545,
+            "zero_count": 2,
+            "mape_percent": 112.40486761038214,
+            "mae": 209.07598190726048,
+            "bias": 2.1012250213344092,
+            "wape_percent": 25.553757075438554
+          },
+          "idfs64": {
+            "count": 547,
+            "positive_count": 547,
+            "zero_count": 0,
+            "mape_percent": 158.28622146446435,
+            "mae": 161.53832505695127,
+            "bias": 26.369110051631054,
+            "wape_percent": 24.476113970530633
+          },
+          "idfs65": {
+            "count": 547,
+            "positive_count": 546,
+            "zero_count": 1,
+            "mape_percent": 236.75120923581338,
+            "mae": 154.2698606947876,
+            "bias": 13.52331771711109,
+            "wape_percent": 24.61844066354182
+          },
+          "idfs66": {
+            "count": 547,
+            "positive_count": 547,
+            "zero_count": 0,
+            "mape_percent": 147.55069048223572,
+            "mae": 177.2495754876564,
+            "bias": 10.2741052603155,
+            "wape_percent": 24.843253702381702
+          },
+          "idfs67": {
+            "count": 547,
+            "positive_count": 545,
+            "zero_count": 2,
+            "mape_percent": 123.84709773231079,
+            "mae": 180.47807655125257,
+            "bias": 12.547749465300788,
+            "wape_percent": 24.178255056497967
+          }
+        },
+        "ai_training_ses": {
+          "idfs44": {
+            "count": 509,
+            "positive_count": 507,
+            "zero_count": 2,
+            "mape_percent": 66.96238639286861,
+            "mae": 99.09846145839728,
+            "bias": 10.23938701757045,
+            "wape_percent": 24.218284727705996
+          },
+          "idfs45": {
+            "count": 509,
+            "positive_count": 507,
+            "zero_count": 2,
+            "mape_percent": 68.51966034180904,
+            "mae": 79.4139512817143,
+            "bias": 0.7284465557465619,
+            "wape_percent": 23.762794275531334
+          },
+          "idfs46": {
+            "count": 509,
+            "positive_count": 507,
+            "zero_count": 2,
+            "mape_percent": 69.29512798611938,
+            "mae": 90.31779315101609,
+            "bias": 6.152253456340557,
+            "wape_percent": 25.213213650849653
+          },
+          "idfs47": {
+            "count": 509,
+            "positive_count": 507,
+            "zero_count": 2,
+            "mape_percent": 65.94320616358064,
+            "mae": 83.88259992618224,
+            "bias": 4.06644249337127,
+            "wape_percent": 23.69459769050399
+          },
+          "idfs64": {
+            "count": 509,
+            "positive_count": 509,
+            "zero_count": 0,
+            "mape_percent": 95.99623069631316,
+            "mae": 94.14364132384654,
+            "bias": 2.7434654011005035,
+            "wape_percent": 24.036232297949404
+          },
+          "idfs65": {
+            "count": 509,
+            "positive_count": 507,
+            "zero_count": 2,
+            "mape_percent": 71.92789621393322,
+            "mae": 79.60997288072507,
+            "bias": 7.56337463738642,
+            "wape_percent": 24.249110557008507
+          },
+          "idfs66": {
+            "count": 509,
+            "positive_count": 509,
+            "zero_count": 0,
+            "mape_percent": 145.06680029910018,
+            "mae": 107.26271782595892,
+            "bias": 3.279711920058095,
+            "wape_percent": 26.09037722135768
+          },
+          "idfs67": {
+            "count": 509,
+            "positive_count": 507,
+            "zero_count": 2,
+            "mape_percent": 62.17387205483229,
+            "mae": 80.13289661819668,
+            "bias": 8.172575405398145,
+            "wape_percent": 23.22811702923877
+          }
+        },
+        "bigdata_baleen": {
+          "idfs44": {
+            "count": 545,
+            "positive_count": 545,
+            "zero_count": 0,
+            "mape_percent": 51.4517776731951,
+            "mae": 43.152191596074935,
+            "bias": 7.961750541477028,
+            "wape_percent": 20.848871846120495
+          },
+          "idfs45": {
+            "count": 545,
+            "positive_count": 545,
+            "zero_count": 0,
+            "mape_percent": 36.474786678207415,
+            "mae": 42.955819618155104,
+            "bias": 7.613074738388762,
+            "wape_percent": 20.433549233134503
+          },
+          "idfs46": {
+            "count": 545,
+            "positive_count": 545,
+            "zero_count": 0,
+            "mape_percent": 38.70509322053373,
+            "mae": 42.820483902397505,
+            "bias": 9.759950130357655,
+            "wape_percent": 20.832661197627825
+          },
+          "idfs47": {
+            "count": 545,
+            "positive_count": 545,
+            "zero_count": 0,
+            "mape_percent": 36.858967282867205,
+            "mae": 42.21278283355433,
+            "bias": 8.654867973677609,
+            "wape_percent": 20.663546960809718
+          },
+          "idfs64": {
+            "count": 545,
+            "positive_count": 545,
+            "zero_count": 0,
+            "mape_percent": 38.9384357219584,
+            "mae": 44.468543264406534,
+            "bias": 9.73902587890625,
+            "wape_percent": 21.139479331066827
+          },
+          "idfs65": {
+            "count": 545,
+            "positive_count": 545,
+            "zero_count": 0,
+            "mape_percent": 37.15915836547178,
+            "mae": 46.71141740991435,
+            "bias": 3.3904723281160405,
+            "wape_percent": 20.99848435151549
+          },
+          "idfs66": {
+            "count": 545,
+            "positive_count": 545,
+            "zero_count": 0,
+            "mape_percent": 37.02258758921376,
+            "mae": 42.66935914765804,
+            "bias": 8.02973999583393,
+            "wape_percent": 20.05242798609436
+          },
+          "idfs67": {
+            "count": 545,
+            "positive_count": 545,
+            "zero_count": 0,
+            "mape_percent": 38.692306044946875,
+            "mae": 47.090078819344896,
+            "bias": 16.663749764818665,
+            "wape_percent": 21.18303395392886
+          }
+        },
+        "graph_zipf": {
+          "idfs44": {
+            "count": 544,
+            "positive_count": 542,
+            "zero_count": 2,
+            "mape_percent": 103.43009579934436,
+            "mae": 131.69314193725586,
+            "bias": 46.84566430484547,
+            "wape_percent": 14.839801147533507
+          },
+          "idfs45": {
+            "count": 544,
+            "positive_count": 542,
+            "zero_count": 2,
+            "mape_percent": 131.59323114809894,
+            "mae": 127.28046843584846,
+            "bias": 33.53062999949736,
+            "wape_percent": 15.183470861113525
+          },
+          "idfs46": {
+            "count": 544,
+            "positive_count": 542,
+            "zero_count": 2,
+            "mape_percent": 141.38178891811822,
+            "mae": 130.59560102574966,
+            "bias": 32.50929058299345,
+            "wape_percent": 15.427881751870897
+          },
+          "idfs47": {
+            "count": 544,
+            "positive_count": 542,
+            "zero_count": 2,
+            "mape_percent": 105.10934786661807,
+            "mae": 136.33501815795898,
+            "bias": 30.10336617862477,
+            "wape_percent": 15.314682329289482
+          },
+          "idfs64": {
+            "count": 544,
+            "positive_count": 544,
+            "zero_count": 0,
+            "mape_percent": 133.02906776827996,
+            "mae": 140.66810563031365,
+            "bias": 25.849603540757123,
+            "wape_percent": 15.304598064989735
+          },
+          "idfs65": {
+            "count": 544,
+            "positive_count": 542,
+            "zero_count": 2,
+            "mape_percent": 95.17771214585487,
+            "mae": 134.19191259496353,
+            "bias": 12.692212160895853,
+            "wape_percent": 16.327058361456757
+          },
+          "idfs66": {
+            "count": 544,
+            "positive_count": 544,
+            "zero_count": 0,
+            "mape_percent": 221.93501751005036,
+            "mae": 314.57870685353,
+            "bias": 107.8465196946088,
+            "wape_percent": 14.652476604210378
+          },
+          "idfs67": {
+            "count": 544,
+            "positive_count": 542,
+            "zero_count": 2,
+            "mape_percent": 149.1923817718895,
+            "mae": 137.15794226702522,
+            "bias": 33.537124521592084,
+            "wape_percent": 15.472907885617591
+          }
+        },
+        "hpc_wrf": {
+          "idfs44": {
+            "count": 516,
+            "positive_count": 509,
+            "zero_count": 7,
+            "mape_percent": 44.93087651341501,
+            "mae": 56.77701298026152,
+            "bias": 11.402617269708205,
+            "wape_percent": 27.501632150997803
+          },
+          "idfs45": {
+            "count": 516,
+            "positive_count": 511,
+            "zero_count": 5,
+            "mape_percent": 53.96374864802326,
+            "mae": 47.27297258007434,
+            "bias": 12.068654112113538,
+            "wape_percent": 25.062009505104655
+          },
+          "idfs46": {
+            "count": 516,
+            "positive_count": 512,
+            "zero_count": 4,
+            "mape_percent": 154.05455924011102,
+            "mae": 52.038611774296726,
+            "bias": 10.325260901635932,
+            "wape_percent": 26.06704495203144
+          },
+          "idfs47": {
+            "count": 516,
+            "positive_count": 511,
+            "zero_count": 5,
+            "mape_percent": 83.65285019331377,
+            "mae": 63.313508336858234,
+            "bias": 13.390399977218273,
+            "wape_percent": 29.917646042380284
+          },
+          "idfs64": {
+            "count": 516,
+            "positive_count": 516,
+            "zero_count": 0,
+            "mape_percent": 93.52188593830505,
+            "mae": 39.27728200513263,
+            "bias": 12.655536119327989,
+            "wape_percent": 23.93937811794051
+          },
+          "idfs65": {
+            "count": 516,
+            "positive_count": 511,
+            "zero_count": 5,
+            "mape_percent": 84.56902326842649,
+            "mae": 53.135007370349975,
+            "bias": 3.413269338681716,
+            "wape_percent": 25.278123435518317
+          },
+          "idfs66": {
+            "count": 516,
+            "positive_count": 516,
+            "zero_count": 0,
+            "mape_percent": 144.28680368656254,
+            "mae": 56.38538539502048,
+            "bias": 8.421638207842213,
+            "wape_percent": 26.149156395839274
+          },
+          "idfs67": {
+            "count": 516,
+            "positive_count": 510,
+            "zero_count": 6,
+            "mape_percent": 63.620189988797264,
+            "mae": 58.528676232626275,
+            "bias": 5.757311769234118,
+            "wape_percent": 25.162298320365224
+          }
+        }
+      },
+      "summed_node_cluster": {
+        "ai_inference_ses": {
+          "count": 547,
+          "positive_count": 547,
+          "mape_percent": 263.66871091948155,
+          "mae": 1202.7611911362224,
+          "bias": 120.41269266801517,
+          "wape_percent": 21.175897887094997
+        },
+        "ai_training_ses": {
+          "count": 509,
+          "positive_count": 509,
+          "mape_percent": 244.5450261324976,
+          "mae": 598.352455363995,
+          "bias": 42.945656886972,
+          "wape_percent": 20.409802489043148
+        },
+        "bigdata_baleen": {
+          "count": 545,
+          "positive_count": 545,
+          "mape_percent": 32.40504822156833,
+          "mae": 279.5507158331915,
+          "bias": 71.81263135157594,
+          "wape_percent": 16.493363918813316
+        },
+        "graph_zipf": {
+          "count": 544,
+          "positive_count": 544,
+          "mape_percent": 380.34345590461487,
+          "mae": 1223.6181081884047,
+          "bias": 322.9144109838149,
+          "wape_percent": 14.855461013813779
+        },
+        "hpc_wrf": {
+          "count": 516,
+          "positive_count": 516,
+          "mape_percent": 334.61765182397636,
+          "mae": 299.8513821298762,
+          "bias": 77.43468769576198,
+          "wape_percent": 18.408900757901264
+        }
+      },
+      "macro_mape_percent": 112.31633789948162,
+      "worst_group_mape_percent": 341.46116906195067,
+      "workload_mean_node_mae": {
+        "ai_inference_ses": 172.11267571736948,
+        "ai_training_ses": 89.23275430825464,
+        "bigdata_baleen": 44.01008457393821,
+        "graph_zipf": 156.56261211283066,
+        "hpc_wrf": 53.34105708432752
+      },
+      "groups_mape_lt10": 0
+    },
+    "M2": {
+      "groups": {
+        "ai_inference_ses": {
+          "idfs44": {
+            "count": 547,
+            "positive_count": 546,
+            "zero_count": 1,
+            "mape_percent": 335.00659332950056,
+            "mae": 152.5886769965972,
+            "bias": 20.29418515723192,
+            "wape_percent": 21.456887848434338
+          },
+          "idfs45": {
+            "count": 547,
+            "positive_count": 547,
+            "zero_count": 0,
+            "mape_percent": 284.2016569555801,
+            "mae": 171.50949437003686,
+            "bias": 26.683490536984404,
+            "wape_percent": 23.388085893312862
+          },
+          "idfs46": {
+            "count": 547,
+            "positive_count": 547,
+            "zero_count": 0,
+            "mape_percent": 296.6022845913759,
+            "mae": 149.5937021314771,
+            "bias": 40.15895752845778,
+            "wape_percent": 22.305082107174723
+          },
+          "idfs47": {
+            "count": 547,
+            "positive_count": 545,
+            "zero_count": 2,
+            "mape_percent": 120.38700995451043,
+            "mae": 207.15502762315043,
+            "bias": 27.895353048767426,
+            "wape_percent": 25.318973535591567
+          },
+          "idfs64": {
+            "count": 547,
+            "positive_count": 547,
+            "zero_count": 0,
+            "mape_percent": 152.9394335101478,
+            "mae": 151.43722536969227,
+            "bias": 46.51507353564721,
+            "wape_percent": 22.945606166355507
+          },
+          "idfs65": {
+            "count": 547,
+            "positive_count": 546,
+            "zero_count": 1,
+            "mape_percent": 237.36205624073827,
+            "mae": 141.8627051540005,
+            "bias": 38.122007213083435,
+            "wape_percent": 22.63850225490798
+          },
+          "idfs66": {
+            "count": 547,
+            "positive_count": 547,
+            "zero_count": 0,
+            "mape_percent": 145.5087772047729,
+            "mae": 166.12795981454238,
+            "bias": 33.88602995654565,
+            "wape_percent": 23.2844509860006
+          },
+          "idfs67": {
+            "count": 547,
+            "positive_count": 545,
+            "zero_count": 2,
+            "mape_percent": 120.91715958528157,
+            "mae": 170.99225260788606,
+            "bias": 25.003106377024537,
+            "wape_percent": 22.90745987125219
+          }
+        },
+        "ai_training_ses": {
+          "idfs44": {
+            "count": 509,
+            "positive_count": 507,
+            "zero_count": 2,
+            "mape_percent": 65.54052028332764,
+            "mae": 92.15958990610419,
+            "bias": 15.939514999539538,
+            "wape_percent": 22.522521095563615
+          },
+          "idfs45": {
+            "count": 509,
+            "positive_count": 507,
+            "zero_count": 2,
+            "mape_percent": 66.45200060339293,
+            "mae": 79.01623532158453,
+            "bias": -8.515390182525095,
+            "wape_percent": 23.643786942586356
+          },
+          "idfs46": {
+            "count": 509,
+            "positive_count": 507,
+            "zero_count": 2,
+            "mape_percent": 68.11130632838358,
+            "mae": 86.38815622385921,
+            "bias": 8.352046374487736,
+            "wape_percent": 24.11621191998351
+          },
+          "idfs47": {
+            "count": 509,
+            "positive_count": 507,
+            "zero_count": 2,
+            "mape_percent": 63.85848302324792,
+            "mae": 80.64168277283315,
+            "bias": -7.35384769102445,
+            "wape_percent": 22.77912501602277
+          },
+          "idfs64": {
+            "count": 509,
+            "positive_count": 509,
+            "zero_count": 0,
+            "mape_percent": 93.15354335293907,
+            "mae": 88.70885433054626,
+            "bias": 3.138427614463102,
+            "wape_percent": 22.648652629010567
+          },
+          "idfs65": {
+            "count": 509,
+            "positive_count": 507,
+            "zero_count": 2,
+            "mape_percent": 71.95590687694767,
+            "mae": 76.87231472292677,
+            "bias": 15.395416409655498,
+            "wape_percent": 23.41522288020689
+          },
+          "idfs66": {
+            "count": 509,
+            "positive_count": 509,
+            "zero_count": 0,
+            "mape_percent": 150.996775266097,
+            "mae": 108.27529508519501,
+            "bias": -1.7105385231362813,
+            "wape_percent": 26.336674566741976
+          },
+          "idfs67": {
+            "count": 509,
+            "positive_count": 507,
+            "zero_count": 2,
+            "mape_percent": 61.1983956785743,
+            "mae": 78.37625979440385,
+            "bias": 0.6535133706563114,
+            "wape_percent": 22.718920838374203
+          }
+        },
+        "bigdata_baleen": {
+          "idfs44": {
+            "count": 545,
+            "positive_count": 545,
+            "zero_count": 0,
+            "mape_percent": 51.48094742016516,
+            "mae": 41.7900090208841,
+            "bias": 4.04979351638654,
+            "wape_percent": 20.190736792239353
+          },
+          "idfs45": {
+            "count": 545,
+            "positive_count": 545,
+            "zero_count": 0,
+            "mape_percent": 34.62134013800306,
+            "mae": 42.522975144692516,
+            "bias": -2.5866767533328554,
+            "wape_percent": 20.227650499565705
+          },
+          "idfs46": {
+            "count": 545,
+            "positive_count": 545,
+            "zero_count": 0,
+            "mape_percent": 37.345424479566404,
+            "mae": 41.89569861735772,
+            "bias": 2.944197936451763,
+            "wape_percent": 20.382742449215296
+          },
+          "idfs47": {
+            "count": 545,
+            "positive_count": 545,
+            "zero_count": 0,
+            "mape_percent": 35.860097989034344,
+            "mae": 42.14027987138941,
+            "bias": -0.40035918349519783,
+            "wape_percent": 20.628056091387535
+          },
+          "idfs64": {
+            "count": 545,
+            "positive_count": 545,
+            "zero_count": 0,
+            "mape_percent": 37.34621934184758,
+            "mae": 43.17596880711547,
+            "bias": 1.8707277350469467,
+            "wape_percent": 20.525014610212335
+          },
+          "idfs65": {
+            "count": 545,
+            "positive_count": 545,
+            "zero_count": 0,
+            "mape_percent": 36.364889978282484,
+            "mae": 46.12919070742546,
+            "bias": -1.9313201064363532,
+            "wape_percent": 20.73675223163654
+          },
+          "idfs66": {
+            "count": 545,
+            "positive_count": 545,
+            "zero_count": 0,
+            "mape_percent": 36.39631499569921,
+            "mae": 41.71052727655533,
+            "bias": 2.373744131665711,
+            "wape_percent": 19.601825787464566
+          },
+          "idfs67": {
+            "count": 545,
+            "positive_count": 545,
+            "zero_count": 0,
+            "mape_percent": 36.91603712291548,
+            "mae": 45.055133672591744,
+            "bias": 4.622573432572391,
+            "wape_percent": 20.267632807470246
+          }
+        },
+        "graph_zipf": {
+          "idfs44": {
+            "count": 544,
+            "positive_count": 542,
+            "zero_count": 2,
+            "mape_percent": 102.35599988766464,
+            "mae": 126.48997340482823,
+            "bias": 66.06887952019187,
+            "wape_percent": 14.253483703644761
+          },
+          "idfs45": {
+            "count": 544,
+            "positive_count": 542,
+            "zero_count": 2,
+            "mape_percent": 132.3554429452755,
+            "mae": 119.87730766745175,
+            "bias": 63.54900898652918,
+            "wape_percent": 14.300337123561759
+          },
+          "idfs46": {
+            "count": 544,
+            "positive_count": 542,
+            "zero_count": 2,
+            "mape_percent": 144.61104590922184,
+            "mae": 122.1972754983341,
+            "bias": 61.369875963996435,
+            "wape_percent": 14.43574746761473
+          },
+          "idfs47": {
+            "count": 544,
+            "positive_count": 542,
+            "zero_count": 2,
+            "mape_percent": 104.12811987620212,
+            "mae": 125.27809131846709,
+            "bias": 68.81052207946777,
+            "wape_percent": 14.072643971332012
+          },
+          "idfs64": {
+            "count": 544,
+            "positive_count": 544,
+            "zero_count": 0,
+            "mape_percent": 137.238180347393,
+            "mae": 132.4514190449434,
+            "bias": 56.50913406820858,
+            "wape_percent": 14.410627928322274
+          },
+          "idfs65": {
+            "count": 544,
+            "positive_count": 542,
+            "zero_count": 2,
+            "mape_percent": 94.63897309513352,
+            "mae": 120.07282784405876,
+            "bias": 52.53307914733887,
+            "wape_percent": 14.609196857878874
+          },
+          "idfs66": {
+            "count": 544,
+            "positive_count": 544,
+            "zero_count": 0,
+            "mape_percent": 231.68101260876296,
+            "mae": 303.8803015316234,
+            "bias": 180.53760259291704,
+            "wape_percent": 14.154165274592687
+          },
+          "idfs67": {
+            "count": 544,
+            "positive_count": 542,
+            "zero_count": 2,
+            "mape_percent": 149.10033689644635,
+            "mae": 127.79200071447036,
+            "bias": 61.38065046422622,
+            "wape_percent": 14.416327796200488
+          }
+        },
+        "hpc_wrf": {
+          "idfs44": {
+            "count": 516,
+            "positive_count": 509,
+            "zero_count": 7,
+            "mape_percent": 39.87055907612539,
+            "mae": 54.68547195611998,
+            "bias": -2.488749910694684,
+            "wape_percent": 26.48853215056878
+          },
+          "idfs45": {
+            "count": 516,
+            "positive_count": 511,
+            "zero_count": 5,
+            "mape_percent": 48.14685065069872,
+            "mae": 42.73087627943172,
+            "bias": 0.17988848871038865,
+            "wape_percent": 22.653993794499915
+          },
+          "idfs46": {
+            "count": 516,
+            "positive_count": 512,
+            "zero_count": 4,
+            "mape_percent": 161.35924107451032,
+            "mae": 48.407043168711105,
+            "bias": -1.2026157600935115,
+            "wape_percent": 24.247929128981305
+          },
+          "idfs47": {
+            "count": 516,
+            "positive_count": 511,
+            "zero_count": 5,
+            "mape_percent": 71.39929661651418,
+            "mae": 59.46656851066175,
+            "bias": 4.194469422333,
+            "wape_percent": 28.099844642809426
+          },
+          "idfs64": {
+            "count": 516,
+            "positive_count": 516,
+            "zero_count": 0,
+            "mape_percent": 83.62259523510852,
+            "mae": 36.852467514747794,
+            "bias": -0.876458441564279,
+            "wape_percent": 22.461461419336008
+          },
+          "idfs65": {
+            "count": 516,
+            "positive_count": 511,
+            "zero_count": 5,
+            "mape_percent": 80.15168605607685,
+            "mae": 51.78831396176834,
+            "bias": -7.528918066690134,
+            "wape_percent": 24.637455749624262
+          },
+          "idfs66": {
+            "count": 516,
+            "positive_count": 516,
+            "zero_count": 0,
+            "mape_percent": 114.09774051270223,
+            "mae": 51.36636700001798,
+            "bias": -7.630900464316671,
+            "wape_percent": 23.821547990841033
+          },
+          "idfs67": {
+            "count": 516,
+            "positive_count": 510,
+            "zero_count": 6,
+            "mape_percent": 58.55791895151109,
+            "mae": 54.418596445127974,
+            "bias": -7.264691508093546,
+            "wape_percent": 23.395317407923443
+          }
+        }
+      },
+      "summed_node_cluster": {
+        "ai_inference_ses": {
+          "count": 547,
+          "positive_count": 547,
+          "mape_percent": 256.8988334839064,
+          "mae": 1171.5460562418323,
+          "bias": 258.5582033537424,
+          "wape_percent": 20.626322032863232
+        },
+        "ai_training_ses": {
+          "count": 509,
+          "positive_count": 509,
+          "mape_percent": 251.5318144884016,
+          "mae": 615.8857861052328,
+          "bias": 25.89914237211636,
+          "wape_percent": 21.007864407559115
+        },
+        "bigdata_baleen": {
+          "count": 545,
+          "positive_count": 545,
+          "mape_percent": 32.150225320150874,
+          "mae": 286.2100425790209,
+          "bias": 10.942680708858944,
+          "wape_percent": 16.88626114014896
+        },
+        "graph_zipf": {
+          "count": 544,
+          "positive_count": 544,
+          "mape_percent": 395.08437462866993,
+          "mae": 1132.0950314016902,
+          "bias": 610.758752822876,
+          "wape_percent": 13.74431572267203
+        },
+        "hpc_wrf": {
+          "count": 516,
+          "positive_count": 516,
+          "mape_percent": 317.56888078356934,
+          "mae": 320.00408889711366,
+          "bias": -22.617976240409437,
+          "wape_percent": 19.646144275826657
+        }
+      },
+      "macro_mape_percent": 109.84595434974196,
+      "worst_group_mape_percent": 335.00659332950056,
+      "workload_mean_node_mae": {
+        "ai_inference_ses": 163.90838050842285,
+        "ai_training_ses": 86.30479851968163,
+        "bigdata_baleen": 43.05247288975147,
+        "graph_zipf": 147.25489962802214,
+        "hpc_wrf": 49.96446310457333
+      },
+      "groups_mape_lt10": 0
+    }
+  },
+  "comparison": {
+    "relative_macro_improvement": 0.021994872660026976,
+    "worst_group_ratio": 0.9810971896154931,
+    "workload_mae_ratios": {
+      "ai_inference_ses": 0.9523318362534837,
+      "ai_training_ses": 0.9671874323361309,
+      "bigdata_baleen": 0.9782410851181638,
+      "graph_zipf": 0.94054958358704,
+      "hpc_wrf": 0.9366980302918241
+    },
+    "passes": false
+  },
+  "result": {
+    "best_epoch": 13,
+    "macro_mape": 109.84595434974196,
+    "epochs_trained": 21,
+    "internal_checkpoint_evaluations": 22,
+    "checkpoint_sha256": "67bf61dc9d4f1b484120912b2e3b39d01dc34c6edcc621b859f6ad259468f0b7",
+    "predictions_sha256": "ca3ac2b1ab8280122db404375518d849ecee95e4be4bdefe4ed46a742da46fd2",
+    "epochs_sha256": "8dd15e9e59a9e62e18d7ed5e128410ded5b1603f45598dc53118198986b8d14d",
+    "workload_metrics": {
+      "ai_inference_ses": {
+        "nodes": {
+          "idfs44": {
+            "n": 547,
+            "zero_actual": 1,
+            "mae_iops": 152.5886769965972,
+            "wape_percent": 21.456887848434338,
+            "mape_percent": 335.00659332950045,
+            "accuracy_percent": -235.00659332950045,
+            "positive_bands": {
+              "positive_le_10": {
+                "n": 4,
+                "ape_percent_sum": 154556.20244344074
+              },
+              "positive_10_to_100": {
+                "n": 11,
+                "ape_percent_sum": 12113.23747152053
+              },
+              "positive_100_to_1000": {
+                "n": 463,
+                "ape_percent_sum": 14842.984469790457
+              },
+              "above_1000": {
+                "n": 68,
+                "ape_percent_sum": 1401.175573155582
+              }
+            }
+          },
+          "idfs45": {
+            "n": 547,
+            "zero_actual": 0,
+            "mae_iops": 171.50949437003686,
+            "wape_percent": 23.388085893312862,
+            "mape_percent": 284.2016569555801,
+            "accuracy_percent": -184.20165695558012,
+            "positive_bands": {
+              "positive_le_10": {
+                "n": 3,
+                "ape_percent_sum": 118823.97104899089
+              },
+              "positive_10_to_100": {
+                "n": 12,
+                "ape_percent_sum": 19634.723852435007
+              },
+              "positive_100_to_1000": {
+                "n": 472,
+                "ape_percent_sum": 15508.439377490902
+              },
+              "above_1000": {
+                "n": 60,
+                "ape_percent_sum": 1491.1720757855553
+              }
+            }
+          },
+          "idfs46": {
+            "n": 547,
+            "zero_actual": 0,
+            "mae_iops": 149.5937021314771,
+            "wape_percent": 22.305082107174723,
+            "mape_percent": 296.60228459137574,
+            "accuracy_percent": -196.60228459137574,
+            "positive_bands": {
+              "positive_le_10": {
+                "n": 5,
+                "ape_percent_sum": 134728.64766438803
+              },
+              "positive_10_to_100": {
+                "n": 10,
+                "ape_percent_sum": 10384.636907404873
+              },
+              "positive_100_to_1000": {
+                "n": 482,
+                "ape_percent_sum": 15890.236982755674
+              },
+              "above_1000": {
+                "n": 50,
+                "ape_percent_sum": 1237.9281169340309
+              }
+            }
+          },
+          "idfs47": {
+            "n": 547,
+            "zero_actual": 2,
+            "mae_iops": 207.15502762315043,
+            "wape_percent": 25.318973535591567,
+            "mape_percent": 120.38700995451046,
+            "accuracy_percent": -20.38700995451046,
+            "positive_bands": {
+              "positive_le_10": {
+                "n": 2,
+                "ape_percent_sum": 29727.59765625
+              },
+              "positive_10_to_100": {
+                "n": 7,
+                "ape_percent_sum": 15912.564149993977
+              },
+              "positive_100_to_1000": {
+                "n": 450,
+                "ape_percent_sum": 17614.698756920003
+              },
+              "above_1000": {
+                "n": 86,
+                "ape_percent_sum": 2356.059862044217
+              }
+            }
+          },
+          "idfs64": {
+            "n": 547,
+            "zero_actual": 0,
+            "mae_iops": 151.43722536969227,
+            "wape_percent": 22.945606166355507,
+            "mape_percent": 152.93943351014784,
+            "accuracy_percent": -52.939433510147836,
+            "positive_bands": {
+              "positive_le_10": {
+                "n": 4,
+                "ape_percent_sum": 50347.75634765625
+              },
+              "positive_10_to_100": {
+                "n": 11,
+                "ape_percent_sum": 14850.417775880953
+              },
+              "positive_100_to_1000": {
+                "n": 479,
+                "ape_percent_sum": 17316.005047714778
+              },
+              "above_1000": {
+                "n": 53,
+                "ape_percent_sum": 1143.6909587988964
+              }
+            }
+          },
+          "idfs65": {
+            "n": 547,
+            "zero_actual": 1,
+            "mae_iops": 141.8627051540005,
+            "wape_percent": 22.63850225490798,
+            "mape_percent": 237.36205624073833,
+            "accuracy_percent": -137.36205624073833,
+            "positive_bands": {
+              "positive_le_10": {
+                "n": 3,
+                "ape_percent_sum": 94464.88138834634
+              },
+              "positive_10_to_100": {
+                "n": 14,
+                "ape_percent_sum": 18912.528745766453
+              },
+              "positive_100_to_1000": {
+                "n": 483,
+                "ape_percent_sum": 15185.724008134985
+              },
+              "above_1000": {
+                "n": 46,
+                "ape_percent_sum": 1036.5485651953043
+              }
+            }
+          },
+          "idfs66": {
+            "n": 547,
+            "zero_actual": 0,
+            "mae_iops": 166.12795981454238,
+            "wape_percent": 23.2844509860006,
+            "mape_percent": 145.5087772047727,
+            "accuracy_percent": -45.50877720477271,
+            "positive_bands": {
+              "positive_le_10": {
+                "n": 4,
+                "ape_percent_sum": 47169.29916381836
+              },
+              "positive_10_to_100": {
+                "n": 8,
+                "ape_percent_sum": 12408.623413891108
+              },
+              "positive_100_to_1000": {
+                "n": 465,
+                "ape_percent_sum": 18386.08773062858
+              },
+              "above_1000": {
+                "n": 70,
+                "ape_percent_sum": 1629.290822672737
+              }
+            }
+          },
+          "idfs67": {
+            "n": 547,
+            "zero_actual": 2,
+            "mae_iops": 170.99225260788606,
+            "wape_percent": 22.90745987125219,
+            "mape_percent": 120.91715958528165,
+            "accuracy_percent": -20.917159585281652,
+            "positive_bands": {
+              "positive_le_10": {
+                "n": 2,
+                "ape_percent_sum": 30789.26045735677
+              },
+              "positive_10_to_100": {
+                "n": 10,
+                "ape_percent_sum": 16580.415390315677
+              },
+              "positive_100_to_1000": {
+                "n": 451,
+                "ape_percent_sum": 16712.68551628032
+              },
+              "above_1000": {
+                "n": 82,
+                "ape_percent_sum": 1817.4906100256765
+              }
+            }
+          }
+        },
+        "cluster_sum": {
+          "n": 547,
+          "zero_actual": 0,
+          "mae_iops": 1171.5460562418323,
+          "wape_percent": 20.626322032863232,
+          "mape_percent": 256.89883348390634,
+          "accuracy_percent": -156.89883348390634,
+          "positive_bands": {
+            "positive_le_10": {
+              "n": 1,
+              "ape_percent_sum": 39121.339111328125
+            },
+            "positive_10_to_100": {
+              "n": 3,
+              "ape_percent_sum": 69086.7709592789
+            },
+            "positive_100_to_1000": {
+              "n": 12,
+              "ape_percent_sum": 16472.378125805593
+            },
+            "above_1000": {
+              "n": 531,
+              "ape_percent_sum": 15843.173719284205
+            }
+          }
+        },
+        "ordinary_actual_gt_100": {
+          "n": 4260,
+          "bias_iops": 17.35817034725852,
+          "mae_iops": 152.52993933091142,
+          "wape_percent": 20.947125910171913
+        }
+      },
+      "ai_training_ses": {
+        "nodes": {
+          "idfs44": {
+            "n": 509,
+            "zero_actual": 2,
+            "mae_iops": 92.15958990610419,
+            "wape_percent": 22.522521095563615,
+            "mape_percent": 65.54052028332761,
+            "accuracy_percent": 34.45947971667239,
+            "positive_bands": {
+              "positive_le_10": {
+                "n": 1,
+                "ape_percent_sum": 6745.203857421875
+              },
+              "positive_10_to_100": {
+                "n": 16,
+                "ape_percent_sum": 14383.414388991894
+              },
+              "positive_100_to_1000": {
+                "n": 448,
+                "ape_percent_sum": 11393.180923163078
+              },
+              "above_1000": {
+                "n": 42,
+                "ape_percent_sum": 707.2446140702568
+              }
+            }
+          },
+          "idfs45": {
+            "n": 509,
+            "zero_actual": 2,
+            "mae_iops": 79.01623532158453,
+            "wape_percent": 23.643786942586356,
+            "mape_percent": 66.45200060339289,
+            "accuracy_percent": 33.54799939660711,
+            "positive_bands": {
+              "positive_le_10": {
+                "n": 2,
+                "ape_percent_sum": 8838.787002563477
+              },
+              "positive_10_to_100": {
+                "n": 28,
+                "ape_percent_sum": 14606.683647649988
+              },
+              "positive_100_to_1000": {
+                "n": 443,
+                "ape_percent_sum": 9361.632492701636
+              },
+              "above_1000": {
+                "n": 34,
+                "ape_percent_sum": 884.0611630051072
+              }
+            }
+          },
+          "idfs46": {
+            "n": 509,
+            "zero_actual": 2,
+            "mae_iops": 86.38815622385921,
+            "wape_percent": 24.11621191998351,
+            "mape_percent": 68.11130632838352,
+            "accuracy_percent": 31.88869367161648,
+            "positive_bands": {
+              "positive_le_10": {
+                "n": 3,
+                "ape_percent_sum": 11018.70373922681
+              },
+              "positive_10_to_100": {
+                "n": 23,
+                "ape_percent_sum": 11857.26337148554
+              },
+              "positive_100_to_1000": {
+                "n": 439,
+                "ape_percent_sum": 10784.942131565931
+              },
+              "above_1000": {
+                "n": 42,
+                "ape_percent_sum": 871.5230662121952
+              }
+            }
+          },
+          "idfs47": {
+            "n": 509,
+            "zero_actual": 2,
+            "mae_iops": 80.64168277283315,
+            "wape_percent": 22.77912501602277,
+            "mape_percent": 63.858483023247956,
+            "accuracy_percent": 36.141516976752044,
+            "positive_bands": {
+              "positive_le_10": {
+                "n": 2,
+                "ape_percent_sum": 8614.95598687066
+              },
+              "positive_10_to_100": {
+                "n": 25,
+                "ape_percent_sum": 13567.017067536812
+              },
+              "positive_100_to_1000": {
+                "n": 442,
+                "ape_percent_sum": 9278.077563266846
+              },
+              "above_1000": {
+                "n": 38,
+                "ape_percent_sum": 916.2002751123833
+              }
+            }
+          },
+          "idfs64": {
+            "n": 509,
+            "zero_actual": 0,
+            "mae_iops": 88.70885433054626,
+            "wape_percent": 22.648652629010567,
+            "mape_percent": 93.15354335293907,
+            "accuracy_percent": 6.846456647060933,
+            "positive_bands": {
+              "positive_le_10": {
+                "n": 2,
+                "ape_percent_sum": 19972.870381673176
+              },
+              "positive_10_to_100": {
+                "n": 25,
+                "ape_percent_sum": 16569.30099117963
+              },
+              "positive_100_to_1000": {
+                "n": 439,
+                "ape_percent_sum": 10173.021385922188
+              },
+              "above_1000": {
+                "n": 43,
+                "ape_percent_sum": 699.9608078709821
+              }
+            }
+          },
+          "idfs65": {
+            "n": 509,
+            "zero_actual": 2,
+            "mae_iops": 76.87231472292677,
+            "wape_percent": 23.41522288020689,
+            "mape_percent": 71.95590687694764,
+            "accuracy_percent": 28.044093123052363,
+            "positive_bands": {
+              "positive_le_10": {
+                "n": 4,
+                "ape_percent_sum": 15523.89150952536
+              },
+              "positive_10_to_100": {
+                "n": 26,
+                "ape_percent_sum": 10817.169737656708
+              },
+              "positive_100_to_1000": {
+                "n": 450,
+                "ape_percent_sum": 9599.35349847742
+              },
+              "above_1000": {
+                "n": 27,
+                "ape_percent_sum": 541.2300409529785
+              }
+            }
+          },
+          "idfs66": {
+            "n": 509,
+            "zero_actual": 0,
+            "mae_iops": 108.27529508519501,
+            "wape_percent": 26.336674566741976,
+            "mape_percent": 150.99677526609705,
+            "accuracy_percent": -50.996775266097046,
+            "positive_bands": {
+              "positive_le_10": {
+                "n": 3,
+                "ape_percent_sum": 51426.73823038737
+              },
+              "positive_10_to_100": {
+                "n": 24,
+                "ape_percent_sum": 13937.54862092834
+              },
+              "positive_100_to_1000": {
+                "n": 426,
+                "ape_percent_sum": 10257.145140354678
+              },
+              "above_1000": {
+                "n": 56,
+                "ape_percent_sum": 1235.9266187729818
+              }
+            }
+          },
+          "idfs67": {
+            "n": 509,
+            "zero_actual": 2,
+            "mae_iops": 78.37625979440385,
+            "wape_percent": 22.718920838374203,
+            "mape_percent": 61.19839567857432,
+            "accuracy_percent": 38.80160432142568,
+            "positive_bands": {
+              "positive_le_10": {
+                "n": 1,
+                "ape_percent_sum": 3891.8535505022323
+              },
+              "positive_10_to_100": {
+                "n": 31,
+                "ape_percent_sum": 17693.530245927985
+              },
+              "positive_100_to_1000": {
+                "n": 442,
+                "ape_percent_sum": 8685.508188430855
+              },
+              "above_1000": {
+                "n": 33,
+                "ape_percent_sum": 756.6946241760938
+              }
+            }
+          }
+        },
+        "cluster_sum": {
+          "n": 509,
+          "zero_actual": 0,
+          "mae_iops": 615.8857861052328,
+          "wape_percent": 21.007864407559115,
+          "mape_percent": 251.53181448840144,
+          "accuracy_percent": -151.53181448840144,
+          "positive_bands": {
+            "positive_le_10": {
+              "n": 1,
+              "ape_percent_sum": 72327.35595703125
+            },
+            "positive_10_to_100": {
+              "n": 2,
+              "ape_percent_sum": 29524.538535812277
+            },
+            "positive_100_to_1000": {
+              "n": 25,
+              "ape_percent_sum": 15814.436611657868
+            },
+            "above_1000": {
+              "n": 481,
+              "ape_percent_sum": 10363.362470095019
+            }
+          }
+        },
+        "ordinary_actual_gt_100": {
+          "n": 3844,
+          "bias_iops": -11.895531796267823,
+          "mae_iops": 76.09886885532852,
+          "wape_percent": 19.78082964999823
+        }
+      },
+      "bigdata_baleen": {
+        "nodes": {
+          "idfs44": {
+            "n": 545,
+            "zero_actual": 0,
+            "mae_iops": 41.7900090208841,
+            "wape_percent": 20.190736792239353,
+            "mape_percent": 51.480947420165144,
+            "accuracy_percent": 48.519052579834856,
+            "positive_bands": {
+              "positive_le_10": {
+                "n": 2,
+                "ape_percent_sum": 10015.32958984375
+              },
+              "positive_10_to_100": {
+                "n": 40,
+                "ape_percent_sum": 9376.851639872999
+              },
+              "positive_100_to_1000": {
+                "n": 503,
+                "ape_percent_sum": 8664.935114273276
+              },
+              "above_1000": {
+                "n": 0,
+                "ape_percent_sum": 0
+              }
+            }
+          },
+          "idfs45": {
+            "n": 545,
+            "zero_actual": 0,
+            "mae_iops": 42.522975144692516,
+            "wape_percent": 20.227650499565705,
+            "mape_percent": 34.6213401380031,
+            "accuracy_percent": 65.37865986199691,
+            "positive_bands": {
+              "positive_le_10": {
+                "n": 0,
+                "ape_percent_sum": 0
+              },
+              "positive_10_to_100": {
+                "n": 38,
+                "ape_percent_sum": 10060.287677406406
+              },
+              "positive_100_to_1000": {
+                "n": 507,
+                "ape_percent_sum": 8808.342697805267
+              },
+              "above_1000": {
+                "n": 0,
+                "ape_percent_sum": 0
+              }
+            }
+          },
+          "idfs46": {
+            "n": 545,
+            "zero_actual": 0,
+            "mae_iops": 41.89569861735772,
+            "wape_percent": 20.382742449215296,
+            "mape_percent": 37.345424479566425,
+            "accuracy_percent": 62.654575520433575,
+            "positive_bands": {
+              "positive_le_10": {
+                "n": 0,
+                "ape_percent_sum": 0
+              },
+              "positive_10_to_100": {
+                "n": 45,
+                "ape_percent_sum": 11766.327891237675
+              },
+              "positive_100_to_1000": {
+                "n": 500,
+                "ape_percent_sum": 8586.92845012601
+              },
+              "above_1000": {
+                "n": 0,
+                "ape_percent_sum": 0
+              }
+            }
+          },
+          "idfs47": {
+            "n": 545,
+            "zero_actual": 0,
+            "mae_iops": 42.14027987138941,
+            "wape_percent": 20.628056091387535,
+            "mape_percent": 35.86009798903435,
+            "accuracy_percent": 64.13990201096564,
+            "positive_bands": {
+              "positive_le_10": {
+                "n": 0,
+                "ape_percent_sum": 0
+              },
+              "positive_10_to_100": {
+                "n": 46,
+                "ape_percent_sum": 11052.183017829959
+              },
+              "positive_100_to_1000": {
+                "n": 499,
+                "ape_percent_sum": 8491.570386193753
+              },
+              "above_1000": {
+                "n": 0,
+                "ape_percent_sum": 0
+              }
+            }
+          },
+          "idfs64": {
+            "n": 545,
+            "zero_actual": 0,
+            "mae_iops": 43.17596880711547,
+            "wape_percent": 20.525014610212335,
+            "mape_percent": 37.346219341847565,
+            "accuracy_percent": 62.653780658152435,
+            "positive_bands": {
+              "positive_le_10": {
+                "n": 1,
+                "ape_percent_sum": 1590.4151916503906
+              },
+              "positive_10_to_100": {
+                "n": 44,
+                "ape_percent_sum": 9979.233707785677
+              },
+              "positive_100_to_1000": {
+                "n": 500,
+                "ape_percent_sum": 8784.040641870872
+              },
+              "above_1000": {
+                "n": 0,
+                "ape_percent_sum": 0
+              }
+            }
+          },
+          "idfs65": {
+            "n": 545,
+            "zero_actual": 0,
+            "mae_iops": 46.12919070742546,
+            "wape_percent": 20.73675223163654,
+            "mape_percent": 36.36488997828244,
+            "accuracy_percent": 63.63511002171756,
+            "positive_bands": {
+              "positive_le_10": {
+                "n": 0,
+                "ape_percent_sum": 0
+              },
+              "positive_10_to_100": {
+                "n": 35,
+                "ape_percent_sum": 9985.44377509413
+              },
+              "positive_100_to_1000": {
+                "n": 510,
+                "ape_percent_sum": 9833.421263069815
+              },
+              "above_1000": {
+                "n": 0,
+                "ape_percent_sum": 0
+              }
+            }
+          },
+          "idfs66": {
+            "n": 545,
+            "zero_actual": 0,
+            "mae_iops": 41.71052727655533,
+            "wape_percent": 19.601825787464566,
+            "mape_percent": 36.39631499569923,
+            "accuracy_percent": 63.60368500430077,
+            "positive_bands": {
+              "positive_le_10": {
+                "n": 0,
+                "ape_percent_sum": 0
+              },
+              "positive_10_to_100": {
+                "n": 43,
+                "ape_percent_sum": 11412.447095092723
+              },
+              "positive_100_to_1000": {
+                "n": 502,
+                "ape_percent_sum": 8423.544577563343
+              },
+              "above_1000": {
+                "n": 0,
+                "ape_percent_sum": 0
+              }
+            }
+          },
+          "idfs67": {
+            "n": 545,
+            "zero_actual": 0,
+            "mae_iops": 45.055133672591744,
+            "wape_percent": 20.267632807470246,
+            "mape_percent": 36.91603712291547,
+            "accuracy_percent": 63.08396287708453,
+            "positive_bands": {
+              "positive_le_10": {
+                "n": 0,
+                "ape_percent_sum": 0
+              },
+              "positive_10_to_100": {
+                "n": 36,
+                "ape_percent_sum": 10622.503706982343
+              },
+              "positive_100_to_1000": {
+                "n": 509,
+                "ape_percent_sum": 9496.7365250066
+              },
+              "above_1000": {
+                "n": 0,
+                "ape_percent_sum": 0
+              }
+            }
+          }
+        },
+        "cluster_sum": {
+          "n": 545,
+          "zero_actual": 0,
+          "mae_iops": 286.2100425790209,
+          "wape_percent": 16.88626114014896,
+          "mape_percent": 32.15022532015086,
+          "accuracy_percent": 67.84977467984913,
+          "positive_bands": {
+            "positive_le_10": {
+              "n": 0,
+              "ape_percent_sum": 0
+            },
+            "positive_10_to_100": {
+              "n": 0,
+              "ape_percent_sum": 0
+            },
+            "positive_100_to_1000": {
+              "n": 54,
+              "ape_percent_sum": 11546.716392108605
+            },
+            "above_1000": {
+              "n": 491,
+              "ape_percent_sum": 5975.156407373617
+            }
+          }
+        },
+        "ordinary_actual_gt_100": {
+          "n": 4030,
+          "bias_iops": -8.915099927272749,
+          "mae_iops": 36.182920125577944,
+          "wape_percent": 16.16677178333301
+        }
+      },
+      "graph_zipf": {
+        "nodes": {
+          "idfs44": {
+            "n": 544,
+            "zero_actual": 2,
+            "mae_iops": 126.48997340482823,
+            "wape_percent": 14.253483703644761,
+            "mape_percent": 102.3559998876646,
+            "accuracy_percent": -2.355999887664595,
+            "positive_bands": {
+              "positive_le_10": {
+                "n": 2,
+                "ape_percent_sum": 38497.02667236328
+              },
+              "positive_10_to_100": {
+                "n": 3,
+                "ape_percent_sum": 4283.074074946835
+              },
+              "positive_100_to_1000": {
+                "n": 365,
+                "ape_percent_sum": 11651.182288784143
+              },
+              "above_1000": {
+                "n": 172,
+                "ape_percent_sum": 1045.668903019968
+              }
+            }
+          },
+          "idfs45": {
+            "n": 544,
+            "zero_actual": 2,
+            "mae_iops": 119.87730766745175,
+            "wape_percent": 14.300337123561759,
+            "mape_percent": 132.35544294527554,
+            "accuracy_percent": -32.35544294527554,
+            "positive_bands": {
+              "positive_le_10": {
+                "n": 2,
+                "ape_percent_sum": 54830.672200520836
+              },
+              "positive_10_to_100": {
+                "n": 4,
+                "ape_percent_sum": 4659.493287754639
+              },
+              "positive_100_to_1000": {
+                "n": 512,
+                "ape_percent_sum": 12012.507370479118
+              },
+              "above_1000": {
+                "n": 24,
+                "ape_percent_sum": 233.97721758474555
+              }
+            }
+          },
+          "idfs46": {
+            "n": 544,
+            "zero_actual": 2,
+            "mae_iops": 122.1972754983341,
+            "wape_percent": 14.43574746761473,
+            "mape_percent": 144.61104590922193,
+            "accuracy_percent": -44.61104590922193,
+            "positive_bands": {
+              "positive_le_10": {
+                "n": 2,
+                "ape_percent_sum": 60323.585205078125
+              },
+              "positive_10_to_100": {
+                "n": 3,
+                "ape_percent_sum": 5054.606791408506
+              },
+              "positive_100_to_1000": {
+                "n": 486,
+                "ape_percent_sum": 12555.539764879692
+              },
+              "above_1000": {
+                "n": 51,
+                "ape_percent_sum": 445.4551214319229
+              }
+            }
+          },
+          "idfs47": {
+            "n": 544,
+            "zero_actual": 2,
+            "mae_iops": 125.27809131846709,
+            "wape_percent": 14.072643971332012,
+            "mape_percent": 104.12811987620216,
+            "accuracy_percent": -4.128119876202163,
+            "positive_bands": {
+              "positive_le_10": {
+                "n": 2,
+                "ape_percent_sum": 39033.11335245769
+              },
+              "positive_10_to_100": {
+                "n": 3,
+                "ape_percent_sum": 4543.3889885501585
+              },
+              "positive_100_to_1000": {
+                "n": 361,
+                "ape_percent_sum": 11791.671024542522
+              },
+              "above_1000": {
+                "n": 176,
+                "ape_percent_sum": 1069.2676073511802
+              }
+            }
+          },
+          "idfs64": {
+            "n": 544,
+            "zero_actual": 0,
+            "mae_iops": 132.4514190449434,
+            "wape_percent": 14.410627928322274,
+            "mape_percent": 137.23818034739318,
+            "accuracy_percent": -37.23818034739318,
+            "positive_bands": {
+              "positive_le_10": {
+                "n": 4,
+                "ape_percent_sum": 58428.540431431364
+              },
+              "positive_10_to_100": {
+                "n": 3,
+                "ape_percent_sum": 3838.874549589239
+              },
+              "positive_100_to_1000": {
+                "n": 266,
+                "ape_percent_sum": 10666.536345672095
+              },
+              "above_1000": {
+                "n": 271,
+                "ape_percent_sum": 1723.6187822891277
+              }
+            }
+          },
+          "idfs65": {
+            "n": 544,
+            "zero_actual": 2,
+            "mae_iops": 120.07282784405876,
+            "wape_percent": 14.609196857878874,
+            "mape_percent": 94.63897309513352,
+            "accuracy_percent": 5.361026904866478,
+            "positive_bands": {
+              "positive_le_10": {
+                "n": 2,
+                "ape_percent_sum": 34674.280463324656
+              },
+              "positive_10_to_100": {
+                "n": 4,
+                "ape_percent_sum": 4405.324156939361
+              },
+              "positive_100_to_1000": {
+                "n": 529,
+                "ape_percent_sum": 12132.78091648416
+              },
+              "above_1000": {
+                "n": 7,
+                "ape_percent_sum": 81.9378808141891
+              }
+            }
+          },
+          "idfs66": {
+            "n": 544,
+            "zero_actual": 0,
+            "mae_iops": 303.8803015316234,
+            "wape_percent": 14.154165274592687,
+            "mape_percent": 231.68101260876304,
+            "accuracy_percent": -131.68101260876304,
+            "positive_bands": {
+              "positive_le_10": {
+                "n": 2,
+                "ape_percent_sum": 88010.82327706473
+              },
+              "positive_10_to_100": {
+                "n": 2,
+                "ape_percent_sum": 20468.18534655449
+              },
+              "positive_100_to_1000": {
+                "n": 33,
+                "ape_percent_sum": 11746.464512805327
+              },
+              "above_1000": {
+                "n": 507,
+                "ape_percent_sum": 5808.997722742469
+              }
+            }
+          },
+          "idfs67": {
+            "n": 544,
+            "zero_actual": 2,
+            "mae_iops": 127.79200071447036,
+            "wape_percent": 14.416327796200488,
+            "mape_percent": 149.10033689644638,
+            "accuracy_percent": -49.10033689644638,
+            "positive_bands": {
+              "positive_le_10": {
+                "n": 2,
+                "ape_percent_sum": 63646.01287841797
+              },
+              "positive_10_to_100": {
+                "n": 3,
+                "ape_percent_sum": 4091.7704607443834
+              },
+              "positive_100_to_1000": {
+                "n": 355,
+                "ape_percent_sum": 11878.660250441628
+              },
+              "above_1000": {
+                "n": 182,
+                "ape_percent_sum": 1195.9390082699335
+              }
+            }
+          }
+        },
+        "cluster_sum": {
+          "n": 544,
+          "zero_actual": 0,
+          "mae_iops": 1132.0950314016902,
+          "wape_percent": 13.74431572267203,
+          "mape_percent": 395.08437462866976,
+          "accuracy_percent": -295.08437462866976,
+          "positive_bands": {
+            "positive_le_10": {
+              "n": 1,
+              "ape_percent_sum": 107128.52935791016
+            },
+            "positive_10_to_100": {
+              "n": 3,
+              "ape_percent_sum": 91025.28166487957
+            },
+            "positive_100_to_1000": {
+              "n": 3,
+              "ape_percent_sum": 4243.74709993469
+            },
+            "above_1000": {
+              "n": 537,
+              "ape_percent_sum": 12528.34167527207
+            }
+          }
+        },
+        "ordinary_actual_gt_100": {
+          "n": 4297,
+          "bias_iops": 65.25404199889185,
+          "mae_iops": 137.07171983121856,
+          "wape_percent": 13.149445166991969
+        }
+      },
+      "hpc_wrf": {
+        "nodes": {
+          "idfs44": {
+            "n": 516,
+            "zero_actual": 7,
+            "mae_iops": 54.68547195611998,
+            "wape_percent": 26.48853215056878,
+            "mape_percent": 39.87055907612543,
+            "accuracy_percent": 60.12944092387457,
+            "positive_bands": {
+              "positive_le_10": {
+                "n": 3,
+                "ape_percent_sum": 4269.880447387695
+              },
+              "positive_10_to_100": {
+                "n": 91,
+                "ape_percent_sum": 7218.449349516636
+              },
+              "positive_100_to_1000": {
+                "n": 415,
+                "ape_percent_sum": 8805.784772843504
+              },
+              "above_1000": {
+                "n": 0,
+                "ape_percent_sum": 0
+              }
+            }
+          },
+          "idfs45": {
+            "n": 516,
+            "zero_actual": 5,
+            "mae_iops": 42.73087627943172,
+            "wape_percent": 22.653993794499915,
+            "mape_percent": 48.14685065069869,
+            "accuracy_percent": 51.85314934930131,
+            "positive_bands": {
+              "positive_le_10": {
+                "n": 3,
+                "ape_percent_sum": 7406.639946831598
+              },
+              "positive_10_to_100": {
+                "n": 104,
+                "ape_percent_sum": 9620.693206364256
+              },
+              "positive_100_to_1000": {
+                "n": 404,
+                "ape_percent_sum": 7575.707529311193
+              },
+              "above_1000": {
+                "n": 0,
+                "ape_percent_sum": 0
+              }
+            }
+          },
+          "idfs46": {
+            "n": 516,
+            "zero_actual": 4,
+            "mae_iops": 48.407043168711105,
+            "wape_percent": 24.247929128981305,
+            "mape_percent": 161.3592410745105,
+            "accuracy_percent": -61.35924107451049,
+            "positive_bands": {
+              "positive_le_10": {
+                "n": 5,
+                "ape_percent_sum": 67168.44075520834
+              },
+              "positive_10_to_100": {
+                "n": 99,
+                "ape_percent_sum": 7989.089875216521
+              },
+              "positive_100_to_1000": {
+                "n": 408,
+                "ape_percent_sum": 7458.4007997244325
+              },
+              "above_1000": {
+                "n": 0,
+                "ape_percent_sum": 0
+              }
+            }
+          },
+          "idfs47": {
+            "n": 516,
+            "zero_actual": 5,
+            "mae_iops": 59.46656851066175,
+            "wape_percent": 28.099844642809426,
+            "mape_percent": 71.39929661651415,
+            "accuracy_percent": 28.60070338348585,
+            "positive_bands": {
+              "positive_le_10": {
+                "n": 4,
+                "ape_percent_sum": 19373.848190307617
+              },
+              "positive_10_to_100": {
+                "n": 100,
+                "ape_percent_sum": 7887.423287036526
+              },
+              "positive_100_to_1000": {
+                "n": 407,
+                "ape_percent_sum": 9223.7690936946
+              },
+              "above_1000": {
+                "n": 0,
+                "ape_percent_sum": 0
+              }
+            }
+          },
+          "idfs64": {
+            "n": 516,
+            "zero_actual": 0,
+            "mae_iops": 36.852467514747794,
+            "wape_percent": 22.461461419336008,
+            "mape_percent": 83.62259523510859,
+            "accuracy_percent": 16.37740476489141,
+            "positive_bands": {
+              "positive_le_10": {
+                "n": 9,
+                "ape_percent_sum": 27964.359135097926
+              },
+              "positive_10_to_100": {
+                "n": 104,
+                "ape_percent_sum": 7807.8337844523685
+              },
+              "positive_100_to_1000": {
+                "n": 403,
+                "ape_percent_sum": 7377.06622176569
+              },
+              "above_1000": {
+                "n": 0,
+                "ape_percent_sum": 0
+              }
+            }
+          },
+          "idfs65": {
+            "n": 516,
+            "zero_actual": 5,
+            "mae_iops": 51.78831396176834,
+            "wape_percent": 24.637455749624262,
+            "mape_percent": 80.15168605607685,
+            "accuracy_percent": 19.848313943923145,
+            "positive_bands": {
+              "positive_le_10": {
+                "n": 3,
+                "ape_percent_sum": 23462.810821533203
+              },
+              "positive_10_to_100": {
+                "n": 94,
+                "ape_percent_sum": 8660.676109145092
+              },
+              "positive_100_to_1000": {
+                "n": 414,
+                "ape_percent_sum": 8834.024643976978
+              },
+              "above_1000": {
+                "n": 0,
+                "ape_percent_sum": 0
+              }
+            }
+          },
+          "idfs66": {
+            "n": 516,
+            "zero_actual": 0,
+            "mae_iops": 51.36636700001798,
+            "wape_percent": 23.821547990841033,
+            "mape_percent": 114.09774051270232,
+            "accuracy_percent": -14.097740512702316,
+            "positive_bands": {
+              "positive_le_10": {
+                "n": 9,
+                "ape_percent_sum": 44024.417530241466
+              },
+              "positive_10_to_100": {
+                "n": 96,
+                "ape_percent_sum": 6752.506261788201
+              },
+              "positive_100_to_1000": {
+                "n": 411,
+                "ape_percent_sum": 8097.510312524677
+              },
+              "above_1000": {
+                "n": 0,
+                "ape_percent_sum": 0
+              }
+            }
+          },
+          "idfs67": {
+            "n": 516,
+            "zero_actual": 6,
+            "mae_iops": 54.418596445127974,
+            "wape_percent": 23.395317407923443,
+            "mape_percent": 58.55791895151112,
+            "accuracy_percent": 41.44208104848888,
+            "positive_bands": {
+              "positive_le_10": {
+                "n": 3,
+                "ape_percent_sum": 13792.847696940105
+              },
+              "positive_10_to_100": {
+                "n": 73,
+                "ape_percent_sum": 8063.88266498928
+              },
+              "positive_100_to_1000": {
+                "n": 434,
+                "ape_percent_sum": 8007.8083033412795
+              },
+              "above_1000": {
+                "n": 0,
+                "ape_percent_sum": 0
+              }
+            }
+          }
+        },
+        "cluster_sum": {
+          "n": 516,
+          "zero_actual": 0,
+          "mae_iops": 320.00408889711366,
+          "wape_percent": 19.646144275826657,
+          "mape_percent": 317.56888078356957,
+          "accuracy_percent": -217.56888078356957,
+          "positive_bands": {
+            "positive_le_10": {
+              "n": 3,
+              "ape_percent_sum": 107687.02249526978
+            },
+            "positive_10_to_100": {
+              "n": 4,
+              "ape_percent_sum": 39957.556229126756
+            },
+            "positive_100_to_1000": {
+              "n": 48,
+              "ape_percent_sum": 9153.287197555715
+            },
+            "above_1000": {
+              "n": 461,
+              "ape_percent_sum": 7067.67656236953
+            }
+          }
+        },
+        "ordinary_actual_gt_100": {
+          "n": 3296,
+          "bias_iops": -15.987623213564309,
+          "mae_iops": 49.90885644630321,
+          "wape_percent": 20.93432089874195
+        }
+      }
+    },
+    "elapsed_seconds": 31.06522606126964
+  }
+}

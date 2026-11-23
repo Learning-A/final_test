@@ -1,0 +1,20 @@
+{
+  "job_id": "masked_multigroup_moe_v1_a02",
+  "experiment_id": "masked-multigroup-moe-v1",
+  "source_code_commit": "06dc5e7116ca0abca05690b83640cf3b52fb479f",
+  "gpu_uuid": "GPU-8923f552-5691-b49b-d2c8-87cb9292ae92",
+  "cpu_threads": 4,
+  "workers": 0,
+  "budget_seconds": 1800,
+  "command": [
+    "/home/lmj/miniconda3/envs/tsfm/bin/python",
+    "/home/lmj/idfs_forecast_lab/model_b_20261122T074416Z/masked_multigroup_moe_v1_a02/source/scripts/run_masked_moe_study.py",
+    "--archive",
+    "/home/lmj/idfs_forecast_lab/model_b_20261122T074416Z/all_workloads_first_round_e2e_v1_a01/data.zip",
+    "--output",
+    "/home/lmj/idfs_forecast_lab/model_b_20261122T074416Z/masked_multigroup_moe_v1_a02/results"
+  ],
+  "source_zip_sha256": "38feed7a1f17fb9fa4e60c16507cea842a66052b8993148204e8ee4ed048a161",
+  "exit_code": 0,
+  "wall_seconds": 57.7063960917294
+}

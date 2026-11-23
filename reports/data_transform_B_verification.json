@@ -1,0 +1,33 @@
+{
+  "state": "B_frozen_outputs_verified_A_review_pending",
+  "arms": {
+    "T1": {
+      "report_sha256": "9aef0657831ec1c1c492b527057008d9c2220a3b8acd7b7cee04d9b01f327cb8",
+      "samples": 2661,
+      "original_labels": 21288,
+      "groups": 40,
+      "macro_mape": 112.180624253091,
+      "macro_log_mae": 0.2963833294782908,
+      "macro_rmsle": 0.624155467175554,
+      "passes": false,
+      "lease_seconds": 21.29969573020935
+    },
+    "T2": {
+      "report_sha256": "f444df2be7c90f6389c0e257f61eacd452daa3fc7875a4a5e747d9e0aab5d7ff",
+      "samples": 2661,
+      "original_labels": 21288,
+      "groups": 40,
+      "macro_mape": 105.9579293962136,
+      "macro_log_mae": 0.2939404304510462,
+      "macro_rmsle": 0.6094879630713927,
+      "passes": false,
+      "lease_seconds": 22.542911291122437
+    }
+  },
+  "input_transform_shared_exactly": true,
+  "T3": "skipped_training_only_gate_not_met",
+  "new_fit": false,
+  "model_load": false,
+  "inference": false,
+  "training_statistics_refitted": false
+}

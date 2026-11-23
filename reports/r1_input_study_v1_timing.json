@@ -1,0 +1,30 @@
+{
+  "scope": "pre-indexed CPU feature construction plus nine sequential model calls; offline only",
+  "fitting_performed": false,
+  "source_role": "train",
+  "partition": "internal_run03",
+  "dataset_id": "dev_20261122_graph_zipf_train_03_a01",
+  "sample_count": 100,
+  "model_code_commit": "8fbf56e59db9ba28d1afc277cfe4d6e6628e16e4",
+  "script_sha256": "a215e563be368b4da5753d16f2840c400c7704a368e360d394a4f1947bb95d6b",
+  "input_zip_parsing_and_indexing_included": false,
+  "network_arrival_and_publication_included": false,
+  "cuda_visible_devices": "",
+  "feature_construction": {
+    "p50_ms": 4.4239105,
+    "p95_ms": 4.6605831,
+    "p99_ms": 5.047708200000001
+  },
+  "nine_model_calls": {
+    "p50_ms": 45.7824535,
+    "p95_ms": 48.59571575,
+    "p99_ms": 53.33649465000005
+  },
+  "combined": {
+    "p50_ms": 50.229239500000006,
+    "p95_ms": 53.01117735,
+    "p99_ms": 57.74464791000005
+  },
+  "formal_acceptance": false,
+  "online_time_eligibility": false
+}

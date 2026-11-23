@@ -1,0 +1,593 @@
+{
+  "audit_script_sha256": "3df205b2af8fa661caaa2ddcc45efa97c9e8e3cdf5ad5765462a1cdab79c25df",
+  "audit_dependency_sha256": {
+    "fine_inputs.py": "5b7bbe497e3359f0ff6101437490179b0eb75c54cf97787bca879853bc44aa90",
+    "fine_paired_dataset.py": "017f063a6aca87dc9c37b6734012b85aa9513b49586202a7191e59944f1c0e5c",
+    "dataset.py": "83ecb3d6772bf3c832beb8b06aa4e38e95f0a6fc9070f7307e1d5351fc8f0656",
+    "counters.py": "e5a30e6978c8e2a48edbf60f32faf5d703a343e72ce59d6e2274da54a2ead14a",
+    "fine_export.py": "a8e8f824ef7acfd2e323f156a6218396b872565c3c9519bc03d06a4370024c6b",
+    "masked_inputs.py": "35b7af68c277067d0d5b83466ee71204cabf72f81b5b8964058510c85f95463c"
+  },
+  "request_id": "B19-FINE-SCHEMA-SAMPLE-20261122-01",
+  "status": "verified",
+  "scope": "delivered_graph_train03_core_and_original_label_replay; validation_audit_labels_only",
+  "archive_sha256": "9f25bff3f4870ccb9f2b7e96e82d79d1d544dc4b627101061d881564a78d6752",
+  "export_manifest_sha256": "0760df3be375363cee7f67ef3f0b329da14fa7a665138be6859ebb83cd4d985b",
+  "dataset_id": "dev_20261122_graph_zipf_train_03_a01",
+  "source_role": "train",
+  "raw_cumulative_event_buckets_independently_rebuilt": 360,
+  "pinned_input_hashes": {
+    "train": "889d303141802a9c826497eb3cf5f31ddac7c7a5d4db63c48698c5894d1d4425",
+    "validation": "0c7bcbf682db0b895569211966eed82cf37bd77663c126ab29269aae8cb05ecf",
+    "index": "52e0bf86ff62079e6104a78b58126f59d0f63210ecb405d86b1614d98e92fd2d",
+    "topology": "81ddb8350790e2a1e165757e01c9c3d6cdcd328d956179778f1b7298230eb98b",
+    "sample_ids": "0458ae7eb0f67db694954034291a2d450a8b6ca2e6f53596b179cc5b3ae0c558"
+  },
+  "fine_rows": 59562,
+  "raw_event_rows": 41031,
+  "all_original_complete_node_client_windows_recomputed": 5921,
+  "incomplete_window_flags_matched": 36,
+  "source_raw_file_hashes_matched_original_quality": 24,
+  "pinned_internal_dev_seconds": 544,
+  "paired_samples_identical_to_prior_baseline": true,
+  "event_audit_label_checks": [
+    {
+      "run_id": "graph_zipf_train_03",
+      "role": "train",
+      "target_start_ns": 1795343004000000000,
+      "oss_complete": 96,
+      "actual_cluster": 8,
+      "client7414_actual": 0,
+      "A_supplied_nearby_vdbench_min_iops": 0.0,
+      "original_vdbench_log_independently_received": false
+    },
+    {
+      "run_id": "graph_zipf_train_03",
+      "role": "train",
+      "target_start_ns": 1795343013000000000,
+      "oss_complete": 96,
+      "actual_cluster": 14,
+      "client7414_actual": 0,
+      "A_supplied_nearby_vdbench_min_iops": 0.0,
+      "original_vdbench_log_independently_received": false
+    },
+    {
+      "run_id": "graph_zipf_train_03",
+      "role": "train",
+      "target_start_ns": 1795343113000000000,
+      "oss_complete": 96,
+      "actual_cluster": 59,
+      "client7414_actual": 48,
+      "A_supplied_nearby_vdbench_min_iops": 44.0,
+      "original_vdbench_log_independently_received": false
+    },
+    {
+      "run_id": "graph_zipf_train_03",
+      "role": "train",
+      "target_start_ns": 1795343199000000000,
+      "oss_complete": 96,
+      "actual_cluster": 53,
+      "client7414_actual": 44,
+      "A_supplied_nearby_vdbench_min_iops": 38.0,
+      "original_vdbench_log_independently_received": false
+    },
+    {
+      "run_id": "graph_zipf_validation_01",
+      "role": "validation",
+      "target_start_ns": 1795346566000000000,
+      "oss_complete": 96,
+      "actual_cluster": 4,
+      "client7414_actual": 0,
+      "A_supplied_nearby_vdbench_min_iops": 0.0,
+      "original_vdbench_log_independently_received": false
+    },
+    {
+      "run_id": "graph_zipf_validation_01",
+      "role": "validation",
+      "target_start_ns": 1795346652000000000,
+      "oss_complete": 96,
+      "actual_cluster": 5,
+      "client7414_actual": 0,
+      "A_supplied_nearby_vdbench_min_iops": 0.0,
+      "original_vdbench_log_independently_received": false
+    },
+    {
+      "run_id": "graph_zipf_validation_01",
+      "role": "validation",
+      "target_start_ns": 1795346870000000000,
+      "oss_complete": 96,
+      "actual_cluster": 2,
+      "client7414_actual": 0,
+      "A_supplied_nearby_vdbench_min_iops": 0.0,
+      "original_vdbench_log_independently_received": false
+    }
+  ],
+  "source_time_only_event_context": [
+    {
+      "target_start_ns": 1795343004000000000,
+      "target_cluster_actual": 8,
+      "pre_target_100ms": [
+        {
+          "start_offset_ms": -2000,
+          "cluster_operations": 937,
+          "source_time_eligible": true
+        },
+        {
+          "start_offset_ms": -1900,
+          "cluster_operations": 824,
+          "source_time_eligible": true
+        },
+        {
+          "start_offset_ms": -1800,
+          "cluster_operations": 859,
+          "source_time_eligible": true
+        },
+        {
+          "start_offset_ms": -1700,
+          "cluster_operations": 915,
+          "source_time_eligible": true
+        },
+        {
+          "start_offset_ms": -1600,
+          "cluster_operations": 945,
+          "source_time_eligible": true
+        },
+        {
+          "start_offset_ms": -1500,
+          "cluster_operations": 943,
+          "source_time_eligible": true
+        },
+        {
+          "start_offset_ms": -1400,
+          "cluster_operations": 891,
+          "source_time_eligible": true
+        },
+        {
+          "start_offset_ms": -1300,
+          "cluster_operations": 918,
+          "source_time_eligible": true
+        },
+        {
+          "start_offset_ms": -1200,
+          "cluster_operations": 713,
+          "source_time_eligible": true
+        },
+        {
+          "start_offset_ms": -1100,
+          "cluster_operations": 967,
+          "source_time_eligible": true
+        },
+        {
+          "start_offset_ms": -1000,
+          "cluster_operations": 944,
+          "source_time_eligible": true
+        },
+        {
+          "start_offset_ms": -900,
+          "cluster_operations": 862,
+          "source_time_eligible": true
+        },
+        {
+          "start_offset_ms": -800,
+          "cluster_operations": 958,
+          "source_time_eligible": true
+        },
+        {
+          "start_offset_ms": -700,
+          "cluster_operations": 999,
+          "source_time_eligible": true
+        },
+        {
+          "start_offset_ms": -600,
+          "cluster_operations": 990,
+          "source_time_eligible": true
+        },
+        {
+          "start_offset_ms": -500,
+          "cluster_operations": 1001,
+          "source_time_eligible": true
+        },
+        {
+          "start_offset_ms": -400,
+          "cluster_operations": 993,
+          "source_time_eligible": true
+        },
+        {
+          "start_offset_ms": -300,
+          "cluster_operations": 1001,
+          "source_time_eligible": true
+        },
+        {
+          "start_offset_ms": -200,
+          "cluster_operations": 566,
+          "source_time_eligible": true
+        },
+        {
+          "start_offset_ms": -100,
+          "cluster_operations": null,
+          "source_time_eligible": false
+        }
+      ],
+      "node_observed_buckets": [
+        19,
+        19,
+        19,
+        19,
+        19,
+        19,
+        19,
+        19
+      ],
+      "online_ready": false,
+      "clock_bound": "unknown",
+      "processing_budget_ns": 0
+    },
+    {
+      "target_start_ns": 1795343013000000000,
+      "target_cluster_actual": 14,
+      "pre_target_100ms": [
+        {
+          "start_offset_ms": -2000,
+          "cluster_operations": 1029,
+          "source_time_eligible": true
+        },
+        {
+          "start_offset_ms": -1900,
+          "cluster_operations": 755,
+          "source_time_eligible": true
+        },
+        {
+          "start_offset_ms": -1800,
+          "cluster_operations": 1016,
+          "source_time_eligible": true
+        },
+        {
+          "start_offset_ms": -1700,
+          "cluster_operations": 1040,
+          "source_time_eligible": true
+        },
+        {
+          "start_offset_ms": -1600,
+          "cluster_operations": 1007,
+          "source_time_eligible": true
+        },
+        {
+          "start_offset_ms": -1500,
+          "cluster_operations": 970,
+          "source_time_eligible": true
+        },
+        {
+          "start_offset_ms": -1400,
+          "cluster_operations": 903,
+          "source_time_eligible": true
+        },
+        {
+          "start_offset_ms": -1300,
+          "cluster_operations": 1014,
+          "source_time_eligible": true
+        },
+        {
+          "start_offset_ms": -1200,
+          "cluster_operations": 927,
+          "source_time_eligible": true
+        },
+        {
+          "start_offset_ms": -1100,
+          "cluster_operations": 491,
+          "source_time_eligible": true
+        },
+        {
+          "start_offset_ms": -1000,
+          "cluster_operations": 0,
+          "source_time_eligible": true
+        },
+        {
+          "start_offset_ms": -900,
+          "cluster_operations": 0,
+          "source_time_eligible": true
+        },
+        {
+          "start_offset_ms": -800,
+          "cluster_operations": 845,
+          "source_time_eligible": true
+        },
+        {
+          "start_offset_ms": -700,
+          "cluster_operations": 1033,
+          "source_time_eligible": true
+        },
+        {
+          "start_offset_ms": -600,
+          "cluster_operations": 935,
+          "source_time_eligible": true
+        },
+        {
+          "start_offset_ms": -500,
+          "cluster_operations": 968,
+          "source_time_eligible": true
+        },
+        {
+          "start_offset_ms": -400,
+          "cluster_operations": 970,
+          "source_time_eligible": true
+        },
+        {
+          "start_offset_ms": -300,
+          "cluster_operations": 993,
+          "source_time_eligible": true
+        },
+        {
+          "start_offset_ms": -200,
+          "cluster_operations": 598,
+          "source_time_eligible": true
+        },
+        {
+          "start_offset_ms": -100,
+          "cluster_operations": null,
+          "source_time_eligible": false
+        }
+      ],
+      "node_observed_buckets": [
+        19,
+        19,
+        19,
+        19,
+        19,
+        19,
+        19,
+        19
+      ],
+      "online_ready": false,
+      "clock_bound": "unknown",
+      "processing_budget_ns": 0
+    },
+    {
+      "target_start_ns": 1795343113000000000,
+      "target_cluster_actual": 59,
+      "pre_target_100ms": [
+        {
+          "start_offset_ms": -2000,
+          "cluster_operations": 203,
+          "source_time_eligible": true
+        },
+        {
+          "start_offset_ms": -1900,
+          "cluster_operations": 299,
+          "source_time_eligible": true
+        },
+        {
+          "start_offset_ms": -1800,
+          "cluster_operations": 999,
+          "source_time_eligible": true
+        },
+        {
+          "start_offset_ms": -1700,
+          "cluster_operations": 925,
+          "source_time_eligible": true
+        },
+        {
+          "start_offset_ms": -1600,
+          "cluster_operations": 959,
+          "source_time_eligible": true
+        },
+        {
+          "start_offset_ms": -1500,
+          "cluster_operations": 918,
+          "source_time_eligible": true
+        },
+        {
+          "start_offset_ms": -1400,
+          "cluster_operations": 1001,
+          "source_time_eligible": true
+        },
+        {
+          "start_offset_ms": -1300,
+          "cluster_operations": 920,
+          "source_time_eligible": true
+        },
+        {
+          "start_offset_ms": -1200,
+          "cluster_operations": 857,
+          "source_time_eligible": true
+        },
+        {
+          "start_offset_ms": -1100,
+          "cluster_operations": 976,
+          "source_time_eligible": true
+        },
+        {
+          "start_offset_ms": -1000,
+          "cluster_operations": 945,
+          "source_time_eligible": true
+        },
+        {
+          "start_offset_ms": -900,
+          "cluster_operations": 956,
+          "source_time_eligible": true
+        },
+        {
+          "start_offset_ms": -800,
+          "cluster_operations": 939,
+          "source_time_eligible": true
+        },
+        {
+          "start_offset_ms": -700,
+          "cluster_operations": 957,
+          "source_time_eligible": true
+        },
+        {
+          "start_offset_ms": -600,
+          "cluster_operations": 944,
+          "source_time_eligible": true
+        },
+        {
+          "start_offset_ms": -500,
+          "cluster_operations": 900,
+          "source_time_eligible": true
+        },
+        {
+          "start_offset_ms": -400,
+          "cluster_operations": 720,
+          "source_time_eligible": true
+        },
+        {
+          "start_offset_ms": -300,
+          "cluster_operations": 987,
+          "source_time_eligible": true
+        },
+        {
+          "start_offset_ms": -200,
+          "cluster_operations": 725,
+          "source_time_eligible": true
+        },
+        {
+          "start_offset_ms": -100,
+          "cluster_operations": null,
+          "source_time_eligible": false
+        }
+      ],
+      "node_observed_buckets": [
+        19,
+        19,
+        19,
+        19,
+        19,
+        19,
+        19,
+        19
+      ],
+      "online_ready": false,
+      "clock_bound": "unknown",
+      "processing_budget_ns": 0
+    },
+    {
+      "target_start_ns": 1795343199000000000,
+      "target_cluster_actual": 53,
+      "pre_target_100ms": [
+        {
+          "start_offset_ms": -2000,
+          "cluster_operations": 860,
+          "source_time_eligible": true
+        },
+        {
+          "start_offset_ms": -1900,
+          "cluster_operations": 906,
+          "source_time_eligible": true
+        },
+        {
+          "start_offset_ms": -1800,
+          "cluster_operations": 855,
+          "source_time_eligible": true
+        },
+        {
+          "start_offset_ms": -1700,
+          "cluster_operations": 896,
+          "source_time_eligible": true
+        },
+        {
+          "start_offset_ms": -1600,
+          "cluster_operations": 812,
+          "source_time_eligible": true
+        },
+        {
+          "start_offset_ms": -1500,
+          "cluster_operations": 936,
+          "source_time_eligible": true
+        },
+        {
+          "start_offset_ms": -1400,
+          "cluster_operations": 820,
+          "source_time_eligible": true
+        },
+        {
+          "start_offset_ms": -1300,
+          "cluster_operations": 954,
+          "source_time_eligible": true
+        },
+        {
+          "start_offset_ms": -1200,
+          "cluster_operations": 908,
+          "source_time_eligible": true
+        },
+        {
+          "start_offset_ms": -1100,
+          "cluster_operations": 972,
+          "source_time_eligible": true
+        },
+        {
+          "start_offset_ms": -1000,
+          "cluster_operations": 772,
+          "source_time_eligible": true
+        },
+        {
+          "start_offset_ms": -900,
+          "cluster_operations": 4,
+          "source_time_eligible": true
+        },
+        {
+          "start_offset_ms": -800,
+          "cluster_operations": 3,
+          "source_time_eligible": true
+        },
+        {
+          "start_offset_ms": -700,
+          "cluster_operations": 1,
+          "source_time_eligible": true
+        },
+        {
+          "start_offset_ms": -600,
+          "cluster_operations": 0,
+          "source_time_eligible": true
+        },
+        {
+          "start_offset_ms": -500,
+          "cluster_operations": 0,
+          "source_time_eligible": true
+        },
+        {
+          "start_offset_ms": -400,
+          "cluster_operations": 0,
+          "source_time_eligible": true
+        },
+        {
+          "start_offset_ms": -300,
+          "cluster_operations": 0,
+          "source_time_eligible": true
+        },
+        {
+          "start_offset_ms": -200,
+          "cluster_operations": 2,
+          "source_time_eligible": true
+        },
+        {
+          "start_offset_ms": -100,
+          "cluster_operations": null,
+          "source_time_eligible": false
+        }
+      ],
+      "node_observed_buckets": [
+        19,
+        19,
+        19,
+        19,
+        19,
+        19,
+        19,
+        19
+      ],
+      "online_ready": false,
+      "clock_bound": "unknown",
+      "processing_budget_ns": 0
+    }
+  ],
+  "limitations": [
+    "Only graph train03 has full fine core; no train01/02 fit range or other workloads.",
+    "Validation three events have audit summaries, not raw fine neighborhood package.",
+    "Online reception and cross-host clock bound unknown; no online eligibility.",
+    "VDbench intervals from A audit only; raw Vdbench/GC logs and auxiliary units not independently verified.",
+    "Export manifest identifies exporter by short upstream commit; exact modified sanitizer source still needed."
+  ],
+  "fitting_performed": false,
+  "new_external_validation_model_evaluations": 0,
+  "formal_acceptance": false
+}

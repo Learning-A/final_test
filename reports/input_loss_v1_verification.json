@@ -1,0 +1,7 @@
+{
+  "prediction_sha256_verified": true,
+  "sample_ids_sha256_verified": true,
+  "independent_metric_groups_recomputed": 270,
+  "baseline_regression_passed": true,
+  "formal_acceptance": false
+}

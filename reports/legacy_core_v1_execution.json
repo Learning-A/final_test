@@ -1,0 +1,23 @@
+{
+  "job_id": "legacy_core_current1s_v1_a01",
+  "experiment_id": "legacy-core-current1s-pilot-v1",
+  "code_commit": "f53de59d4089238700bd6bc38e634553b5f63185",
+  "gpu_uuid": "GPU-8923f552-5691-b49b-d2c8-87cb9292ae92",
+  "threads": 4,
+  "workers": 0,
+  "budget_seconds": 1800,
+  "command": [
+    "/home/lmj/miniconda3/envs/tsfm/bin/python",
+    "/home/lmj/idfs_forecast_lab/model_b_20261122T074416Z/legacy_core_current1s_v1_a01/source/scripts/run_legacy_core_pilot.py",
+    "--archive",
+    "/home/lmj/idfs_forecast_lab/model_b_20261122T074416Z/all_workloads_first_round_e2e_v1_a01/data.zip",
+    "--core",
+    "/home/lmj/idfs_forecast_lab/model_b_20261122T074416Z/legacy_core_current1s_v1_a01/legacy_assets/models.py",
+    "--output",
+    "/home/lmj/idfs_forecast_lab/model_b_20261122T074416Z/legacy_core_current1s_v1_a01/results"
+  ],
+  "legacy_assets_sha256": {
+    "models.py": "9510dfb820d770394a91b4d18d7ac29974a6db7303f64cdc9b17d9111eec2685",
+    "run_final_reference.py": "09d5ac18aa0fd81b59309e7557eebff7b63604713068ee210bcd75ff3b60aca0"
+  }
+}

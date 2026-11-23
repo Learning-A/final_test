@@ -1,0 +1,44 @@
+{
+  "release": "development-all-20-rounds-20261122-v1",
+  "capture_count": 20,
+  "role_counts": {
+    "train": 15,
+    "validation": 5
+  },
+  "member_files_verified": 149,
+  "duplicate_prior_first_round_captures": [
+    "ai_training_20261122_train01_attempt02",
+    "dev_20261122_ai_inference_ses_train_01_a01",
+    "dev_20261122_bigdata_baleen_train_01_a01",
+    "dev_20261122_graph_zipf_train_01_a01",
+    "dev_20261122_hpc_wrf_train_01_a01"
+  ],
+  "old_windows_and_recording_start_byte_identical": true,
+  "new_captures_beyond_first_round": 15,
+  "source_quality": "candidate_pending_time_boundary_review",
+  "formal_acceptance": false,
+  "validation_labels_inspected_for_model_selection": false,
+  "telemetry_availability_statement": "source read and offline receiver timestamps; runtime alignment pending",
+  "coverage": {
+    "ai_inference_ses": {
+      "train": 3,
+      "validation": 1
+    },
+    "ai_training_ses": {
+      "train": 3,
+      "validation": 1
+    },
+    "bigdata_baleen": {
+      "train": 3,
+      "validation": 1
+    },
+    "graph_zipf": {
+      "train": 3,
+      "validation": 1
+    },
+    "hpc_wrf": {
+      "train": 3,
+      "validation": 1
+    }
+  }
+}
