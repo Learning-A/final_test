@@ -1,5 +1,5 @@
 {
-  "state": "D1_published_B_full_receipt_I1_preparing",
+  "state": "I1_A_independent_verified_no_gain_M1_C258_next",
   "execution_authorized": true,
   "plan_commit": "1e286c3",
   "A_script": "scripts/analyze_v2_d0.py",
@@ -8,8 +8,8 @@
   "D1_sample": "reports/v2_d1_sample_audit.json",
   "new_fit_count": 0,
   "next_actions": [
-    "B completes full15 receipt and I1 registration/execution; do not duplicate fits.",
-    "A reviews actual frozen I1 results and time/mask evidence on handoff; keep D1 artifacts immutable."
+    "B freeze M1 local historical scale/residual specification and matching baseline; register and execute within original V2 card limits.",
+    "A review M1 source-time/scale/fallback contract and frozen predictions; no duplicate fitting."
   ],
   "boundaries": {
     "cluster_operations": false,
@@ -35,5 +35,13 @@
     "state": "completed"
   },
   "D1_delivery": "reports/v2_d1_delivery.json",
-  "I1_static_review": "reports/v2_i1_A_contract_review.json"
+  "I1_static_review": "reports/v2_i1_A_contract_review.json",
+  "I1_independent_review": "reports/v2_i1_A_independent_review.json",
+  "I1_completed": {
+    "job_id": "b19_v2_i1_aux_inputs_v1_a01",
+    "new_fit_count_B": 16,
+    "groups_below10_all_arms": 0,
+    "no_input_promoted": true,
+    "next_input": "C258"
+  }
 }
