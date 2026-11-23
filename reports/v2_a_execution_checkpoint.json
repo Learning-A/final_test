@@ -1,5 +1,5 @@
 {
-  "state": "M1_fixed_C258_specification_in_progress",
+  "state": "M1_verified_no_promotion_M2_pending",
   "execution_authorized": true,
   "plan_commit": "1e286c3",
   "A_script": "scripts/analyze_v2_d0.py",
@@ -8,8 +8,8 @@
   "D1_sample": "reports/v2_d1_sample_audit.json",
   "new_fit_count": 0,
   "next_actions": [
-    "B freeze M1 local historical scale/residual specification and matching baseline; register and execute within original V2 card limits.",
-    "A review M1 source-time/scale/fallback contract and frozen predictions; no duplicate fitting."
+    "B proceeds on registered V2 M2 bounds with matched R2 L0 backbone; workload ID is conditional offline unless pre-cutoff availability is evidenced.",
+    "A reviews frozen M2 results; do not repeat I1 or M1."
   ],
   "boundaries": {
     "cluster_operations": false,
@@ -44,5 +44,6 @@
     "no_input_promoted": true,
     "next_input": "C258"
   },
-  "M1_static_review": "reports/v2_m1_A_static_review.json"
+  "M1_static_review": "reports/v2_m1_A_static_review.json",
+  "M1_independent_review": "reports/v2_m1_A_independent_review.json"
 }
