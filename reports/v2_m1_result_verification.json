@@ -1,0 +1,80 @@
+{
+  "state": "verified_frozen_M1_metrics_no_promotion",
+  "original_labels": 21288,
+  "compared_node_predictions": 42576,
+  "common_seconds": 2661,
+  "phase_source_sha256": "c9ee23e7be1abe4b6a8b2f594b088b32e6d7fe60bda806c24d21e7908ce6bd7e",
+  "model_loaded": false,
+  "additional_fits": 0,
+  "reports_sha256": {
+    "checkpoint.pt": "1b69fd157323b3bd9926715fbb2548ecf5f5b88073ed21ae0526f11517c6f325",
+    "epochs.json": "d25e1a9922595b544c82a865baef82a8f81aa6f4d21afb33bc67a02738d65b59",
+    "predictions.jsonl.gz": "c5a64fcfa69c01e0cc97e29930e0638444608af25d24fae7505dd66dc4e62dd0",
+    "report.json": "a24e4c56c8d45c0c27f52bbef1e2429d52e334a156cac904c630f8ef567fb172"
+  },
+  "lease_elapsed_seconds": 29.100932359695435,
+  "relative_macro_improvement": 0.008028776925878112,
+  "screen_passes": false,
+  "scores": {
+    "M0_reused": {
+      "macro_mape": 112.31633789948161,
+      "worst_group_mape": 341.4611690619506,
+      "groups_below10": 0,
+      "workload_mae": {
+        "ai_training_ses": 89.23275430825464,
+        "ai_inference_ses": 172.1126757173695,
+        "bigdata_baleen": 44.010084573938215,
+        "graph_zipf": 156.56261211283066,
+        "hpc_wrf": 53.341057084327524
+      },
+      "phase_contribution_pp": {
+        "ordinary": 32.82682605023474,
+        "known_recovery": 0.4534439418446137,
+        "known_onset": 79.03606790740227
+      },
+      "magnitude_contribution_pp": {
+        "100_lt_y_le1000": 20.82425564283083,
+        "gt1000": 1.6316160474719898,
+        "10_lt_y_le100": 21.602626047458855,
+        "positive_le10": 68.25784016172004
+      },
+      "ordinary_node_mae_by_workload": {
+        "ai_training_ses": 84.46979772874634,
+        "ai_inference_ses": 163.3915752280842,
+        "bigdata_baleen": 43.43298050215857,
+        "graph_zipf": 144.88033663191885,
+        "hpc_wrf": 50.55430365377857
+      }
+    },
+    "M1": {
+      "macro_mape": 111.41457507735512,
+      "worst_group_mape": 341.80634095029046,
+      "groups_below10": 0,
+      "workload_mae": {
+        "ai_training_ses": 90.63082412839638,
+        "ai_inference_ses": 173.44002947903203,
+        "bigdata_baleen": 43.92343051105465,
+        "graph_zipf": 152.83747520166284,
+        "hpc_wrf": 54.475363223127616
+      },
+      "phase_contribution_pp": {
+        "ordinary": 32.519797826175456,
+        "known_recovery": 0.44058004693680075,
+        "known_onset": 78.454197204243
+      },
+      "magnitude_contribution_pp": {
+        "100_lt_y_le1000": 20.896748818405978,
+        "gt1000": 1.602644933507909,
+        "10_lt_y_le100": 21.080884889737685,
+        "positive_le10": 67.8342964357036
+      },
+      "ordinary_node_mae_by_workload": {
+        "ai_training_ses": 85.78083730569439,
+        "ai_inference_ses": 164.50173926353455,
+        "bigdata_baleen": 43.352567376579245,
+        "graph_zipf": 141.09847574773823,
+        "hpc_wrf": 52.11100854412202
+      }
+    }
+  }
+}

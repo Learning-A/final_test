@@ -1,6 +1,6 @@
 {
   "schema": "b19_local_checkpoint_v1",
-  "updated_at": "2026-11-23T11:29:30.993266+08:00",
+  "updated_at": "2026-11-23T11:48:13.707301+08:00",
   "owner": "B",
   "owner_thread": "01a203f5-3aa6-7b21-8a1f-8fece4787432",
   "worktree": "F:/sessions/26.9.8_测试大纲/work/idfs-model-b",
@@ -9,7 +9,7 @@
   "issue": 19,
   "pr": 16,
   "state": "running",
-  "substage": "V2_M1_spec_ready_before_remote_registration",
+  "substage": "V2_M1_completed_no_promotion_next_M2",
   "training_running": false,
   "sources": {
     "handoff_sha256": "2e7ac9ddcc68da042a1f06269b6c6021e977e167482face0699e199fee47cf90",
@@ -177,9 +177,9 @@
     "includes_network_and_publication": false
   },
   "next_actions": [
-    "Register M1 code/data/batch-order hashes and unique B GPU job; run one new model with frozen R2 L0 baseline and same optimization.",
-    "Keep M1 zero-gradient/zero-output diagnostics and all internal checkpoint selections; no floor/seed/window search after scoring.",
-    "Preserve I1 no-gain and A independent receipt, do not retrain C or expand B/P."
+    "A independently recomputes M1 frozen results. Preserve M1 no-promotion decision and reuse R2 L0 as M2 baseline.",
+    "Freeze a single C258 workload adapter on the R2 L0 backbone with unknown-workload fallback and identical loss, split and selection. Treat the result as conditional on workload metadata availability.",
+    "Register and execute eligible M2 on B GPU under existing budget and locks. Preserve R1/R2/I1/M1 and existing validation accounting."
   ],
   "heartbeat": {
     "id": "idfs-b",
@@ -545,7 +545,7 @@
     "B_review_path": "docs/B19_REPLAN_V2_REVIEW.md",
     "B_review_sha256": "b57a085bafe1cd1668ddcd72c3ee6b22f0c432885af0a1b9d8071bbf589c8555",
     "B_review_access": "shared workspace; A reads the file directly",
-    "next_stage": "M1_history_local_scale_residual_on_fixed_C_reuse_R2_L0",
+    "next_stage": "M2_fixed_core_R2_L0_workload_adapter",
     "configuration_executions_max_plan_only": 17,
     "execution_started": true,
     "new_fit_started": false,
@@ -734,11 +734,11 @@
     }
   },
   "v2_m1": {
-    "state": "specification_and_implementation_ready_before_registration",
+    "state": "completed_no_gain_A_review_pending",
     "job_id": "b19_v2_m1_local_residual_v1_a01",
     "card": "docs/B19_V2_M1_EXECUTION_CARD.md",
     "configuration_fits": 1,
-    "new_fit_count": 0,
+    "new_fit_count": 1,
     "baseline": "R2_L0_reused",
     "input": "C258_plus_four_history_descriptors",
     "model_parameters": 21345,
@@ -765,6 +765,94 @@
       "skipped": 5,
       "failed": 0
     },
-    "external_validation_new_evaluations": 0
+    "external_validation_new_evaluations": 0,
+    "do_not_repeat": true,
+    "code_sha": "7aeac287eeae3bbf3c15cbbfd1a46fa8197a5e51",
+    "report": "reports/v2_m1_local_residual.json",
+    "report_sha256": "a24e4c56c8d45c0c27f52bbef1e2429d52e334a156cac904c630f8ef567fb172",
+    "verification": "reports/v2_m1_result_verification.json",
+    "verification_sha256": "4363c263486915bb419c067127502f5a51567fc19ebc425939d607db11ccc9fb",
+    "registration_url": "https://github.com/Learning-A/final_test/issues/19#issuecomment-7090948805",
+    "release_url": "https://github.com/Learning-A/final_test/releases/tag/b19-v2-m1-local-residual-20261123-v1",
+    "package_sha256": "87dbc9a6a8dec9aad0adf52455d1431b9b11a3870383e392c9f76e446f9479a5",
+    "worker_elapsed_seconds": 27.0259300339967,
+    "lease_elapsed_seconds": 29.100932359695435,
+    "best_epoch": 12,
+    "epochs_trained": 20,
+    "internal_checkpoint_evaluations": 21,
+    "scores": {
+      "M0_reused": {
+        "macro_mape": 112.31633789948161,
+        "worst_group_mape": 341.4611690619506,
+        "groups_below10": 0,
+        "workload_mae": {
+          "ai_training_ses": 89.23275430825464,
+          "ai_inference_ses": 172.1126757173695,
+          "bigdata_baleen": 44.010084573938215,
+          "graph_zipf": 156.56261211283066,
+          "hpc_wrf": 53.341057084327524
+        },
+        "phase_contribution_pp": {
+          "ordinary": 32.82682605023474,
+          "known_recovery": 0.4534439418446137,
+          "known_onset": 79.03606790740227
+        },
+        "magnitude_contribution_pp": {
+          "100_lt_y_le1000": 20.82425564283083,
+          "gt1000": 1.6316160474719898,
+          "10_lt_y_le100": 21.602626047458855,
+          "positive_le10": 68.25784016172004
+        },
+        "ordinary_node_mae_by_workload": {
+          "ai_training_ses": 84.46979772874634,
+          "ai_inference_ses": 163.3915752280842,
+          "bigdata_baleen": 43.43298050215857,
+          "graph_zipf": 144.88033663191885,
+          "hpc_wrf": 50.55430365377857
+        }
+      },
+      "M1": {
+        "macro_mape": 111.41457507735512,
+        "worst_group_mape": 341.80634095029046,
+        "groups_below10": 0,
+        "workload_mae": {
+          "ai_training_ses": 90.63082412839638,
+          "ai_inference_ses": 173.44002947903203,
+          "bigdata_baleen": 43.92343051105465,
+          "graph_zipf": 152.83747520166284,
+          "hpc_wrf": 54.475363223127616
+        },
+        "phase_contribution_pp": {
+          "ordinary": 32.519797826175456,
+          "known_recovery": 0.44058004693680075,
+          "known_onset": 78.454197204243
+        },
+        "magnitude_contribution_pp": {
+          "100_lt_y_le1000": 20.896748818405978,
+          "gt1000": 1.602644933507909,
+          "10_lt_y_le100": 21.080884889737685,
+          "positive_le10": 67.8342964357036
+        },
+        "ordinary_node_mae_by_workload": {
+          "ai_training_ses": 85.78083730569439,
+          "ai_inference_ses": 164.50173926353455,
+          "bigdata_baleen": 43.352567376579245,
+          "graph_zipf": 141.09847574773823,
+          "hpc_wrf": 52.11100854412202
+        }
+      }
+    },
+    "comparison": {
+      "relative_macro_improvement": 0.008028776925878334,
+      "worst_group_ratio": 1.0010108671779225,
+      "workload_mae_ratios": {
+        "ai_inference_ses": 1.0077121208890054,
+        "ai_training_ses": 1.0156676752945686,
+        "bigdata_baleen": 0.998031040755262,
+        "graph_zipf": 0.9762067273859535,
+        "hpc_wrf": 1.02126516047492
+      },
+      "passes": false
+    }
   }
 }

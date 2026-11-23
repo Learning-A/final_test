@@ -1,0 +1,1265 @@
+{
+  "state": "completed",
+  "job_id": "b19_v2_m1_local_residual_v1_a01",
+  "code_sha": "7aeac287eeae3bbf3c15cbbfd1a46fa8197a5e51",
+  "configuration": {
+    "job_id": "b19_v2_m1_local_residual_v1_a01",
+    "source_feature_count": 258,
+    "descriptor_count": 4,
+    "node_embedding": 4,
+    "hidden": [
+      64,
+      64
+    ],
+    "parameters": 21345,
+    "history_total_columns": [
+      2,
+      5,
+      8,
+      11,
+      14
+    ],
+    "history_seconds": 5,
+    "base_floor": 1.0,
+    "scale_absolute_floor": 1.0,
+    "scale_training_s_fraction_floor": 0.05,
+    "output": "relu(b+sigma*delta)",
+    "epoch0": "max(five_history_mean,1)",
+    "loss": "same_R2_L0_scaled_MAE",
+    "seed": 2026,
+    "max_epoch": 60,
+    "patience": 8,
+    "batch": 128,
+    "AdamW_lr": 0.001,
+    "AdamW_weight_decay": 0.0001,
+    "gradient_clip": 5.0,
+    "budget_seconds": 1800,
+    "baseline": "frozen_R2_L0_no_fit",
+    "new_network_fits": 1,
+    "new_preprocessing_fits": 0
+  },
+  "inputs": {
+    "arrays": {
+      "file": "C_source_inputs.npz",
+      "bytes": 22700403,
+      "sha256": "ffc01763d54e6185eb62772769e489eed63b6eef817bf79171adfbbb24d41170"
+    },
+    "receipt": {
+      "file": "C_source_receipt.json",
+      "bytes": 52322,
+      "sha256": "fa3f1b745d65f9c638b6b30e812d8dd141263204021eaedef21f13afb4b2bdf3"
+    },
+    "metadata": {
+      "file": "metadata.json",
+      "bytes": 2388,
+      "sha256": "40f6c1e539aca36a298462431713a3b88ee3b99d3731212cd760e4362d23fde9"
+    },
+    "samples": {
+      "file": "sample_ids.json",
+      "bytes": 521111,
+      "sha256": "0458ae7eb0f67db694954034291a2d450a8b6ca2e6f53596b179cc5b3ae0c558"
+    },
+    "r2_report": {
+      "file": "r2_report.json",
+      "bytes": 171466,
+      "sha256": "ab2cf84157b0aef5826647ab727a69aee1d06aebf88d992c91d62b7b505b9f26"
+    },
+    "preprocessing": {
+      "file": "r2_preprocessing.json",
+      "bytes": 29228,
+      "sha256": "b47162c6a15270fc142355898bc54684335d6912a3de49648f4c78d5d7cb99fc"
+    },
+    "baseline": {
+      "file": "r2_L0_predictions.jsonl.gz",
+      "bytes": 235077,
+      "sha256": "4b8fbc189fb215beddef096598cc1952a483f9445b4ffe513a7a7fdd16724a0e"
+    }
+  },
+  "python": "3.11.16",
+  "numpy": "1.26.4",
+  "torch": "2.4.1+cu121",
+  "feature_names": [
+    "lag1_read",
+    "lag1_write",
+    "lag1_total",
+    "lag2_read",
+    "lag2_write",
+    "lag2_total",
+    "lag3_read",
+    "lag3_write",
+    "lag3_total",
+    "lag4_read",
+    "lag4_write",
+    "lag4_total",
+    "lag5_read",
+    "lag5_write",
+    "lag5_total",
+    "read_5s_mean",
+    "read_5s_std",
+    "read_5s_min",
+    "read_5s_max",
+    "read_5s_median",
+    "write_5s_mean",
+    "write_5s_std",
+    "write_5s_min",
+    "write_5s_max",
+    "write_5s_median",
+    "total_5s_mean",
+    "total_5s_std",
+    "total_5s_min",
+    "total_5s_max",
+    "total_5s_median",
+    "read_difference",
+    "write_difference",
+    "total_difference",
+    "latest_read_fraction",
+    "latest_total_zero",
+    "optional_lag1_read",
+    "optional_lag1_write",
+    "optional_lag1_total",
+    "optional_lag1_observed",
+    "optional_lag2_read",
+    "optional_lag2_write",
+    "optional_lag2_total",
+    "optional_lag2_observed",
+    "optional_lag3_read",
+    "optional_lag3_write",
+    "optional_lag3_total",
+    "optional_lag3_observed",
+    "optional_lag4_read",
+    "optional_lag4_write",
+    "optional_lag4_total",
+    "optional_lag4_observed",
+    "optional_lag5_read",
+    "optional_lag5_write",
+    "optional_lag5_total",
+    "optional_lag5_observed",
+    "optional_lag6_read",
+    "optional_lag6_write",
+    "optional_lag6_total",
+    "optional_lag6_observed",
+    "optional_lag7_read",
+    "optional_lag7_write",
+    "optional_lag7_total",
+    "optional_lag7_observed",
+    "optional_lag8_read",
+    "optional_lag8_write",
+    "optional_lag8_total",
+    "optional_lag8_observed",
+    "optional_lag9_read",
+    "optional_lag9_write",
+    "optional_lag9_total",
+    "optional_lag9_observed",
+    "optional_lag10_read",
+    "optional_lag10_write",
+    "optional_lag10_total",
+    "optional_lag10_observed",
+    "optional_lag11_read",
+    "optional_lag11_write",
+    "optional_lag11_total",
+    "optional_lag11_observed",
+    "optional_lag12_read",
+    "optional_lag12_write",
+    "optional_lag12_total",
+    "optional_lag12_observed",
+    "optional_lag13_read",
+    "optional_lag13_write",
+    "optional_lag13_total",
+    "optional_lag13_observed",
+    "optional_lag14_read",
+    "optional_lag14_write",
+    "optional_lag14_total",
+    "optional_lag14_observed",
+    "optional_lag15_read",
+    "optional_lag15_write",
+    "optional_lag15_total",
+    "optional_lag15_observed",
+    "observed_long_read_mean",
+    "observed_long_read_std",
+    "observed_long_read_min",
+    "observed_long_read_max",
+    "observed_long_read_median",
+    "observed_long_write_mean",
+    "observed_long_write_std",
+    "observed_long_write_min",
+    "observed_long_write_max",
+    "observed_long_write_median",
+    "observed_long_total_mean",
+    "observed_long_total_std",
+    "observed_long_total_min",
+    "observed_long_total_max",
+    "observed_long_total_median",
+    "long_observed_fraction",
+    "oldest_observed_lag_seconds",
+    "context_idfs44_read",
+    "context_idfs44_write",
+    "context_idfs44_total",
+    "context_idfs44_observed",
+    "context_idfs45_read",
+    "context_idfs45_write",
+    "context_idfs45_total",
+    "context_idfs45_observed",
+    "context_idfs46_read",
+    "context_idfs46_write",
+    "context_idfs46_total",
+    "context_idfs46_observed",
+    "context_idfs47_read",
+    "context_idfs47_write",
+    "context_idfs47_total",
+    "context_idfs47_observed",
+    "context_idfs64_read",
+    "context_idfs64_write",
+    "context_idfs64_total",
+    "context_idfs64_observed",
+    "context_idfs65_read",
+    "context_idfs65_write",
+    "context_idfs65_total",
+    "context_idfs65_observed",
+    "context_idfs66_read",
+    "context_idfs66_write",
+    "context_idfs66_total",
+    "context_idfs66_observed",
+    "context_idfs67_read",
+    "context_idfs67_write",
+    "context_idfs67_total",
+    "context_idfs67_observed",
+    "fine_lag1_read_count",
+    "fine_lag1_write_count",
+    "fine_lag1_total_count",
+    "fine_lag1_observed",
+    "fine_lag1_age_seconds",
+    "fine_lag2_read_count",
+    "fine_lag2_write_count",
+    "fine_lag2_total_count",
+    "fine_lag2_observed",
+    "fine_lag2_age_seconds",
+    "fine_lag3_read_count",
+    "fine_lag3_write_count",
+    "fine_lag3_total_count",
+    "fine_lag3_observed",
+    "fine_lag3_age_seconds",
+    "fine_lag4_read_count",
+    "fine_lag4_write_count",
+    "fine_lag4_total_count",
+    "fine_lag4_observed",
+    "fine_lag4_age_seconds",
+    "fine_lag5_read_count",
+    "fine_lag5_write_count",
+    "fine_lag5_total_count",
+    "fine_lag5_observed",
+    "fine_lag5_age_seconds",
+    "fine_lag6_read_count",
+    "fine_lag6_write_count",
+    "fine_lag6_total_count",
+    "fine_lag6_observed",
+    "fine_lag6_age_seconds",
+    "fine_lag7_read_count",
+    "fine_lag7_write_count",
+    "fine_lag7_total_count",
+    "fine_lag7_observed",
+    "fine_lag7_age_seconds",
+    "fine_lag8_read_count",
+    "fine_lag8_write_count",
+    "fine_lag8_total_count",
+    "fine_lag8_observed",
+    "fine_lag8_age_seconds",
+    "fine_lag9_read_count",
+    "fine_lag9_write_count",
+    "fine_lag9_total_count",
+    "fine_lag9_observed",
+    "fine_lag9_age_seconds",
+    "fine_lag10_read_count",
+    "fine_lag10_write_count",
+    "fine_lag10_total_count",
+    "fine_lag10_observed",
+    "fine_lag10_age_seconds",
+    "fine_lag11_read_count",
+    "fine_lag11_write_count",
+    "fine_lag11_total_count",
+    "fine_lag11_observed",
+    "fine_lag11_age_seconds",
+    "fine_lag12_read_count",
+    "fine_lag12_write_count",
+    "fine_lag12_total_count",
+    "fine_lag12_observed",
+    "fine_lag12_age_seconds",
+    "fine_lag13_read_count",
+    "fine_lag13_write_count",
+    "fine_lag13_total_count",
+    "fine_lag13_observed",
+    "fine_lag13_age_seconds",
+    "fine_lag14_read_count",
+    "fine_lag14_write_count",
+    "fine_lag14_total_count",
+    "fine_lag14_observed",
+    "fine_lag14_age_seconds",
+    "fine_lag15_read_count",
+    "fine_lag15_write_count",
+    "fine_lag15_total_count",
+    "fine_lag15_observed",
+    "fine_lag15_age_seconds",
+    "fine_lag16_read_count",
+    "fine_lag16_write_count",
+    "fine_lag16_total_count",
+    "fine_lag16_observed",
+    "fine_lag16_age_seconds",
+    "fine_lag17_read_count",
+    "fine_lag17_write_count",
+    "fine_lag17_total_count",
+    "fine_lag17_observed",
+    "fine_lag17_age_seconds",
+    "fine_lag18_read_count",
+    "fine_lag18_write_count",
+    "fine_lag18_total_count",
+    "fine_lag18_observed",
+    "fine_lag18_age_seconds",
+    "fine_lag19_read_count",
+    "fine_lag19_write_count",
+    "fine_lag19_total_count",
+    "fine_lag19_observed",
+    "fine_lag19_age_seconds",
+    "fine_lag20_read_count",
+    "fine_lag20_write_count",
+    "fine_lag20_total_count",
+    "fine_lag20_observed",
+    "fine_lag20_age_seconds",
+    "fine_observed_fraction",
+    "fine_latest_observed_age_seconds",
+    "fine_3ticks_observed_count_sum",
+    "fine_3ticks_observed_fraction",
+    "fine_3ticks_zero_observed_fraction",
+    "fine_5ticks_observed_count_sum",
+    "fine_5ticks_observed_fraction",
+    "fine_5ticks_zero_observed_fraction",
+    "fine_10ticks_observed_count_sum",
+    "fine_10ticks_observed_fraction",
+    "fine_10ticks_zero_observed_fraction",
+    "fine_20ticks_observed_count_sum",
+    "fine_20ticks_observed_fraction",
+    "fine_20ticks_zero_observed_fraction",
+    "local_base_over_training_s",
+    "local_scale_over_training_s",
+    "latest_minus_local_mean_over_local_scale",
+    "local_zero_history"
+  ],
+  "host_order": [
+    "idfs44",
+    "idfs45",
+    "idfs46",
+    "idfs47",
+    "idfs64",
+    "idfs65",
+    "idfs66",
+    "idfs67"
+  ],
+  "batch_permutations_sha256": "2c7d48fb24dd050e01444ce474273c93750fc2f8c1a45642ef3eab3b5126c227",
+  "reused_preprocessing_sha256": "b47162c6a15270fc142355898bc54684335d6912a3de49648f4c78d5d7cb99fc",
+  "local_diagnostics": {
+    "fit": {
+      "zero_history_rows": 0,
+      "baseline_min": 50.2,
+      "scale_min": 14.9
+    },
+    "internal_dev": {
+      "zero_history_rows": 0,
+      "baseline_min": 47.2,
+      "scale_min": 14.9
+    }
+  },
+  "fit_run_weights": {
+    "dev_20261122_ai_inference_ses_train_02_a01": 0.10000000000000002,
+    "dev_20261122_hpc_wrf_train_01_a01": 0.09999999999999998,
+    "dev_20261122_bigdata_baleen_train_01_a01": 0.09999999999999998,
+    "dev_20261122_bigdata_baleen_train_02_a01": 0.1,
+    "dev_20261122_graph_zipf_train_02_a01": 0.1,
+    "dev_20261122_ai_inference_ses_train_01_a01": 0.1,
+    "ai_training_20261122_train01_attempt02": 0.1,
+    "dev_20261122_ai_training_ses_train_02_a01": 0.1,
+    "dev_20261122_graph_zipf_train_01_a01": 0.1,
+    "dev_20261122_hpc_wrf_train_02_a01": 0.09999999999999998
+  },
+  "source_role": "train",
+  "fit_samples": 5328,
+  "internal_dev_samples": 2661,
+  "arms": {
+    "M0_reused": {
+      "groups": {
+        "ai_inference_ses": {
+          "idfs44": {
+            "count": 547,
+            "positive_count": 546,
+            "zero_count": 1,
+            "mape_percent": 341.46116906195067,
+            "mae": 160.27311553118216,
+            "bias": 15.327341529525395,
+            "wape_percent": 22.53746695207552
+          },
+          "idfs45": {
+            "count": 547,
+            "positive_count": 547,
+            "zero_count": 0,
+            "mape_percent": 285.8754640048505,
+            "mae": 175.99057743274753,
+            "bias": 13.268702588961808,
+            "wape_percent": 23.99915384585215
+          },
+          "idfs46": {
+            "count": 547,
+            "positive_count": 547,
+            "zero_count": 0,
+            "mape_percent": 321.83992325709704,
+            "mae": 158.0258930771181,
+            "bias": 27.001141033835122,
+            "wape_percent": 23.562359042674284
+          },
+          "idfs47": {
+            "count": 547,
+            "positive_count": 545,
+            "zero_count": 2,
+            "mape_percent": 112.40486761038214,
+            "mae": 209.07598190726048,
+            "bias": 2.1012250213344092,
+            "wape_percent": 25.553757075438554
+          },
+          "idfs64": {
+            "count": 547,
+            "positive_count": 547,
+            "zero_count": 0,
+            "mape_percent": 158.28622146446435,
+            "mae": 161.53832505695127,
+            "bias": 26.369110051631054,
+            "wape_percent": 24.476113970530633
+          },
+          "idfs65": {
+            "count": 547,
+            "positive_count": 546,
+            "zero_count": 1,
+            "mape_percent": 236.75120923581338,
+            "mae": 154.2698606947876,
+            "bias": 13.52331771711109,
+            "wape_percent": 24.61844066354182
+          },
+          "idfs66": {
+            "count": 547,
+            "positive_count": 547,
+            "zero_count": 0,
+            "mape_percent": 147.55069048223572,
+            "mae": 177.2495754876564,
+            "bias": 10.2741052603155,
+            "wape_percent": 24.843253702381702
+          },
+          "idfs67": {
+            "count": 547,
+            "positive_count": 545,
+            "zero_count": 2,
+            "mape_percent": 123.84709773231079,
+            "mae": 180.47807655125257,
+            "bias": 12.547749465300788,
+            "wape_percent": 24.178255056497967
+          }
+        },
+        "ai_training_ses": {
+          "idfs44": {
+            "count": 509,
+            "positive_count": 507,
+            "zero_count": 2,
+            "mape_percent": 66.96238639286861,
+            "mae": 99.09846145839728,
+            "bias": 10.23938701757045,
+            "wape_percent": 24.218284727705996
+          },
+          "idfs45": {
+            "count": 509,
+            "positive_count": 507,
+            "zero_count": 2,
+            "mape_percent": 68.51966034180904,
+            "mae": 79.4139512817143,
+            "bias": 0.7284465557465619,
+            "wape_percent": 23.762794275531334
+          },
+          "idfs46": {
+            "count": 509,
+            "positive_count": 507,
+            "zero_count": 2,
+            "mape_percent": 69.29512798611938,
+            "mae": 90.31779315101609,
+            "bias": 6.152253456340557,
+            "wape_percent": 25.213213650849653
+          },
+          "idfs47": {
+            "count": 509,
+            "positive_count": 507,
+            "zero_count": 2,
+            "mape_percent": 65.94320616358064,
+            "mae": 83.88259992618224,
+            "bias": 4.06644249337127,
+            "wape_percent": 23.69459769050399
+          },
+          "idfs64": {
+            "count": 509,
+            "positive_count": 509,
+            "zero_count": 0,
+            "mape_percent": 95.99623069631316,
+            "mae": 94.14364132384654,
+            "bias": 2.7434654011005035,
+            "wape_percent": 24.036232297949404
+          },
+          "idfs65": {
+            "count": 509,
+            "positive_count": 507,
+            "zero_count": 2,
+            "mape_percent": 71.92789621393322,
+            "mae": 79.60997288072507,
+            "bias": 7.56337463738642,
+            "wape_percent": 24.249110557008507
+          },
+          "idfs66": {
+            "count": 509,
+            "positive_count": 509,
+            "zero_count": 0,
+            "mape_percent": 145.06680029910018,
+            "mae": 107.26271782595892,
+            "bias": 3.279711920058095,
+            "wape_percent": 26.09037722135768
+          },
+          "idfs67": {
+            "count": 509,
+            "positive_count": 507,
+            "zero_count": 2,
+            "mape_percent": 62.17387205483229,
+            "mae": 80.13289661819668,
+            "bias": 8.172575405398145,
+            "wape_percent": 23.22811702923877
+          }
+        },
+        "bigdata_baleen": {
+          "idfs44": {
+            "count": 545,
+            "positive_count": 545,
+            "zero_count": 0,
+            "mape_percent": 51.4517776731951,
+            "mae": 43.152191596074935,
+            "bias": 7.961750541477028,
+            "wape_percent": 20.848871846120495
+          },
+          "idfs45": {
+            "count": 545,
+            "positive_count": 545,
+            "zero_count": 0,
+            "mape_percent": 36.474786678207415,
+            "mae": 42.955819618155104,
+            "bias": 7.613074738388762,
+            "wape_percent": 20.433549233134503
+          },
+          "idfs46": {
+            "count": 545,
+            "positive_count": 545,
+            "zero_count": 0,
+            "mape_percent": 38.70509322053373,
+            "mae": 42.820483902397505,
+            "bias": 9.759950130357655,
+            "wape_percent": 20.832661197627825
+          },
+          "idfs47": {
+            "count": 545,
+            "positive_count": 545,
+            "zero_count": 0,
+            "mape_percent": 36.858967282867205,
+            "mae": 42.21278283355433,
+            "bias": 8.654867973677609,
+            "wape_percent": 20.663546960809718
+          },
+          "idfs64": {
+            "count": 545,
+            "positive_count": 545,
+            "zero_count": 0,
+            "mape_percent": 38.9384357219584,
+            "mae": 44.468543264406534,
+            "bias": 9.73902587890625,
+            "wape_percent": 21.139479331066827
+          },
+          "idfs65": {
+            "count": 545,
+            "positive_count": 545,
+            "zero_count": 0,
+            "mape_percent": 37.15915836547178,
+            "mae": 46.71141740991435,
+            "bias": 3.3904723281160405,
+            "wape_percent": 20.99848435151549
+          },
+          "idfs66": {
+            "count": 545,
+            "positive_count": 545,
+            "zero_count": 0,
+            "mape_percent": 37.02258758921376,
+            "mae": 42.66935914765804,
+            "bias": 8.02973999583393,
+            "wape_percent": 20.05242798609436
+          },
+          "idfs67": {
+            "count": 545,
+            "positive_count": 545,
+            "zero_count": 0,
+            "mape_percent": 38.692306044946875,
+            "mae": 47.090078819344896,
+            "bias": 16.663749764818665,
+            "wape_percent": 21.18303395392886
+          }
+        },
+        "graph_zipf": {
+          "idfs44": {
+            "count": 544,
+            "positive_count": 542,
+            "zero_count": 2,
+            "mape_percent": 103.43009579934436,
+            "mae": 131.69314193725586,
+            "bias": 46.84566430484547,
+            "wape_percent": 14.839801147533507
+          },
+          "idfs45": {
+            "count": 544,
+            "positive_count": 542,
+            "zero_count": 2,
+            "mape_percent": 131.59323114809894,
+            "mae": 127.28046843584846,
+            "bias": 33.53062999949736,
+            "wape_percent": 15.183470861113525
+          },
+          "idfs46": {
+            "count": 544,
+            "positive_count": 542,
+            "zero_count": 2,
+            "mape_percent": 141.38178891811822,
+            "mae": 130.59560102574966,
+            "bias": 32.50929058299345,
+            "wape_percent": 15.427881751870897
+          },
+          "idfs47": {
+            "count": 544,
+            "positive_count": 542,
+            "zero_count": 2,
+            "mape_percent": 105.10934786661807,
+            "mae": 136.33501815795898,
+            "bias": 30.10336617862477,
+            "wape_percent": 15.314682329289482
+          },
+          "idfs64": {
+            "count": 544,
+            "positive_count": 544,
+            "zero_count": 0,
+            "mape_percent": 133.02906776827996,
+            "mae": 140.66810563031365,
+            "bias": 25.849603540757123,
+            "wape_percent": 15.304598064989735
+          },
+          "idfs65": {
+            "count": 544,
+            "positive_count": 542,
+            "zero_count": 2,
+            "mape_percent": 95.17771214585487,
+            "mae": 134.19191259496353,
+            "bias": 12.692212160895853,
+            "wape_percent": 16.327058361456757
+          },
+          "idfs66": {
+            "count": 544,
+            "positive_count": 544,
+            "zero_count": 0,
+            "mape_percent": 221.93501751005036,
+            "mae": 314.57870685353,
+            "bias": 107.8465196946088,
+            "wape_percent": 14.652476604210378
+          },
+          "idfs67": {
+            "count": 544,
+            "positive_count": 542,
+            "zero_count": 2,
+            "mape_percent": 149.1923817718895,
+            "mae": 137.15794226702522,
+            "bias": 33.537124521592084,
+            "wape_percent": 15.472907885617591
+          }
+        },
+        "hpc_wrf": {
+          "idfs44": {
+            "count": 516,
+            "positive_count": 509,
+            "zero_count": 7,
+            "mape_percent": 44.93087651341501,
+            "mae": 56.77701298026152,
+            "bias": 11.402617269708205,
+            "wape_percent": 27.501632150997803
+          },
+          "idfs45": {
+            "count": 516,
+            "positive_count": 511,
+            "zero_count": 5,
+            "mape_percent": 53.96374864802326,
+            "mae": 47.27297258007434,
+            "bias": 12.068654112113538,
+            "wape_percent": 25.062009505104655
+          },
+          "idfs46": {
+            "count": 516,
+            "positive_count": 512,
+            "zero_count": 4,
+            "mape_percent": 154.05455924011102,
+            "mae": 52.038611774296726,
+            "bias": 10.325260901635932,
+            "wape_percent": 26.06704495203144
+          },
+          "idfs47": {
+            "count": 516,
+            "positive_count": 511,
+            "zero_count": 5,
+            "mape_percent": 83.65285019331377,
+            "mae": 63.313508336858234,
+            "bias": 13.390399977218273,
+            "wape_percent": 29.917646042380284
+          },
+          "idfs64": {
+            "count": 516,
+            "positive_count": 516,
+            "zero_count": 0,
+            "mape_percent": 93.52188593830505,
+            "mae": 39.27728200513263,
+            "bias": 12.655536119327989,
+            "wape_percent": 23.93937811794051
+          },
+          "idfs65": {
+            "count": 516,
+            "positive_count": 511,
+            "zero_count": 5,
+            "mape_percent": 84.56902326842649,
+            "mae": 53.135007370349975,
+            "bias": 3.413269338681716,
+            "wape_percent": 25.278123435518317
+          },
+          "idfs66": {
+            "count": 516,
+            "positive_count": 516,
+            "zero_count": 0,
+            "mape_percent": 144.28680368656254,
+            "mae": 56.38538539502048,
+            "bias": 8.421638207842213,
+            "wape_percent": 26.149156395839274
+          },
+          "idfs67": {
+            "count": 516,
+            "positive_count": 510,
+            "zero_count": 6,
+            "mape_percent": 63.620189988797264,
+            "mae": 58.528676232626275,
+            "bias": 5.757311769234118,
+            "wape_percent": 25.162298320365224
+          }
+        }
+      },
+      "summed_node_cluster": {
+        "ai_inference_ses": {
+          "count": 547,
+          "positive_count": 547,
+          "mape_percent": 263.66871091948155,
+          "mae": 1202.7611911362224,
+          "bias": 120.41269266801517,
+          "wape_percent": 21.175897887094997
+        },
+        "ai_training_ses": {
+          "count": 509,
+          "positive_count": 509,
+          "mape_percent": 244.5450261324976,
+          "mae": 598.352455363995,
+          "bias": 42.945656886972,
+          "wape_percent": 20.409802489043148
+        },
+        "bigdata_baleen": {
+          "count": 545,
+          "positive_count": 545,
+          "mape_percent": 32.40504822156833,
+          "mae": 279.5507158331915,
+          "bias": 71.81263135157594,
+          "wape_percent": 16.493363918813316
+        },
+        "graph_zipf": {
+          "count": 544,
+          "positive_count": 544,
+          "mape_percent": 380.34345590461487,
+          "mae": 1223.6181081884047,
+          "bias": 322.9144109838149,
+          "wape_percent": 14.855461013813779
+        },
+        "hpc_wrf": {
+          "count": 516,
+          "positive_count": 516,
+          "mape_percent": 334.61765182397636,
+          "mae": 299.8513821298762,
+          "bias": 77.43468769576198,
+          "wape_percent": 18.408900757901264
+        }
+      },
+      "macro_mape_percent": 112.31633789948162,
+      "worst_group_mape_percent": 341.46116906195067,
+      "workload_mean_node_mae": {
+        "ai_inference_ses": 172.11267571736948,
+        "ai_training_ses": 89.23275430825464,
+        "bigdata_baleen": 44.01008457393821,
+        "graph_zipf": 156.56261211283066,
+        "hpc_wrf": 53.34105708432752
+      },
+      "groups_mape_lt10": 0
+    },
+    "M1": {
+      "groups": {
+        "ai_inference_ses": {
+          "idfs44": {
+            "count": 547,
+            "positive_count": 546,
+            "zero_count": 1,
+            "mape_percent": 341.80634095029046,
+            "mae": 164.15015992996243,
+            "bias": 9.283493739377429,
+            "wape_percent": 23.082653583780072
+          },
+          "idfs45": {
+            "count": 547,
+            "positive_count": 547,
+            "zero_count": 0,
+            "mape_percent": 269.9319593920542,
+            "mae": 179.2916221827868,
+            "bias": 3.3488306467450295,
+            "wape_percent": 24.44930454121258
+          },
+          "idfs46": {
+            "count": 547,
+            "positive_count": 547,
+            "zero_count": 0,
+            "mape_percent": 326.5390338314294,
+            "mae": 158.40547763189844,
+            "bias": 23.155940137789933,
+            "wape_percent": 23.61895677734061
+          },
+          "idfs47": {
+            "count": 547,
+            "positive_count": 545,
+            "zero_count": 2,
+            "mape_percent": 117.75459874269265,
+            "mae": 208.96866731800588,
+            "bias": 8.80761350530593,
+            "wape_percent": 25.540640834541602
+          },
+          "idfs64": {
+            "count": 547,
+            "positive_count": 547,
+            "zero_count": 0,
+            "mape_percent": 152.05358901357488,
+            "mae": 160.01694495499243,
+            "bias": 16.064231468075153,
+            "wape_percent": 24.245596087205335
+          },
+          "idfs65": {
+            "count": 547,
+            "positive_count": 546,
+            "zero_count": 1,
+            "mape_percent": 233.7733408814007,
+            "mae": 155.1444477311436,
+            "bias": 8.252187390649993,
+            "wape_percent": 24.758007581944824
+          },
+          "idfs66": {
+            "count": 547,
+            "positive_count": 547,
+            "zero_count": 0,
+            "mape_percent": 149.79448503812088,
+            "mae": 178.6299031203582,
+            "bias": 4.862831799160192,
+            "wape_percent": 25.03672005894292
+          },
+          "idfs67": {
+            "count": 547,
+            "positive_count": 545,
+            "zero_count": 2,
+            "mape_percent": 122.12201552219986,
+            "mae": 182.91301296310843,
+            "bias": 5.671360831809872,
+            "wape_percent": 24.50445818730032
+          }
+        },
+        "ai_training_ses": {
+          "idfs44": {
+            "count": 509,
+            "positive_count": 507,
+            "zero_count": 2,
+            "mape_percent": 64.52234690282864,
+            "mae": 96.26138335642037,
+            "bias": -0.009961381174023821,
+            "wape_percent": 23.524942326045586
+          },
+          "idfs45": {
+            "count": 509,
+            "positive_count": 507,
+            "zero_count": 2,
+            "mape_percent": 66.99116005227673,
+            "mae": 80.57014717147018,
+            "bias": -6.2037309448002365,
+            "wape_percent": 24.108759242984227
+          },
+          "idfs46": {
+            "count": 509,
+            "positive_count": 507,
+            "zero_count": 2,
+            "mape_percent": 67.24767772510404,
+            "mae": 92.90221841208827,
+            "bias": 1.0637737941179857,
+            "wape_percent": 25.93468462571185
+          },
+          "idfs47": {
+            "count": 509,
+            "positive_count": 507,
+            "zero_count": 2,
+            "mape_percent": 61.952615991578185,
+            "mae": 84.86453280046085,
+            "bias": -8.541589493367432,
+            "wape_percent": 23.971967543555596
+          },
+          "idfs64": {
+            "count": 509,
+            "positive_count": 509,
+            "zero_count": 0,
+            "mape_percent": 91.45939764290591,
+            "mae": 93.32171558912236,
+            "bias": -4.660466222257183,
+            "wape_percent": 23.82638277849504
+          },
+          "idfs65": {
+            "count": 509,
+            "positive_count": 507,
+            "zero_count": 2,
+            "mape_percent": 71.21350132293026,
+            "mae": 81.71734541197891,
+            "bias": 7.794967261653518,
+            "wape_percent": 24.891013922202966
+          },
+          "idfs66": {
+            "count": 509,
+            "positive_count": 509,
+            "zero_count": 0,
+            "mape_percent": 156.29017759694483,
+            "mae": 114.46675031920547,
+            "bias": -8.249368573921368,
+            "wape_percent": 27.842672231900785
+          },
+          "idfs67": {
+            "count": 509,
+            "positive_count": 507,
+            "zero_count": 2,
+            "mape_percent": 61.484118829580716,
+            "mae": 80.94249996642466,
+            "bias": 0.6582932387915951,
+            "wape_percent": 23.462796694064874
+          }
+        },
+        "bigdata_baleen": {
+          "idfs44": {
+            "count": 545,
+            "positive_count": 545,
+            "zero_count": 0,
+            "mape_percent": 50.41188795835058,
+            "mae": 42.72010432252097,
+            "bias": 6.450223464265876,
+            "wape_percent": 20.640109976573044
+          },
+          "idfs45": {
+            "count": 545,
+            "positive_count": 545,
+            "zero_count": 0,
+            "mape_percent": 36.53995507791272,
+            "mae": 42.917743535872994,
+            "bias": 5.742465349949828,
+            "wape_percent": 20.41543691427218
+          },
+          "idfs46": {
+            "count": 545,
+            "positive_count": 545,
+            "zero_count": 0,
+            "mape_percent": 38.072507857782554,
+            "mae": 42.45355897955938,
+            "bias": 6.070565277939543,
+            "wape_percent": 20.65414797437991
+          },
+          "idfs47": {
+            "count": 545,
+            "positive_count": 545,
+            "zero_count": 0,
+            "mape_percent": 36.32858973530885,
+            "mae": 42.35335603766485,
+            "bias": 5.421810213141485,
+            "wape_percent": 20.73235884217804
+          },
+          "idfs64": {
+            "count": 545,
+            "positive_count": 545,
+            "zero_count": 0,
+            "mape_percent": 38.49595979424778,
+            "mae": 44.79113797529028,
+            "bias": 5.248661174249212,
+            "wape_percent": 21.292834573276814
+          },
+          "idfs65": {
+            "count": 545,
+            "positive_count": 545,
+            "zero_count": 0,
+            "mape_percent": 37.40334325119235,
+            "mae": 46.56417202730791,
+            "bias": 5.227483094941586,
+            "wape_percent": 20.932292186217637
+          },
+          "idfs66": {
+            "count": 545,
+            "positive_count": 545,
+            "zero_count": 0,
+            "mape_percent": 36.941575535628594,
+            "mae": 43.05423880760823,
+            "bias": 3.6043926833966458,
+            "wape_percent": 20.233301845431132
+          },
+          "idfs67": {
+            "count": 545,
+            "positive_count": 545,
+            "zero_count": 0,
+            "mape_percent": 37.35418608366774,
+            "mae": 46.53313240261253,
+            "bias": 8.344739553469037,
+            "wape_percent": 20.932496788734856
+          }
+        },
+        "graph_zipf": {
+          "idfs44": {
+            "count": 544,
+            "positive_count": 542,
+            "zero_count": 2,
+            "mape_percent": 101.63884962468074,
+            "mae": 131.47215764662798,
+            "bias": 51.82460268806009,
+            "wape_percent": 14.814899600790786
+          },
+          "idfs45": {
+            "count": 544,
+            "positive_count": 542,
+            "zero_count": 2,
+            "mape_percent": 129.88414206141144,
+            "mae": 123.14471076516544,
+            "bias": 54.76354082892923,
+            "wape_percent": 14.690110356920439
+          },
+          "idfs46": {
+            "count": 544,
+            "positive_count": 542,
+            "zero_count": 2,
+            "mape_percent": 141.202448893615,
+            "mae": 127.43579370835248,
+            "bias": 51.553334404440484,
+            "wape_percent": 15.054598630015299
+          },
+          "idfs47": {
+            "count": 544,
+            "positive_count": 542,
+            "zero_count": 2,
+            "mape_percent": 103.30342950808513,
+            "mae": 130.72719394459443,
+            "bias": 52.98635393030503,
+            "wape_percent": 14.684748453557923
+          },
+          "idfs64": {
+            "count": 544,
+            "positive_count": 544,
+            "zero_count": 0,
+            "mape_percent": 136.56577730942655,
+            "mae": 138.12857599819407,
+            "bias": 44.836108432096594,
+            "wape_percent": 15.028298898810123
+          },
+          "idfs65": {
+            "count": 544,
+            "positive_count": 542,
+            "zero_count": 2,
+            "mape_percent": 94.14496814385926,
+            "mae": 123.81264321944293,
+            "bias": 47.39022372750675,
+            "wape_percent": 15.064218197944804
+          },
+          "idfs66": {
+            "count": 544,
+            "positive_count": 544,
+            "zero_count": 0,
+            "mape_percent": 233.91540998897776,
+            "mae": 313.8130003985237,
+            "bias": 143.1488360236673,
+            "wape_percent": 14.61681145690943
+          },
+          "idfs67": {
+            "count": 544,
+            "positive_count": 542,
+            "zero_count": 2,
+            "mape_percent": 146.99409951132472,
+            "mae": 134.16572593240176,
+            "bias": 50.072197409237134,
+            "wape_percent": 15.135353333878012
+          }
+        },
+        "hpc_wrf": {
+          "idfs44": {
+            "count": 516,
+            "positive_count": 509,
+            "zero_count": 7,
+            "mape_percent": 43.85153806396652,
+            "mae": 55.263472860173664,
+            "bias": 0.7724753682927568,
+            "wape_percent": 26.768504051375796
+          },
+          "idfs45": {
+            "count": 516,
+            "positive_count": 511,
+            "zero_count": 5,
+            "mape_percent": 51.672714638925314,
+            "mae": 48.50015535280686,
+            "bias": 2.9055732756622077,
+            "wape_percent": 25.712606762610026
+          },
+          "idfs46": {
+            "count": 516,
+            "positive_count": 512,
+            "zero_count": 4,
+            "mape_percent": 160.3868078480816,
+            "mae": 55.350631388582926,
+            "bias": 2.3585095960040423,
+            "wape_percent": 27.726093132295375
+          },
+          "idfs47": {
+            "count": 516,
+            "positive_count": 511,
+            "zero_count": 5,
+            "mape_percent": 62.984157084577134,
+            "mae": 61.79384731322296,
+            "bias": -0.7944217948026435,
+            "wape_percent": 29.19955788388451
+          },
+          "idfs64": {
+            "count": 516,
+            "positive_count": 516,
+            "zero_count": 0,
+            "mape_percent": 93.41830208448145,
+            "mae": 38.88505605948988,
+            "bias": 5.421498749607293,
+            "wape_percent": 23.700317654969027
+          },
+          "idfs65": {
+            "count": 516,
+            "positive_count": 511,
+            "zero_count": 5,
+            "mape_percent": 84.90225978624427,
+            "mae": 57.631123136180314,
+            "bias": -1.1663238909817482,
+            "wape_percent": 27.41707805195184
+          },
+          "idfs66": {
+            "count": 516,
+            "positive_count": 516,
+            "zero_count": 0,
+            "mape_percent": 139.41526244841586,
+            "mae": 57.74409597234209,
+            "bias": -2.09959479635076,
+            "wape_percent": 26.779268882153882
+          },
+          "idfs67": {
+            "count": 516,
+            "positive_count": 510,
+            "zero_count": 6,
+            "mape_percent": 65.81847136812873,
+            "mae": 60.634523702222246,
+            "bias": -3.479002605112948,
+            "wape_percent": 26.067631665622443
+          }
+        }
+      },
+      "summed_node_cluster": {
+        "ai_inference_ses": {
+          "count": 547,
+          "positive_count": 547,
+          "mape_percent": 260.484083469897,
+          "mae": 1225.0987991249322,
+          "bias": 79.44648951891354,
+          "wape_percent": 21.569175379997827
+        },
+        "ai_training_ses": {
+          "count": 509,
+          "positive_count": 509,
+          "mape_percent": 245.74424471429873,
+          "mae": 617.326769875637,
+          "bias": -18.148082320957148,
+          "wape_percent": 21.057016364537343
+        },
+        "bigdata_baleen": {
+          "count": 545,
+          "positive_count": 545,
+          "mape_percent": 32.41593672939266,
+          "mae": 284.81916254726025,
+          "bias": 46.11034081135321,
+          "wape_percent": 16.80419985669681
+        },
+        "graph_zipf": {
+          "count": 544,
+          "positive_count": 544,
+          "mape_percent": 397.95854502593096,
+          "mae": 1183.0762303296258,
+          "bias": 496.5751974442426,
+          "wape_percent": 14.363258191766985
+        },
+        "hpc_wrf": {
+          "count": 516,
+          "positive_count": 516,
+          "mape_percent": 331.39901321748715,
+          "mae": 315.74216291146683,
+          "bias": 3.9187139023182005,
+          "wape_percent": 19.384490079170963
+        }
+      },
+      "macro_mape_percent": 111.41457507735511,
+      "worst_group_mape_percent": 341.80634095029046,
+      "workload_mean_node_mae": {
+        "ai_inference_ses": 173.44002947903203,
+        "ai_training_ses": 90.6308241283964,
+        "bigdata_baleen": 43.92343051105465,
+        "graph_zipf": 152.83747520166287,
+        "hpc_wrf": 54.475363223127616
+      },
+      "groups_mape_lt10": 0
+    }
+  },
+  "baseline_fit_count": 0,
+  "new_fit_count": 1,
+  "new_preprocessing_fit_count": 0,
+  "external_validation_evaluations": 0,
+  "online_time_eligibility": false,
+  "clock_uncertainty_ns": null,
+  "best_epoch": 12,
+  "epochs_trained": 20,
+  "internal_checkpoint_evaluations": 21,
+  "comparison": {
+    "relative_macro_improvement": 0.008028776925878334,
+    "worst_group_ratio": 1.0010108671779225,
+    "workload_mae_ratios": {
+      "ai_inference_ses": 1.0077121208890054,
+      "ai_training_ses": 1.0156676752945686,
+      "bigdata_baleen": 0.998031040755262,
+      "graph_zipf": 0.9762067273859535,
+      "hpc_wrf": 1.02126516047492
+    },
+    "passes": false
+  },
+  "checkpoint_sha256": "1b69fd157323b3bd9926715fbb2548ecf5f5b88073ed21ae0526f11517c6f325",
+  "predictions_sha256": "c5a64fcfa69c01e0cc97e29930e0638444608af25d24fae7505dd66dc4e62dd0",
+  "epochs_sha256": "d25e1a9922595b544c82a865baef82a8f81aa6f4d21afb33bc67a02738d65b59",
+  "selected_zero_prediction_rows": 22,
+  "selected_zero_prediction_positive_actual_rows": 22,
+  "elapsed_seconds": 27.0259300339967
+}
