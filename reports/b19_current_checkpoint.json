@@ -1,6 +1,6 @@
 {
   "schema": "b19_local_checkpoint_v1",
-  "updated_at": "2026-11-23T16:55:11.709576+08:00",
+  "updated_at": "2026-11-23T16:59:35.521346+08:00",
   "owner": "B",
   "owner_thread": "01a203f5-3aa6-7b21-8a1f-8fece4787432",
   "worktree": "F:/sessions/26.9.8_测试大纲/work/idfs-model-b",
@@ -9,7 +9,7 @@
   "issue": 19,
   "pr": 16,
   "state": "completed",
-  "substage": "cluster_horizon_completed_A_limited_package_reviewed",
+  "substage": "cluster_horizon_completed_regression_metrics_supplemented",
   "training_running": false,
   "sources": {
     "handoff_sha256": "2e7ac9ddcc68da042a1f06269b6c6021e977e167482face0699e199fee47cf90",
@@ -1940,6 +1940,18 @@
       "sha256": "53303566a13fd2581be8fa24617e33b35fdadc6dc6c918ca5c5bfbfcc8941ad5",
       "source_git_status": "A source JSON untracked at snapshot; exact bytes archived on B branch without touching A worktree",
       "scope": "Final ZIP integrity, CSV counts and reported score boundaries; does not assert a second raw-label/statistics or new inference validation"
+    },
+    "regression_metrics": {
+      "state": "completed_frozen_descriptive_analysis",
+      "report": "docs/CLUSTER_HORIZON_REGRESSION_METRICS.md",
+      "calculations": "reports/cluster_horizon_regression_metrics.json",
+      "new_fit_count": 0,
+      "checkpoint_reselected": false,
+      "direct10_group_macro_r2": -0.732561,
+      "direct10_group_macro_pearson": 0.22852,
+      "direct10_pooled_r2": 0.931263,
+      "direct10_pooled_pearson": 0.983061,
+      "interpretation": "Pooled level discrimination differs from within-workload time variation; Pearson is not predictive R2 or percent accuracy."
     }
   }
 }

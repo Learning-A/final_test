@@ -75,3 +75,5 @@
 完整native预测、checkpoint、epoch、尺度及租约保存在本机.local/cluster_horizon和b507原job目录；最终包包含上述可复核文件，不复制全部原始采集包。当前没有授权追加其它模型或把时间窗继续调到达标，后续选择应据用途而非单个好看的分数。
 
 [最终交付包](https://github.com/Learning-A/final_test/releases/tag/b19-cluster-horizon-two-paths-20261123-v1) 为29850407字节，SHA256=7f9719cc9a3246af99a01d3632ebb68a971ecb01b8b0ee4998c59f06c8c40a45，MANIFEST包含28成员，B与A均核对无缺失/不匹配。原ZIP保持冻结；补充轨迹诊断和A复核快照另存Git，不回写ZIP。当前两次作业均已结束，无新增拟合或心跳任务。
+
+用户后续询问的 [MAE/RMSE/R²/Pearson补表](CLUSTER_HORIZON_REGRESSION_METRICS.md) 已从相同冻结预测计算。直接10秒窗口混合R²=.9313、r=.9831，但逐负载分别计算后的平均R²=−.7326、r=.2285，不能把业务间量级区分当作每类时间轨迹准确。原模型和checkpoint保持不变。
