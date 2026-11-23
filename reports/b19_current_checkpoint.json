@@ -1,6 +1,6 @@
 {
   "schema": "b19_local_checkpoint_v1",
-  "updated_at": "2026-11-23T15:30:12.239526+08:00",
+  "updated_at": "2026-11-23T15:37:28.008469+08:00",
   "owner": "B",
   "owner_thread": "01a203f5-3aa6-7b21-8a1f-8fece4787432",
   "worktree": "F:/sessions/26.9.8_测试大纲/work/idfs-model-b",
@@ -9,7 +9,7 @@
   "issue": 19,
   "pr": 16,
   "state": "running",
-  "substage": "data_transform_card_registered_before_fit",
+  "substage": "data_transform_T1_T2_complete_no_promotion_A_review_pending",
   "training_running": false,
   "sources": {
     "handoff_sha256": "2e7ac9ddcc68da042a1f06269b6c6021e977e167482face0699e199fee47cf90",
@@ -177,7 +177,7 @@
     "includes_network_and_publication": false
   },
   "next_actions": [
-    "Execute newly authorized T1/T2 and gated T3; reuse T0 and all completed work without refitting."
+    "A independently verifies frozen T1/T2 outputs. T3 skipped; no more fitting authorized in this card."
   ],
   "heartbeat": {
     "id": "idfs-b",
@@ -1038,7 +1038,7 @@
     }
   },
   "data_transform": {
-    "state": "registered_before_fit",
+    "state": "completed_no_promotion_A_review_pending",
     "card": "docs/B19_DATA_TRANSFORM_EXECUTION_CARD.md",
     "authorization_handoff_ids": [
       "A18-DATA-TRANSFORM-EXECUTE-20261123-01",
@@ -1046,7 +1046,7 @@
     ],
     "new_configuration_limit": 3,
     "budget_per_configuration_seconds": 1800,
-    "new_model_fits": 0,
+    "new_model_fits": 2,
     "contract": {
       "schema": "c258_log_robust_v1",
       "source_contract_sha256": "faf89520c65b69e630d27a9ad0fb8165175c21617b5b0868a669964219c7e550",
@@ -1722,6 +1722,56 @@
       }
     },
     "baseline": "frozen_R2_L0",
-    "external_validation_new_evaluations": 0
+    "external_validation_new_evaluations": 0,
+    "T1": {
+      "state": "completed_no_promotion_A_review_pending",
+      "job_id": "b19_data_transform_t1_v1_a01",
+      "code_sha": "25b5a3c8908eebef033e6148026cefe241f0974b",
+      "do_not_repeat": true,
+      "report": "reports/data_transform_T1.json",
+      "comparison": {
+        "relative_macro_improvement": 0.001208316162445322,
+        "worst_group_ratio": 0.9853927813500286,
+        "workload_mae_ratios": {
+          "ai_inference_ses": 1.0506362014851374,
+          "ai_training_ses": 1.07723232393075,
+          "bigdata_baleen": 1.016295776784028,
+          "graph_zipf": 1.0942794180217887,
+          "hpc_wrf": 1.0899274296020887
+        },
+        "passes": false
+      },
+      "macro_mape": 112.18062425309101,
+      "lease_elapsed_seconds": 21.29969573020935
+    },
+    "T3": {
+      "state": "skipped_training_gate_not_met",
+      "eligible_columns": 0,
+      "required_columns": 18,
+      "no_fit": true
+    },
+    "T2": {
+      "state": "completed_no_promotion_A_review_pending",
+      "job_id": "b19_data_transform_t2_v1_a01",
+      "code_sha": "25b5a3c8908eebef033e6148026cefe241f0974b",
+      "do_not_repeat": true,
+      "report": "reports/data_transform_T2.json",
+      "comparison": {
+        "relative_macro_improvement": 0.05661160808998711,
+        "worst_group_ratio": 0.9819239205026155,
+        "workload_mae_ratios": {
+          "ai_inference_ses": 1.0399141723746221,
+          "ai_training_ses": 1.0839891959158388,
+          "bigdata_baleen": 1.0157237310632852,
+          "graph_zipf": 1.046921528369948,
+          "hpc_wrf": 1.0058136322131983
+        },
+        "passes": false
+      },
+      "macro_mape": 105.9579293962136,
+      "lease_elapsed_seconds": 22.542911291122437
+    },
+    "results": "docs/B19_DATA_TRANSFORM_RESULTS.md",
+    "verification": "reports/data_transform_B_verification.json"
   }
 }
