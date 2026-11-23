@@ -1,0 +1,25 @@
+{
+  "state": "authorized_preprocessing_study_B_preparing_A_contract_review",
+  "study": "data_transform_20261123",
+  "execution_authorized": true,
+  "metric_revision_allowed": true,
+  "current_priority": "new_data_processing_first",
+  "formal_metric_replaced": false,
+  "training_scope": "original10fit/5train03,5328/2661,C258",
+  "new_config_budget_max": 3,
+  "seconds_per_new_config": 1800,
+  "B_thread": "01a203f5-3aa6-7b21-8a1f-8fece4787432",
+  "handoff_id": "A18-DATA-TRANSFORM-EXECUTE-20261123-01",
+  "A_fit_count": 0,
+  "next_actions": [
+    "B freeze exact transform contract and execute registered bounded T1/T2;T3 conditional on fitting-data evidence",
+    "A inspect contract and independently verify immutable predictions after delivery"
+  ],
+  "field_concerns": [
+    "3 signed differences cannot ordinary log1p",
+    "missing excluded from fitted stats;true0included",
+    "IQRzero/allmissing fallback fixed before scoring",
+    "inverse-target scaling and epoch0 declared",
+    "no externalvalidation selection or new cluster work"
+  ]
+}
