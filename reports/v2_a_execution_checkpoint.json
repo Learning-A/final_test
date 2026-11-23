@@ -1,5 +1,5 @@
 {
-  "state": "I1_A_independent_verified_no_gain_M1_C258_next",
+  "state": "M1_fixed_C258_specification_in_progress",
   "execution_authorized": true,
   "plan_commit": "1e286c3",
   "A_script": "scripts/analyze_v2_d0.py",
@@ -43,5 +43,6 @@
     "groups_below10_all_arms": 0,
     "no_input_promoted": true,
     "next_input": "C258"
-  }
+  },
+  "M1_static_review": "reports/v2_m1_A_static_review.json"
 }
