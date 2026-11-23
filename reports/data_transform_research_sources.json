@@ -1,0 +1,54 @@
+{
+  "date": "2026-11-23",
+  "sources": [
+    {
+      "id": "target_transform",
+      "url": "https://scikit-learn.org/stable/modules/compose.html#transforming-target-in-regression",
+      "state": "fetched",
+      "sha256": "39446c9d43e7c9539b5fba7cdd0e4b4ef21d149b8a612723a930048f45889107"
+    },
+    {
+      "id": "power",
+      "url": "https://scikit-learn.org/stable/modules/generated/sklearn.preprocessing.PowerTransformer.html",
+      "state": "fetched",
+      "sha256": "04c30d6d6d24faf18798793b178450d5a1be5cead419b7d3c543393e64ab2914"
+    },
+    {
+      "id": "quantile",
+      "url": "https://scikit-learn.org/stable/modules/generated/sklearn.preprocessing.QuantileTransformer.html",
+      "state": "fetched",
+      "sha256": "1b94c036531e367c5d077979312485ba2850cdf0458fd697a7af873b952bff05"
+    },
+    {
+      "id": "robust",
+      "url": "https://scikit-learn.org/stable/modules/generated/sklearn.preprocessing.RobustScaler.html",
+      "state": "fetched",
+      "sha256": "c904fcab6187274e461aa59cc165fa0fc9a8a83e2ade6fab500528f4df5cf540"
+    },
+    {
+      "id": "rmsle",
+      "url": "https://scikit-learn.org/stable/modules/generated/sklearn.metrics.root_mean_squared_log_error.html",
+      "state": "fetched",
+      "sha256": "1d555c98c64aec44fa886aa86aa7e3924b51dd790b2955bb62dcc05aeac39515"
+    },
+    {
+      "id": "poisson",
+      "url": "https://scikit-learn.org/stable/modules/model_evaluation.html#mean-poisson-gamma-and-tweedie-deviances",
+      "state": "fetched",
+      "sha256": "7e740e140ba75771bb1c7de132babfd958c277b5529d187e7ba744e69729120c"
+    },
+    {
+      "id": "bias_adjustment",
+      "url": "https://otexts.com/fpp3/ftransformations.html",
+      "state": "failed",
+      "error": "<urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1082)>"
+    },
+    {
+      "id": "robuststl",
+      "url": "https://www.statsmodels.org/stable/generated/statsmodels.tsa.seasonal.STL.html",
+      "state": "fetched",
+      "sha256": "fbf721a1c6332fe0980a7b127ee6360a2c3ea705c3a89c19aa689583d7d9d8c2"
+    }
+  ],
+  "scope": "official_method_documentation_targeted_review"
+}
