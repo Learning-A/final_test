@@ -1,0 +1,1181 @@
+{
+  "state": "A_semantic_column_partition_no_statistics_fit",
+  "source_module_sha256": "b590ba27a6bea086a509f976e1e5586dfc3e54b3ba074ee464a5f860094c792f",
+  "columns": {
+    "nonnegative_log1p": [
+      {
+        "column": 0,
+        "name": "lag1_read"
+      },
+      {
+        "column": 1,
+        "name": "lag1_write"
+      },
+      {
+        "column": 2,
+        "name": "lag1_total"
+      },
+      {
+        "column": 3,
+        "name": "lag2_read"
+      },
+      {
+        "column": 4,
+        "name": "lag2_write"
+      },
+      {
+        "column": 5,
+        "name": "lag2_total"
+      },
+      {
+        "column": 6,
+        "name": "lag3_read"
+      },
+      {
+        "column": 7,
+        "name": "lag3_write"
+      },
+      {
+        "column": 8,
+        "name": "lag3_total"
+      },
+      {
+        "column": 9,
+        "name": "lag4_read"
+      },
+      {
+        "column": 10,
+        "name": "lag4_write"
+      },
+      {
+        "column": 11,
+        "name": "lag4_total"
+      },
+      {
+        "column": 12,
+        "name": "lag5_read"
+      },
+      {
+        "column": 13,
+        "name": "lag5_write"
+      },
+      {
+        "column": 14,
+        "name": "lag5_total"
+      },
+      {
+        "column": 15,
+        "name": "read_5s_mean"
+      },
+      {
+        "column": 16,
+        "name": "read_5s_std"
+      },
+      {
+        "column": 17,
+        "name": "read_5s_min"
+      },
+      {
+        "column": 18,
+        "name": "read_5s_max"
+      },
+      {
+        "column": 19,
+        "name": "read_5s_median"
+      },
+      {
+        "column": 20,
+        "name": "write_5s_mean"
+      },
+      {
+        "column": 21,
+        "name": "write_5s_std"
+      },
+      {
+        "column": 22,
+        "name": "write_5s_min"
+      },
+      {
+        "column": 23,
+        "name": "write_5s_max"
+      },
+      {
+        "column": 24,
+        "name": "write_5s_median"
+      },
+      {
+        "column": 25,
+        "name": "total_5s_mean"
+      },
+      {
+        "column": 26,
+        "name": "total_5s_std"
+      },
+      {
+        "column": 27,
+        "name": "total_5s_min"
+      },
+      {
+        "column": 28,
+        "name": "total_5s_max"
+      },
+      {
+        "column": 29,
+        "name": "total_5s_median"
+      },
+      {
+        "column": 35,
+        "name": "optional_lag1_read"
+      },
+      {
+        "column": 36,
+        "name": "optional_lag1_write"
+      },
+      {
+        "column": 37,
+        "name": "optional_lag1_total"
+      },
+      {
+        "column": 39,
+        "name": "optional_lag2_read"
+      },
+      {
+        "column": 40,
+        "name": "optional_lag2_write"
+      },
+      {
+        "column": 41,
+        "name": "optional_lag2_total"
+      },
+      {
+        "column": 43,
+        "name": "optional_lag3_read"
+      },
+      {
+        "column": 44,
+        "name": "optional_lag3_write"
+      },
+      {
+        "column": 45,
+        "name": "optional_lag3_total"
+      },
+      {
+        "column": 47,
+        "name": "optional_lag4_read"
+      },
+      {
+        "column": 48,
+        "name": "optional_lag4_write"
+      },
+      {
+        "column": 49,
+        "name": "optional_lag4_total"
+      },
+      {
+        "column": 51,
+        "name": "optional_lag5_read"
+      },
+      {
+        "column": 52,
+        "name": "optional_lag5_write"
+      },
+      {
+        "column": 53,
+        "name": "optional_lag5_total"
+      },
+      {
+        "column": 55,
+        "name": "optional_lag6_read"
+      },
+      {
+        "column": 56,
+        "name": "optional_lag6_write"
+      },
+      {
+        "column": 57,
+        "name": "optional_lag6_total"
+      },
+      {
+        "column": 59,
+        "name": "optional_lag7_read"
+      },
+      {
+        "column": 60,
+        "name": "optional_lag7_write"
+      },
+      {
+        "column": 61,
+        "name": "optional_lag7_total"
+      },
+      {
+        "column": 63,
+        "name": "optional_lag8_read"
+      },
+      {
+        "column": 64,
+        "name": "optional_lag8_write"
+      },
+      {
+        "column": 65,
+        "name": "optional_lag8_total"
+      },
+      {
+        "column": 67,
+        "name": "optional_lag9_read"
+      },
+      {
+        "column": 68,
+        "name": "optional_lag9_write"
+      },
+      {
+        "column": 69,
+        "name": "optional_lag9_total"
+      },
+      {
+        "column": 71,
+        "name": "optional_lag10_read"
+      },
+      {
+        "column": 72,
+        "name": "optional_lag10_write"
+      },
+      {
+        "column": 73,
+        "name": "optional_lag10_total"
+      },
+      {
+        "column": 75,
+        "name": "optional_lag11_read"
+      },
+      {
+        "column": 76,
+        "name": "optional_lag11_write"
+      },
+      {
+        "column": 77,
+        "name": "optional_lag11_total"
+      },
+      {
+        "column": 79,
+        "name": "optional_lag12_read"
+      },
+      {
+        "column": 80,
+        "name": "optional_lag12_write"
+      },
+      {
+        "column": 81,
+        "name": "optional_lag12_total"
+      },
+      {
+        "column": 83,
+        "name": "optional_lag13_read"
+      },
+      {
+        "column": 84,
+        "name": "optional_lag13_write"
+      },
+      {
+        "column": 85,
+        "name": "optional_lag13_total"
+      },
+      {
+        "column": 87,
+        "name": "optional_lag14_read"
+      },
+      {
+        "column": 88,
+        "name": "optional_lag14_write"
+      },
+      {
+        "column": 89,
+        "name": "optional_lag14_total"
+      },
+      {
+        "column": 91,
+        "name": "optional_lag15_read"
+      },
+      {
+        "column": 92,
+        "name": "optional_lag15_write"
+      },
+      {
+        "column": 93,
+        "name": "optional_lag15_total"
+      },
+      {
+        "column": 95,
+        "name": "observed_long_read_mean"
+      },
+      {
+        "column": 96,
+        "name": "observed_long_read_std"
+      },
+      {
+        "column": 97,
+        "name": "observed_long_read_min"
+      },
+      {
+        "column": 98,
+        "name": "observed_long_read_max"
+      },
+      {
+        "column": 99,
+        "name": "observed_long_read_median"
+      },
+      {
+        "column": 100,
+        "name": "observed_long_write_mean"
+      },
+      {
+        "column": 101,
+        "name": "observed_long_write_std"
+      },
+      {
+        "column": 102,
+        "name": "observed_long_write_min"
+      },
+      {
+        "column": 103,
+        "name": "observed_long_write_max"
+      },
+      {
+        "column": 104,
+        "name": "observed_long_write_median"
+      },
+      {
+        "column": 105,
+        "name": "observed_long_total_mean"
+      },
+      {
+        "column": 106,
+        "name": "observed_long_total_std"
+      },
+      {
+        "column": 107,
+        "name": "observed_long_total_min"
+      },
+      {
+        "column": 108,
+        "name": "observed_long_total_max"
+      },
+      {
+        "column": 109,
+        "name": "observed_long_total_median"
+      },
+      {
+        "column": 112,
+        "name": "context_idfs44_read"
+      },
+      {
+        "column": 113,
+        "name": "context_idfs44_write"
+      },
+      {
+        "column": 114,
+        "name": "context_idfs44_total"
+      },
+      {
+        "column": 116,
+        "name": "context_idfs45_read"
+      },
+      {
+        "column": 117,
+        "name": "context_idfs45_write"
+      },
+      {
+        "column": 118,
+        "name": "context_idfs45_total"
+      },
+      {
+        "column": 120,
+        "name": "context_idfs46_read"
+      },
+      {
+        "column": 121,
+        "name": "context_idfs46_write"
+      },
+      {
+        "column": 122,
+        "name": "context_idfs46_total"
+      },
+      {
+        "column": 124,
+        "name": "context_idfs47_read"
+      },
+      {
+        "column": 125,
+        "name": "context_idfs47_write"
+      },
+      {
+        "column": 126,
+        "name": "context_idfs47_total"
+      },
+      {
+        "column": 128,
+        "name": "context_idfs64_read"
+      },
+      {
+        "column": 129,
+        "name": "context_idfs64_write"
+      },
+      {
+        "column": 130,
+        "name": "context_idfs64_total"
+      },
+      {
+        "column": 132,
+        "name": "context_idfs65_read"
+      },
+      {
+        "column": 133,
+        "name": "context_idfs65_write"
+      },
+      {
+        "column": 134,
+        "name": "context_idfs65_total"
+      },
+      {
+        "column": 136,
+        "name": "context_idfs66_read"
+      },
+      {
+        "column": 137,
+        "name": "context_idfs66_write"
+      },
+      {
+        "column": 138,
+        "name": "context_idfs66_total"
+      },
+      {
+        "column": 140,
+        "name": "context_idfs67_read"
+      },
+      {
+        "column": 141,
+        "name": "context_idfs67_write"
+      },
+      {
+        "column": 142,
+        "name": "context_idfs67_total"
+      },
+      {
+        "column": 144,
+        "name": "fine_lag1_read_count"
+      },
+      {
+        "column": 145,
+        "name": "fine_lag1_write_count"
+      },
+      {
+        "column": 146,
+        "name": "fine_lag1_total_count"
+      },
+      {
+        "column": 149,
+        "name": "fine_lag2_read_count"
+      },
+      {
+        "column": 150,
+        "name": "fine_lag2_write_count"
+      },
+      {
+        "column": 151,
+        "name": "fine_lag2_total_count"
+      },
+      {
+        "column": 154,
+        "name": "fine_lag3_read_count"
+      },
+      {
+        "column": 155,
+        "name": "fine_lag3_write_count"
+      },
+      {
+        "column": 156,
+        "name": "fine_lag3_total_count"
+      },
+      {
+        "column": 159,
+        "name": "fine_lag4_read_count"
+      },
+      {
+        "column": 160,
+        "name": "fine_lag4_write_count"
+      },
+      {
+        "column": 161,
+        "name": "fine_lag4_total_count"
+      },
+      {
+        "column": 164,
+        "name": "fine_lag5_read_count"
+      },
+      {
+        "column": 165,
+        "name": "fine_lag5_write_count"
+      },
+      {
+        "column": 166,
+        "name": "fine_lag5_total_count"
+      },
+      {
+        "column": 169,
+        "name": "fine_lag6_read_count"
+      },
+      {
+        "column": 170,
+        "name": "fine_lag6_write_count"
+      },
+      {
+        "column": 171,
+        "name": "fine_lag6_total_count"
+      },
+      {
+        "column": 174,
+        "name": "fine_lag7_read_count"
+      },
+      {
+        "column": 175,
+        "name": "fine_lag7_write_count"
+      },
+      {
+        "column": 176,
+        "name": "fine_lag7_total_count"
+      },
+      {
+        "column": 179,
+        "name": "fine_lag8_read_count"
+      },
+      {
+        "column": 180,
+        "name": "fine_lag8_write_count"
+      },
+      {
+        "column": 181,
+        "name": "fine_lag8_total_count"
+      },
+      {
+        "column": 184,
+        "name": "fine_lag9_read_count"
+      },
+      {
+        "column": 185,
+        "name": "fine_lag9_write_count"
+      },
+      {
+        "column": 186,
+        "name": "fine_lag9_total_count"
+      },
+      {
+        "column": 189,
+        "name": "fine_lag10_read_count"
+      },
+      {
+        "column": 190,
+        "name": "fine_lag10_write_count"
+      },
+      {
+        "column": 191,
+        "name": "fine_lag10_total_count"
+      },
+      {
+        "column": 194,
+        "name": "fine_lag11_read_count"
+      },
+      {
+        "column": 195,
+        "name": "fine_lag11_write_count"
+      },
+      {
+        "column": 196,
+        "name": "fine_lag11_total_count"
+      },
+      {
+        "column": 199,
+        "name": "fine_lag12_read_count"
+      },
+      {
+        "column": 200,
+        "name": "fine_lag12_write_count"
+      },
+      {
+        "column": 201,
+        "name": "fine_lag12_total_count"
+      },
+      {
+        "column": 204,
+        "name": "fine_lag13_read_count"
+      },
+      {
+        "column": 205,
+        "name": "fine_lag13_write_count"
+      },
+      {
+        "column": 206,
+        "name": "fine_lag13_total_count"
+      },
+      {
+        "column": 209,
+        "name": "fine_lag14_read_count"
+      },
+      {
+        "column": 210,
+        "name": "fine_lag14_write_count"
+      },
+      {
+        "column": 211,
+        "name": "fine_lag14_total_count"
+      },
+      {
+        "column": 214,
+        "name": "fine_lag15_read_count"
+      },
+      {
+        "column": 215,
+        "name": "fine_lag15_write_count"
+      },
+      {
+        "column": 216,
+        "name": "fine_lag15_total_count"
+      },
+      {
+        "column": 219,
+        "name": "fine_lag16_read_count"
+      },
+      {
+        "column": 220,
+        "name": "fine_lag16_write_count"
+      },
+      {
+        "column": 221,
+        "name": "fine_lag16_total_count"
+      },
+      {
+        "column": 224,
+        "name": "fine_lag17_read_count"
+      },
+      {
+        "column": 225,
+        "name": "fine_lag17_write_count"
+      },
+      {
+        "column": 226,
+        "name": "fine_lag17_total_count"
+      },
+      {
+        "column": 229,
+        "name": "fine_lag18_read_count"
+      },
+      {
+        "column": 230,
+        "name": "fine_lag18_write_count"
+      },
+      {
+        "column": 231,
+        "name": "fine_lag18_total_count"
+      },
+      {
+        "column": 234,
+        "name": "fine_lag19_read_count"
+      },
+      {
+        "column": 235,
+        "name": "fine_lag19_write_count"
+      },
+      {
+        "column": 236,
+        "name": "fine_lag19_total_count"
+      },
+      {
+        "column": 239,
+        "name": "fine_lag20_read_count"
+      },
+      {
+        "column": 240,
+        "name": "fine_lag20_write_count"
+      },
+      {
+        "column": 241,
+        "name": "fine_lag20_total_count"
+      },
+      {
+        "column": 246,
+        "name": "fine_3ticks_observed_count_sum"
+      },
+      {
+        "column": 249,
+        "name": "fine_5ticks_observed_count_sum"
+      },
+      {
+        "column": 252,
+        "name": "fine_10ticks_observed_count_sum"
+      },
+      {
+        "column": 255,
+        "name": "fine_20ticks_observed_count_sum"
+      }
+    ],
+    "signed_robust_only": [
+      {
+        "column": 30,
+        "name": "read_difference"
+      },
+      {
+        "column": 31,
+        "name": "write_difference"
+      },
+      {
+        "column": 32,
+        "name": "total_difference"
+      }
+    ],
+    "preserved": [
+      {
+        "column": 33,
+        "name": "latest_read_fraction"
+      },
+      {
+        "column": 34,
+        "name": "latest_total_zero"
+      },
+      {
+        "column": 38,
+        "name": "optional_lag1_observed"
+      },
+      {
+        "column": 42,
+        "name": "optional_lag2_observed"
+      },
+      {
+        "column": 46,
+        "name": "optional_lag3_observed"
+      },
+      {
+        "column": 50,
+        "name": "optional_lag4_observed"
+      },
+      {
+        "column": 54,
+        "name": "optional_lag5_observed"
+      },
+      {
+        "column": 58,
+        "name": "optional_lag6_observed"
+      },
+      {
+        "column": 62,
+        "name": "optional_lag7_observed"
+      },
+      {
+        "column": 66,
+        "name": "optional_lag8_observed"
+      },
+      {
+        "column": 70,
+        "name": "optional_lag9_observed"
+      },
+      {
+        "column": 74,
+        "name": "optional_lag10_observed"
+      },
+      {
+        "column": 78,
+        "name": "optional_lag11_observed"
+      },
+      {
+        "column": 82,
+        "name": "optional_lag12_observed"
+      },
+      {
+        "column": 86,
+        "name": "optional_lag13_observed"
+      },
+      {
+        "column": 90,
+        "name": "optional_lag14_observed"
+      },
+      {
+        "column": 94,
+        "name": "optional_lag15_observed"
+      },
+      {
+        "column": 110,
+        "name": "long_observed_fraction"
+      },
+      {
+        "column": 111,
+        "name": "oldest_observed_lag_seconds"
+      },
+      {
+        "column": 115,
+        "name": "context_idfs44_observed"
+      },
+      {
+        "column": 119,
+        "name": "context_idfs45_observed"
+      },
+      {
+        "column": 123,
+        "name": "context_idfs46_observed"
+      },
+      {
+        "column": 127,
+        "name": "context_idfs47_observed"
+      },
+      {
+        "column": 131,
+        "name": "context_idfs64_observed"
+      },
+      {
+        "column": 135,
+        "name": "context_idfs65_observed"
+      },
+      {
+        "column": 139,
+        "name": "context_idfs66_observed"
+      },
+      {
+        "column": 143,
+        "name": "context_idfs67_observed"
+      },
+      {
+        "column": 147,
+        "name": "fine_lag1_observed"
+      },
+      {
+        "column": 148,
+        "name": "fine_lag1_age_seconds"
+      },
+      {
+        "column": 152,
+        "name": "fine_lag2_observed"
+      },
+      {
+        "column": 153,
+        "name": "fine_lag2_age_seconds"
+      },
+      {
+        "column": 157,
+        "name": "fine_lag3_observed"
+      },
+      {
+        "column": 158,
+        "name": "fine_lag3_age_seconds"
+      },
+      {
+        "column": 162,
+        "name": "fine_lag4_observed"
+      },
+      {
+        "column": 163,
+        "name": "fine_lag4_age_seconds"
+      },
+      {
+        "column": 167,
+        "name": "fine_lag5_observed"
+      },
+      {
+        "column": 168,
+        "name": "fine_lag5_age_seconds"
+      },
+      {
+        "column": 172,
+        "name": "fine_lag6_observed"
+      },
+      {
+        "column": 173,
+        "name": "fine_lag6_age_seconds"
+      },
+      {
+        "column": 177,
+        "name": "fine_lag7_observed"
+      },
+      {
+        "column": 178,
+        "name": "fine_lag7_age_seconds"
+      },
+      {
+        "column": 182,
+        "name": "fine_lag8_observed"
+      },
+      {
+        "column": 183,
+        "name": "fine_lag8_age_seconds"
+      },
+      {
+        "column": 187,
+        "name": "fine_lag9_observed"
+      },
+      {
+        "column": 188,
+        "name": "fine_lag9_age_seconds"
+      },
+      {
+        "column": 192,
+        "name": "fine_lag10_observed"
+      },
+      {
+        "column": 193,
+        "name": "fine_lag10_age_seconds"
+      },
+      {
+        "column": 197,
+        "name": "fine_lag11_observed"
+      },
+      {
+        "column": 198,
+        "name": "fine_lag11_age_seconds"
+      },
+      {
+        "column": 202,
+        "name": "fine_lag12_observed"
+      },
+      {
+        "column": 203,
+        "name": "fine_lag12_age_seconds"
+      },
+      {
+        "column": 207,
+        "name": "fine_lag13_observed"
+      },
+      {
+        "column": 208,
+        "name": "fine_lag13_age_seconds"
+      },
+      {
+        "column": 212,
+        "name": "fine_lag14_observed"
+      },
+      {
+        "column": 213,
+        "name": "fine_lag14_age_seconds"
+      },
+      {
+        "column": 217,
+        "name": "fine_lag15_observed"
+      },
+      {
+        "column": 218,
+        "name": "fine_lag15_age_seconds"
+      },
+      {
+        "column": 222,
+        "name": "fine_lag16_observed"
+      },
+      {
+        "column": 223,
+        "name": "fine_lag16_age_seconds"
+      },
+      {
+        "column": 227,
+        "name": "fine_lag17_observed"
+      },
+      {
+        "column": 228,
+        "name": "fine_lag17_age_seconds"
+      },
+      {
+        "column": 232,
+        "name": "fine_lag18_observed"
+      },
+      {
+        "column": 233,
+        "name": "fine_lag18_age_seconds"
+      },
+      {
+        "column": 237,
+        "name": "fine_lag19_observed"
+      },
+      {
+        "column": 238,
+        "name": "fine_lag19_age_seconds"
+      },
+      {
+        "column": 242,
+        "name": "fine_lag20_observed"
+      },
+      {
+        "column": 243,
+        "name": "fine_lag20_age_seconds"
+      },
+      {
+        "column": 244,
+        "name": "fine_observed_fraction"
+      },
+      {
+        "column": 245,
+        "name": "fine_latest_observed_age_seconds"
+      },
+      {
+        "column": 247,
+        "name": "fine_3ticks_observed_fraction"
+      },
+      {
+        "column": 248,
+        "name": "fine_3ticks_zero_observed_fraction"
+      },
+      {
+        "column": 250,
+        "name": "fine_5ticks_observed_fraction"
+      },
+      {
+        "column": 251,
+        "name": "fine_5ticks_zero_observed_fraction"
+      },
+      {
+        "column": 253,
+        "name": "fine_10ticks_observed_fraction"
+      },
+      {
+        "column": 254,
+        "name": "fine_10ticks_zero_observed_fraction"
+      },
+      {
+        "column": 256,
+        "name": "fine_20ticks_observed_fraction"
+      },
+      {
+        "column": 257,
+        "name": "fine_20ticks_zero_observed_fraction"
+      }
+    ]
+  },
+  "observed_by_column": {
+    "35": 38,
+    "36": 38,
+    "37": 38,
+    "39": 42,
+    "40": 42,
+    "41": 42,
+    "43": 46,
+    "44": 46,
+    "45": 46,
+    "47": 50,
+    "48": 50,
+    "49": 50,
+    "51": 54,
+    "52": 54,
+    "53": 54,
+    "55": 58,
+    "56": 58,
+    "57": 58,
+    "59": 62,
+    "60": 62,
+    "61": 62,
+    "63": 66,
+    "64": 66,
+    "65": 66,
+    "67": 70,
+    "68": 70,
+    "69": 70,
+    "71": 74,
+    "72": 74,
+    "73": 74,
+    "75": 78,
+    "76": 78,
+    "77": 78,
+    "79": 82,
+    "80": 82,
+    "81": 82,
+    "83": 86,
+    "84": 86,
+    "85": 86,
+    "87": 90,
+    "88": 90,
+    "89": 90,
+    "91": 94,
+    "92": 94,
+    "93": 94,
+    "112": 115,
+    "113": 115,
+    "114": 115,
+    "116": 119,
+    "117": 119,
+    "118": 119,
+    "120": 123,
+    "121": 123,
+    "122": 123,
+    "124": 127,
+    "125": 127,
+    "126": 127,
+    "128": 131,
+    "129": 131,
+    "130": 131,
+    "132": 135,
+    "133": 135,
+    "134": 135,
+    "136": 139,
+    "137": 139,
+    "138": 139,
+    "140": 143,
+    "141": 143,
+    "142": 143,
+    "144": 147,
+    "145": 147,
+    "146": 147,
+    "149": 152,
+    "150": 152,
+    "151": 152,
+    "154": 157,
+    "155": 157,
+    "156": 157,
+    "159": 162,
+    "160": 162,
+    "161": 162,
+    "164": 167,
+    "165": 167,
+    "166": 167,
+    "169": 172,
+    "170": 172,
+    "171": 172,
+    "174": 177,
+    "175": 177,
+    "176": 177,
+    "179": 182,
+    "180": 182,
+    "181": 182,
+    "184": 187,
+    "185": 187,
+    "186": 187,
+    "189": 192,
+    "190": 192,
+    "191": 192,
+    "194": 197,
+    "195": 197,
+    "196": 197,
+    "199": 202,
+    "200": 202,
+    "201": 202,
+    "204": 207,
+    "205": 207,
+    "206": 207,
+    "209": 212,
+    "210": 212,
+    "211": 212,
+    "214": 217,
+    "215": 217,
+    "216": 217,
+    "219": 222,
+    "220": 222,
+    "221": 222,
+    "224": 227,
+    "225": 227,
+    "226": 227,
+    "229": 232,
+    "230": 232,
+    "231": 232,
+    "234": 237,
+    "235": 237,
+    "236": 237,
+    "239": 242,
+    "240": 242,
+    "241": 242,
+    "246": 247,
+    "249": 250,
+    "252": 253,
+    "255": 256
+  },
+  "fit_statistics": false,
+  "c_policy": "one reference unit in each named field; direction counts/IOPS are separate semantic columns; no bytes input in C258"
+}
