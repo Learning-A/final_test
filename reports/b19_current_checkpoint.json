@@ -1,6 +1,6 @@
 {
   "schema": "b19_local_checkpoint_v1",
-  "updated_at": "2026-11-23T16:15:12.955976+08:00",
+  "updated_at": "2026-11-23T16:37:40.021315+08:00",
   "owner": "B",
   "owner_thread": "01a203f5-3aa6-7b21-8a1f-8fece4787432",
   "worktree": "F:/sessions/26.9.8_测试大纲/work/idfs-model-b",
@@ -8,8 +8,8 @@
   "remote_branch": "model/causal-multiscale-inputs",
   "issue": 19,
   "pr": 16,
-  "state": "completed",
-  "substage": "cluster_1s_target_metric_review_completed_no_new_fit",
+  "state": "running",
+  "substage": "cluster_horizon_two_paths_registered_before_fit",
   "training_running": false,
   "sources": {
     "handoff_sha256": "2e7ac9ddcc68da042a1f06269b6c6021e977e167482face0699e199fee47cf90",
@@ -176,7 +176,9 @@
     "offline_component_p95_ms": 53.01117735,
     "includes_network_and_publication": false
   },
-  "next_actions": [],
+  "next_actions": [
+    "Execute the newly authorized matched cluster multihorizon paths; old jobs remain do_not_repeat."
+  ],
   "heartbeat": {
     "id": "idfs-b",
     "status": "DELETED",
@@ -1817,5 +1819,28 @@
       "44.0585 is old model MAPE contribution, not an irreducible error bound."
     ],
     "next_training_card": "suggested_direct_cluster_MAE_WAPE_objective_not_registered_or_started"
+  },
+  "cluster_horizon": {
+    "state": "registered_before_fit",
+    "card": "docs/B19_CLUSTER_HORIZON_EXECUTION_CARD.md",
+    "user_request": "测试一下，同时是否能输出更长时间尺度，例如3、5、10等",
+    "user_output_preference": "同时给出窗口平均IOPS和逐秒轨迹",
+    "horizons": [
+      1,
+      3,
+      5,
+      10
+    ],
+    "fit_samples": 4615,
+    "internal_dev_samples": 2297,
+    "new_fit_limit": 2,
+    "new_fit_count": 0,
+    "preparation_charged_seconds_per_arm": 300,
+    "worker_budget_seconds": 1500,
+    "full_card_budget_seconds_per_arm": 1800,
+    "input_receipt": "reports/cluster_horizon_input_receipt.json",
+    "source_clock_offline_only": true,
+    "external_validation_new_evaluations": 0,
+    "parameter_count": 124161
   }
 }
